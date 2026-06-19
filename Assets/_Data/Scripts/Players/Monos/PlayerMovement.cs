@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : LifetimeScope
@@ -18,8 +17,14 @@ public class PlayerMovement : LifetimeScope
     {
         if (_rd == null) return;
 
+        Vector3 curentVelocity = _rd.transform.localScale;
         Vector2 velocity = _currentDir * _currentVel;
         _rd.linearVelocity = Vector2.ClampMagnitude(velocity, _speed);
+
+        if (Mathf.Abs(_rd.linearVelocity.x) < float.Epsilon) return;
+
+        curentVelocity.x = (Mathf.Sign(_rd.linearVelocityX) * Mathf.Abs(curentVelocity.x));
+        _rd.transform.localScale = curentVelocity;
     }
 
     public void ChangePos(Vector2 dir, float speedIntensity)
