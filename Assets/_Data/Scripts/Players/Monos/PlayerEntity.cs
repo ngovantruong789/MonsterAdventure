@@ -7,14 +7,9 @@ public class PlayerEntity : CharacterEntity, IStartInit
     [Header("Installers")]
     [SerializeReference] private List<BaseInstaller> installerConfigs = new List<BaseInstaller>();
 
-    protected override void Start()
+    public override void Initialize()
     {
-        base.Start();
-        Initialize();
-    }
-
-    public void Initialize()
-    {
+        base.Initialize();
         foreach(BaseInstaller installer in installerConfigs)
         {
             installer.Initialize();

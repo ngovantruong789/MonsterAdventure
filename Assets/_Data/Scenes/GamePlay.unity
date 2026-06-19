@@ -625,6 +625,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1088951855}
   - component: {fileID: 1088951857}
+  - component: {fileID: 1088951858}
+  - component: {fileID: 1088951859}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -701,11 +703,46 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.34, y: 0.36}
+  m_Size: {x: 0.32, y: 0.38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &1088951858
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088951854}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 52361558c4654d24d83c2d9719e69a84, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1088951859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088951854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0efa826b13124c347b17cfeff3c9adc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimatorController
+  _animator: {fileID: 1088951858}
 --- !u!1 &1159903346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,6 +1052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfd394c033676d84d92a59b08f4852c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerEntity
+  _characterScripts: []
   installerConfigs:
   - rid: 5677875185751949398
   references:
@@ -1026,6 +1064,7 @@ MonoBehaviour:
         installerName: Player movement
         _view: {fileID: 393709199}
         _playerMovement: {fileID: 993076900}
+        _animatorController: {fileID: 1088951859}
 --- !u!50 &1877288291
 Rigidbody2D:
   serializedVersion: 5
