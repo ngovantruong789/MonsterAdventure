@@ -1,37 +1,34 @@
 fileFormatVersion: 2
-guid: 3e34c6fe092a06d419ff6560168e6188
+guid: c8a17e6f41a573b42ad8ea91fc04f856
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2678056010834147488
-    second: male_hero-walk_0
+      213: -8902091141364715938
+    second: DeepBreath-Anim_0
   - first:
-      213: -8593442913765755271
-    second: male_hero-walk_1
+      213: -8144215259571460076
+    second: DeepBreath-Anim_1
   - first:
-      213: 5906035176386186516
-    second: male_hero-walk_2
+      213: -7673589639116324909
+    second: DeepBreath-Anim_2
   - first:
-      213: -9131558586554212597
-    second: male_hero-walk_3
+      213: -3854204572327481600
+    second: DeepBreath-Anim_3
   - first:
-      213: 8769146988011900335
-    second: male_hero-walk_4
+      213: 5710813350107861688
+    second: DeepBreath-Anim_4
   - first:
-      213: 3437182081678281977
-    second: male_hero-walk_5
+      213: 905746899585449218
+    second: DeepBreath-Anim_5
   - first:
-      213: 4258722309966059283
-    second: male_hero-walk_6
+      213: 1603064114795800414
+    second: DeepBreath-Anim_6
   - first:
-      213: -4183377455723820377
-    second: male_hero-walk_7
+      213: 3141687740250080461
+    second: DeepBreath-Anim_7
   - first:
-      213: -2313563430374355276
-    second: male_hero-walk_8
-  - first:
-      213: 5757145782676573215
-    second: male_hero-walk_9
+      213: -3460931365207596128
+    second: DeepBreath-Anim_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -78,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 35
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -166,13 +163,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: male_hero-walk_0
+      name: DeepBreath-Anim_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 47
-        width: 35
-        height: 38
+        x: 1
+        y: 9
+        width: 20
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +178,152 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a87e5eb0cd5a2520800000000000000
-      internalID: 2678056010834147488
+      spriteID: e5eedc0b54b657480800000000000000
+      internalID: -8902091141364715938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: male_hero-walk_1
+      name: DeepBreath-Anim_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 9
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4186dee0f5fe9fe80800000000000000
+      internalID: -8144215259571460076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeepBreath-Anim_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 9
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df7a5031eee18590800000000000000
+      internalID: -7673589639116324909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeepBreath-Anim_3
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 9
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00febb6ac5d138ac0800000000000000
+      internalID: -3854204572327481600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeepBreath-Anim_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 9
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b2dcb71c72e04f40800000000000000
+      internalID: 5710813350107861688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeepBreath-Anim_5
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 9
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20db33e910cd19c00800000000000000
+      internalID: 905746899585449218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeepBreath-Anim_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 9
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57649aa15a3f3610800000000000000
+      internalID: 1603064114795800414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeepBreath-Anim_7
       rect:
         serializedVersion: 2
         x: 169
-        y: 47
-        width: 33
-        height: 39
+        y: 9
+        width: 21
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 976f46f2335fdb880800000000000000
-      internalID: -8593442913765755271
+      spriteID: dc44ec8ba54899b20800000000000000
+      internalID: 3141687740250080461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: male_hero-walk_2
+      name: DeepBreath-Anim_8
       rect:
         serializedVersion: 2
-        x: 296
-        y: 47
-        width: 34
-        height: 39
+        x: 193
+        y: 9
+        width: 21
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,162 +354,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41dc57f83b376f150800000000000000
-      internalID: 5906035176386186516
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: male_hero-walk_3
-      rect:
-        serializedVersion: 2
-        x: 424
-        y: 47
-        width: 35
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b0f94cab8df264180800000000000000
-      internalID: -9131558586554212597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: male_hero-walk_4
-      rect:
-        serializedVersion: 2
-        x: 552
-        y: 47
-        width: 37
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fadc2a389b442b970800000000000000
-      internalID: 8769146988011900335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: male_hero-walk_5
-      rect:
-        serializedVersion: 2
-        x: 680
-        y: 47
-        width: 36
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9fc85ce64e253bf20800000000000000
-      internalID: 3437182081678281977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: male_hero-walk_6
-      rect:
-        serializedVersion: 2
-        x: 808
-        y: 47
-        width: 34
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 317de8290650a1b30800000000000000
-      internalID: 4258722309966059283
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: male_hero-walk_7
-      rect:
-        serializedVersion: 2
-        x: 936
-        y: 47
-        width: 34
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7aa44365e58a1f5c0800000000000000
-      internalID: -4183377455723820377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: male_hero-walk_8
-      rect:
-        serializedVersion: 2
-        x: 1065
-        y: 47
-        width: 34
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4bec33f515294efd0800000000000000
-      internalID: -2313563430374355276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: male_hero-walk_9
-      rect:
-        serializedVersion: 2
-        x: 1194
-        y: 47
-        width: 35
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f1c4390369d75ef40800000000000000
-      internalID: 5757145782676573215
+      spriteID: 0a32bc8924d48ffc0800000000000000
+      internalID: -3460931365207596128
       vertices: []
       indices: 
       edges: []
@@ -399,16 +374,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      male_hero-walk_0: 2678056010834147488
-      male_hero-walk_1: -8593442913765755271
-      male_hero-walk_2: 5906035176386186516
-      male_hero-walk_3: -9131558586554212597
-      male_hero-walk_4: 8769146988011900335
-      male_hero-walk_5: 3437182081678281977
-      male_hero-walk_6: 4258722309966059283
-      male_hero-walk_7: -4183377455723820377
-      male_hero-walk_8: -2313563430374355276
-      male_hero-walk_9: 5757145782676573215
+      DeepBreath-Anim_0: -8902091141364715938
+      DeepBreath-Anim_1: -8144215259571460076
+      DeepBreath-Anim_2: -7673589639116324909
+      DeepBreath-Anim_3: -3854204572327481600
+      DeepBreath-Anim_4: 5710813350107861688
+      DeepBreath-Anim_5: 905746899585449218
+      DeepBreath-Anim_6: 1603064114795800414
+      DeepBreath-Anim_7: 3141687740250080461
+      DeepBreath-Anim_8: -3460931365207596128
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
