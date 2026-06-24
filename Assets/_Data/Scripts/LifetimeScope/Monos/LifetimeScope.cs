@@ -1,5 +1,6 @@
-using UnityEngine;
-
+﻿using UnityEngine;
+using System;
+using System.Collections.Generic;
 public class LifetimeScope : MonoBehaviour
 {
     protected virtual void Start()
