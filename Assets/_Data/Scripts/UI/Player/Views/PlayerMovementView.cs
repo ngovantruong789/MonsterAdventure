@@ -22,24 +22,16 @@ public class PlayerMovementView : LifetimeScope, IPointerUpHandler, IDragHandler
 
     public void Initialize()
     {
-         _inputManager.MovePressedEvent += OnKeyboardMove;    
+         _inputManager.MovePressedEvent += HandleMovePointByKey;
     }
 
-    private void OnKeyboardMove(Vector2 keyboardDirection)
+    private void ProcessMovement(Vector2 rawOffset)
     {
-        if (keyboardDirection == Vector2.zero)
-        {
-            _point.anchoredPosition = Vector2.zero;
-            directionTouchPos = Vector2.zero;
-            this.MoveEvent?.Invoke(Vector2.zero, 0f);
-        }
-        else
-        {
-            Vector2 normalizedDir = keyboardDirection.normalized;
-            _point.anchoredPosition = normalizedDir * _radius;
-            directionTouchPos = normalizedDir * _radius;
-            this.MoveEvent?.Invoke(directionTouchPos, 1f);
-        }
+        directionTouchPos = Vector2.ClampMagnitude(rawOffset, _radius);
+        _point.anchoredPosition = directionTouchPos;
+
+        float speedIntensity = Mathf.Clamp01(directionTouchPos.magnitude / _radius);
+        this.MoveEvent?.Invoke(directionTouchPos, speedIntensity);
     }
 
     public void OnPointerUp(PointerEventData eventData)
@@ -52,7 +44,7 @@ public class PlayerMovementView : LifetimeScope, IPointerUpHandler, IDragHandler
 
     public void OnDrag(PointerEventData eventData)
     {
-        HandleTransformPoint(eventData.position);
+        HandleMovePointByJoystick(eventData.position);
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -61,14 +53,14 @@ public class PlayerMovementView : LifetimeScope, IPointerUpHandler, IDragHandler
         PlayTweenClick(0.9f, 0.1f);
     }
 
-    private void HandleTransformPoint(Vector2 tounchPos)
+    private void HandleMovePointByKey(Vector2 keyboardDirection)
     {
-        directionTouchPos = tounchPos - startTouchPos;//Tính hướng chạm  từ điểm đầu tới cuối
-        Vector2 newPointPos = Vector2.ClampMagnitude(directionTouchPos, _radius);//Tính nó vào bán kính, cao quá thì = r
-        _point.anchoredPosition = newPointPos;
+        ProcessMovement(keyboardDirection.normalized * _radius);
+    }
 
-        float speedIntensity = Mathf.Clamp01(newPointPos.magnitude / _radius);
-        this.MoveEvent?.Invoke(directionTouchPos, speedIntensity);
+    private void HandleMovePointByJoystick(Vector2 touchPos)
+    {
+        ProcessMovement(touchPos - startTouchPos);
     }
 
     private void PlayTweenClick(float scale, float duration)
