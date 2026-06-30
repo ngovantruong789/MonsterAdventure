@@ -1,9 +1,13 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class InputManager : LifetimeScope, IStartInit
 {
     private Player_Input inputActions;
+
+
+    public Action<Vector2> MovePressedEvent { get; set; }
 
     protected override void Start()
     {
@@ -18,7 +22,10 @@ public class InputManager : LifetimeScope, IStartInit
     public void Initialize()
     {
         inputActions = new Player_Input();
+
         inputActions.Player.Move.performed += HandleMovePerformed;
+        inputActions.Player.Move.canceled += HandleMovePerformed;
+
         ToggleStatusInput(true);
     }
 
@@ -36,11 +43,7 @@ public class InputManager : LifetimeScope, IStartInit
 
     private void HandleMovePerformed(InputAction.CallbackContext ctx)
     {
-        LogKey(ctx.control.name);
-    }
-
-    private void LogKey(string keyName)
-    {
-        Debug.Log($"Phím vừa ấn: {keyName}");
+        Vector2 moveValue = ctx.ReadValue<Vector2>();
+        MovePressedEvent?.Invoke(moveValue);
     }
 }
