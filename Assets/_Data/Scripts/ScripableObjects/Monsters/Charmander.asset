@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a8fcf4b1db5df418469822cca472b3, type: 3}
+  m_Name: Charmander
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterSO
+  _id: 1
+  _name: Charmander
+  _animator: {fileID: 22100000, guid: 2f8d6ab238979bc47a4d8f5c4874cb54, type: 2}
+  _nextEvolve:
+    _nextEvolveSO: {fileID: 11400000, guid: e58336df91b478e4a808460e5252ae13, type: 2}
+    _levelEvolve: 15
+  _captureRateConfig:
+    _baseCatchDifficulty: 5
+    _levelBonus: 0.5
+  _health:
+    _statType: 0
+    _growthPerLevels: 0500000002000000
+  _attack:
+    _statType: 0
+    _growthPerLevels: 05000000
+  _defense:
+    _statType: 0
+    _growthPerLevels: 05000000
+  _speed:
+    _statType: 0
+    _growthPerLevels: 05000000
+  _map:
+  - _mapType: 0
+    _levelOriginRange: {x: 3, y: 6}
+  - _mapType: 2
+    _levelOriginRange: {x: 10, y: 17}

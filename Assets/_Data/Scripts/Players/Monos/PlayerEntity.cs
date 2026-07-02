@@ -6,7 +6,6 @@ public class PlayerEntity : CharacterEntity, IStartInit
     [Header("Installers")]
     [SerializeReference] private List<BaseInstaller> installerConfigs = new List<BaseInstaller>();
     [SerializeField] private SceneLoadManager _sceneLoadManager;
-    [SerializeField] private MonsterEntity _monsterEntity;
 
     public override void Initialize()
     {
@@ -17,18 +16,19 @@ public class PlayerEntity : CharacterEntity, IStartInit
         }
     }
 
-    [ContextMenu("Add installer")]
-    public void AddInstaller()
-    {
-        installerConfigs.Clear();
-        installerConfigs.Add(new PlayerMovementInstaller());
-    }
+    [ContextMenu("Add PlayerMovementInstaller")]
+    public void AddInstaller() => installerConfigs.Add(new PlayerMovementInstaller());
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (!collision.TryGetComponent(out MonsterEntity monsterEntity)) return;
+
         _sceneLoadManager.StartLoadScene("BattleScene", new SceneLoadModel
         {
-            MonsterEntity = _monsterEntity,
+            BatlleModel = new BattleModel
+            {
+                OpponentMonsterModel = monsterEntity.IMonsterModelProvider.CurrentMonsterModel,
+            },
         });
     }
 }
