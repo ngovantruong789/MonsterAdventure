@@ -8,11 +8,13 @@ public static class MonsterModelFactory
         {
             NextEvolve = monsterSO.NextEvolve,
             Health = StatCalculator.CalculateStatPerLevel(monsterSO.Health.GrowthPerLevels, level),
+            MaxHealth = StatCalculator.CalculateStatPerLevel(monsterSO.Health.GrowthPerLevels, level),
             Attack = StatCalculator.CalculateStatPerLevel(monsterSO.Attack.GrowthPerLevels, level),
             Defense = StatCalculator.CalculateStatPerLevel(monsterSO.Defense.GrowthPerLevels, level),
             Speed = StatCalculator.CalculateStatPerLevel(monsterSO.Speed.GrowthPerLevels, level),
             Level = level,
             Animator = monsterSO.Animator,
+            MonsterName = monsterSO.name,
         };
     }
 }

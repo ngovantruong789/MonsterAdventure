@@ -4,7 +4,8 @@ using UnityEngine;
 [Serializable]
 public class BattleInstaller : BaseInstaller, IBattleProvider
 {
-    [SerializeField] private BattleMonsterView _battleMonsterView;
+    [SerializeField] private BattleMonsterWorldSpaceView _battleMonsterView;
+    [SerializeField] private HUDBattleMonsterView _hUDBattleMonsterView;
 
     private BattleMonsterPresenter _battleMonsterPresenter;
     private BattleModel _battleModel;
@@ -15,7 +16,7 @@ public class BattleInstaller : BaseInstaller, IBattleProvider
         base.Initialize();
         if(BattleModel != null)
         {
-            _battleMonsterPresenter = new BattleMonsterPresenter(_battleMonsterView, BattleModel);
+            _battleMonsterPresenter = new BattleMonsterPresenter(_battleMonsterView, _hUDBattleMonsterView, BattleModel);
         }
     }
 }
