@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8a8fcf4b1db5df418469822cca472b3, type: 3}
-  m_Name: Charmeleon
+  m_Name: Charizard
   m_EditorClassIdentifier: Assembly-CSharp::MonsterSO
-  _id: 2
-  _name: Charmeleon
-  _animator: {fileID: 22100000, guid: a23e77c083cd87f41b9cd24f39ecc789, type: 2}
+  _id: 3
+  _name: Charizard
+  _animator: {fileID: 22100000, guid: 4df4512d52060c040b560c67818e61f7, type: 2}
   _nextEvolve:
     _nextEvolveSO: {fileID: 11400000}
-    _levelEvolve: 30
+    _levelEvolve: 0
   _captureRateConfig:
-    _baseCatchDifficulty: 20
-    _levelBonus: 1
+    _baseCatchDifficulty: 50
+    _levelBonus: 1.5
   _health:
     _statType: 0
-    _growthPerLevels: 05000000
+    _growthPerLevels: 0500000000000000000000000000000000000000
   _attack:
     _statType: 3
     _growthPerLevels: 05000000
