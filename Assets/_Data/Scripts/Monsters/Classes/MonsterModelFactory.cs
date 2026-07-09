@@ -13,8 +13,11 @@ public static class MonsterModelFactory
             Defense = StatCalculator.CalculateStatPerLevel(monsterSO.Defense.GrowthPerLevels, level),
             Speed = StatCalculator.CalculateStatPerLevel(monsterSO.Speed.GrowthPerLevels, level),
             Level = level,
-            Animator = monsterSO.Animator,
+            MonsterAnimator = monsterSO.MonsterAnimator,
+            UIAnimator = monsterSO.UIAnimator,
             MonsterName = monsterSO.name,
+            Experience = 0,
+            IsDead = false,
         };
     }
 }
