@@ -5,6 +5,7 @@ public class BattleManager : LifetimeScope, IStartInit
 {
     [Header("Installers")]
     [SerializeReference] private List<BaseInstaller> installerConfigs = new List<BaseInstaller>();
+    [SerializeField] private SceneLoadManager _sceneLoadManager;
     [SerializeField] private SceneReceiverData _sceneReceiverData;
 
     private MonsterModel _playerMonsterModel;
@@ -14,7 +15,6 @@ public class BattleManager : LifetimeScope, IStartInit
     {
         base.Start();
         Initialize();
-        Debug.Log("BattleManager");
     }
 
     public void Initialize()
@@ -36,5 +36,13 @@ public class BattleManager : LifetimeScope, IStartInit
 
             installer.Initialize();
         }
+    }
+
+    public void EndBattle(BattleModel newBattleModel)
+    {
+        SceneLoadModel sceneLoadModel = new SceneLoadModel();
+        sceneLoadModel = _sceneReceiverData.SceneLoadModel;
+        sceneLoadModel.BatlleModel = newBattleModel;
+        _sceneLoadManager.CloseSceneAttitive("BattleScene", "GamePlay", sceneLoadModel);
     }
 }
