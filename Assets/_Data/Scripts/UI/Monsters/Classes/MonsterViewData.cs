@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MonsterModel
+public class MonsterViewData
 {
     public EvolveConfig NextEvolve { get; set; }
     public RuntimeAnimatorController MonsterAnimator { get; set; }

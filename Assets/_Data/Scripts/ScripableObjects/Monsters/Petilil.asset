@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Petilil
   m_EditorClassIdentifier: Assembly-CSharp::MonsterSO
   _id: 7
-  _name: 
-  _animator: {fileID: 22100000, guid: b3806fa631e458946a869fd91e1f80de, type: 2}
+  _name: Petilil
+  _monsterAnimator: {fileID: 0}
+  _uIAnimator: {fileID: 0}
   _nextEvolve:
     _nextEvolveSO: {fileID: 11400000}
     _levelEvolve: 15

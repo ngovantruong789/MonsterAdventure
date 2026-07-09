@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MonsterSO
   _id: 2
   _name: Charmeleon
-  _animator: {fileID: 22100000, guid: a23e77c083cd87f41b9cd24f39ecc789, type: 2}
+  _monsterAnimator: {fileID: 22100000, guid: a23e77c083cd87f41b9cd24f39ecc789, type: 2}
+  _uIAnimator: {fileID: 9100000, guid: 2f76e029b3a901b4eb83ac0ba3ef07e3, type: 2}
   _nextEvolve:
     _nextEvolveSO: {fileID: 11400000}
     _levelEvolve: 30

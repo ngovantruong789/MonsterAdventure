@@ -23,5 +23,6 @@ public class SceneReceiverData : LifetimeScope
         _sceneLoadModel = new SceneLoadModel();
         _sceneLoadModel = data;
         //Debug.Log(_sceneLoadModel.BatlleModel.OpponentMonsterModel.Level + "; " + _sceneLoadModel.BatlleModel.OpponentMonsterModel.Health);
+        //Debug.Log(_sceneLoadModel.BatlleModel.PlayerTeamModel.playerTeam[0].Level + "; " + _sceneLoadModel.BatlleModel.PlayerTeamModel.playerTeam[0].Health);
     }
 }

@@ -10,8 +10,11 @@ public class MonsterSO : ScriptableObject
     [SerializeField] private string _name;
     public string Name => _name;
 
-    [SerializeField] private RuntimeAnimatorController _animator;
-    public RuntimeAnimatorController Animator => _animator;
+    [SerializeField] private RuntimeAnimatorController _monsterAnimator;
+    public RuntimeAnimatorController MonsterAnimator => _monsterAnimator;
+
+    [SerializeField] private RuntimeAnimatorController _uIAnimator;
+    public RuntimeAnimatorController UIAnimator => _uIAnimator;
 
     [SerializeField] private EvolveConfig _nextEvolve;
     public EvolveConfig NextEvolve => _nextEvolve;
