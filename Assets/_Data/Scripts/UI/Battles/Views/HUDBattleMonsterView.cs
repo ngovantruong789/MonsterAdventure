@@ -29,6 +29,8 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
 
     [Header("Run")]
     [SerializeField] private Button _btnRun;
+    public Action OnOutBattleEvent { get; set; }
+
     [SerializeField] private bool _isBattleButtonClicked;
 
     private HUDBattleMonsterViewData _hUDBattleMonsterViewData;
@@ -48,7 +50,11 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
         });
         _btnItem.onClick.AddListener(() => Debug.Log("_btnItem"));
         _btnMonster.onClick.AddListener(() => OnClickedBattleHUD(OnShowPlayerTeamEvent));
-        _btnRun.onClick.AddListener(() => Debug.Log("_btnRun"));
+        _btnRun.onClick.AddListener(() =>
+        {
+            OnClickedBattleHUD(OnOutBattleEvent);
+            ResetValue();
+        });
     }
 
     public void SetData(HUDBattleMonsterViewData hUDBattleMonsterViewData)
@@ -111,5 +117,10 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
 
         _isBattleButtonClicked = true;
         action?.Invoke();
+    }
+
+    private void ResetValue()
+    {
+        _isBattleButtonClicked = false;
     }
 }

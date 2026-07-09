@@ -3,12 +3,17 @@ public class BattleMonsterPresenter
     private BattleModel _battleModel;
     private BattleMonsterWorldSpaceView _battleMonsterView;
     private HUDBattleMonsterView _hUDBattleMonsterView;
+    private BattleManager _battleManager;
 
-    public BattleMonsterPresenter(BattleMonsterWorldSpaceView battleMonsterView, HUDBattleMonsterView hUDBattleMonsterView, BattleModel battleModel)
+    public BattleMonsterPresenter(BattleMonsterWorldSpaceView battleMonsterView, 
+        HUDBattleMonsterView hUDBattleMonsterView, 
+        BattleModel battleModel,
+        BattleManager battleManager)
     {
         _battleModel = battleModel;
         _battleMonsterView = battleMonsterView;
         _hUDBattleMonsterView = hUDBattleMonsterView;
+        _battleManager = battleManager;
 
         UpdateHUDBattleMonsterViewData();
         _battleMonsterView.UpdateMonsterAnimator(false, _battleModel.OpponentMonsterModel.MonsterAnimator);
@@ -18,7 +23,8 @@ public class BattleMonsterPresenter
         _hUDBattleMonsterView.UpdatePlayerTeamAnimator();
 
         _hUDBattleMonsterView.OnShowPlayerTeamEvent += ShowPlayerTeam;
-    }
+        _hUDBattleMonsterView.OnOutBattleEvent += OutBattle;
+}
 
     private void UpdateHUDBattleMonsterViewData()
     {
@@ -49,5 +55,10 @@ public class BattleMonsterPresenter
     private void ShowPlayerTeam()
     {
         _hUDBattleMonsterView.ShowPlayerTeam();
+    }
+
+    private void OutBattle()
+    {
+        _battleManager.EndBattle(_battleModel);
     }
 }

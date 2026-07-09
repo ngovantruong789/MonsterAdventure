@@ -1,28 +1,31 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class SceneReceiverData : LifetimeScope
 {
     [SerializeField] private SceneLoadManager _sceneLoadManager;
     private SceneLoadModel _sceneLoadModel;
-    public Action<SceneLoadModel> SceneLoadedEvent;
-
-    protected override void Start()
-    {
-        base.Start();
-        Debug.Log("SceneReceiverData ended");
-        _sceneLoadManager.EndLoadNewScene();
-        if(_sceneLoadModel != null)
-        {
-            SceneLoadedEvent.Invoke(_sceneLoadModel);
-        }
-    }
+    public SceneLoadModel SceneLoadModel => _sceneLoadModel;
+    public Action<SceneLoadModel> SceneLoadedEvent { get; set; }
 
     public void Initialize(SceneLoadModel data)
     {
+        StartCoroutine(ReceiverSceneLoadModelCoroutine(data));
+    }
+
+    private IEnumerator ReceiverSceneLoadModelCoroutine(SceneLoadModel data)
+    {
         _sceneLoadModel = new SceneLoadModel();
         _sceneLoadModel = data;
+        yield return new WaitForSeconds(1);
+
+        _sceneLoadManager.EndLoadNewScene();
+        if (_sceneLoadModel != null)
+        {
+            SceneLoadedEvent?.Invoke(_sceneLoadModel);
+        }
         //Debug.Log(_sceneLoadModel.BatlleModel.OpponentMonsterModel.Level + "; " + _sceneLoadModel.BatlleModel.OpponentMonsterModel.Health);
-        //Debug.Log(_sceneLoadModel.BatlleModel.PlayerTeamModel.playerTeam[0].Level + "; " + _sceneLoadModel.BatlleModel.PlayerTeamModel.playerTeam[0].Health);
+        Debug.Log(_sceneLoadModel.BatlleModel.PlayerTeamModel.PlayerTeam[0].Level + "; " + _sceneLoadModel.BatlleModel.PlayerTeamModel.PlayerTeam[0].Health);
     }
 }

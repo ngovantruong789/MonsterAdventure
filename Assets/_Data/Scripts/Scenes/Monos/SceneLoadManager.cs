@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class SceneLoadManager : LifetimeScope, IStartInit
@@ -28,21 +27,15 @@ public class SceneLoadManager : LifetimeScope, IStartInit
 
     public void StartLoadScene(string sceneName, SceneLoadModel sceneLoadModel)
     {
-        StartCoroutine(StartLoadSceneCoroutine(sceneName, sceneLoadModel));
-    }
-
-    private IEnumerator StartLoadSceneCoroutine(string sceneName, SceneLoadModel sceneLoadModel)
-    {
-        yield return new WaitForSeconds(3);
         _installer.ToggleLoadScene(() =>
         {
-            StartCoroutine(LoadSceneAdditive(sceneName, sceneLoadModel));
+            StartCoroutine(LoadSceneAdditiveCoroutine(sceneName, sceneLoadModel));
         });
     }
 
-    private IEnumerator LoadSceneAdditive(string sceneName, SceneLoadModel sceneLoadModel)
+    private IEnumerator LoadSceneAdditiveCoroutine(string sceneName, SceneLoadModel sceneLoadModel)
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
 
         SetActiveObjects(false);
         AsyncOperation op = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
@@ -51,16 +44,45 @@ public class SceneLoadManager : LifetimeScope, IStartInit
         Scene sceneLoaded = SceneManager.GetSceneByName(sceneName);
         foreach(GameObject obj in sceneLoaded.GetRootGameObjects())
         {
-            if (!obj.TryGetComponent(out SceneReceiverData sceneReceiverData)) continue;
-
-            sceneReceiverData.Initialize(sceneLoadModel);
-            break;
+            if (obj.TryGetComponent(out SceneReceiverData sceneReceiverData))
+            {
+                sceneReceiverData.Initialize(sceneLoadModel);
+            }
+            if (obj.TryGetComponent(out SceneLoadManager sceneLoadManager))
+            {
+                sceneLoadManager.SetActiveObjects(true);
+            }
         }
+    }
+
+    public void CloseSceneAttitive(string sceneNameClose, string sceneNameBack, SceneLoadModel sceneLoadModel)
+    {
+        _installer.ToggleLoadScene(() =>
+        {
+            OnCloseSceneAttitive(sceneNameClose, sceneNameBack, sceneLoadModel);
+        });
+    }
+
+    private void OnCloseSceneAttitive(string sceneNameClose, string sceneNameBack, SceneLoadModel sceneLoadModel)
+    {
+        Scene sceneLoaded = SceneManager.GetSceneByName(sceneNameBack);
+        foreach (GameObject obj in sceneLoaded.GetRootGameObjects())
+        {
+            if (obj.TryGetComponent(out SceneReceiverData sceneReceiverData))
+            {
+                sceneReceiverData.Initialize(sceneLoadModel);
+            }
+            if (obj.TryGetComponent(out SceneLoadManager sceneLoadManager))
+            {
+                sceneLoadManager.SetActiveObjects(true);
+            }
+        }
+
+        SceneManager.UnloadSceneAsync(sceneNameClose);
     }
 
     public void EndLoadNewScene()
     {
-        SetActiveObjects(true);
         _installer.ToggleLoadScene();
     }
 
