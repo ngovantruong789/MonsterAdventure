@@ -1,4 +1,4 @@
-using System;
+    using System;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -23,6 +23,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
 
     [Header("Monster")]
     [SerializeField] private Button _btnMonster;
+    [SerializeField] private Button _btnCloseMonster;
     [SerializeField] private RectTransform _monsterChoosePanel;
     [SerializeField] private List<ButtonSelectMonsterInfor> _btnSelectMonsters;
     public Action OnShowPlayerTeamEvent { get; set; }
@@ -52,8 +53,15 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
         _btnMonster.onClick.AddListener(() => OnClickedBattleHUD(OnShowPlayerTeamEvent));
         _btnRun.onClick.AddListener(() =>
         {
+            if(_isBattleButtonClicked) return;
+
             OnClickedBattleHUD(OnOutBattleEvent);
             ResetValue();
+        });
+        _btnCloseMonster.onClick.AddListener(() =>
+        {
+            _isBattleButtonClicked = false;
+            _monsterChoosePanel.gameObject.SetActive(false);
         });
     }
 
