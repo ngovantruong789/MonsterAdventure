@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MonsterSO
   _id: 7
   _name: Petilil
-  _monsterAnimator: {fileID: 0}
-  _uIAnimator: {fileID: 0}
+  _monsterAnimator: {fileID: 22100000, guid: b3806fa631e458946a869fd91e1f80de, type: 2}
+  _uIAnimator: {fileID: 9100000, guid: 9ce108329ebb1b04591241d3eb145a5c, type: 2}
   _nextEvolve:
-    _nextEvolveSO: {fileID: 11400000}
+    _nextEvolveSO: {fileID: 11400000, guid: 5b391501f65ff9e458aa19e8ebc8fbf6, type: 2}
     _levelEvolve: 15
   _captureRateConfig:
     _baseCatchDifficulty: 5
@@ -36,4 +36,4 @@ MonoBehaviour:
     _growthPerLevels: 05000000
   _map:
   - _mapType: 2
-    _levelOriginRange: {x: 0, y: 0}
+    _levelOriginRange: {x: 3, y: 6}
