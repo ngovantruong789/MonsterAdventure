@@ -70,10 +70,11 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
         _hUDBattleMonsterViewData = hUDBattleMonsterViewData;
     }
 
-    public void UpdateMonsterName(bool isPlayer, string name)
+    public void UpdateStaticInforText(bool isPlayer, string name, int level)
     {
         MonsterBattleInforUI currentBattleInfor = isPlayer ? _playerMonster : _opponentMonster;
         currentBattleInfor.MonsterNameText.text = name;
+        currentBattleInfor.LevelText.text = "Lv." + level.ToString();
     }
 
     public void UpdateMonsterStats(bool isPlayer, EStatType eStatType, int value, int maxValue = 0)

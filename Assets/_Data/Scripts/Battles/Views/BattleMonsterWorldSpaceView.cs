@@ -5,29 +5,25 @@ public class BattleMonsterWorldSpaceView : LifetimeScope
     [SerializeField] private Transform _playerMonsterObj;
     [SerializeField] private Transform _opponentMonsterObj;
 
-    private Animator _currentPlayerAnimator;
-    private Animator _currentOpponentAnimator;
+    [SerializeField] private MonsterAnimatorController _playerAnimator;
+    [SerializeField] private MonsterAnimatorController _opponentAnimator;
 
     public void UpdateMonsterAnimator(bool isPlayer, RuntimeAnimatorController runTimeAnimator)
     {
-        Animator animatorObj = GetAnimator(isPlayer);
-        if (animatorObj == null) return;
-
-        animatorObj.runtimeAnimatorController = runTimeAnimator;
-        animatorObj.CrossFade(Animator.StringToHash("Idle_Attack"), 0, 1);
+        MonsterAnimatorController monsterAnimatorController = GetMonsterAnimator(isPlayer);
+        monsterAnimatorController.UpdateRuntimeAnimator(runTimeAnimator);
+        monsterAnimatorController.EnterBattle(isPlayer);
     }
 
-    private Animator GetAnimator(bool isPlayer)
+    private MonsterAnimatorController GetMonsterAnimator(bool isPlayer)
     {
         if (isPlayer)
         {
-            return _currentPlayerAnimator = _playerMonsterObj.Find("Model").GetComponent<Animator>();
+            return _playerAnimator;
         }
-        else if(!isPlayer)
+        else
         {
-            return _currentPlayerAnimator = _opponentMonsterObj.Find("Model").GetComponent<Animator>();
+            return _opponentAnimator;
         }
-        
-        return null;
     }
 }
