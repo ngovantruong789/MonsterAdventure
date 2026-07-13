@@ -16,9 +16,16 @@ public class BattleMonsterPresenter
         _battleManager = battleManager;
 
         UpdateHUDBattleMonsterViewData();
+
+        //Opponent
         _battleMonsterView.UpdateMonsterAnimator(false, _battleModel.OpponentMonsterModel.MonsterAnimator);
-        _hUDBattleMonsterView.UpdateMonsterName(false, _battleModel.OpponentMonsterModel.MonsterName);
+        _hUDBattleMonsterView.UpdateStaticInforText(false, _battleModel.OpponentMonsterModel.MonsterName, _battleModel.OpponentMonsterModel.Level);
         _hUDBattleMonsterView.UpdateMonsterStats(false, EStatType.Health, _battleModel.OpponentMonsterModel.Health, _battleModel.OpponentMonsterModel.MaxHealth);
+        
+        //Player
+        _battleMonsterView.UpdateMonsterAnimator(true, _battleModel.PlayerTeamModel.PlayerTeam[0].MonsterAnimator);
+        _hUDBattleMonsterView.UpdateStaticInforText(true, _battleModel.PlayerTeamModel.PlayerTeam[0].MonsterName, _battleModel.PlayerTeamModel.PlayerTeam[0].Level);
+        _hUDBattleMonsterView.UpdateMonsterStats(true, EStatType.Health, _battleModel.PlayerTeamModel.PlayerTeam[0].Health, _battleModel.PlayerTeamModel.PlayerTeam[0].MaxHealth);
         _hUDBattleMonsterView.UpdateMonsterNumber(_battleModel.PlayerTeamModel.PlayerTeam.Count);
         _hUDBattleMonsterView.UpdatePlayerTeamAnimator();
 

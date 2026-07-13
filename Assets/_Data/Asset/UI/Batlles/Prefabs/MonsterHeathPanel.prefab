@@ -627,6 +627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MonsterBattleInforUI
   _monsterNameText: {fileID: 2483032722832242848}
   _healthValueText: {fileID: 3871329136160178478}
+  _levelText: {fileID: 5654379146024162695}
   _healthSlider: {fileID: 1998308939225448649}
 --- !u!1 &5546159161919570073
 GameObject:

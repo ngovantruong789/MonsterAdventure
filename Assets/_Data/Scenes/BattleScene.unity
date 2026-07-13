@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 149678018}
   - component: {fileID: 149678019}
   m_Layer: 0
-  m_Name: Views
+  m_Name: BattleMonsterWorldSpaceView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -414,14 +414,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149678017}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 110, y: 110, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1306092452}
   - {fileID: 1111015099}
-  m_Father: {fileID: 2012784023}
+  m_Father: {fileID: 1006604342}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &149678019
 MonoBehaviour:
@@ -437,6 +437,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BatlleMonsterView
   _playerMonsterObj: {fileID: 1306092452}
   _opponentMonsterObj: {fileID: 1111015099}
+  _playerAnimator: {fileID: 4054095783427405369}
+  _opponentAnimator: {fileID: 645746290}
 --- !u!1 &158180218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,7 +1062,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -242.0775}
+  m_AnchoredPosition: {x: 0, y: -242.07751}
   m_SizeDelta: {x: 535, y: -484.15503}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!1 &581018412
@@ -1410,11 +1412,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2824251576345058224, guid: 71e77e52ec920ac40a1820888e473af7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.07
+      value: 6.71
       objectReference: {fileID: 0}
     - target: {fileID: 2824251576345058224, guid: 71e77e52ec920ac40a1820888e473af7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.37
+      value: 2.96
       objectReference: {fileID: 0}
     - target: {fileID: 2824251576345058224, guid: 71e77e52ec920ac40a1820888e473af7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1465,6 +1467,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71e77e52ec920ac40a1820888e473af7, type: 3}
+--- !u!114 &645746290 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7846359654850736598, guid: 71e77e52ec920ac40a1820888e473af7, type: 3}
+  m_PrefabInstance: {fileID: 645746289}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca7f67a277882444bd6d3699c02f432, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAnimatorController
 --- !u!1 &654861934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,14 +1698,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 350930839}
     m_Modifications:
-    - target: {fileID: 7829574246317596597, guid: 069808db92890f242b50fa8d3131e733, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7829574246317596597, guid: 069808db92890f242b50fa8d3131e733, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1907581898722831457, guid: b49c63f7fb9529246b63a610e830e70e, type: 3}
       propertyPath: m_Name
       value: BtnMonster
@@ -1780,6 +1785,14 @@ PrefabInstance:
     - target: {fileID: 9058539775315280624, guid: b49c63f7fb9529246b63a610e830e70e, type: 3}
       propertyPath: m_text
       value: Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829574246317596597, guid: 069808db92890f242b50fa8d3131e733, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829574246317596597, guid: 069808db92890f242b50fa8d3131e733, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2347,6 +2360,7 @@ RectTransform:
   m_Children:
   - {fileID: 2068228763}
   - {fileID: 581018413}
+  - {fileID: 149678018}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3048,7 +3062,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 802.18, y: 308.44}
+  m_SizeDelta: {x: 802.18, y: 261.59}
   m_Pivot: {x: 0, y: 0}
 --- !u!223 &1497157912
 Canvas:
@@ -3677,14 +3691,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 350930839}
     m_Modifications:
-    - target: {fileID: 7829574246317596597, guid: 069808db92890f242b50fa8d3131e733, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7829574246317596597, guid: 069808db92890f242b50fa8d3131e733, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1907581898722831457, guid: b49c63f7fb9529246b63a610e830e70e, type: 3}
       propertyPath: m_Name
       value: BtnItem
@@ -3772,6 +3778,14 @@ PrefabInstance:
     - target: {fileID: 9058539775315280624, guid: b49c63f7fb9529246b63a610e830e70e, type: 3}
       propertyPath: m_text
       value: Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829574246317596597, guid: 069808db92890f242b50fa8d3131e733, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829574246317596597, guid: 069808db92890f242b50fa8d3131e733, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4054,8 +4068,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 149678018}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2012784024
@@ -4761,14 +4774,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 350930839}
     m_Modifications:
-    - target: {fileID: 7829574246317596597, guid: 069808db92890f242b50fa8d3131e733, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7829574246317596597, guid: 069808db92890f242b50fa8d3131e733, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1907581898722831457, guid: b49c63f7fb9529246b63a610e830e70e, type: 3}
       propertyPath: m_Name
       value: BtnRun
@@ -4856,6 +4861,14 @@ PrefabInstance:
     - target: {fileID: 9058539775315280624, guid: b49c63f7fb9529246b63a610e830e70e, type: 3}
       propertyPath: m_text
       value: Run
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829574246317596597, guid: 069808db92890f242b50fa8d3131e733, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829574246317596597, guid: 069808db92890f242b50fa8d3131e733, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5147,6 +5160,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71e77e52ec920ac40a1820888e473af7, type: 3}
+--- !u!114 &4054095783427405369 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7846359654850736598, guid: 71e77e52ec920ac40a1820888e473af7, type: 3}
+  m_PrefabInstance: {fileID: 4054095783427405368}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca7f67a277882444bd6d3699c02f432, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterAnimatorController
 --- !u!1001 &4821853700157623158
 PrefabInstance:
   m_ObjectHideFlags: 0
