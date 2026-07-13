@@ -10,6 +10,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
     [Header("Infor current pokemon")]
     [SerializeField] private MonsterBattleInforUI _playerMonster;
     [SerializeField] private MonsterBattleInforUI _opponentMonster;
+    [SerializeField] private RectTransform _battleHUDCanvas;
     [SerializeField] private int monsterTeamNumber;
 
     [Header("Skill")]
@@ -43,25 +44,33 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
 
     public void Initialize()
     {
-        _btnSkill.onClick.AddListener(() => Debug.Log("_btnSkill"));
+        //Skill
+        _btnSkill.onClick.AddListener(() => OnClickedBattleHUD(OnShowSkillsEvent));
         _btnCloseSkill.onClick.AddListener(() =>
         {
             _isBattleButtonClicked = false;
             _skillPanel.gameObject.SetActive(false);
+            _battleHUDCanvas.gameObject.SetActive(true);
         });
+
+        //Item
         _btnItem.onClick.AddListener(() => Debug.Log("_btnItem"));
+
+        //Monster
         _btnMonster.onClick.AddListener(() => OnClickedBattleHUD(OnShowPlayerTeamEvent));
+        _btnCloseMonster.onClick.AddListener(() =>
+        {
+            _isBattleButtonClicked = false;
+            _monsterChoosePanel.gameObject.SetActive(false);
+        });
+
+        //Run
         _btnRun.onClick.AddListener(() =>
         {
             if(_isBattleButtonClicked) return;
 
             OnClickedBattleHUD(OnOutBattleEvent);
             ResetValue();
-        });
-        _btnCloseMonster.onClick.AddListener(() =>
-        {
-            _isBattleButtonClicked = false;
-            _monsterChoosePanel.gameObject.SetActive(false);
         });
     }
 
@@ -118,6 +127,12 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
             _btnSelectMonsters[i].LevelText.text = _hUDBattleMonsterViewData.PlayerTeamDatas[i].Level.ToString();
             _btnSelectMonsters[i].HealthBar.value = _hUDBattleMonsterViewData.PlayerTeamDatas[i].Health / _hUDBattleMonsterViewData.PlayerTeamDatas[i].MaxHealth;
         }
+    }
+
+    public void ShowSkillBattleMonster()
+    {
+        _skillPanel.gameObject.SetActive(true);
+        _battleHUDCanvas.gameObject.SetActive(false);
     }
 
     private void OnClickedBattleHUD(Action action)
