@@ -4,9 +4,7 @@ using UnityEngine.InputSystem;
 
 public class InputManager : LifetimeScope, IStartInit
 {
-    private Player_Input inputActions;
-
-
+    private InputSystem_Actions inputActions;
     public Action<Vector2> MovePressedEvent { get; set; }
 
     protected override void Start()
@@ -21,7 +19,7 @@ public class InputManager : LifetimeScope, IStartInit
 
     public void Initialize()
     {
-        inputActions = new Player_Input();
+        inputActions = new InputSystem_Actions();
 
         inputActions.Player.Move.performed += HandleMovePerformed;
         inputActions.Player.Move.canceled += HandleMovePerformed;

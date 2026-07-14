@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MonsterSO
   _id: 6
   _name: Lilligant
-  _animator: {fileID: 22100000, guid: 0bb2fadab8f94f64681845c696e7f297, type: 2}
+  _monsterAnimator: {fileID: 22100000, guid: 0bb2fadab8f94f64681845c696e7f297, type: 2}
+  _uIAnimator: {fileID: 9100000, guid: 864c93f8f77fe1049aa8e111d320492b, type: 2}
   _nextEvolve:
-    _nextEvolveSO: {fileID: 11400000}
+    _nextEvolveSO: {fileID: 0}
     _levelEvolve: 0
   _captureRateConfig:
     _baseCatchDifficulty: 20
@@ -35,4 +36,4 @@ MonoBehaviour:
     _growthPerLevels: 05000000
   _map:
   - _mapType: 2
-    _levelOriginRange: {x: 0, y: 0}
+    _levelOriginRange: {x: 16, y: 50}

@@ -10,6 +10,9 @@ public class MonsterBattleInforUI : LifetimeScope
     [SerializeField] private TextMeshProUGUI _healthValueText;
     public TextMeshProUGUI HealthValueText { get => _healthValueText; set => _healthValueText = value; }
 
+    [SerializeField] private TextMeshProUGUI _levelText;
+    public TextMeshProUGUI LevelText { get => _levelText; set => _levelText = value; }
+
     [SerializeField] private Slider _healthSlider;
     public Slider HealthSlider { get => _healthSlider; set => _healthSlider = value; }
 }

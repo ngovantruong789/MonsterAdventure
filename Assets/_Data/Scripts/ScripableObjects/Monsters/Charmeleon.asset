@@ -17,7 +17,7 @@ MonoBehaviour:
   _monsterAnimator: {fileID: 22100000, guid: a23e77c083cd87f41b9cd24f39ecc789, type: 2}
   _uIAnimator: {fileID: 9100000, guid: 2f76e029b3a901b4eb83ac0ba3ef07e3, type: 2}
   _nextEvolve:
-    _nextEvolveSO: {fileID: 11400000}
+    _nextEvolveSO: {fileID: 11400000, guid: 86a9b1424498918469affd6326b4d719, type: 2}
     _levelEvolve: 30
   _captureRateConfig:
     _baseCatchDifficulty: 20
@@ -36,4 +36,4 @@ MonoBehaviour:
     _growthPerLevels: 05000000
   _map:
   - _mapType: 0
-    _levelOriginRange: {x: 0, y: 0}
+    _levelOriginRange: {x: 16, y: 25}

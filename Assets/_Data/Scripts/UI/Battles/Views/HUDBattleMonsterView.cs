@@ -10,6 +10,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
     [Header("Infor current pokemon")]
     [SerializeField] private MonsterBattleInforUI _playerMonster;
     [SerializeField] private MonsterBattleInforUI _opponentMonster;
+    [SerializeField] private RectTransform _battleHUDCanvas;
     [SerializeField] private int monsterTeamNumber;
 
     [Header("Skill")]
@@ -23,12 +24,15 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
 
     [Header("Monster")]
     [SerializeField] private Button _btnMonster;
+    [SerializeField] private Button _btnCloseMonster;
     [SerializeField] private RectTransform _monsterChoosePanel;
     [SerializeField] private List<ButtonSelectMonsterInfor> _btnSelectMonsters;
     public Action OnShowPlayerTeamEvent { get; set; }
 
     [Header("Run")]
     [SerializeField] private Button _btnRun;
+    public Action OnOutBattleEvent { get; set; }
+
     [SerializeField] private bool _isBattleButtonClicked;
 
     private HUDBattleMonsterViewData _hUDBattleMonsterViewData;
@@ -40,15 +44,34 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
 
     public void Initialize()
     {
-        _btnSkill.onClick.AddListener(() => Debug.Log("_btnSkill"));
+        //Skill
+        _btnSkill.onClick.AddListener(() => OnClickedBattleHUD(OnShowSkillsEvent));
         _btnCloseSkill.onClick.AddListener(() =>
         {
             _isBattleButtonClicked = false;
             _skillPanel.gameObject.SetActive(false);
+            _battleHUDCanvas.gameObject.SetActive(true);
         });
+
+        //Item
         _btnItem.onClick.AddListener(() => Debug.Log("_btnItem"));
+
+        //Monster
         _btnMonster.onClick.AddListener(() => OnClickedBattleHUD(OnShowPlayerTeamEvent));
-        _btnRun.onClick.AddListener(() => Debug.Log("_btnRun"));
+        _btnCloseMonster.onClick.AddListener(() =>
+        {
+            _isBattleButtonClicked = false;
+            _monsterChoosePanel.gameObject.SetActive(false);
+        });
+
+        //Run
+        _btnRun.onClick.AddListener(() =>
+        {
+            if(_isBattleButtonClicked) return;
+
+            OnClickedBattleHUD(OnOutBattleEvent);
+            ResetValue();
+        });
     }
 
     public void SetData(HUDBattleMonsterViewData hUDBattleMonsterViewData)
@@ -56,10 +79,11 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
         _hUDBattleMonsterViewData = hUDBattleMonsterViewData;
     }
 
-    public void UpdateMonsterName(bool isPlayer, string name)
+    public void UpdateStaticInforText(bool isPlayer, string name, int level)
     {
         MonsterBattleInforUI currentBattleInfor = isPlayer ? _playerMonster : _opponentMonster;
         currentBattleInfor.MonsterNameText.text = name;
+        currentBattleInfor.LevelText.text = "Lv." + level.ToString();
     }
 
     public void UpdateMonsterStats(bool isPlayer, EStatType eStatType, int value, int maxValue = 0)
@@ -105,11 +129,22 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
         }
     }
 
+    public void ShowSkillBattleMonster()
+    {
+        _skillPanel.gameObject.SetActive(true);
+        _battleHUDCanvas.gameObject.SetActive(false);
+    }
+
     private void OnClickedBattleHUD(Action action)
     {
         if (_isBattleButtonClicked) return;
 
         _isBattleButtonClicked = true;
         action?.Invoke();
+    }
+
+    private void ResetValue()
+    {
+        _isBattleButtonClicked = false;
     }
 }
