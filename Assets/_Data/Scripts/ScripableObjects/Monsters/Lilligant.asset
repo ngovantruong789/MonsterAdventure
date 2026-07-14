@@ -22,6 +22,7 @@ MonoBehaviour:
   _captureRateConfig:
     _baseCatchDifficulty: 20
     _levelBonus: 1
+  _elements: 02000000
   _health:
     _statType: 0
     _growthPerLevels: 05000000
@@ -37,3 +38,4 @@ MonoBehaviour:
   _map:
   - _mapType: 2
     _levelOriginRange: {x: 16, y: 50}
+  _skills: []
