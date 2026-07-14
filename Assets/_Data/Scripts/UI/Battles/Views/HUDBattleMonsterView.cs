@@ -36,6 +36,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
     [SerializeField] private bool _isBattleButtonClicked;
 
     private HUDBattleMonsterViewData _hUDBattleMonsterViewData;
+
     protected override void Start()
     {
         base.Start();

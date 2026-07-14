@@ -37,3 +37,4 @@ MonoBehaviour:
   _map:
   - _mapType: 0
     _levelOriginRange: {x: 0, y: 0}
+  _skills: []
