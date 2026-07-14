@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public enum EEffectType
 {
     None = 0,
