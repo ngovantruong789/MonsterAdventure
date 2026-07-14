@@ -36,4 +36,4 @@ MonoBehaviour:
     _growthPerLevels: 05000000
   _map:
   - _mapType: 0
-    _levelOriginRange: {x: 0, y: 0}
+    _levelOriginRange: {x: 31, y: 50}

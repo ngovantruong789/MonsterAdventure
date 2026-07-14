@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MonsterSO
   _id: 5
   _name: Jolteon
-  _animator: {fileID: 22100000, guid: d25f5b49ad9364c4b9f72fe2e0427157, type: 2}
+  _monsterAnimator: {fileID: 22100000, guid: d25f5b49ad9364c4b9f72fe2e0427157, type: 2}
+  _uIAnimator: {fileID: 9100000, guid: 2a2c0c0338cb29842949f84cfdee2120, type: 2}
   _nextEvolve:
-    _nextEvolveSO: {fileID: 11400000}
+    _nextEvolveSO: {fileID: 0}
     _levelEvolve: 0
   _captureRateConfig:
     _baseCatchDifficulty: 25
@@ -35,4 +36,4 @@ MonoBehaviour:
     _growthPerLevels: 05000000
   _map:
   - _mapType: 4
-    _levelOriginRange: {x: 0, y: 0}
+    _levelOriginRange: {x: 3, y: 25}
