@@ -28,11 +28,12 @@ public class BattleMonsterPresenter
         _hUDBattleMonsterView.UpdateMonsterStats(true, EStatType.Health, _battleModel.PlayerTeamModel.PlayerTeam[0].Health, _battleModel.PlayerTeamModel.PlayerTeam[0].MaxHealth);
         _hUDBattleMonsterView.UpdateMonsterNumber(_battleModel.PlayerTeamModel.PlayerTeam.Count);
         _hUDBattleMonsterView.UpdatePlayerTeamAnimator();
+        _hUDBattleMonsterView.UpdateBattteMonsterSkill(0);
 
         _hUDBattleMonsterView.OnShowPlayerTeamEvent += ShowPlayerTeam;
         _hUDBattleMonsterView.OnOutBattleEvent += OutBattle;
         _hUDBattleMonsterView.OnShowSkillsEvent += ShowSkillBattleMonsterHUD;
-}
+    }
 
     private void UpdateHUDBattleMonsterViewData()
     {
@@ -54,6 +55,19 @@ public class BattleMonsterPresenter
                 Level = model.Level,
                 MonsterName = model.MonsterName,
             };
+
+            for(int i = 0; i < model.UnlockedSkills.Count; i++)
+            {
+                SkillViewData skillViewData = new SkillViewData
+                {
+                    Damage = model.UnlockedSkills[i].Damage,
+                    ElementType = model.UnlockedSkills[i].ElementType,
+                    FullName = model.UnlockedSkills[i].FullName,
+                    Id = model.UnlockedSkills[i].Id,
+                    SkillType = model.UnlockedSkills[i].SkillType,
+                };
+                monsterViewData.UnlockedSkills.Add(skillViewData);
+            }
             hUDBattleMonsterViewData.PlayerTeamDatas.Add(monsterViewData);
         }
 

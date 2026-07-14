@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ae7077c60b2e2a48ab9ab90008bf65a, type: 3}
-  m_Name: Blizzard
+  m_Name: Ember
   m_EditorClassIdentifier: Assembly-CSharp::SkillSO
-  _id: 5001
-  _fullName: Blizzard
+  _id: 1003
+  _fullName: Ember
   _skillType: 1
-  _elementType: 4
-  _damage: 5
+  _elementType: 0
+  _damage: 1

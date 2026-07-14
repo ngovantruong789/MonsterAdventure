@@ -1,4 +1,4 @@
-public class SkillModel
+public class SkillViewData
 {
     public int Id { get; set; }
     public string FullName { get; set; }

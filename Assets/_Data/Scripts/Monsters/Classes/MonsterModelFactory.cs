@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public static class MonsterModelFactory
@@ -12,6 +13,7 @@ public static class MonsterModelFactory
             Attack = StatCalculator.CalculateStatPerLevel(monsterSO.Attack.GrowthPerLevels, level),
             Defense = StatCalculator.CalculateStatPerLevel(monsterSO.Defense.GrowthPerLevels, level),
             Speed = StatCalculator.CalculateStatPerLevel(monsterSO.Speed.GrowthPerLevels, level),
+            UnlockedSkills = CalculateSkill.CalculateUnlockedSkillsPerLevel(monsterSO.Skills, level).ToList(),
             Level = level,
             MonsterAnimator = monsterSO.MonsterAnimator,
             UIAnimator = monsterSO.UIAnimator,

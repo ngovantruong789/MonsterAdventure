@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae7077c60b2e2a48ab9ab90008bf65a, type: 3}
   m_Name: RazorLeaf
   m_EditorClassIdentifier: Assembly-CSharp::SkillSO
-  _id: 9
+  _id: 3002
   _fullName: Razor Leaf
   _skillType: 1
   _elementType: 2
