@@ -15,7 +15,7 @@ public class PlayerTeamInstaller : BaseInstaller, IPlayerTeamModelProvider
     public override void Initialize()
     {
         base.Initialize();
-        _teamModel.PlayerTeam.Add(MonsterModelFactory.Create(_monsterSO, 5));
-        _teamModel.PlayerTeam.Add(MonsterModelFactory.Create(_monsterSO2, 6));
+        _teamModel.PlayerTeam.Add(MonsterModelFactory.Create(_monsterSO2, 30));
+        _teamModel.PlayerTeam.Add(MonsterModelFactory.Create(_monsterSO, 16));
     }
 }

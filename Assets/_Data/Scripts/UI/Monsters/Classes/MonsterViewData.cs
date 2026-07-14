@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MonsterViewData
@@ -5,6 +6,8 @@ public class MonsterViewData
     public EvolveConfig NextEvolve { get; set; }
     public RuntimeAnimatorController MonsterAnimator { get; set; }
     public RuntimeAnimatorController UIAnimator { get; set; }
+    public List<SkillViewData> UnlockedSkills { get; set; } = new();
+    public List<SkillViewData> BatlleSkills { get; set; } = new List<SkillViewData>(4);
     public string MonsterName { get; set; }
     public int Attack { get; set; }
     public int Speed { get; set; }

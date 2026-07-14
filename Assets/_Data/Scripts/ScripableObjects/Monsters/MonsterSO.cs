@@ -36,6 +36,9 @@ public class MonsterSO : ScriptableObject
 
     [SerializeField] private MonsterMapConfig[] _map;
     public MonsterMapConfig[] Map => _map;
+
+    [SerializeField] private SkillConfig[] _skills;
+    public SkillConfig[] Skills => _skills;
 }
 
 [Serializable]

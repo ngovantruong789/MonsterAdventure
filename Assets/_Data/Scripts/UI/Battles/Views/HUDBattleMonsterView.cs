@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -17,6 +18,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
     [SerializeField] private Button _btnSkill;
     [SerializeField] private Button _btnCloseSkill;
     [SerializeField] private RectTransform _skillPanel;
+    [SerializeField] private List<BattleButtonSkillInfor> _btnBattleSkills;
     public Action OnShowSkillsEvent { get; set; }
 
     [Header("Item")]
@@ -36,6 +38,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
     [SerializeField] private bool _isBattleButtonClicked;
 
     private HUDBattleMonsterViewData _hUDBattleMonsterViewData;
+
     protected override void Start()
     {
         base.Start();
@@ -115,6 +118,23 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
             _btnSelectMonsters[i].gameObject.SetActive(i < number);
         }
         _monsterChoosePanel.gameObject.SetActive(false);
+    }
+
+    public void UpdateBattteMonsterSkill(int index)
+    {
+        for(int i = 0; i < 4; i++)
+        {
+            if(i >= _hUDBattleMonsterViewData.PlayerTeamDatas[index].UnlockedSkills.Count)
+            {
+                _btnBattleSkills[i].gameObject.SetActive(false);
+            }
+            else
+            {
+                _btnBattleSkills[i].gameObject.SetActive(true);
+                _btnBattleSkills[i].SkillNameText.text = _hUDBattleMonsterViewData.PlayerTeamDatas[index].UnlockedSkills[i].FullName;
+                _btnBattleSkills[i].SkillType = _hUDBattleMonsterViewData.PlayerTeamDatas[index].UnlockedSkills[i].SkillType;
+            }
+        }
     }
 
     public void ShowPlayerTeam()

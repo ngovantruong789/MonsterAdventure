@@ -794,6 +794,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 139966b8487d83e4a9ce653284adefb8, type: 3}
+--- !u!114 &438358419 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6749548909755684652, guid: 139966b8487d83e4a9ce653284adefb8, type: 3}
+  m_PrefabInstance: {fileID: 438358418}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d0049df08608a489f7ffb119904712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BattleButtonSkillInfor
 --- !u!224 &472413222 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2641719227148925469, guid: f637411f3150f2d4ca50d07326937e32, type: 3}
@@ -1947,6 +1958,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 139966b8487d83e4a9ce653284adefb8, type: 3}
+--- !u!114 &1120370651 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6749548909755684652, guid: 139966b8487d83e4a9ce653284adefb8, type: 3}
+  m_PrefabInstance: {fileID: 1120370650}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d0049df08608a489f7ffb119904712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BattleButtonSkillInfor
 --- !u!1 &1126753946
 GameObject:
   m_ObjectHideFlags: 0
@@ -3030,6 +3052,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 139966b8487d83e4a9ce653284adefb8, type: 3}
+--- !u!114 &1658976526 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6749548909755684652, guid: 139966b8487d83e4a9ce653284adefb8, type: 3}
+  m_PrefabInstance: {fileID: 1658976525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d0049df08608a489f7ffb119904712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BattleButtonSkillInfor
 --- !u!1001 &1776689928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3552,6 +3585,11 @@ MonoBehaviour:
   _btnSkill: {fileID: 968922895}
   _btnCloseSkill: {fileID: 1195776678}
   _skillPanel: {fileID: 551022838}
+  _btnBattleSkills:
+  - {fileID: 1658976526}
+  - {fileID: 1257020287757225655}
+  - {fileID: 1120370651}
+  - {fileID: 438358419}
   _btnItem: {fileID: 1776689929}
   _btnMonster: {fileID: 752629415}
   _btnCloseMonster: {fileID: 2130495489}
@@ -4063,6 +4101,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 139966b8487d83e4a9ce653284adefb8, type: 3}
+--- !u!114 &1257020287757225655 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6749548909755684652, guid: 139966b8487d83e4a9ce653284adefb8, type: 3}
+  m_PrefabInstance: {fileID: 1257020287757225654}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d0049df08608a489f7ffb119904712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BattleButtonSkillInfor
 --- !u!1001 &2463925050011223193
 PrefabInstance:
   m_ObjectHideFlags: 0
