@@ -22,6 +22,9 @@ public class MonsterSO : ScriptableObject
     [SerializeField] private CaptureRateConfig _captureRateConfig;
     public CaptureRateConfig CaptureRateConfig => _captureRateConfig;
 
+    [SerializeField] private EElementType[] _elements;
+    public EElementType[] Elements => _elements;
+
     [SerializeField] private StatConfig _health = new StatConfig { StatType = EStatType.Health};
     public StatConfig Health => _health;
 
