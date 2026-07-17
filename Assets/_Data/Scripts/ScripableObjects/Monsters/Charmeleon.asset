@@ -22,6 +22,7 @@ MonoBehaviour:
   _captureRateConfig:
     _baseCatchDifficulty: 20
     _levelBonus: 1
+  _elements: 00000000
   _health:
     _statType: 0
     _growthPerLevels: 05000000
