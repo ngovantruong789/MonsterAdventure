@@ -33,6 +33,7 @@ public class BattleMonsterPresenter
         _hUDBattleMonsterView.OnShowPlayerTeamEvent += ShowPlayerTeam;
         _hUDBattleMonsterView.OnOutBattleEvent += OutBattle;
         _hUDBattleMonsterView.OnShowSkillsEvent += ShowSkillBattleMonsterHUD;
+        _hUDBattleMonsterView.OnShowItemsEvent += ShowItem;
     }
 
     private void UpdateHUDBattleMonsterViewData()
@@ -83,7 +84,10 @@ public class BattleMonsterPresenter
     {
         _hUDBattleMonsterView.ShowSkillBattleMonster();
     }
-
+     private void ShowItem()
+    {
+        _hUDBattleMonsterView.ShowItem();
+    }
     private void OutBattle()
     {
         _battleManager.EndBattle(_battleModel);

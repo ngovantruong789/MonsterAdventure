@@ -3632,6 +3632,8 @@ MonoBehaviour:
   - {fileID: 1120370651}
   - {fileID: 438358419}
   _btnItem: {fileID: 1776689929}
+  _btnCloseItem: {fileID: 3210666783494212861}
+  _itemChoosePanel: {fileID: 8263782614617513916}
   _btnMonster: {fileID: 752629415}
   _btnCloseMonster: {fileID: 2130495489}
   _monsterChoosePanel: {fileID: 2095560324}
@@ -4772,7 +4774,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 45.4775}
+  m_AnchoredPosition: {x: 0, y: 45.47751}
   m_SizeDelta: {x: -46.000008, y: -136.955}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4294250157443925870
