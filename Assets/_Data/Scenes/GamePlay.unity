@@ -1657,6 +1657,7 @@ MonoBehaviour:
         installerName: Monster team
         _monsterSO: {fileID: 11400000, guid: e58336df91b478e4a808460e5252ae13, type: 2}
         _monsterSO2: {fileID: 11400000, guid: 86a9b1424498918469affd6326b4d719, type: 2}
+        _monsterSO3: {fileID: 11400000, guid: 9bcc8b6ff448aed488d486fad422d56a, type: 2}
     - rid: 5677875185751949398
       type: {class: PlayerMovementInstaller, ns: , asm: Assembly-CSharp}
       data:

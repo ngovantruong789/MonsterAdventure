@@ -18,22 +18,18 @@ public class BattleMonsterPresenter
         UpdateHUDBattleMonsterViewData();
 
         //Opponent
-        _battleMonsterView.UpdateMonsterAnimator(false, _battleModel.OpponentMonsterModel.MonsterAnimator);
-        _hUDBattleMonsterView.UpdateStaticInforText(false, _battleModel.OpponentMonsterModel.MonsterName, _battleModel.OpponentMonsterModel.Level);
-        _hUDBattleMonsterView.UpdateMonsterStats(false, EStatType.Health, _battleModel.OpponentMonsterModel.Health, _battleModel.OpponentMonsterModel.MaxHealth);
-        
+        DeployMonster(false, -1);
+
         //Player
-        _battleMonsterView.UpdateMonsterAnimator(true, _battleModel.PlayerTeamModel.PlayerTeam[0].MonsterAnimator);
-        _hUDBattleMonsterView.UpdateStaticInforText(true, _battleModel.PlayerTeamModel.PlayerTeam[0].MonsterName, _battleModel.PlayerTeamModel.PlayerTeam[0].Level);
-        _hUDBattleMonsterView.UpdateMonsterStats(true, EStatType.Health, _battleModel.PlayerTeamModel.PlayerTeam[0].Health, _battleModel.PlayerTeamModel.PlayerTeam[0].MaxHealth);
         _hUDBattleMonsterView.UpdateMonsterNumber(_battleModel.PlayerTeamModel.PlayerTeam.Count);
         _hUDBattleMonsterView.UpdatePlayerTeamAnimator();
-        _hUDBattleMonsterView.UpdateBattteMonsterSkill(0);
+        DeployMonster(true, 0);
 
         _hUDBattleMonsterView.OnShowPlayerTeamEvent += ShowPlayerTeam;
         _hUDBattleMonsterView.OnOutBattleEvent += OutBattle;
         _hUDBattleMonsterView.OnShowSkillsEvent += ShowSkillBattleMonsterHUD;
         _hUDBattleMonsterView.OnShowItemsEvent += ShowItem;
+        _hUDBattleMonsterView.OnSwapMonster += SwapMonster;
     }
 
     private void UpdateHUDBattleMonsterViewData()
@@ -84,12 +80,36 @@ public class BattleMonsterPresenter
     {
         _hUDBattleMonsterView.ShowSkillBattleMonster();
     }
-     private void ShowItem()
+
+    private void ShowItem()
     {
         _hUDBattleMonsterView.ShowItem();
     }
+
     private void OutBattle()
     {
         _battleManager.EndBattle(_battleModel);
+    }
+
+    private void SwapMonster(bool isPlayer, int index)
+    {
+        DeployMonster(isPlayer, index);
+    }
+
+    private void DeployMonster(bool isPlayer, int index)
+    {
+        if (isPlayer && _battleModel.PlayerTeamModel.PlayerTeam[index] != null)
+        {
+            _battleMonsterView.UpdateMonsterAnimator(true, _battleModel.PlayerTeamModel.PlayerTeam[index].MonsterAnimator);
+            _hUDBattleMonsterView.UpdateStatsInforText(true, _battleModel.PlayerTeamModel.PlayerTeam[index].MonsterName, _battleModel.PlayerTeamModel.PlayerTeam[index].Level);
+            _hUDBattleMonsterView.UpdateMonsterStats(true, EStatType.Health, _battleModel.PlayerTeamModel.PlayerTeam[index].Health, _battleModel.PlayerTeamModel.PlayerTeam[index].MaxHealth);
+            _hUDBattleMonsterView.UpdateBattteMonsterSkill(index);
+        }
+        else if (!isPlayer && _battleModel.OpponentMonsterModel != null)
+        {
+            _battleMonsterView.UpdateMonsterAnimator(false, _battleModel.OpponentMonsterModel.MonsterAnimator);
+            _hUDBattleMonsterView.UpdateStatsInforText(false, _battleModel.OpponentMonsterModel.MonsterName, _battleModel.OpponentMonsterModel.Level);
+            _hUDBattleMonsterView.UpdateMonsterStats(false, EStatType.Health, _battleModel.OpponentMonsterModel.Health, _battleModel.OpponentMonsterModel.MaxHealth);
+        }
     }
 }
