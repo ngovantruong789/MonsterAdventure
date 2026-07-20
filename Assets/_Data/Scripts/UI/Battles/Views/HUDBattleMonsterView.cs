@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class HUDBattleMonsterView : LifetimeScope, IStartInit
 {
-    [Header("Infor current pokemon")]
+    [Header("Infor current monster")]
     [SerializeField] private MonsterBattleInforUI _playerMonster;
     [SerializeField] private MonsterBattleInforUI _opponentMonster;
     [SerializeField] private RectTransform _battleHUDCanvas;
@@ -32,7 +32,9 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
     [SerializeField] private Button _btnCloseMonster;
     [SerializeField] private RectTransform _monsterChoosePanel;
     [SerializeField] private List<ButtonSelectMonsterInfor> _btnSelectMonsters;
+    private ButtonSelectMonsterInfor _currentMonsterSelected;
     public Action OnShowPlayerTeamEvent { get; set; }
+    public Action<bool, int> OnSwapMonster { get; set; }
 
     [Header("Run")]
     [SerializeField] private Button _btnRun;
@@ -54,8 +56,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
         _btnSkill.onClick.AddListener(() => OnClickedBattleHUD(OnShowSkillsEvent));
         _btnCloseSkill.onClick.AddListener(() =>
         {
-            _isBattleButtonClicked = false;
-            _skillPanel.gameObject.SetActive(false);
+            ResetValue();
             _battleHUDCanvas.gameObject.SetActive(true);
         });
 
@@ -63,17 +64,16 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
         _btnItem.onClick.AddListener(() => OnClickedBattleHUD(OnShowItemsEvent));
         _btnCloseItem.onClick.AddListener(() =>
         {
-            _isBattleButtonClicked = false;
-            _itemChoosePanel.gameObject.SetActive(false);
+            ResetValue();
         });
 
         //Monster
         _btnMonster.onClick.AddListener(() => OnClickedBattleHUD(OnShowPlayerTeamEvent));
         _btnCloseMonster.onClick.AddListener(() =>
         {
-            _isBattleButtonClicked = false;
-            _monsterChoosePanel.gameObject.SetActive(false);
+            ResetValue();
         });
+        _btnSelectMonsters.ForEach(infor => infor.Button.onClick.AddListener(() => SelectMonster(infor)));
 
         //Run
         _btnRun.onClick.AddListener(() =>
@@ -90,7 +90,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
         _hUDBattleMonsterViewData = hUDBattleMonsterViewData;
     }
 
-    public void UpdateStaticInforText(bool isPlayer, string name, int level)
+    public void UpdateStatsInforText(bool isPlayer, string name, int level)
     {
         MonsterBattleInforUI currentBattleInfor = isPlayer ? _playerMonster : _opponentMonster;
         currentBattleInfor.MonsterNameText.text = name;
@@ -168,6 +168,31 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
         _itemChoosePanel.gameObject.SetActive(true);
     }
 
+    private void SelectMonster(ButtonSelectMonsterInfor buttonSelectMonsterInfor)
+    {
+        if(_currentMonsterSelected == null)
+        {
+            _currentMonsterSelected = buttonSelectMonsterInfor;
+            _currentMonsterSelected.ImgSelected.gameObject.SetActive(true);
+        }
+        else if (_currentMonsterSelected != null && _currentMonsterSelected == buttonSelectMonsterInfor)
+        {
+            SwapMonster(true, _currentMonsterSelected.MonsterIndex);
+            ResetValue();
+        }
+        else
+        {
+            _currentMonsterSelected.ImgSelected.gameObject.SetActive(false);
+            _currentMonsterSelected = buttonSelectMonsterInfor;
+            _currentMonsterSelected.ImgSelected.gameObject.SetActive(true);
+        }
+    }
+
+    private void SwapMonster(bool isPlayer, int index)
+    {
+        OnSwapMonster?.Invoke(isPlayer, index);
+    }
+
     private void OnClickedBattleHUD(Action action)
     {
         if (_isBattleButtonClicked) return;
@@ -179,5 +204,13 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
     private void ResetValue()
     {
         _isBattleButtonClicked = false;
+        _monsterChoosePanel.gameObject.SetActive(false);
+        _itemChoosePanel.gameObject.SetActive(false);
+        _skillPanel.gameObject.SetActive(false);
+        if (_currentMonsterSelected)
+        {
+            _currentMonsterSelected.ImgSelected.gameObject.SetActive(false);
+            _currentMonsterSelected = null;
+        }
     }
 }

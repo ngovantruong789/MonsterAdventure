@@ -11,11 +11,13 @@ public class PlayerTeamInstaller : BaseInstaller, IPlayerTeamModelProvider
 
     [SerializeField] private MonsterSO _monsterSO;
     [SerializeField] private MonsterSO _monsterSO2;
+    [SerializeField] private MonsterSO _monsterSO3;
 
     public override void Initialize()
     {
         base.Initialize();
         _teamModel.PlayerTeam.Add(MonsterModelFactory.Create(_monsterSO2, 30));
         _teamModel.PlayerTeam.Add(MonsterModelFactory.Create(_monsterSO, 16));
+        _teamModel.PlayerTeam.Add(MonsterModelFactory.Create(_monsterSO3, 13));
     }
 }
