@@ -17,7 +17,7 @@ public class BattleInstaller : BaseInstaller, IBattleProvider
         base.Initialize();
         if(BattleModel != null)
         {
-            _battleMonsterPresenter = new BattleMonsterPresenter(_battleMonsterView, _hUDBattleMonsterView, BattleModel, _battleManager);
+            _battleMonsterPresenter = new BattleMonsterPresenter(_battleMonsterView, _hUDBattleMonsterView, BattleModel, _battleManager, new DamageCalculator());
         }
     }
 }

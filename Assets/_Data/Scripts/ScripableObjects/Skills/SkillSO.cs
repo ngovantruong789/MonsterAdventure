@@ -4,8 +4,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "SkillSO", menuName = "ScripableObjects/Skill")]
 public class SkillSO : ScriptableObject
 {
-    [SerializeField] private int _id;
-    public int Id => _id;
+    [SerializeField] private ESkillId eSkillId;
+    public ESkillId ESkillId => eSkillId;
 
     [SerializeField] private string _fullName;
     public string FullName => _fullName;
