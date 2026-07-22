@@ -22,7 +22,7 @@ public static class CalculateSkill
 
             skillModels[i] = new SkillModel
             {
-                Id = skillConfigs[i].SkillSO.Id,
+                ESkillId = skillConfigs[i].SkillSO.ESkillId,
                 Damage = skillConfigs[i].SkillSO.Damage,
                 FullName = skillConfigs[i].SkillSO.FullName,
                 ElementType = skillConfigs[i].SkillSO.ElementType,
@@ -31,5 +31,14 @@ public static class CalculateSkill
         }
 
         return skillModels;
+    }
+
+    public static SkillModel[] CalculateBattleSkills(SkillModel[] unlockedSkills)
+    {
+        if(unlockedSkills.Length <= 4) return unlockedSkills;
+
+        SkillModel[] battleSkills = new SkillModel[4];
+        Array.Copy(unlockedSkills, battleSkills, 4);
+        return battleSkills;
     }
 }

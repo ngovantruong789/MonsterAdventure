@@ -14,7 +14,8 @@ public class MonsterStatsInstaller : BaseInstaller, IMonsterModelProvider
     {
         base.Initialize();
         Vector2 originLevelRange = GetOriginLevelRange(_monsterSO.Map);
-        _currentModel = MonsterModelFactory.Create(_monsterSO, (int)UnityEngine.Random.Range(originLevelRange.x, originLevelRange.y));
+        //_currentModel = MonsterModelFactory.Create(_monsterSO, (int)UnityEngine.Random.Range(originLevelRange.x, originLevelRange.y));
+        _currentModel = MonsterModelFactory.Create(_monsterSO, 27);
         //Debug.Log("Level: " + _currentModel.Level + "; Health: " + _currentModel.Health);
     }
 

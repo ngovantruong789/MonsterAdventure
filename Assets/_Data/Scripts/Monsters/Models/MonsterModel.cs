@@ -8,6 +8,7 @@ public class MonsterModel
     public RuntimeAnimatorController UIAnimator { get; set; }
     public List<SkillModel> UnlockedSkills { get; set; } = new();
     public List<SkillModel> BatlleSkills { get; set; } = new(4);
+    public EElementType[] EElementTypes { get; set; }
     public string MonsterName { get; set; }
     public int Attack { get; set; }
     public int Speed { get; set; }

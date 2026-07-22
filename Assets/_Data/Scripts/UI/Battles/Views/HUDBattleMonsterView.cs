@@ -1,8 +1,6 @@
+using DG.Tweening;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,7 +17,9 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
     [SerializeField] private Button _btnCloseSkill;
     [SerializeField] private RectTransform _skillPanel;
     [SerializeField] private List<BattleButtonSkillInfor> _btnBattleSkills;
+    private BattleButtonSkillInfor _currentButtonSkillSelected;
     public Action OnShowSkillsEvent { get; set; }
+    public Action<bool, int, int> OnActiveSkill { get; set; }
 
     [Header("Item")]
     [SerializeField] private Button _btnItem;
@@ -66,6 +66,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
         {
             ResetValue();
         });
+        _btnBattleSkills.ForEach(skill => skill.BtnSkill.onClick.AddListener(() => SelectSkill(skill)));
 
         //Monster
         _btnMonster.onClick.AddListener(() => OnClickedBattleHUD(OnShowPlayerTeamEvent));
@@ -97,14 +98,16 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
         currentBattleInfor.LevelText.text = "Lv." + level.ToString();
     }
 
-    public void UpdateMonsterStats(bool isPlayer, EStatType eStatType, int value, int maxValue = 0)
+    public void UpdateMonsterStats(bool isPlayer, EStatType eStatType, float value, float maxValue = 0)
     {
         MonsterBattleInforUI currentBattleInfor = isPlayer ? _playerMonster : _opponentMonster;
         switch(eStatType)
         {
             case EStatType.Health:
                 currentBattleInfor.HealthValueText.text = value.ToString() + " / " + maxValue;
-                currentBattleInfor.HealthSlider.value = value / maxValue;
+                currentBattleInfor.HealthSlider
+                    .DOValue(value / maxValue, 1f)
+                    .SetEase(Ease.OutQuad);
                 break;
         }
     }
@@ -132,15 +135,16 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
     {
         for(int i = 0; i < 4; i++)
         {
-            if(i >= _hUDBattleMonsterViewData.PlayerTeamDatas[index].UnlockedSkills.Count)
+            if(i >= _hUDBattleMonsterViewData.PlayerTeamDatas[index].BatlleSkills.Count)
             {
                 _btnBattleSkills[i].gameObject.SetActive(false);
             }
             else
             {
                 _btnBattleSkills[i].gameObject.SetActive(true);
-                _btnBattleSkills[i].SkillNameText.text = _hUDBattleMonsterViewData.PlayerTeamDatas[index].UnlockedSkills[i].FullName;
-                _btnBattleSkills[i].SkillType = _hUDBattleMonsterViewData.PlayerTeamDatas[index].UnlockedSkills[i].SkillType;
+                _btnBattleSkills[i].SkillNameText.text = _hUDBattleMonsterViewData.PlayerTeamDatas[index].BatlleSkills[i].FullName;
+                _btnBattleSkills[i].SkillType = _hUDBattleMonsterViewData.PlayerTeamDatas[index].BatlleSkills[i].SkillType;
+                _btnBattleSkills[i].ESkillId = _hUDBattleMonsterViewData.PlayerTeamDatas[index].BatlleSkills[i].ESkillId;
             }
         }
     }
@@ -168,9 +172,14 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
         _itemChoosePanel.gameObject.SetActive(true);
     }
 
+    public void CurrentMonsterSelectedConstructor()
+    {
+        _currentMonsterSelected = _btnSelectMonsters[0];
+    }
+
     private void SelectMonster(ButtonSelectMonsterInfor buttonSelectMonsterInfor)
     {
-        if(_currentMonsterSelected == null)
+        if(_currentMonsterSelected != null && _currentMonsterSelected != buttonSelectMonsterInfor)
         {
             _currentMonsterSelected = buttonSelectMonsterInfor;
             _currentMonsterSelected.ImgSelected.gameObject.SetActive(true);
@@ -201,16 +210,47 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
         action?.Invoke();
     }
 
+    private void SelectSkill(BattleButtonSkillInfor battleButtonSkillInfor)
+    {
+        if (_currentButtonSkillSelected == null)
+        {
+            _currentButtonSkillSelected = battleButtonSkillInfor;
+            _currentButtonSkillSelected.ImgSelected.gameObject.SetActive(true);
+        }
+        else if (_currentButtonSkillSelected != null && _currentButtonSkillSelected == battleButtonSkillInfor)
+        {
+            ActiveSKill(true, _currentMonsterSelected.MonsterIndex, _currentButtonSkillSelected.SkillIndex);
+            ResetValue();
+        }
+        else
+        {
+            _currentButtonSkillSelected.ImgSelected.gameObject.SetActive(false);
+            _currentButtonSkillSelected = battleButtonSkillInfor;
+            _currentButtonSkillSelected.ImgSelected.gameObject.SetActive(true);
+        }
+    }
+
+    private void ActiveSKill(bool isPlayer, int monsterActiveIndex, int skillIndex)
+    {
+        OnActiveSkill?.Invoke(isPlayer, monsterActiveIndex, skillIndex);
+    }
+
     private void ResetValue()
     {
         _isBattleButtonClicked = false;
         _monsterChoosePanel.gameObject.SetActive(false);
         _itemChoosePanel.gameObject.SetActive(false);
         _skillPanel.gameObject.SetActive(false);
+        _battleHUDCanvas.gameObject.SetActive(true);
         if (_currentMonsterSelected)
         {
             _currentMonsterSelected.ImgSelected.gameObject.SetActive(false);
-            _currentMonsterSelected = null;
+        }
+
+        if (_currentButtonSkillSelected)
+        {
+            _currentButtonSkillSelected.ImgSelected.gameObject.SetActive(false);
+            _currentButtonSkillSelected = null;
         }
     }
 }

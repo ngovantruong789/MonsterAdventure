@@ -25,7 +25,7 @@ MonoBehaviour:
   _elements: 00000000
   _health:
     _statType: 0
-    _growthPerLevels: 0500000002000000
+    _growthPerLevels: 0500000006000000
   _attack:
     _statType: 0
     _growthPerLevels: 05000000
