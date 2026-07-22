@@ -106,7 +106,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
             case EStatType.Health:
                 currentBattleInfor.HealthValueText.text = value.ToString() + " / " + maxValue;
                 currentBattleInfor.HealthSlider
-                    .DOValue(Mathf.Max(0, value / maxValue), 1f)
+                    .DOValue(value / maxValue, 1f)
                     .SetEase(Ease.OutQuad);
                 break;
         }

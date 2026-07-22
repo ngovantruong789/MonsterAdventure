@@ -23,6 +23,7 @@ public static class MonsterModelFactory
             MonsterAnimator = monsterSO.MonsterAnimator,
             UIAnimator = monsterSO.UIAnimator,
             MonsterName = monsterSO.name,
+            EElementTypes = monsterSO.Elements,
             Experience = 0,
             IsDead = false,
         };

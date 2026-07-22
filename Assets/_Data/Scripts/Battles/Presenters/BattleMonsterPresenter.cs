@@ -1,3 +1,6 @@
+using System;
+using UnityEngine;
+
 public class BattleMonsterPresenter
 {
     private BattleModel _battleModel;
@@ -131,11 +134,12 @@ public class BattleMonsterPresenter
         }
     }
 
-    private void RefreshMonsterHUD(bool isPlayer)
+    private void RefreshMonsterHUD(bool isPlayer, int playerMonsterIndex)
     {
         if (isPlayer)
         {
-
+            _hUDBattleMonsterView.UpdateStatsInforText(true, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].MonsterName, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].Level);
+            _hUDBattleMonsterView.UpdateMonsterStats(true, EStatType.Health, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].Health, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].MaxHealth);
         }
         else
         {
@@ -144,14 +148,24 @@ public class BattleMonsterPresenter
         }
     }
 
-    private void ActiveSkill(bool isPlayer, int monsterIndex, int skillIndex)
+    private void ActiveSkill(bool isPlayer, int playerMonsterIndex, int skillIndex)
     {
-        MonsterModel playerModel = _battleModel.PlayerTeamModel.PlayerTeam[monsterIndex];
+        MonsterModel playerModel = _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex];
         MonsterModel opponentModel = _battleModel.OpponentMonsterModel;
         SkillModel skillModel = playerModel.BatlleSkills[skillIndex];
+        int damage = 0;
 
-        int damage = _damageCalculator.Calculate(playerModel, opponentModel, skillModel);
-        opponentModel.Health -= damage;
-        RefreshMonsterHUD(false);
+        if (isPlayer)
+        {
+            damage = _damageCalculator.Calculate(playerModel, opponentModel, skillModel);
+            opponentModel.Health = Mathf.Max(0, opponentModel.Health - damage);
+            RefreshMonsterHUD(false, playerMonsterIndex);
+        }
+        else
+        {
+            damage = _damageCalculator.Calculate(opponentModel, playerModel, skillModel);
+            playerModel.Health = Mathf.Max(0, playerModel.Health - damage);
+            RefreshMonsterHUD(true, -1);
+        }
     }
 }
