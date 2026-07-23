@@ -84,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -175,12 +175,12 @@ TextureImporter:
       name: lightining5-Sheet_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 19
-        width: 125
-        height: 25
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: lightining5-Sheet_1
       rect:
         serializedVersion: 2
-        x: 129
-        y: 15
-        width: 64
-        height: 30
+        x: 64
+        y: 0
+        width: 65
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -219,12 +219,12 @@ TextureImporter:
       name: lightining5-Sheet_2
       rect:
         serializedVersion: 2
-        x: 130
-        y: 29
-        width: 7
-        height: 21
+        x: 129
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -242,11 +242,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 193
-        y: 14
-        width: 10
-        height: 25
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -263,12 +263,12 @@ TextureImporter:
       name: lightining5-Sheet_4
       rect:
         serializedVersion: 2
-        x: 196
-        y: 19
-        width: 61
-        height: 30
+        x: 257
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -285,12 +285,12 @@ TextureImporter:
       name: lightining5-Sheet_5
       rect:
         serializedVersion: 2
-        x: 258
-        y: 26
-        width: 8
-        height: 26
+        x: 321
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -307,12 +307,12 @@ TextureImporter:
       name: lightining5-Sheet_6
       rect:
         serializedVersion: 2
-        x: 262
-        y: 16
-        width: 59
-        height: 26
+        x: 385
+        y: 0
+        width: 63
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -325,121 +325,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: lightining5-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 323
-        y: 33
-        width: 7
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a6765df085f4816c0800000000000000
-      internalID: -4172497815117404310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lightining5-Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 326
-        y: 21
-        width: 59
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f2b79ef134c0261e0800000000000000
-      internalID: -2206187385020384465
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lightining5-Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 386
-        y: 15
-        width: 8
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6d37d44070b1a7da0800000000000000
-      internalID: -5946410641038412842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lightining5-Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 388
-        y: 22
-        width: 60
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 33251d4fdfdf255c0800000000000000
-      internalID: -4228037832971562445
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lightining5-Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 323
-        y: 13
-        width: 8
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d1c089658308c6900800000000000000
-      internalID: 679058623285431325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f41b9c24b672fe647a6634b25ac01928
     internalID: 0
     vertices: []
     indices: 
@@ -447,20 +337,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       lightining5-Sheet_0: -2818378296821127142
       lightining5-Sheet_1: 6095007039599144819
-      lightining5-Sheet_10: -4228037832971562445
-      lightining5-Sheet_11: 679058623285431325
       lightining5-Sheet_2: 8559055281593305492
       lightining5-Sheet_3: -22386592065486568
       lightining5-Sheet_4: 1823010877660852628
       lightining5-Sheet_5: 9193746980777554919
       lightining5-Sheet_6: 5834734152080897038
-      lightining5-Sheet_7: -4172497815117404310
-      lightining5-Sheet_8: -2206187385020384465
-      lightining5-Sheet_9: -5946410641038412842
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

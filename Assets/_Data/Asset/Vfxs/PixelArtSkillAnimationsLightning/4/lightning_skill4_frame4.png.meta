@@ -67,7 +67,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -172,12 +172,12 @@ TextureImporter:
       name: lightning_skill4_frame4_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 80
-        width: 14
-        height: 24
+        x: 0
+        y: 0
+        width: 128
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -190,231 +190,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: lightning_skill4_frame4_1
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 102
-        width: 13
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 80ef80656d6919bd0800000000000000
-      internalID: -2625151260469690872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lightning_skill4_frame4_2
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 12
-        width: 84
-        height: 231
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ffa50cb993a6d64d0800000000000000
-      internalID: -3139736569548612865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lightning_skill4_frame4_3
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 87
-        width: 20
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1d6f1b108b80be360800000000000000
-      internalID: 7199858015677314769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lightning_skill4_frame4_4
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 66
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8e7f40185925513e0800000000000000
-      internalID: -2083668450520795160
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lightning_skill4_frame4_5
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 73
-        width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0595c6d7c55e263f0800000000000000
-      internalID: -908911989371414192
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lightning_skill4_frame4_6
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 50
-        width: 15
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 86e469144b45d41d0800000000000000
-      internalID: -3364940213404676504
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lightning_skill4_frame4_7
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 44
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 23304d57655b59890800000000000000
-      internalID: -7451850625465973966
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lightning_skill4_frame4_8
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 42
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 87ed31573587200a0800000000000000
-      internalID: -6916833777845805448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lightning_skill4_frame4_9
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 40
-        width: 19
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e7943c75d564f7560800000000000000
-      internalID: 7313641686591293822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lightning_skill4_frame4_10
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 40
-        width: 21
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7507b7df366f3f4a0800000000000000
-      internalID: -6560629322833760169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e390b20ddbf774a468af26cbcf3b5c4d
     internalID: 0
     vertices: []
     indices: 
@@ -422,19 +202,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       lightning_skill4_frame4_0: -9057051315621201337
-      lightning_skill4_frame4_1: -2625151260469690872
-      lightning_skill4_frame4_10: -6560629322833760169
-      lightning_skill4_frame4_2: -3139736569548612865
-      lightning_skill4_frame4_3: 7199858015677314769
-      lightning_skill4_frame4_4: -2083668450520795160
-      lightning_skill4_frame4_5: -908911989371414192
-      lightning_skill4_frame4_6: -3364940213404676504
-      lightning_skill4_frame4_7: -7451850625465973966
-      lightning_skill4_frame4_8: -6916833777845805448
-      lightning_skill4_frame4_9: 7313641686591293822
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
