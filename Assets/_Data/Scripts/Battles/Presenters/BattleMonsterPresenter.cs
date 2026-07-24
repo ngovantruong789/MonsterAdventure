@@ -1,25 +1,22 @@
-using System;
-using UnityEngine;
-
 public class BattleMonsterPresenter
 {
     private BattleModel _battleModel;
     private BattleMonsterWorldSpaceView _battleMonsterView;
     private HUDBattleMonsterView _hUDBattleMonsterView;
     private BattleManager _battleManager;
-    private DamageCalculator _damageCalculator;
+    private IBattleMonsterPresenter _iBattleMonsterPresenter;
 
     public BattleMonsterPresenter(BattleMonsterWorldSpaceView battleMonsterView, 
         HUDBattleMonsterView hUDBattleMonsterView, 
         BattleModel battleModel,
         BattleManager battleManager,
-        DamageCalculator damageCalculator)
+        IBattleMonsterPresenter iBattleMonsterPresenter)
     {
         _battleModel = battleModel;
         _battleMonsterView = battleMonsterView;
         _hUDBattleMonsterView = hUDBattleMonsterView;
         _battleManager = battleManager;
-        _damageCalculator = damageCalculator;
+        _iBattleMonsterPresenter = iBattleMonsterPresenter;
 
         UpdateHUDBattleMonsterViewData();
 
@@ -37,7 +34,9 @@ public class BattleMonsterPresenter
         _hUDBattleMonsterView.OnShowSkillsEvent += ShowSkillBattleMonsterHUD;
         _hUDBattleMonsterView.OnShowItemsEvent += ShowItem;
         _hUDBattleMonsterView.OnSwapMonster += SwapMonster;
-        _hUDBattleMonsterView.OnActiveSkill += ActiveSkill;
+        _hUDBattleMonsterView.OnActiveAttack += ActiveAttack;
+        _iBattleMonsterPresenter.StatePhaseChangeEvt += HandleStatePhaseChange;
+        _iBattleMonsterPresenter.TurnEvt += HandleTurn;
     }
 
     private void UpdateHUDBattleMonsterViewData()
@@ -125,6 +124,7 @@ public class BattleMonsterPresenter
             _hUDBattleMonsterView.UpdateStatsInforText(true, _battleModel.PlayerTeamModel.PlayerTeam[index].MonsterName, _battleModel.PlayerTeamModel.PlayerTeam[index].Level);
             _hUDBattleMonsterView.UpdateMonsterStats(true, EStatType.Health, _battleModel.PlayerTeamModel.PlayerTeam[index].Health, _battleModel.PlayerTeamModel.PlayerTeam[index].MaxHealth);
             _hUDBattleMonsterView.UpdateBattteMonsterSkill(index);
+            _iBattleMonsterPresenter.CurrentPlayerMonsterBattleIndex = index;
         }
         else if (!isPlayer && _battleModel.OpponentMonsterModel != null)
         {
@@ -140,6 +140,7 @@ public class BattleMonsterPresenter
         {
             _hUDBattleMonsterView.UpdateStatsInforText(true, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].MonsterName, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].Level);
             _hUDBattleMonsterView.UpdateMonsterStats(true, EStatType.Health, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].Health, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].MaxHealth);
+            UpdateHUDBattleMonsterViewData();
         }
         else
         {
@@ -148,24 +149,71 @@ public class BattleMonsterPresenter
         }
     }
 
-    private void ActiveSkill(bool isPlayer, int playerMonsterIndex, int skillIndex)
+    private void HandleStatePhaseChange(bool isPlayer, EStatePhase eStatePhase, int monsterIndex)
     {
-        MonsterModel playerModel = _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex];
-        MonsterModel opponentModel = _battleModel.OpponentMonsterModel;
-        SkillModel skillModel = playerModel.BatlleSkills[skillIndex];
-        int damage = 0;
+        switch(eStatePhase)
+        {
+            case EStatePhase.PlayAnimAttack:
+                HandlePlayAnimAttackPhase(isPlayer); 
+                break;
+            case EStatePhase.PlayVFXAttack:
+                HandlePlayVFXPhase(isPlayer);
+                break;
+            case EStatePhase.ApplyDamage:
+                HandleApplyDamagePhase(isPlayer, monsterIndex);
+                break;
+            case EStatePhase.End:
+                HandleEndPhase();
+                break;
+        }
+    }
 
+    private void HandleTurn(EBattlePhase eBattlePhase)
+    {
+        if(eBattlePhase == EBattlePhase.PlayerTurn)
+        {
+            _hUDBattleMonsterView.IsInteract = true;
+        }
+        else if(eBattlePhase == EBattlePhase.OpponentTurn)
+        {
+            _hUDBattleMonsterView.IsInteract = false;
+        }
+        else if(eBattlePhase == EBattlePhase.End)
+        {
+            OutBattle();
+        }
+    }
+
+    private void HandlePlayAnimAttackPhase(bool isPlayer)
+    {
+        _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.PlayAnimAttack);
+    }
+
+    private void HandlePlayVFXPhase(bool isPlayer)
+    {
+        _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.PlayVFXAttack);
+    }
+    
+    private void HandleApplyDamagePhase(bool isPlayer, int monsterIndex)
+    {
         if (isPlayer)
         {
-            damage = _damageCalculator.Calculate(playerModel, opponentModel, skillModel);
-            opponentModel.Health = Mathf.Max(0, opponentModel.Health - damage);
-            RefreshMonsterHUD(false, playerMonsterIndex);
+            RefreshMonsterHUD(false, -1);
         }
         else
         {
-            damage = _damageCalculator.Calculate(opponentModel, playerModel, skillModel);
-            playerModel.Health = Mathf.Max(0, playerModel.Health - damage);
-            RefreshMonsterHUD(true, -1);
+            RefreshMonsterHUD(true, monsterIndex);
         }
+        _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.ApplyDamage);
+    }
+
+    private void HandleEndPhase()
+    {
+        _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.End);
+    }
+
+    private void ActiveAttack(bool isPlayer, int skillIndex)
+    {
+        _iBattleMonsterPresenter.ActiveAttack(isPlayer, skillIndex);
     }
 }
