@@ -7,19 +7,19 @@ public class BattleMonsterPresenter
     private BattleMonsterWorldSpaceView _battleMonsterView;
     private HUDBattleMonsterView _hUDBattleMonsterView;
     private BattleManager _battleManager;
-    private DamageCalculator _damageCalculator;
+    private IBattleMonsterPresenter _iBattleMonsterPresenter;
 
     public BattleMonsterPresenter(BattleMonsterWorldSpaceView battleMonsterView, 
         HUDBattleMonsterView hUDBattleMonsterView, 
         BattleModel battleModel,
         BattleManager battleManager,
-        DamageCalculator damageCalculator)
+        IBattleMonsterPresenter iBattleMonsterPresenter)
     {
         _battleModel = battleModel;
         _battleMonsterView = battleMonsterView;
         _hUDBattleMonsterView = hUDBattleMonsterView;
         _battleManager = battleManager;
-        _damageCalculator = damageCalculator;
+        _iBattleMonsterPresenter = iBattleMonsterPresenter;
 
         UpdateHUDBattleMonsterViewData();
 
@@ -37,7 +37,9 @@ public class BattleMonsterPresenter
         _hUDBattleMonsterView.OnShowSkillsEvent += ShowSkillBattleMonsterHUD;
         _hUDBattleMonsterView.OnShowItemsEvent += ShowItem;
         _hUDBattleMonsterView.OnSwapMonster += SwapMonster;
-        _hUDBattleMonsterView.OnActiveSkill += ActiveSkill;
+        _hUDBattleMonsterView.OnActiveAttack += ActiveAttack;
+        _iBattleMonsterPresenter.StatePhaseChangeEvt += HandleStatePhaseChange;
+        _iBattleMonsterPresenter.TurnEvt += HandleTurn;
     }
 
     private void UpdateHUDBattleMonsterViewData()
@@ -148,9 +150,74 @@ public class BattleMonsterPresenter
         }
     }
 
-    private void ActiveSkill(bool isPlayer, int playerMonsterIndex, int skillIndex)
+    private void HandleStatePhaseChange(bool isPlayer, EStatePhase eStatePhase, int monsterIndex)
     {
-        MonsterModel playerModel = _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex];
+        switch(eStatePhase)
+        {
+            case EStatePhase.PlayAnimAttack:
+                HandlePlayAnimAttackPhase(isPlayer); 
+                break;
+            case EStatePhase.PlayVFXAttack:
+                HandlePlayVFXPhase(isPlayer);
+                break;
+            case EStatePhase.ApplyDamage:
+                HandleApplyDamagePhase(isPlayer, monsterIndex);
+                break;
+            case EStatePhase.End:
+                HandleEndPhase();
+                break;
+        }
+    }
+
+    private void HandleTurn(EBattlePhase eBattlePhase)
+    {
+        if(eBattlePhase == EBattlePhase.PlayerTurn)
+        {
+            _hUDBattleMonsterView.IsInteract = true;
+        }
+        else if(eBattlePhase == EBattlePhase.OpponentTurn)
+        {
+            _hUDBattleMonsterView.IsInteract = false;
+        }
+        else if(eBattlePhase == EBattlePhase.End)
+        {
+            OutBattle();
+        }
+    }
+
+    private void HandlePlayAnimAttackPhase(bool isPlayer)
+    {
+        _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.PlayAnimAttack);
+    }
+
+    private void HandlePlayVFXPhase(bool isPlayer)
+    {
+        _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.PlayVFXAttack);
+    }
+    
+    private void HandleApplyDamagePhase(bool isPlayer, int monsterIndex)
+    {
+        if (isPlayer)
+        {
+            RefreshMonsterHUD(false, monsterIndex);
+        }
+        else
+        {
+            RefreshMonsterHUD(true, -1);
+        }
+        _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.ApplyDamage);
+    }
+
+    private void HandleEndPhase()
+    {
+
+    }
+
+    private void ActiveAttack(bool isPlayer, int playerMonsterIndex, int skillIndex)
+    {
+        _iBattleMonsterPresenter.ActiveAttack(isPlayer, playerMonsterIndex, skillIndex);
+
+        /*MonsterModel playerModel = _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex];
         MonsterModel opponentModel = _battleModel.OpponentMonsterModel;
         SkillModel skillModel = playerModel.BatlleSkills[skillIndex];
         int damage = 0;
@@ -166,6 +233,6 @@ public class BattleMonsterPresenter
             damage = _damageCalculator.Calculate(opponentModel, playerModel, skillModel);
             playerModel.Health = Mathf.Max(0, playerModel.Health - damage);
             RefreshMonsterHUD(true, -1);
-        }
+        }*/
     }
 }

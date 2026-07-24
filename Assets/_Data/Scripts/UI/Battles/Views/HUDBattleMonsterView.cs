@@ -19,7 +19,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
     [SerializeField] private List<BattleButtonSkillInfor> _btnBattleSkills;
     private BattleButtonSkillInfor _currentButtonSkillSelected;
     public Action OnShowSkillsEvent { get; set; }
-    public Action<bool, int, int> OnActiveSkill { get; set; }
+    public Action<bool, int, int> OnActiveAttack { get; set; }
 
     [Header("Item")]
     [SerializeField] private Button _btnItem;
@@ -43,6 +43,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
     [SerializeField] private bool _isBattleButtonClicked;
 
     private HUDBattleMonsterViewData _hUDBattleMonsterViewData;
+    public bool IsInteract { get; set; } = true;
 
     protected override void Start()
     {
@@ -179,7 +180,8 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
 
     private void SelectMonster(ButtonSelectMonsterInfor buttonSelectMonsterInfor)
     {
-        if(_currentMonsterSelected != null && _currentMonsterSelected != buttonSelectMonsterInfor)
+        if (!IsInteract) return;
+        if (_currentMonsterSelected != null && _currentMonsterSelected != buttonSelectMonsterInfor)
         {
             _currentMonsterSelected = buttonSelectMonsterInfor;
             _currentMonsterSelected.ImgSelected.gameObject.SetActive(true);
@@ -204,6 +206,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
 
     private void OnClickedBattleHUD(Action action)
     {
+        if (!IsInteract) return;
         if (_isBattleButtonClicked) return;
 
         _isBattleButtonClicked = true;
@@ -212,6 +215,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
 
     private void SelectSkill(BattleButtonSkillInfor battleButtonSkillInfor)
     {
+        if (!IsInteract) return;
         if (_currentButtonSkillSelected == null)
         {
             _currentButtonSkillSelected = battleButtonSkillInfor;
@@ -232,7 +236,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
 
     private void ActiveSKill(bool isPlayer, int monsterActiveIndex, int skillIndex)
     {
-        OnActiveSkill?.Invoke(isPlayer, monsterActiveIndex, skillIndex);
+        OnActiveAttack?.Invoke(isPlayer, monsterActiveIndex, skillIndex);
     }
 
     private void ResetValue()
