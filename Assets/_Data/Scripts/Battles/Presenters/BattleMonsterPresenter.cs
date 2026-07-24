@@ -1,6 +1,3 @@
-using System;
-using UnityEngine;
-
 public class BattleMonsterPresenter
 {
     private BattleModel _battleModel;
@@ -127,6 +124,7 @@ public class BattleMonsterPresenter
             _hUDBattleMonsterView.UpdateStatsInforText(true, _battleModel.PlayerTeamModel.PlayerTeam[index].MonsterName, _battleModel.PlayerTeamModel.PlayerTeam[index].Level);
             _hUDBattleMonsterView.UpdateMonsterStats(true, EStatType.Health, _battleModel.PlayerTeamModel.PlayerTeam[index].Health, _battleModel.PlayerTeamModel.PlayerTeam[index].MaxHealth);
             _hUDBattleMonsterView.UpdateBattteMonsterSkill(index);
+            _iBattleMonsterPresenter.CurrentPlayerMonsterBattleIndex = index;
         }
         else if (!isPlayer && _battleModel.OpponentMonsterModel != null)
         {
@@ -142,6 +140,7 @@ public class BattleMonsterPresenter
         {
             _hUDBattleMonsterView.UpdateStatsInforText(true, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].MonsterName, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].Level);
             _hUDBattleMonsterView.UpdateMonsterStats(true, EStatType.Health, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].Health, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].MaxHealth);
+            UpdateHUDBattleMonsterViewData();
         }
         else
         {
@@ -199,40 +198,22 @@ public class BattleMonsterPresenter
     {
         if (isPlayer)
         {
-            RefreshMonsterHUD(false, monsterIndex);
+            RefreshMonsterHUD(false, -1);
         }
         else
         {
-            RefreshMonsterHUD(true, -1);
+            RefreshMonsterHUD(true, monsterIndex);
         }
         _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.ApplyDamage);
     }
 
     private void HandleEndPhase()
     {
-
+        _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.End);
     }
 
-    private void ActiveAttack(bool isPlayer, int playerMonsterIndex, int skillIndex)
+    private void ActiveAttack(bool isPlayer, int skillIndex)
     {
-        _iBattleMonsterPresenter.ActiveAttack(isPlayer, playerMonsterIndex, skillIndex);
-
-        /*MonsterModel playerModel = _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex];
-        MonsterModel opponentModel = _battleModel.OpponentMonsterModel;
-        SkillModel skillModel = playerModel.BatlleSkills[skillIndex];
-        int damage = 0;
-
-        if (isPlayer)
-        {
-            damage = _damageCalculator.Calculate(playerModel, opponentModel, skillModel);
-            opponentModel.Health = Mathf.Max(0, opponentModel.Health - damage);
-            RefreshMonsterHUD(false, playerMonsterIndex);
-        }
-        else
-        {
-            damage = _damageCalculator.Calculate(opponentModel, playerModel, skillModel);
-            playerModel.Health = Mathf.Max(0, playerModel.Health - damage);
-            RefreshMonsterHUD(true, -1);
-        }*/
+        _iBattleMonsterPresenter.ActiveAttack(isPlayer, skillIndex);
     }
 }
