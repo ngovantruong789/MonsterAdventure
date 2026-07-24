@@ -90,7 +90,7 @@ public static class TypeChart
             { (EElementType.Fly, EElementType.Ground), 1f },
             { (EElementType.Fly, EElementType.Fly), 1f },
             { (EElementType.Fly, EElementType.Ghost), 1f },
-            { (EElementType.Fly, EElementType.Fighting), 1f },
+            { (EElementType.Fly, EElementType.Fighting), 2f },
             { (EElementType.Fly, EElementType.Steel), 0.5f },
             { (EElementType.Fly, EElementType.Psychic), 1f },
             { (EElementType.Fly, EElementType.Fairy), 1f },
