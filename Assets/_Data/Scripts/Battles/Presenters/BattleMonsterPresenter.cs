@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using Unity.VisualScripting;
+
 public class BattleMonsterPresenter
 {
     private BattleModel _battleModel;
@@ -18,7 +21,7 @@ public class BattleMonsterPresenter
         _battleManager = battleManager;
         _iBattleMonsterPresenter = iBattleMonsterPresenter;
 
-        UpdateHUDBattleMonsterViewData();
+        UpdateHUDBattleMonsterViewData(true, true);
 
         //Opponent
         DeployMonster(false, -1);
@@ -39,56 +42,59 @@ public class BattleMonsterPresenter
         _iBattleMonsterPresenter.TurnEvt += HandleTurn;
     }
 
-    private void UpdateHUDBattleMonsterViewData()
+    private void UpdateHUDBattleMonsterViewData(bool updateUnlockSkills, bool updateBattleSkills)
     {
         HUDBattleMonsterViewData hUDBattleMonsterViewData = new HUDBattleMonsterViewData();
-        foreach (MonsterModel model in _battleModel.PlayerTeamModel.PlayerTeam)
+        for (int i = 0; i < _battleModel.PlayerTeamModel.PlayerTeam.Count; i++)
         {
-            MonsterViewData monsterViewData = new MonsterViewData
-            {
-                NextEvolve = model.NextEvolve,
-                MonsterAnimator = model.MonsterAnimator,
-                UIAnimator = model.UIAnimator,
-                Health = model.Health,
-                MaxHealth = model.MaxHealth,
-                Attack = model.Attack,
-                Speed = model.Speed,
-                IsDead = model.IsDead,
-                Experience = model.Experience,
-                Defense = model.Defense,
-                Level = model.Level,
-                MonsterName = model.MonsterName,
-            };
+            MonsterModel model = _battleModel.PlayerTeamModel.PlayerTeam[i];
+            MonsterViewData monsterViewData = CovertMonsterModelToMonsterViewData(model);
 
-            for(int i = 0; i < model.UnlockedSkills.Count; i++)
-            {
-                SkillViewData skillViewData = new SkillViewData
-                {
-                    Damage = model.UnlockedSkills[i].Damage,
-                    ElementType = model.UnlockedSkills[i].ElementType,
-                    FullName = model.UnlockedSkills[i].FullName,
-                    ESkillId = model.UnlockedSkills[i].ESkillId,
-                    SkillType = model.UnlockedSkills[i].SkillType,
-                };
-                monsterViewData.UnlockedSkills.Add(skillViewData);
-            }
-
-            for (int i = 0; i < model.BatlleSkills.Count; i++)
-            {
-                SkillViewData skillViewData = new SkillViewData
-                {
-                    Damage = model.BatlleSkills[i].Damage,
-                    ElementType = model.BatlleSkills[i].ElementType,
-                    FullName = model.BatlleSkills[i].FullName,
-                    ESkillId = model.BatlleSkills[i].ESkillId,
-                    SkillType = model.BatlleSkills[i].SkillType,
-                };
-                monsterViewData.BatlleSkills.Add(skillViewData);
-            }
+            monsterViewData.UnlockedSkills = updateUnlockSkills ? ConvertSkillsModelToSkillViewData(model.UnlockedSkills) : _hUDBattleMonsterView.HUDBattleMonsterViewData.PlayerTeamDatas[i].UnlockedSkills;
+            monsterViewData.BatlleSkills = updateBattleSkills ? ConvertSkillsModelToSkillViewData(model.BatlleSkills) : _hUDBattleMonsterView.HUDBattleMonsterViewData.PlayerTeamDatas[i].BatlleSkills;
             hUDBattleMonsterViewData.PlayerTeamDatas.Add(monsterViewData);
         }
 
         _hUDBattleMonsterView.SetData(hUDBattleMonsterViewData);
+    }
+    private MonsterViewData CovertMonsterModelToMonsterViewData(MonsterModel model)
+    {
+        return new MonsterViewData
+        {
+            NextEvolve = model.NextEvolve,
+            MonsterAnimator = model.MonsterAnimator,
+            UIAnimator = model.UIAnimator,
+            Health = model.Health,
+            MaxHealth = model.MaxHealth,
+            Attack = model.Attack,
+            Speed = model.Speed,
+            IsDead = model.IsDead,
+            Experience = model.Experience,
+            Defense = model.Defense,
+            Level = model.Level,
+            MonsterName = model.MonsterName,
+            UnlockedSkills = new List<SkillViewData>(),
+            BatlleSkills = new List<SkillViewData>()
+        };
+    }
+
+    private List<SkillViewData> ConvertSkillsModelToSkillViewData(List<SkillModel> originalSkills)
+    {
+        List<SkillViewData> viewSkills = new List<SkillViewData>();
+
+        foreach (var skill in originalSkills)
+        {
+            viewSkills.Add(new SkillViewData
+            {
+                Damage = skill.Damage,
+                ElementType = skill.ElementType,
+                FullName = skill.FullName,
+                ESkillId = skill.ESkillId,
+                SkillType = skill.SkillType,
+            });
+        }
+
+        return viewSkills;
     }
 
     private void ShowPlayerTeam()
@@ -140,7 +146,7 @@ public class BattleMonsterPresenter
         {
             _hUDBattleMonsterView.UpdateStatsInforText(true, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].MonsterName, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].Level);
             _hUDBattleMonsterView.UpdateMonsterStats(true, EStatType.Health, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].Health, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].MaxHealth);
-            UpdateHUDBattleMonsterViewData();
+            UpdateHUDBattleMonsterViewData(false, false);
         }
         else
         {

@@ -43,6 +43,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
     [SerializeField] private bool _isBattleButtonClicked;
 
     private HUDBattleMonsterViewData _hUDBattleMonsterViewData;
+    public HUDBattleMonsterViewData HUDBattleMonsterViewData { get => _hUDBattleMonsterViewData; set => _hUDBattleMonsterViewData = value; }
     public bool IsInteract { get; set; } = true;
 
     protected override void Start()
