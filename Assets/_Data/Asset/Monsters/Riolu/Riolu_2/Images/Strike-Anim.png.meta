@@ -264,7 +264,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -288,7 +288,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -316,12 +316,12 @@ TextureImporter:
       name: Strike-Anim_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 534
-        width: 24
-        height: 31
+        x: 0
+        y: 504
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -338,12 +338,12 @@ TextureImporter:
       name: Strike-Anim_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 535
-        width: 24
-        height: 31
+        x: 64
+        y: 504
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -360,12 +360,12 @@ TextureImporter:
       name: Strike-Anim_2
       rect:
         serializedVersion: 2
-        x: 148
-        y: 531
-        width: 24
-        height: 31
+        x: 128
+        y: 504
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -382,12 +382,12 @@ TextureImporter:
       name: Strike-Anim_3
       rect:
         serializedVersion: 2
-        x: 212
-        y: 527
-        width: 24
-        height: 31
+        x: 192
+        y: 504
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -404,12 +404,12 @@ TextureImporter:
       name: Strike-Anim_4
       rect:
         serializedVersion: 2
-        x: 273
-        y: 513
-        width: 30
-        height: 34
+        x: 256
+        y: 504
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -426,12 +426,12 @@ TextureImporter:
       name: Strike-Anim_5
       rect:
         serializedVersion: 2
-        x: 343
-        y: 512
-        width: 22
-        height: 27
+        x: 320
+        y: 504
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -448,12 +448,12 @@ TextureImporter:
       name: Strike-Anim_6
       rect:
         serializedVersion: 2
-        x: 408
-        y: 512
-        width: 22
-        height: 27
+        x: 384
+        y: 504
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -470,12 +470,12 @@ TextureImporter:
       name: Strike-Anim_7
       rect:
         serializedVersion: 2
-        x: 471
-        y: 519
-        width: 24
-        height: 26
+        x: 448
+        y: 504
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -492,12 +492,12 @@ TextureImporter:
       name: Strike-Anim_8
       rect:
         serializedVersion: 2
-        x: 532
-        y: 526
-        width: 24
-        height: 31
+        x: 512
+        y: 504
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -514,12 +514,12 @@ TextureImporter:
       name: Strike-Anim_9
       rect:
         serializedVersion: 2
-        x: 19
-        y: 462
-        width: 22
-        height: 32
+        x: 0
+        y: 432
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -536,12 +536,12 @@ TextureImporter:
       name: Strike-Anim_10
       rect:
         serializedVersion: 2
-        x: 82
-        y: 463
-        width: 22
-        height: 32
+        x: 64
+        y: 432
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -558,12 +558,12 @@ TextureImporter:
       name: Strike-Anim_11
       rect:
         serializedVersion: 2
-        x: 150
-        y: 459
-        width: 22
-        height: 32
+        x: 128
+        y: 432
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -580,12 +580,12 @@ TextureImporter:
       name: Strike-Anim_12
       rect:
         serializedVersion: 2
-        x: 218
-        y: 455
-        width: 22
-        height: 32
+        x: 192
+        y: 432
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -602,12 +602,12 @@ TextureImporter:
       name: Strike-Anim_13
       rect:
         serializedVersion: 2
-        x: 291
-        y: 442
-        width: 30
-        height: 34
+        x: 256
+        y: 432
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -624,12 +624,12 @@ TextureImporter:
       name: Strike-Anim_14
       rect:
         serializedVersion: 2
-        x: 354
-        y: 443
-        width: 24
-        height: 26
+        x: 320
+        y: 432
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -646,12 +646,12 @@ TextureImporter:
       name: Strike-Anim_15
       rect:
         serializedVersion: 2
-        x: 418
-        y: 442
-        width: 24
-        height: 26
+        x: 384
+        y: 432
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -668,12 +668,12 @@ TextureImporter:
       name: Strike-Anim_16
       rect:
         serializedVersion: 2
-        x: 479
-        y: 450
-        width: 24
-        height: 25
+        x: 448
+        y: 432
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -690,12 +690,12 @@ TextureImporter:
       name: Strike-Anim_17
       rect:
         serializedVersion: 2
-        x: 538
-        y: 455
-        width: 22
-        height: 32
+        x: 512
+        y: 432
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -712,12 +712,12 @@ TextureImporter:
       name: Strike-Anim_18
       rect:
         serializedVersion: 2
-        x: 19
-        y: 388
-        width: 20
-        height: 30
+        x: 0
+        y: 360
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -734,12 +734,12 @@ TextureImporter:
       name: Strike-Anim_19
       rect:
         serializedVersion: 2
-        x: 82
-        y: 388
-        width: 20
-        height: 30
+        x: 64
+        y: 360
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -756,12 +756,12 @@ TextureImporter:
       name: Strike-Anim_20
       rect:
         serializedVersion: 2
-        x: 150
-        y: 388
-        width: 20
-        height: 30
+        x: 128
+        y: 360
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -778,12 +778,12 @@ TextureImporter:
       name: Strike-Anim_21
       rect:
         serializedVersion: 2
-        x: 218
-        y: 388
-        width: 20
-        height: 30
+        x: 192
+        y: 360
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -800,12 +800,12 @@ TextureImporter:
       name: Strike-Anim_22
       rect:
         serializedVersion: 2
-        x: 291
-        y: 388
-        width: 27
-        height: 28
+        x: 256
+        y: 360
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -822,12 +822,12 @@ TextureImporter:
       name: Strike-Anim_23
       rect:
         serializedVersion: 2
-        x: 357
-        y: 389
-        width: 24
-        height: 25
+        x: 320
+        y: 360
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -844,12 +844,12 @@ TextureImporter:
       name: Strike-Anim_24
       rect:
         serializedVersion: 2
-        x: 422
-        y: 388
-        width: 24
-        height: 25
+        x: 384
+        y: 360
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -866,12 +866,12 @@ TextureImporter:
       name: Strike-Anim_25
       rect:
         serializedVersion: 2
-        x: 479
-        y: 388
-        width: 24
-        height: 27
+        x: 448
+        y: 360
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -888,12 +888,12 @@ TextureImporter:
       name: Strike-Anim_26
       rect:
         serializedVersion: 2
-        x: 538
-        y: 388
-        width: 20
-        height: 30
+        x: 512
+        y: 360
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -910,12 +910,12 @@ TextureImporter:
       name: Strike-Anim_27
       rect:
         serializedVersion: 2
-        x: 20
-        y: 315
-        width: 23
-        height: 28
+        x: 0
+        y: 288
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -932,12 +932,12 @@ TextureImporter:
       name: Strike-Anim_28
       rect:
         serializedVersion: 2
-        x: 83
-        y: 314
-        width: 23
-        height: 28
+        x: 64
+        y: 288
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -954,12 +954,12 @@ TextureImporter:
       name: Strike-Anim_29
       rect:
         serializedVersion: 2
-        x: 151
-        y: 318
-        width: 23
-        height: 28
+        x: 128
+        y: 288
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -976,12 +976,12 @@ TextureImporter:
       name: Strike-Anim_30
       rect:
         serializedVersion: 2
-        x: 219
-        y: 322
-        width: 23
-        height: 28
+        x: 192
+        y: 288
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -998,12 +998,12 @@ TextureImporter:
       name: Strike-Anim_31
       rect:
         serializedVersion: 2
-        x: 291
-        y: 330
-        width: 29
-        height: 31
+        x: 256
+        y: 288
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1020,12 +1020,12 @@ TextureImporter:
       name: Strike-Anim_32
       rect:
         serializedVersion: 2
-        x: 358
-        y: 332
-        width: 24
-        height: 27
+        x: 320
+        y: 288
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1042,12 +1042,12 @@ TextureImporter:
       name: Strike-Anim_33
       rect:
         serializedVersion: 2
-        x: 423
-        y: 332
-        width: 24
-        height: 27
+        x: 384
+        y: 288
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1064,12 +1064,12 @@ TextureImporter:
       name: Strike-Anim_34
       rect:
         serializedVersion: 2
-        x: 481
-        y: 327
-        width: 21
-        height: 29
+        x: 448
+        y: 288
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1086,12 +1086,12 @@ TextureImporter:
       name: Strike-Anim_35
       rect:
         serializedVersion: 2
-        x: 539
-        y: 322
-        width: 23
-        height: 28
+        x: 512
+        y: 288
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1108,12 +1108,12 @@ TextureImporter:
       name: Strike-Anim_36
       rect:
         serializedVersion: 2
-        x: 22
-        y: 243
-        width: 23
-        height: 28
+        x: 0
+        y: 216
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1130,12 +1130,12 @@ TextureImporter:
       name: Strike-Anim_37
       rect:
         serializedVersion: 2
-        x: 86
-        y: 242
-        width: 23
-        height: 28
+        x: 64
+        y: 216
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1152,12 +1152,12 @@ TextureImporter:
       name: Strike-Anim_38
       rect:
         serializedVersion: 2
-        x: 150
-        y: 246
-        width: 23
-        height: 28
+        x: 128
+        y: 216
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1174,12 +1174,12 @@ TextureImporter:
       name: Strike-Anim_39
       rect:
         serializedVersion: 2
-        x: 214
-        y: 250
-        width: 23
-        height: 28
+        x: 192
+        y: 216
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1196,12 +1196,12 @@ TextureImporter:
       name: Strike-Anim_40
       rect:
         serializedVersion: 2
-        x: 274
-        y: 259
-        width: 29
-        height: 29
+        x: 256
+        y: 216
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1218,12 +1218,12 @@ TextureImporter:
       name: Strike-Anim_41
       rect:
         serializedVersion: 2
-        x: 340
-        y: 259
-        width: 21
-        height: 29
+        x: 320
+        y: 216
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1240,12 +1240,12 @@ TextureImporter:
       name: Strike-Anim_42
       rect:
         serializedVersion: 2
-        x: 403
-        y: 260
-        width: 21
-        height: 29
+        x: 384
+        y: 216
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1262,12 +1262,12 @@ TextureImporter:
       name: Strike-Anim_43
       rect:
         serializedVersion: 2
-        x: 470
-        y: 256
-        width: 20
-        height: 27
+        x: 448
+        y: 216
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1284,12 +1284,12 @@ TextureImporter:
       name: Strike-Anim_44
       rect:
         serializedVersion: 2
-        x: 533
-        y: 251
-        width: 24
-        height: 28
+        x: 512
+        y: 216
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1306,12 +1306,12 @@ TextureImporter:
       name: Strike-Anim_45
       rect:
         serializedVersion: 2
-        x: 22
-        y: 171
-        width: 23
-        height: 28
+        x: 0
+        y: 144
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1328,12 +1328,12 @@ TextureImporter:
       name: Strike-Anim_46
       rect:
         serializedVersion: 2
-        x: 87
-        y: 170
-        width: 23
-        height: 28
+        x: 64
+        y: 144
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1350,12 +1350,12 @@ TextureImporter:
       name: Strike-Anim_47
       rect:
         serializedVersion: 2
-        x: 147
-        y: 174
-        width: 23
-        height: 28
+        x: 128
+        y: 144
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1372,12 +1372,12 @@ TextureImporter:
       name: Strike-Anim_48
       rect:
         serializedVersion: 2
-        x: 207
-        y: 178
-        width: 23
-        height: 28
+        x: 192
+        y: 144
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1394,12 +1394,12 @@ TextureImporter:
       name: Strike-Anim_49
       rect:
         serializedVersion: 2
-        x: 257
-        y: 186
-        width: 29
-        height: 31
+        x: 256
+        y: 144
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1416,12 +1416,12 @@ TextureImporter:
       name: Strike-Anim_50
       rect:
         serializedVersion: 2
-        x: 323
-        y: 188
-        width: 24
-        height: 27
+        x: 320
+        y: 144
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1438,12 +1438,12 @@ TextureImporter:
       name: Strike-Anim_51
       rect:
         serializedVersion: 2
-        x: 386
-        y: 188
-        width: 24
-        height: 27
+        x: 384
+        y: 144
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1460,12 +1460,12 @@ TextureImporter:
       name: Strike-Anim_52
       rect:
         serializedVersion: 2
-        x: 459
-        y: 183
-        width: 21
-        height: 29
+        x: 448
+        y: 144
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1482,12 +1482,12 @@ TextureImporter:
       name: Strike-Anim_53
       rect:
         serializedVersion: 2
-        x: 527
-        y: 178
-        width: 23
-        height: 28
+        x: 512
+        y: 144
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1504,12 +1504,12 @@ TextureImporter:
       name: Strike-Anim_54
       rect:
         serializedVersion: 2
-        x: 26
-        y: 100
-        width: 20
-        height: 30
+        x: 0
+        y: 72
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1526,12 +1526,12 @@ TextureImporter:
       name: Strike-Anim_55
       rect:
         serializedVersion: 2
-        x: 91
-        y: 100
-        width: 20
-        height: 30
+        x: 64
+        y: 72
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1548,12 +1548,12 @@ TextureImporter:
       name: Strike-Anim_56
       rect:
         serializedVersion: 2
-        x: 151
-        y: 100
-        width: 20
-        height: 30
+        x: 128
+        y: 72
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1570,12 +1570,12 @@ TextureImporter:
       name: Strike-Anim_57
       rect:
         serializedVersion: 2
-        x: 211
-        y: 100
-        width: 20
-        height: 30
+        x: 192
+        y: 72
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1592,12 +1592,12 @@ TextureImporter:
       name: Strike-Anim_58
       rect:
         serializedVersion: 2
-        x: 259
-        y: 100
-        width: 27
-        height: 28
+        x: 256
+        y: 72
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1614,12 +1614,12 @@ TextureImporter:
       name: Strike-Anim_59
       rect:
         serializedVersion: 2
-        x: 324
-        y: 101
-        width: 24
-        height: 25
+        x: 320
+        y: 72
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1636,12 +1636,12 @@ TextureImporter:
       name: Strike-Anim_60
       rect:
         serializedVersion: 2
-        x: 387
-        y: 100
-        width: 24
-        height: 25
+        x: 384
+        y: 72
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1658,12 +1658,12 @@ TextureImporter:
       name: Strike-Anim_61
       rect:
         serializedVersion: 2
-        x: 458
-        y: 100
-        width: 24
-        height: 27
+        x: 448
+        y: 72
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1680,12 +1680,12 @@ TextureImporter:
       name: Strike-Anim_62
       rect:
         serializedVersion: 2
-        x: 531
-        y: 100
-        width: 20
-        height: 30
+        x: 512
+        y: 72
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1702,12 +1702,12 @@ TextureImporter:
       name: Strike-Anim_63
       rect:
         serializedVersion: 2
-        x: 24
-        y: 30
-        width: 22
-        height: 32
+        x: 0
+        y: 0
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1724,12 +1724,12 @@ TextureImporter:
       name: Strike-Anim_64
       rect:
         serializedVersion: 2
-        x: 89
-        y: 31
-        width: 22
-        height: 32
+        x: 64
+        y: 0
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1746,12 +1746,12 @@ TextureImporter:
       name: Strike-Anim_65
       rect:
         serializedVersion: 2
-        x: 149
-        y: 27
-        width: 22
-        height: 32
+        x: 128
+        y: 0
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1768,12 +1768,12 @@ TextureImporter:
       name: Strike-Anim_66
       rect:
         serializedVersion: 2
-        x: 209
-        y: 23
-        width: 22
-        height: 32
+        x: 192
+        y: 0
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1791,11 +1791,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 10
-        width: 30
-        height: 34
+        y: 0
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1812,12 +1812,12 @@ TextureImporter:
       name: Strike-Anim_68
       rect:
         serializedVersion: 2
-        x: 327
-        y: 11
-        width: 24
-        height: 26
+        x: 320
+        y: 0
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1834,12 +1834,12 @@ TextureImporter:
       name: Strike-Anim_69
       rect:
         serializedVersion: 2
-        x: 391
-        y: 10
-        width: 24
-        height: 26
+        x: 384
+        y: 0
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1856,12 +1856,12 @@ TextureImporter:
       name: Strike-Anim_70
       rect:
         serializedVersion: 2
-        x: 458
-        y: 18
-        width: 24
-        height: 25
+        x: 448
+        y: 0
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1878,12 +1878,12 @@ TextureImporter:
       name: Strike-Anim_71
       rect:
         serializedVersion: 2
-        x: 529
-        y: 23
-        width: 22
-        height: 32
+        x: 512
+        y: 0
+        width: 64
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1900,7 +1900,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d6ec0c6bf41e60c4db82b7c3e32a3404
     internalID: 0
     vertices: []
     indices: 
@@ -1908,7 +1908,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":8.0},"gridSpriteSize":{"x":64.0,"y":72.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Strike-Anim_0: -8651576243718324282
       Strike-Anim_1: -7522275166435322049
