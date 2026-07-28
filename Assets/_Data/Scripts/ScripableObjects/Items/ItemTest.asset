@@ -12,12 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04385e6d9d22d73439aefca02e05220a, type: 3}
   m_Name: ItemTest
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
-  itemName: "\u0111fd"
-  description: sdadasd
-  itemImage: {fileID: 0}
-  itemID: 0
-  itemType: 2
-  buyPrice: 0
-  sellPrice: 0
-  effectValue: 0
-  isConsumable: 0
+  _itemName: "\u0111\xE1"
+  _description: sdas
+  _itemImage: {fileID: 0}
+  _itemID: 13
+  _itemEffects: 0000000000000000
+  _value: 11
