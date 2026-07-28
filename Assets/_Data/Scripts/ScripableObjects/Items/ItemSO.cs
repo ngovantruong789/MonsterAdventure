@@ -1,20 +1,19 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-[CreateAssetMenu(fileName = "ItemSO", menuName = "Scriptable Objects/ItemSO")]
+[CreateAssetMenu(fileName = "ItemSO", menuName = "ScriptableObjects/ItemSO")]
 public class ItemSO : ScriptableObject
 {
-    [SerializeField] private Sprite _itemImage;
-    public Sprite ItemImage => _itemImage;
+    [SerializeField] private Sprite _Image;
+    public Sprite Image => _Image;
 
-    [SerializeField] private int _itemID;
-    public int ItemID => _itemID;
+    [SerializeField] private int _ID;
+    public int ID => _ID;
 
-    [SerializeField] private string _itemName;
-    public string ItemName => _itemName;
+    [SerializeField] private string _Name;
+    public string Name => _Name;
 
-    [SerializeField] private EItemEffect _itemEffects;
-    public EItemEffect ItemEffects => _itemEffects;
+    [SerializeField] private EItemEffect _effects;
+    public EItemEffect Effects => _effects;
 
     [SerializeField] private float _value;
     public float Value => _value;
