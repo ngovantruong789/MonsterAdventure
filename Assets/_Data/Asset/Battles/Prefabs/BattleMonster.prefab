@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2824251576345058224}
   m_Layer: 0
-  m_Name: PlayerMonster
+  m_Name: BattleMonster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 8970572534976722365}
   - component: {fileID: 7077288321396480865}
   - component: {fileID: 8253191350398471930}
-  - component: {fileID: 7846359654850736598}
+  - component: {fileID: 2801655775613832790}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -147,7 +147,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7846359654850736598
+--- !u!114 &2801655775613832790
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,5 +158,5 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ca7f67a277882444bd6d3699c02f432, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MonsterAnimatorController
+  m_EditorClassIdentifier: Assembly-CSharp::BattleMonsterAnimatorController
   _animator: {fileID: 8253191350398471930}
