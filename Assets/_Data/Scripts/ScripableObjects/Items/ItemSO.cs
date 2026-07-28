@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(fileName = "ItemSO", menuName = "ScriptableObjects/ItemSO")]
+[CreateAssetMenu(fileName = "ItemSO", menuName = "ScriptableObjects/Item")]
 public class ItemSO : ScriptableObject
 {
     [SerializeField] private Sprite _image;
@@ -12,9 +12,9 @@ public class ItemSO : ScriptableObject
     [SerializeField] private string _name;
     public string Name => _name;
 
-    [SerializeField] private EItemEffect _effects;
-    public EItemEffect Effects => _effects;
-
+    [SerializeField] private EItemEffect _eItem;
+    public EItemEffect EItem => _eItem;
+        
     [SerializeField] private float _value;
     public float Value => _value;
 
