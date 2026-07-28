@@ -4,7 +4,7 @@ using UnityEngine;
 public class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTurn
 {
     public Action<EBattlePhase> TurnEvt { get; set; }
-    public Action<bool, EStatePhase, int, bool> StatePhaseChangeEvt { get; set; }
+    public Action<EMonsterSide, EStatePhase, int, bool> StatePhaseChangeEvt { get; set; }
     public Action<bool> EndBattleEvt { get; set; }
     public Action NextTurnEvt { get; set; }
     public int CurrentPlayerMonsterBattleIndex { get => _currentPlayerMonsterBattleIndex; set => _currentPlayerMonsterBattleIndex = value; }
@@ -12,9 +12,9 @@ public class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTu
     private BattleModel _battleModel;
     DamageCalculator _damageCalculator;
     private EBattlePhase _eBattlePhase;
+    private EMonsterSide _eMonsterSide;
     private int _skillIndexAttack;
     private int _currentPlayerMonsterBattleIndex;
-    private bool _isPlayerAttack;
     private bool _isEndBattle;
 
     public BattleMonsterController(BattleModel battleModel, DamageCalculator damageCalculator)
@@ -36,12 +36,12 @@ public class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTu
 
     private void PlayAnim()
     {
-        StatePhaseChangeEvt.Invoke(_isPlayerAttack, EStatePhase.PlayAnimAttack, _currentPlayerMonsterBattleIndex, false);
+        StatePhaseChangeEvt.Invoke(_eMonsterSide, EStatePhase.PlayAnimAttack, _currentPlayerMonsterBattleIndex, false);
     }
 
     private void PlayVFX()
     {
-        StatePhaseChangeEvt.Invoke(_isPlayerAttack, EStatePhase.PlayVFXAttack, _currentPlayerMonsterBattleIndex, false);
+        StatePhaseChangeEvt.Invoke(_eMonsterSide, EStatePhase.PlayVFXAttack, _currentPlayerMonsterBattleIndex, false);
     }
 
     private void ApplyDamage()
@@ -51,7 +51,7 @@ public class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTu
         SkillModel skillModel = null;
         int damage = 0;
 
-        if (_isPlayerAttack)
+        if (_eMonsterSide == EMonsterSide.Player)
         {
             skillModel = playerModel.BatlleSkills[_skillIndexAttack];
             damage = _damageCalculator.Calculate(playerModel, opponentModel, skillModel);
@@ -66,7 +66,7 @@ public class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTu
             playerModel.Health = Mathf.Max(0, playerModel.Health - damage);
             playerModel.IsDead = playerModel.Health <= 0;
         }
-        StatePhaseChangeEvt.Invoke(_isPlayerAttack, EStatePhase.ApplyDamage, _currentPlayerMonsterBattleIndex, false);
+        StatePhaseChangeEvt.Invoke(_eMonsterSide, EStatePhase.ApplyDamage, _currentPlayerMonsterBattleIndex, false);
     }
 
     private bool CheckEndBattle()
@@ -91,19 +91,20 @@ public class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTu
     {
         _isEndBattle = CheckEndBattle();
         EndBattleEvt.Invoke(_isEndBattle);
-        StatePhaseChangeEvt.Invoke(_isPlayerAttack, EStatePhase.End, _currentPlayerMonsterBattleIndex, _isEndBattle);
+        StatePhaseChangeEvt.Invoke(_eMonsterSide, EStatePhase.End, _currentPlayerMonsterBattleIndex, _isEndBattle);
     }
 
     private void AIOpponentAttack()
     {
-        ActiveAttack(false, UnityEngine.Random.Range(0, _battleModel.OpponentMonsterModel.BatlleSkills.Count));
+        ActiveAttack(EMonsterSide.Opponent, UnityEngine.Random.Range(0, _battleModel.OpponentMonsterModel.BatlleSkills.Count));
     }
 
-    public void ActiveAttack(bool isPlayer, int skillIndex)
+    public void ActiveAttack(EMonsterSide eMonsterSide, int skillIndex)
     {
-        if ((isPlayer && _eBattlePhase == EBattlePhase.PlayerTurn) || (!isPlayer && _eBattlePhase == EBattlePhase.OpponentTurn))
+        if ((eMonsterSide == EMonsterSide.Player && _eBattlePhase == EBattlePhase.PlayerTurn) || 
+            (eMonsterSide == EMonsterSide.Opponent && _eBattlePhase == EBattlePhase.OpponentTurn))
         {
-            _isPlayerAttack = isPlayer;
+            _eMonsterSide = eMonsterSide;
             _skillIndexAttack = skillIndex;
             PlayAnim();
         }

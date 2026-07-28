@@ -19,7 +19,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
     [SerializeField] private List<BattleButtonSkillInfor> _btnBattleSkills;
     private BattleButtonSkillInfor _currentButtonSkillSelected;
     public Action OnShowSkillsEvent { get; set; }
-    public Action<bool, int> OnActiveAttack { get; set; }
+    public Action<EMonsterSide, int> OnActiveAttack { get; set; }
 
     [Header("Item")]
     [SerializeField] private Button _btnItem;
@@ -34,7 +34,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
     [SerializeField] private List<ButtonSelectMonsterInfor> _btnSelectMonsters;
     private ButtonSelectMonsterInfor _currentMonsterSelected;
     public Action OnShowPlayerTeamEvent { get; set; }
-    public Action<bool, int> OnSwapMonster { get; set; }
+    public Action<EMonsterSide, int> OnSwapMonster { get; set; }
 
     [Header("Run")]
     [SerializeField] private Button _btnRun;
@@ -93,16 +93,16 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
         _hUDBattleMonsterViewData = hUDBattleMonsterViewData;
     }
 
-    public void UpdateStatsInforText(bool isPlayer, string name, int level)
+    public void UpdateStatsInforText(EMonsterSide eMonsterSide, string name, int level)
     {
-        MonsterBattleInforUI currentBattleInfor = isPlayer ? _playerMonster : _opponentMonster;
+        MonsterBattleInforUI currentBattleInfor = eMonsterSide == EMonsterSide.Player ? _playerMonster : _opponentMonster;
         currentBattleInfor.MonsterNameText.text = name;
         currentBattleInfor.LevelText.text = "Lv." + level.ToString();
     }
 
-    public void UpdateMonsterStats(bool isPlayer, EStatType eStatType, float value, float maxValue = 0)
+    public void UpdateMonsterStats(EMonsterSide eMonsterSide, EStatType eStatType, float value, float maxValue = 0)
     {
-        MonsterBattleInforUI currentBattleInfor = isPlayer ? _playerMonster : _opponentMonster;
+        MonsterBattleInforUI currentBattleInfor = eMonsterSide == EMonsterSide.Player ? _playerMonster : _opponentMonster;
         switch(eStatType)
         {
             case EStatType.Health:
@@ -189,7 +189,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
         }
         else if (_currentMonsterSelected != null && _currentMonsterSelected == buttonSelectMonsterInfor)
         {
-            SwapMonster(true, _currentMonsterSelected.MonsterIndex);
+            SwapMonster(EMonsterSide.Player, _currentMonsterSelected.MonsterIndex);
             ResetValue();
         }
         else
@@ -200,9 +200,9 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
         }
     }
 
-    private void SwapMonster(bool isPlayer, int index)
+    private void SwapMonster(EMonsterSide eMonsterSide, int index)
     {
-        OnSwapMonster?.Invoke(isPlayer, index);
+        OnSwapMonster?.Invoke(eMonsterSide, index);
     }
 
     private void OnClickedBattleHUD(Action action)
@@ -224,7 +224,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
         }
         else if (_currentButtonSkillSelected != null && _currentButtonSkillSelected == battleButtonSkillInfor)
         {
-            ActiveSKill(true, _currentButtonSkillSelected.SkillIndex);
+            ActiveSKill(EMonsterSide.Player, _currentButtonSkillSelected.SkillIndex);
             ResetValue();
         }
         else
@@ -235,9 +235,9 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
         }
     }
 
-    private void ActiveSKill(bool isPlayer, int skillIndex)
+    private void ActiveSKill(EMonsterSide eMonsterSide, int skillIndex)
     {
-        OnActiveAttack?.Invoke(isPlayer, skillIndex);
+        OnActiveAttack?.Invoke(eMonsterSide, skillIndex);
     }
 
     private void ResetValue()
