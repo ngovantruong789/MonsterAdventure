@@ -5,19 +5,27 @@ using UnityEngine;
 public class ItemSO : ScriptableObject
 {
     [Header("1. Thông tin giao diện (UI)")]
-    public string itemName;         
+    [SerializeField] private string _itemName;
+    public string ItemName => _itemName;
 
     [TextArea(3, 5)]
-    public string description;      
-    public Sprite itemImage;         
+    [SerializeField] private string _description;
+    public string Description => _description;
+    [SerializeField] private Sprite _itemImage;
+    public Sprite ItemImage => _itemImage;
 
     [Header("2. Định danh & Kinh tế")]
-    public int itemID;              
-    public EItemType itemType;       
+    [SerializeField] private int _itemID;
+    public int ItemID => _itemID;
+    /*
+    public EItemType itemType;
+    
     public int buyPrice;            
-    public int sellPrice;           
+    public int sellPrice;*/           
 
     [Header("3. Chỉ số Tác dụng (Effect Payload)")]
-    public float effectValue;       
-    public bool isConsumable;       
+    [SerializeField] private EItemEffect[] _itemEffects;
+    public EItemEffect[] ItemEffects => _itemEffects;
+    [SerializeField] private float _value;
+    public float Value => _value;         
 }
