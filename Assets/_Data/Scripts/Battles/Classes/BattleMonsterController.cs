@@ -4,10 +4,10 @@ using UnityEngine;
 public class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTurn
 {
     public Action<EBattlePhase> TurnEvt { get; set; }
-    public Action<bool, EStatePhase, int> StatePhaseChangeEvt { get; set; }
+    public Action<bool, EStatePhase, int, bool> StatePhaseChangeEvt { get; set; }
+    public Action<bool> EndBattleEvt { get; set; }
     public Action NextTurnEvt { get; set; }
     public int CurrentPlayerMonsterBattleIndex { get => _currentPlayerMonsterBattleIndex; set => _currentPlayerMonsterBattleIndex = value; }
-    public bool IsEndBattle { get; set; }
 
     private BattleModel _battleModel;
     DamageCalculator _damageCalculator;
@@ -15,6 +15,7 @@ public class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTu
     private int _skillIndexAttack;
     private int _currentPlayerMonsterBattleIndex;
     private bool _isPlayerAttack;
+    private bool _isEndBattle;
 
     public BattleMonsterController(BattleModel battleModel, DamageCalculator damageCalculator)
     {
@@ -35,12 +36,12 @@ public class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTu
 
     private void PlayAnim()
     {
-        StatePhaseChangeEvt.Invoke(_isPlayerAttack, EStatePhase.PlayAnimAttack, _currentPlayerMonsterBattleIndex);
+        StatePhaseChangeEvt.Invoke(_isPlayerAttack, EStatePhase.PlayAnimAttack, _currentPlayerMonsterBattleIndex, false);
     }
 
     private void PlayVFX()
     {
-        StatePhaseChangeEvt.Invoke(_isPlayerAttack, EStatePhase.PlayVFXAttack, _currentPlayerMonsterBattleIndex);
+        StatePhaseChangeEvt.Invoke(_isPlayerAttack, EStatePhase.PlayVFXAttack, _currentPlayerMonsterBattleIndex, false);
     }
 
     private void ApplyDamage()
@@ -55,6 +56,7 @@ public class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTu
             skillModel = playerModel.BatlleSkills[_skillIndexAttack];
             damage = _damageCalculator.Calculate(playerModel, opponentModel, skillModel);
             opponentModel.Health = Mathf.Max(0, opponentModel.Health - damage);
+            opponentModel.IsDead = opponentModel.Health <= 0;
         }
         else
         {
@@ -62,13 +64,34 @@ public class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTu
             skillModel = opponentModel.BatlleSkills[UnityEngine.Random.Range(0, countBattleSkill)];
             damage = _damageCalculator.Calculate(opponentModel, playerModel, skillModel);
             playerModel.Health = Mathf.Max(0, playerModel.Health - damage);
+            playerModel.IsDead = playerModel.Health <= 0;
         }
-        StatePhaseChangeEvt.Invoke(_isPlayerAttack, EStatePhase.ApplyDamage, _currentPlayerMonsterBattleIndex);
+        StatePhaseChangeEvt.Invoke(_isPlayerAttack, EStatePhase.ApplyDamage, _currentPlayerMonsterBattleIndex, false);
+    }
+
+    private bool CheckEndBattle()
+    {
+        if(_battleModel.OpponentMonsterModel.IsDead)
+        {
+            return true;
+        }
+
+        foreach(MonsterModel model in _battleModel.PlayerTeamModel.PlayerTeam)
+        {
+            if (!model.IsDead)
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     private void EndPhase()
     {
-        StatePhaseChangeEvt.Invoke(_isPlayerAttack, EStatePhase.End, _currentPlayerMonsterBattleIndex);
+        _isEndBattle = CheckEndBattle();
+        EndBattleEvt.Invoke(_isEndBattle);
+        StatePhaseChangeEvt.Invoke(_isPlayerAttack, EStatePhase.End, _currentPlayerMonsterBattleIndex, _isEndBattle);
     }
 
     private void AIOpponentAttack()

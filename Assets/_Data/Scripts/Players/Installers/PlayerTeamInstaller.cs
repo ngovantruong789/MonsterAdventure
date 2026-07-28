@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class PlayerTeamInstaller : BaseInstaller, IPlayerTeamModelProvider
+public class PlayerTeamInstaller : BaseInstaller, IPlayerTeamIntallerProvider
 {
-    private PlayerTeamModel _teamModel = new();
+    private PlayerTeamController _playerTeamController;
+    public PlayerTeamController PlayerTeamController => _playerTeamController;
 
-    public PlayerTeamModel PlayerTeamModel { get => _teamModel; set => _teamModel = value; }
+    public PlayerTeamModel TeamModel => _playerTeamController.TeamModel;
+    public bool CanBattle => _playerTeamController.CanBattle;
 
     [SerializeField] private MonsterSO _monsterSO;
     [SerializeField] private MonsterSO _monsterSO2;
@@ -16,8 +18,14 @@ public class PlayerTeamInstaller : BaseInstaller, IPlayerTeamModelProvider
     public override void Initialize()
     {
         base.Initialize();
-        _teamModel.PlayerTeam.Add(MonsterModelFactory.Create(_monsterSO2, 30));
-        _teamModel.PlayerTeam.Add(MonsterModelFactory.Create(_monsterSO, 16));
-        _teamModel.PlayerTeam.Add(MonsterModelFactory.Create(_monsterSO3, 13));
+        //_teamModel.PlayerTeam.Add(MonsterModelFactory.Create(_monsterSO2, 30));
+        //_teamModel.PlayerTeam.Add(MonsterModelFactory.Create(_monsterSO, 16));
+        //_teamModel.PlayerTeam.Add(MonsterModelFactory.Create(_monsterSO3, 13));
+        _playerTeamController = new PlayerTeamController(_monsterSO2, _monsterSO);
+    }
+
+    public PlayerTeamModel ClonePlayerTeamModel()
+    {
+        return _playerTeamController.ClonePlayerTeamModel();
     }
 }

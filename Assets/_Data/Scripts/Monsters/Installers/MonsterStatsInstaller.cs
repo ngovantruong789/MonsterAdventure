@@ -19,6 +19,11 @@ public class MonsterStatsInstaller : BaseInstaller, IMonsterModelProvider
         //Debug.Log("Level: " + _currentModel.Level + "; Health: " + _currentModel.Health);
     }
 
+    public MonsterModel CloneCurrentMonsterModel()
+    {
+        return MonsterModelFactory.Create(_currentModel);
+    }
+
     private Vector2 GetOriginLevelRange(MonsterMapConfig[] monsterMapConfigs)
     {
         foreach(MonsterMapConfig monsterMapConfig in monsterMapConfigs)

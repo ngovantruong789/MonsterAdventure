@@ -1647,6 +1647,7 @@ MonoBehaviour:
   installerConfigs:
   - rid: 5677875185751949398
   - rid: 2744881490987843671
+  _sceneReceiverData: {fileID: 1263100481}
   _sceneLoadManager: {fileID: 276409611}
   references:
     version: 2

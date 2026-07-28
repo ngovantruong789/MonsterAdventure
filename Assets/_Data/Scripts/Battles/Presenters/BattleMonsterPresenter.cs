@@ -1,4 +1,5 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class BattleMonsterPresenter
 {
@@ -154,7 +155,7 @@ public class BattleMonsterPresenter
         }
     }
 
-    private void HandleStatePhaseChange(bool isPlayer, EStatePhase eStatePhase, int monsterIndex)
+    private void HandleStatePhaseChange(bool isPlayer, EStatePhase eStatePhase, int monsterIndex, bool isEndBattle)
     {
         switch(eStatePhase)
         {
@@ -168,7 +169,7 @@ public class BattleMonsterPresenter
                 HandleApplyDamagePhase(isPlayer, monsterIndex);
                 break;
             case EStatePhase.End:
-                HandleEndPhase();
+                HandleEndPhase(isPlayer, isEndBattle);
                 break;
         }
     }
@@ -212,8 +213,19 @@ public class BattleMonsterPresenter
         _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.ApplyDamage);
     }
 
-    private void HandleEndPhase()
+    private void HandleEndPhase(bool isPlayer, bool isEndBattle)
     {
+        if (isEndBattle)
+        {
+            if (isPlayer)
+            {
+                Debug.Log("Opponent đã chết hết");
+            }
+            else
+            {
+                Debug.Log("Player đã chết hết");
+            }
+        }
         _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.End);
     }
 

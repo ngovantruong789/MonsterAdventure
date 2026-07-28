@@ -6,10 +6,10 @@ public class BattleTurnController
 
     public BattleTurnController(IBattleMonsterTurn battleMonsterTurn)
     {
-        _isEndBattle = battleMonsterTurn.IsEndBattle;
         _eBattlePhase = EBattlePhase.Start;
-
         _battleMonsterTurn = battleMonsterTurn;
+
+        battleMonsterTurn.EndBattleEvt += SetEndBattle;
         _battleMonsterTurn.NextTurnEvt += HandleNextTurn;
 
         HandleNextTurn();
@@ -32,8 +32,8 @@ public class BattleTurnController
         _battleMonsterTurn.ChangeTurn(_eBattlePhase);
     }
 
-    public void EndBattle()
+    private void SetEndBattle(bool isEndBattle)
     {
-        _isEndBattle = true;
+        _isEndBattle = isEndBattle;
     }
 }
