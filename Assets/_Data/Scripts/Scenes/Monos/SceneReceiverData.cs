@@ -18,7 +18,7 @@ public class SceneReceiverData : LifetimeScope
     {
         _sceneLoadModel = new SceneLoadModel();
         _sceneLoadModel = data;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
 
         _sceneLoadManager.EndLoadNewScene();
         if (_sceneLoadModel != null)

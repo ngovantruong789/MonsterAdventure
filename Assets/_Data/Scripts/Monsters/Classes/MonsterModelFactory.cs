@@ -1,13 +1,11 @@
 using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
 
 public static class MonsterModelFactory
 {
     public static MonsterModel Create(MonsterSO monsterSO, int level)
     {
-        List<SkillModel> unlockSkills = CalculateSkill.CalculateUnlockedSkillsPerLevel(monsterSO.Skills, level).ToList();
-        List<SkillModel> battleSkills = CalculateSkill.CalculateBattleSkills(unlockSkills.ToArray()).ToList();
+        List<SkillModel> unlockSkills = CalculateSkill.CalculateUnlockedSkillsPerLevel(monsterSO.Skills, level);
+        List<SkillModel> battleSkills = CalculateSkill.CalculateBattleSkills(unlockSkills);
 
         return new MonsterModel
         {
@@ -26,6 +24,28 @@ public static class MonsterModelFactory
             EElementTypes = monsterSO.Elements,
             Experience = 0,
             IsDead = false,
+        };
+    }
+
+    public static MonsterModel Create(MonsterModel monsterModel)
+    {
+        return new MonsterModel
+        {
+            NextEvolve = monsterModel.NextEvolve,
+            Health = monsterModel.Health,
+            MaxHealth = monsterModel.MaxHealth,
+            Attack = monsterModel.Attack,
+            Defense = monsterModel.Defense,
+            Speed = monsterModel.Speed,
+            UnlockedSkills = monsterModel.UnlockedSkills,
+            BatlleSkills = monsterModel.BatlleSkills,
+            Level = monsterModel.Level,
+            MonsterAnimator = monsterModel.MonsterAnimator,
+            UIAnimator = monsterModel.UIAnimator,
+            MonsterName = monsterModel.MonsterName,
+            EElementTypes = monsterModel.EElementTypes,
+            Experience = monsterModel.Experience,
+            IsDead = monsterModel.IsDead,
         };
     }
 }

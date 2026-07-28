@@ -8,9 +8,6 @@ public class BattleManager : LifetimeScope, IStartInit
     [SerializeField] private SceneLoadManager _sceneLoadManager;
     [SerializeField] private SceneReceiverData _sceneReceiverData;
 
-    private MonsterModel _playerMonsterModel;
-    private MonsterModel _opponentMonsterModel;
-
     protected override void Start()
     {
         base.Start();
@@ -43,6 +40,8 @@ public class BattleManager : LifetimeScope, IStartInit
         SceneLoadModel sceneLoadModel = new SceneLoadModel();
         sceneLoadModel = _sceneReceiverData.SceneLoadModel;
         sceneLoadModel.BatlleModel = newBattleModel;
+        sceneLoadModel.PlayerTeamModel = newBattleModel.PlayerTeamModel;
+        sceneLoadModel.BatlleModel.OpponentMonsterModel = null;
         _sceneLoadManager.CloseSceneAttitive("BattleScene", "GamePlay", sceneLoadModel);
     }
 }
