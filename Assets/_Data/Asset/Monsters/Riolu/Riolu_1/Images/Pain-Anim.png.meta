@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 102c658b4afa8d4469cd3999faaa18f9
+guid: 0a327d4a83e9ec5499378cbfce93ee40
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -381,45 +381,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -428,9 +389,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 336
-        width: 40
-        height: 48
+        y: 280
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,10 +410,10 @@ TextureImporter:
       name: Pain-Anim_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 336
-        width: 40
-        height: 48
+        x: 24
+        y: 280
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -471,10 +432,10 @@ TextureImporter:
       name: Pain-Anim_2
       rect:
         serializedVersion: 2
-        x: 80
-        y: 336
-        width: 40
-        height: 48
+        x: 48
+        y: 280
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -493,10 +454,10 @@ TextureImporter:
       name: Pain-Anim_3
       rect:
         serializedVersion: 2
-        x: 120
-        y: 336
-        width: 40
-        height: 48
+        x: 72
+        y: 280
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -515,10 +476,10 @@ TextureImporter:
       name: Pain-Anim_4
       rect:
         serializedVersion: 2
-        x: 160
-        y: 336
-        width: 40
-        height: 48
+        x: 96
+        y: 280
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -537,10 +498,10 @@ TextureImporter:
       name: Pain-Anim_5
       rect:
         serializedVersion: 2
-        x: 200
-        y: 336
-        width: 40
-        height: 48
+        x: 120
+        y: 280
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -559,10 +520,10 @@ TextureImporter:
       name: Pain-Anim_6
       rect:
         serializedVersion: 2
-        x: 240
-        y: 336
-        width: 40
-        height: 48
+        x: 144
+        y: 280
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -581,10 +542,10 @@ TextureImporter:
       name: Pain-Anim_7
       rect:
         serializedVersion: 2
-        x: 280
-        y: 336
-        width: 40
-        height: 48
+        x: 168
+        y: 280
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -603,10 +564,10 @@ TextureImporter:
       name: Pain-Anim_8
       rect:
         serializedVersion: 2
-        x: 320
-        y: 336
-        width: 40
-        height: 48
+        x: 192
+        y: 280
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -625,10 +586,10 @@ TextureImporter:
       name: Pain-Anim_9
       rect:
         serializedVersion: 2
-        x: 360
-        y: 336
-        width: 40
-        height: 48
+        x: 216
+        y: 280
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -647,10 +608,10 @@ TextureImporter:
       name: Pain-Anim_10
       rect:
         serializedVersion: 2
-        x: 400
-        y: 336
-        width: 40
-        height: 48
+        x: 240
+        y: 280
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -669,10 +630,10 @@ TextureImporter:
       name: Pain-Anim_11
       rect:
         serializedVersion: 2
-        x: 440
-        y: 336
-        width: 40
-        height: 48
+        x: 264
+        y: 280
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -688,35 +649,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pain-Anim_13
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 288
-        width: 40
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 21050e8184050f9f0800000000000000
-      internalID: -436760893269716974
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Pain-Anim_24
       rect:
         serializedVersion: 2
         x: 0
-        y: 240
-        width: 40
-        height: 48
+        y: 200
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -735,10 +674,10 @@ TextureImporter:
       name: Pain-Anim_25
       rect:
         serializedVersion: 2
-        x: 40
-        y: 240
-        width: 40
-        height: 48
+        x: 24
+        y: 200
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -757,10 +696,10 @@ TextureImporter:
       name: Pain-Anim_26
       rect:
         serializedVersion: 2
-        x: 80
-        y: 240
-        width: 40
-        height: 48
+        x: 48
+        y: 200
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -779,10 +718,10 @@ TextureImporter:
       name: Pain-Anim_27
       rect:
         serializedVersion: 2
-        x: 120
-        y: 240
-        width: 40
-        height: 48
+        x: 72
+        y: 200
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -801,10 +740,10 @@ TextureImporter:
       name: Pain-Anim_28
       rect:
         serializedVersion: 2
-        x: 160
-        y: 240
-        width: 40
-        height: 48
+        x: 96
+        y: 200
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -823,10 +762,10 @@ TextureImporter:
       name: Pain-Anim_29
       rect:
         serializedVersion: 2
-        x: 200
-        y: 240
-        width: 40
-        height: 48
+        x: 120
+        y: 200
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -845,10 +784,10 @@ TextureImporter:
       name: Pain-Anim_30
       rect:
         serializedVersion: 2
-        x: 240
-        y: 240
-        width: 40
-        height: 48
+        x: 144
+        y: 200
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -867,10 +806,10 @@ TextureImporter:
       name: Pain-Anim_31
       rect:
         serializedVersion: 2
-        x: 280
-        y: 240
-        width: 40
-        height: 48
+        x: 168
+        y: 200
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -889,10 +828,10 @@ TextureImporter:
       name: Pain-Anim_32
       rect:
         serializedVersion: 2
-        x: 320
-        y: 240
-        width: 40
-        height: 48
+        x: 192
+        y: 200
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -911,10 +850,10 @@ TextureImporter:
       name: Pain-Anim_33
       rect:
         serializedVersion: 2
-        x: 360
-        y: 240
-        width: 40
-        height: 48
+        x: 216
+        y: 200
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -933,10 +872,10 @@ TextureImporter:
       name: Pain-Anim_34
       rect:
         serializedVersion: 2
-        x: 400
-        y: 240
-        width: 40
-        height: 48
+        x: 240
+        y: 200
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -955,10 +894,10 @@ TextureImporter:
       name: Pain-Anim_35
       rect:
         serializedVersion: 2
-        x: 440
-        y: 240
-        width: 40
-        height: 48
+        x: 264
+        y: 200
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -977,7 +916,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 251f18d6612208043b5c90f2b26772b1
+    spriteID: e8bad3e172e101c4e83f46025f77c6e6
     internalID: 0
     vertices: []
     indices: 
@@ -987,9 +926,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":12.0,"y":8.0},"gridSpriteSize":{"x":40.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":12.0,"y":8.0},"gridSpriteSize":{"x":24.0,"y":40.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Charmander_2_Faint-Anim_0: 2008396042
       Pain-Anim_0: 9173519871159801538
       Pain-Anim_1: -6577285080314848751
       Pain-Anim_10: -3648175734298090525
