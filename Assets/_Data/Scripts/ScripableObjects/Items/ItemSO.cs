@@ -3,14 +3,14 @@
 [CreateAssetMenu(fileName = "ItemSO", menuName = "ScriptableObjects/ItemSO")]
 public class ItemSO : ScriptableObject
 {
-    [SerializeField] private Sprite _Image;
-    public Sprite Image => _Image;
+    [SerializeField] private Sprite _image;
+    public Sprite Image => _image;
 
-    [SerializeField] private int _ID;
-    public int ID => _ID;
+    [SerializeField] private int _id;
+    public int Id => _id;
 
-    [SerializeField] private string _Name;
-    public string Name => _Name;
+    [SerializeField] private string _name;
+    public string Name => _name;
 
     [SerializeField] private EItemEffect _effects;
     public EItemEffect Effects => _effects;
