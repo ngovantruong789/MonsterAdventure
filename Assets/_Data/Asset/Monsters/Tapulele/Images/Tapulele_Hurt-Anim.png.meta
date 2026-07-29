@@ -145,7 +145,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hurt-Anim_4
+      name: Tapulele_Hurt-Anim_4
       rect:
         serializedVersion: 2
         x: 0
@@ -158,16 +158,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6c04b091dab7f7850800000000000000
-      internalID: 6376951580759638214
+      spriteID: 60e04930688d9fa46af29985a1a14ac0
+      internalID: 1807366188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt-Anim_5
+      name: Tapulele_Hurt-Anim_5
       rect:
         serializedVersion: 2
         x: 40
@@ -180,16 +180,60 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 47122dd0325d17f00800000000000000
-      internalID: 1112904929469669748
+      spriteID: 52c78e3ec4e704447a30026ce9d39c3c
+      internalID: -1196279800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt-Anim_12
+      name: Tapulele_Hurt-Anim_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 40
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0245857b937674dbde2dfa6e0741da
+      internalID: 266540291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Hurt-Anim_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 288
+        width: 40
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32146c379fbfc114ca9b2cff77d4f763
+      internalID: -213407755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Hurt-Anim_12
       rect:
         serializedVersion: 2
         x: 0
@@ -202,16 +246,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 43ad087235cedbff0800000000000000
-      internalID: -18598981550417356
+      spriteID: 928b45bc2348d6248a484b8639c453f4
+      internalID: 1443599652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt-Anim_13
+      name: Tapulele_Hurt-Anim_13
       rect:
         serializedVersion: 2
         x: 40
@@ -224,10 +268,54 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 15cf488c8b49efda0800000000000000
-      internalID: -5909122139704460207
+      spriteID: 254eab6c7b33e9c479b49ee5a9c33c73
+      internalID: 512382348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Hurt-Anim_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 40
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71dd1b3dec3e5254f910f2ca8fb58160
+      internalID: -1151070754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Hurt-Anim_15
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 40
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4ea5717eb7a6c49a60f05e342b720e
+      internalID: -1595315641
       vertices: []
       indices: 
       edges: []
@@ -248,22 +336,22 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":8.0},"gridSpriteSize":{"x":40.0,"y":72.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Hurt-Anim_0: -3483430361698347056
-      Hurt-Anim_1: 3116437033781710035
-      Hurt-Anim_10: -606437513128102347
-      Hurt-Anim_11: 6310680550416806712
-      Hurt-Anim_12: -18598981550417356
-      Hurt-Anim_13: -5909122139704460207
-      Hurt-Anim_14: -1778341294004012663
-      Hurt-Anim_15: -8574411699006034854
-      Hurt-Anim_2: 969750801644170259
-      Hurt-Anim_3: -1664589625159975562
-      Hurt-Anim_4: 6376951580759638214
-      Hurt-Anim_5: 1112904929469669748
-      Hurt-Anim_6: -6216161832688416774
-      Hurt-Anim_7: 5124697469292587934
-      Hurt-Anim_8: -8788567161575655961
-      Hurt-Anim_9: -6774800835217887876
+      Tapulele_Hurt-Anim_0: 26883683
+      Tapulele_Hurt-Anim_1: 1478242901
+      Tapulele_Hurt-Anim_10: 108467827
+      Tapulele_Hurt-Anim_11: -550438066
+      Tapulele_Hurt-Anim_12: 1443599652
+      Tapulele_Hurt-Anim_13: 512382348
+      Tapulele_Hurt-Anim_14: -1151070754
+      Tapulele_Hurt-Anim_15: -1595315641
+      Tapulele_Hurt-Anim_2: -1485328021
+      Tapulele_Hurt-Anim_3: -55003334
+      Tapulele_Hurt-Anim_4: 1807366188
+      Tapulele_Hurt-Anim_5: -1196279800
+      Tapulele_Hurt-Anim_6: 266540291
+      Tapulele_Hurt-Anim_7: -213407755
+      Tapulele_Hurt-Anim_8: -922916871
+      Tapulele_Hurt-Anim_9: 1691509743
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

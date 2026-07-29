@@ -256,7 +256,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hurt-Anim_4
+      name: Petilil_1_Hurt-Anim_4
       rect:
         serializedVersion: 2
         x: 0
@@ -269,16 +269,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6c04b091dab7f7850800000000000000
-      internalID: 6376951580759638214
+      spriteID: 12efc2037558ba24086c7b979334a972
+      internalID: 2014540851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt-Anim_5
+      name: Petilil_1_Hurt-Anim_5
       rect:
         serializedVersion: 2
         x: 48
@@ -291,16 +291,60 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 47122dd0325d17f00800000000000000
-      internalID: 1112904929469669748
+      spriteID: 498a8a2e83ab47341a8f62b22c9b795b
+      internalID: 1830812171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt-Anim_12
+      name: Petilil_1_Hurt-Anim_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba7a61c37a50d84191b19c979b30b18
+      internalID: -1104668421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Hurt-Anim_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e9f8a00d1d65d428a84e900a415efc
+      internalID: -1301341447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Hurt-Anim_12
       rect:
         serializedVersion: 2
         x: 0
@@ -313,16 +357,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 43ad087235cedbff0800000000000000
-      internalID: -18598981550417356
+      spriteID: 2bf8261bbe74dd44fbec5468f93ec78e
+      internalID: 1095801525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt-Anim_13
+      name: Petilil_1_Hurt-Anim_13
       rect:
         serializedVersion: 2
         x: 48
@@ -335,10 +379,54 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 15cf488c8b49efda0800000000000000
-      internalID: -5909122139704460207
+      spriteID: 1f14d9e0a7c67fb49bd20b4bc38b249a
+      internalID: 1361155974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Hurt-Anim_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051234349ba3f554aa5ede535269596a
+      internalID: -1575225834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Hurt-Anim_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26818038ec24874da793a8cb07c921c
+      internalID: -122832380
       vertices: []
       indices: 
       edges: []
@@ -359,22 +447,22 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":8.0},"gridSpriteSize":{"x":48.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Hurt-Anim_0: -3483430361698347056
-      Hurt-Anim_1: 3116437033781710035
-      Hurt-Anim_10: -606437513128102347
-      Hurt-Anim_11: 6310680550416806712
-      Hurt-Anim_12: -18598981550417356
-      Hurt-Anim_13: -5909122139704460207
-      Hurt-Anim_14: -1778341294004012663
-      Hurt-Anim_15: -8574411699006034854
-      Hurt-Anim_2: 969750801644170259
-      Hurt-Anim_3: -1664589625159975562
-      Hurt-Anim_4: 6376951580759638214
-      Hurt-Anim_5: 1112904929469669748
-      Hurt-Anim_6: -6216161832688416774
-      Hurt-Anim_7: 5124697469292587934
-      Hurt-Anim_8: -8788567161575655961
-      Hurt-Anim_9: -6774800835217887876
+      Petilil_1_Hurt-Anim_0: -867492757
+      Petilil_1_Hurt-Anim_1: -2046625067
+      Petilil_1_Hurt-Anim_10: 1263413204
+      Petilil_1_Hurt-Anim_11: 440681068
+      Petilil_1_Hurt-Anim_12: 1095801525
+      Petilil_1_Hurt-Anim_13: 1361155974
+      Petilil_1_Hurt-Anim_14: -1575225834
+      Petilil_1_Hurt-Anim_15: -122832380
+      Petilil_1_Hurt-Anim_2: 122654666
+      Petilil_1_Hurt-Anim_3: -1992264483
+      Petilil_1_Hurt-Anim_4: 2014540851
+      Petilil_1_Hurt-Anim_5: 1830812171
+      Petilil_1_Hurt-Anim_6: -1104668421
+      Petilil_1_Hurt-Anim_7: -1301341447
+      Petilil_1_Hurt-Anim_8: -1127638763
+      Petilil_1_Hurt-Anim_9: -215994826
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

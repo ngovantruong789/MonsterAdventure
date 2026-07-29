@@ -145,7 +145,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hurt-Anim_4
+      name: Mewtwo_Hurt-Anim_4
       rect:
         serializedVersion: 2
         x: 0
@@ -158,16 +158,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6c04b091dab7f7850800000000000000
-      internalID: 6376951580759638214
+      spriteID: dae01c2a5b68b8248bd281ec07f34121
+      internalID: 425992596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt-Anim_5
+      name: Mewtwo_Hurt-Anim_5
       rect:
         serializedVersion: 2
         x: 48
@@ -180,16 +180,60 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 47122dd0325d17f00800000000000000
-      internalID: 1112904929469669748
+      spriteID: b434b41bdac193942b009d1458a6b2b5
+      internalID: 1763946925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt-Anim_12
+      name: Mewtwo_Hurt-Anim_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00b3b83f8f6fcd4f813016e549f19cd
+      internalID: 1494417778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Hurt-Anim_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 288
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0e59d67a474034a97ac59426eda80f
+      internalID: 481850250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Hurt-Anim_12
       rect:
         serializedVersion: 2
         x: 0
@@ -202,16 +246,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 43ad087235cedbff0800000000000000
-      internalID: -18598981550417356
+      spriteID: 0fff5ee1fb6fbd14fac72b46d1c11993
+      internalID: -1710413471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt-Anim_13
+      name: Mewtwo_Hurt-Anim_13
       rect:
         serializedVersion: 2
         x: 48
@@ -224,10 +268,54 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 15cf488c8b49efda0800000000000000
-      internalID: -5909122139704460207
+      spriteID: d822ce51c73475746b1eb55ecddd42be
+      internalID: -841320473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Hurt-Anim_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ad7a2b0aede5343b3f5ba15141529e
+      internalID: -1833579806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Hurt-Anim_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e107a05829888e419ae17f611bd6ce5
+      internalID: -520746008
       vertices: []
       indices: 
       edges: []
@@ -248,22 +336,22 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":8.0},"gridSpriteSize":{"x":48.0,"y":72.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Hurt-Anim_0: -3483430361698347056
-      Hurt-Anim_1: 3116437033781710035
-      Hurt-Anim_10: -606437513128102347
-      Hurt-Anim_11: 6310680550416806712
-      Hurt-Anim_12: -18598981550417356
-      Hurt-Anim_13: -5909122139704460207
-      Hurt-Anim_14: -1778341294004012663
-      Hurt-Anim_15: -8574411699006034854
-      Hurt-Anim_2: 969750801644170259
-      Hurt-Anim_3: -1664589625159975562
-      Hurt-Anim_4: 6376951580759638214
-      Hurt-Anim_5: 1112904929469669748
-      Hurt-Anim_6: -6216161832688416774
-      Hurt-Anim_7: 5124697469292587934
-      Hurt-Anim_8: -8788567161575655961
-      Hurt-Anim_9: -6774800835217887876
+      Mewtwo_Hurt-Anim_0: 1641544437
+      Mewtwo_Hurt-Anim_1: -429228085
+      Mewtwo_Hurt-Anim_10: -1460323733
+      Mewtwo_Hurt-Anim_11: -1662141307
+      Mewtwo_Hurt-Anim_12: -1710413471
+      Mewtwo_Hurt-Anim_13: -841320473
+      Mewtwo_Hurt-Anim_14: -1833579806
+      Mewtwo_Hurt-Anim_15: -520746008
+      Mewtwo_Hurt-Anim_2: 311359216
+      Mewtwo_Hurt-Anim_3: 2139021590
+      Mewtwo_Hurt-Anim_4: 425992596
+      Mewtwo_Hurt-Anim_5: 1763946925
+      Mewtwo_Hurt-Anim_6: 1494417778
+      Mewtwo_Hurt-Anim_7: 481850250
+      Mewtwo_Hurt-Anim_8: -87712549
+      Mewtwo_Hurt-Anim_9: 397594274
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
