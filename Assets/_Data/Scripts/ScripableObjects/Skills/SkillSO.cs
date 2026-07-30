@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "SkillSO", menuName = "ScripableObjects/Skill")]
+[CreateAssetMenu(fileName = "SkillSO", menuName = "ScriptableObjects/Skill")]
 public class SkillSO : ScriptableObject
 {
     [SerializeField] private ESkillId eSkillId;
