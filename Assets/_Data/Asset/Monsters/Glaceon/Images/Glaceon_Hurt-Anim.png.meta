@@ -262,7 +262,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hurt-Anim_4
+      name: Glaceon_Hurt-Anim_4
       rect:
         serializedVersion: 2
         x: 0
@@ -275,16 +275,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6c04b091dab7f7850800000000000000
-      internalID: 6376951580759638214
+      spriteID: 1b607b452ba3e29479104d5b9f7b15c4
+      internalID: 50870397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt-Anim_5
+      name: Glaceon_Hurt-Anim_5
       rect:
         serializedVersion: 2
         x: 48
@@ -297,16 +297,60 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 47122dd0325d17f00800000000000000
-      internalID: 1112904929469669748
+      spriteID: e998f741a7c19c84da1fc473ae77f903
+      internalID: -730028025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt-Anim_12
+      name: Glaceon_Hurt-Anim_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c542bb94b87283243999a45d290560de
+      internalID: -694817958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Hurt-Anim_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 256
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e1e9b6a87d0914495fdfae63308f3d
+      internalID: -277427939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Hurt-Anim_12
       rect:
         serializedVersion: 2
         x: 0
@@ -319,16 +363,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 43ad087235cedbff0800000000000000
-      internalID: -18598981550417356
+      spriteID: d9aff700abdbf794ba9d9a2918eee612
+      internalID: 1472889309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt-Anim_13
+      name: Glaceon_Hurt-Anim_13
       rect:
         serializedVersion: 2
         x: 48
@@ -341,10 +385,54 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 15cf488c8b49efda0800000000000000
-      internalID: -5909122139704460207
+      spriteID: c28f8be8382d1cf49823ed2f2910d04b
+      internalID: -1606607392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Hurt-Anim_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb55764f765572c4dbe4b0a2cccbcf7e
+      internalID: -475296023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Hurt-Anim_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf604dc2b254294b8b36760561b54fe
+      internalID: -417037489
       vertices: []
       indices: 
       edges: []
@@ -366,22 +454,21 @@ TextureImporter:
         value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":8.0},"gridSpriteSize":{"x":48.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Glaceon_Hurt-Anim_0: 751948497
-      Hurt-Anim_0: -3483430361698347056
-      Hurt-Anim_1: 3116437033781710035
-      Hurt-Anim_10: -606437513128102347
-      Hurt-Anim_11: 6310680550416806712
-      Hurt-Anim_12: -18598981550417356
-      Hurt-Anim_13: -5909122139704460207
-      Hurt-Anim_14: -1778341294004012663
-      Hurt-Anim_15: -8574411699006034854
-      Hurt-Anim_2: 969750801644170259
-      Hurt-Anim_3: -1664589625159975562
-      Hurt-Anim_4: 6376951580759638214
-      Hurt-Anim_5: 1112904929469669748
-      Hurt-Anim_6: -6216161832688416774
-      Hurt-Anim_7: 5124697469292587934
-      Hurt-Anim_8: -8788567161575655961
-      Hurt-Anim_9: -6774800835217887876
+      Glaceon_Hurt-Anim_1: 1732962905
+      Glaceon_Hurt-Anim_10: -953751685
+      Glaceon_Hurt-Anim_11: 539720642
+      Glaceon_Hurt-Anim_12: 1472889309
+      Glaceon_Hurt-Anim_13: -1606607392
+      Glaceon_Hurt-Anim_14: -475296023
+      Glaceon_Hurt-Anim_15: -417037489
+      Glaceon_Hurt-Anim_2: 375957349
+      Glaceon_Hurt-Anim_3: -14781540
+      Glaceon_Hurt-Anim_4: 50870397
+      Glaceon_Hurt-Anim_5: -730028025
+      Glaceon_Hurt-Anim_6: -694817958
+      Glaceon_Hurt-Anim_7: -277427939
+      Glaceon_Hurt-Anim_8: -247267129
+      Glaceon_Hurt-Anim_9: 287258107
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

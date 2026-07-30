@@ -1,0 +1,419 @@
+fileFormatVersion: 2
+guid: 3e478fc65e012344591cf932d58dcdea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3483430361698347056
+    second: Hurt-Anim_0
+  - first:
+      213: 3116437033781710035
+    second: Hurt-Anim_1
+  - first:
+      213: 969750801644170259
+    second: Hurt-Anim_2
+  - first:
+      213: -1664589625159975562
+    second: Hurt-Anim_3
+  - first:
+      213: 6376951580759638214
+    second: Hurt-Anim_4
+  - first:
+      213: 1112904929469669748
+    second: Hurt-Anim_5
+  - first:
+      213: -6216161832688416774
+    second: Hurt-Anim_6
+  - first:
+      213: 5124697469292587934
+    second: Hurt-Anim_7
+  - first:
+      213: -8788567161575655961
+    second: Hurt-Anim_8
+  - first:
+      213: -6774800835217887876
+    second: Hurt-Anim_9
+  - first:
+      213: -606437513128102347
+    second: Hurt-Anim_10
+  - first:
+      213: 6310680550416806712
+    second: Hurt-Anim_11
+  - first:
+      213: -18598981550417356
+    second: Hurt-Anim_12
+  - first:
+      213: -5909122139704460207
+    second: Hurt-Anim_13
+  - first:
+      213: -1778341294004012663
+    second: Hurt-Anim_14
+  - first:
+      213: -8574411699006034854
+    second: Hurt-Anim_15
+  - first:
+      213: 3180343295765527050
+    second: Hurt-Anim_16
+  - first:
+      213: 3224951564713888410
+    second: Hurt-Anim_17
+  - first:
+      213: 6914463669582661488
+    second: Hurt-Anim_18
+  - first:
+      213: 5219845952948907265
+    second: Hurt-Anim_19
+  - first:
+      213: 4688548642762085282
+    second: Hurt-Anim_20
+  - first:
+      213: 3234459065889838442
+    second: Hurt-Anim_21
+  - first:
+      213: 6378418287461545960
+    second: Hurt-Anim_22
+  - first:
+      213: 7835273670664814821
+    second: Hurt-Anim_23
+  - first:
+      213: 2463629745904968435
+    second: Hurt-Anim_24
+  - first:
+      213: 3438934848703147394
+    second: Hurt-Anim_25
+  - first:
+      213: -3622377113796756006
+    second: Hurt-Anim_26
+  - first:
+      213: 8221531919156105501
+    second: Hurt-Anim_27
+  - first:
+      213: 3290462894638974389
+    second: Hurt-Anim_28
+  - first:
+      213: -8040017618751254253
+    second: Hurt-Anim_29
+  - first:
+      213: -8294116024755313535
+    second: Hurt-Anim_30
+  - first:
+      213: -3847946046884600448
+    second: Hurt-Anim_31
+  - first:
+      213: 329424432451637431
+    second: Hurt-Anim_32
+  - first:
+      213: 974826468323437438
+    second: Hurt-Anim_33
+  - first:
+      213: -5157570414764665244
+    second: Hurt-Anim_34
+  - first:
+      213: 6638992821075839838
+    second: Hurt-Anim_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Riolu_2_Hurt-Anim_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff82712a332589438d964bb3ac03e0f
+      internalID: 852318621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_2_Hurt-Anim_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 280
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b34ba9e3517fb4f9db0029035ae90b
+      internalID: -94453019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_2_Hurt-Anim_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b132ce3f5e31af41b4b9111aea1ec1c
+      internalID: 745337542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_2_Hurt-Anim_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 224
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d001d245e913ab4ea423c9fc1c85258
+      internalID: -363961048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_2_Hurt-Anim_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3770b16aa60d59d45bc5956158bea92b
+      internalID: 316143801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_2_Hurt-Anim_13
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 56
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21866b16ddca94f4c945f12a3905f3dd
+      internalID: 502053368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_2_Hurt-Anim_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87edd5ad9b3bdb6498c045a6444422ca
+      internalID: -1592170608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_2_Hurt-Anim_15
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e5a8f015d8e874bbcaf3737a225950
+      internalID: 1548909575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0d0ab8a05feb49d49a753dde2140a45f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":8.0},"gridSpriteSize":{"x":40.0,"y":56.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Riolu_2_Hurt-Anim_0: -850487855
+      Riolu_2_Hurt-Anim_1: -1231788828
+      Riolu_2_Hurt-Anim_10: 1643321536
+      Riolu_2_Hurt-Anim_11: 110122626
+      Riolu_2_Hurt-Anim_12: 316143801
+      Riolu_2_Hurt-Anim_13: 502053368
+      Riolu_2_Hurt-Anim_14: -1592170608
+      Riolu_2_Hurt-Anim_15: 1548909575
+      Riolu_2_Hurt-Anim_2: 951337648
+      Riolu_2_Hurt-Anim_3: 652897752
+      Riolu_2_Hurt-Anim_4: 852318621
+      Riolu_2_Hurt-Anim_5: -94453019
+      Riolu_2_Hurt-Anim_6: 745337542
+      Riolu_2_Hurt-Anim_7: -363961048
+      Riolu_2_Hurt-Anim_8: 522037657
+      Riolu_2_Hurt-Anim_9: 1750816103
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

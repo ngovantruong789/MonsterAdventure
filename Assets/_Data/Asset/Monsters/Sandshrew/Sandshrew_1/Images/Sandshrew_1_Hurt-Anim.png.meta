@@ -244,7 +244,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hurt-Anim_4
+      name: Sandshrew_1_Hurt-Anim_4
       rect:
         serializedVersion: 2
         x: 0
@@ -257,16 +257,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6c04b091dab7f7850800000000000000
-      internalID: 6376951580759638214
+      spriteID: 5f9a2a39f0750b9488ed3cfa0838e913
+      internalID: 1466621718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt-Anim_5
+      name: Sandshrew_1_Hurt-Anim_5
       rect:
         serializedVersion: 2
         x: 40
@@ -279,16 +279,60 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 47122dd0325d17f00800000000000000
-      internalID: 1112904929469669748
+      spriteID: 05b9f310fb14a9c479c708a1dacf66a9
+      internalID: -1579282487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt-Anim_12
+      name: Sandshrew_1_Hurt-Anim_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda83c07e65e3f449aee968ffc7252b4
+      internalID: -1574261918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_1_Hurt-Anim_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 192
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edec1b24909c45349be6db0c36190ad5
+      internalID: 397691281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_1_Hurt-Anim_12
       rect:
         serializedVersion: 2
         x: 0
@@ -301,16 +345,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 43ad087235cedbff0800000000000000
-      internalID: -18598981550417356
+      spriteID: 2954425ee2476304a8c94b99d7aa74cb
+      internalID: -608478309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt-Anim_13
+      name: Sandshrew_1_Hurt-Anim_13
       rect:
         serializedVersion: 2
         x: 40
@@ -323,10 +367,54 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 15cf488c8b49efda0800000000000000
-      internalID: -5909122139704460207
+      spriteID: 980078e7129979b46be76ea25937cab6
+      internalID: -424281121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_1_Hurt-Anim_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4fd4a7b9706434ca0698f07e99ef57
+      internalID: -1420969762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_1_Hurt-Anim_15
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd0a3c6d271cb14a9c8dc4a1525ff62
+      internalID: -611677737
       vertices: []
       indices: 
       edges: []
@@ -347,22 +435,22 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":8.0},"gridSpriteSize":{"x":40.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Hurt-Anim_0: -3483430361698347056
-      Hurt-Anim_1: 3116437033781710035
-      Hurt-Anim_10: -606437513128102347
-      Hurt-Anim_11: 6310680550416806712
-      Hurt-Anim_12: -18598981550417356
-      Hurt-Anim_13: -5909122139704460207
-      Hurt-Anim_14: -1778341294004012663
-      Hurt-Anim_15: -8574411699006034854
-      Hurt-Anim_2: 969750801644170259
-      Hurt-Anim_3: -1664589625159975562
-      Hurt-Anim_4: 6376951580759638214
-      Hurt-Anim_5: 1112904929469669748
-      Hurt-Anim_6: -6216161832688416774
-      Hurt-Anim_7: 5124697469292587934
-      Hurt-Anim_8: -8788567161575655961
-      Hurt-Anim_9: -6774800835217887876
+      Sandshrew_1_Hurt-Anim_0: -144641657
+      Sandshrew_1_Hurt-Anim_1: -467625098
+      Sandshrew_1_Hurt-Anim_10: -996997297
+      Sandshrew_1_Hurt-Anim_11: 953990382
+      Sandshrew_1_Hurt-Anim_12: -608478309
+      Sandshrew_1_Hurt-Anim_13: -424281121
+      Sandshrew_1_Hurt-Anim_14: -1420969762
+      Sandshrew_1_Hurt-Anim_15: -611677737
+      Sandshrew_1_Hurt-Anim_2: 46373544
+      Sandshrew_1_Hurt-Anim_3: 407374698
+      Sandshrew_1_Hurt-Anim_4: 1466621718
+      Sandshrew_1_Hurt-Anim_5: -1579282487
+      Sandshrew_1_Hurt-Anim_6: -1574261918
+      Sandshrew_1_Hurt-Anim_7: 397691281
+      Sandshrew_1_Hurt-Anim_8: 44020877
+      Sandshrew_1_Hurt-Anim_9: 2128116433
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

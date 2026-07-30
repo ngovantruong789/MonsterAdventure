@@ -208,7 +208,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hurt-Anim_4
+      name: Charmander_2_Hurt-Anim_4
       rect:
         serializedVersion: 2
         x: 0
@@ -221,16 +221,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6c04b091dab7f7850800000000000000
-      internalID: 6376951580759638214
+      spriteID: fb73cf6370f816349b4534aa4c44e86a
+      internalID: -1716088771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt-Anim_5
+      name: Charmander_2_Hurt-Anim_5
       rect:
         serializedVersion: 2
         x: 48
@@ -243,16 +243,60 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 47122dd0325d17f00800000000000000
-      internalID: 1112904929469669748
+      spriteID: 617dfc5feb720094c9d5ec466433dbfa
+      internalID: -1280406070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt-Anim_12
+      name: Charmander_2_Hurt-Anim_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323bea659b5f61144b66a9ef315046fe
+      internalID: 1256087353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Hurt-Anim_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 256
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca00654b82ba4114d8d521621b62c8fc
+      internalID: -1561577916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Hurt-Anim_12
       rect:
         serializedVersion: 2
         x: 0
@@ -265,16 +309,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 43ad087235cedbff0800000000000000
-      internalID: -18598981550417356
+      spriteID: 95ed78a53e6e2e148af537c0bb63ff3c
+      internalID: -1322134283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt-Anim_13
+      name: Charmander_2_Hurt-Anim_13
       rect:
         serializedVersion: 2
         x: 48
@@ -287,10 +331,54 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 15cf488c8b49efda0800000000000000
-      internalID: -5909122139704460207
+      spriteID: 536bc90a3d1dc4e4f8dc47f588787384
+      internalID: 790998649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Hurt-Anim_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e433505a08e220544a9387aac4686279
+      internalID: 727620574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Hurt-Anim_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe59fcf3533450c49859c26e161cdf28
+      internalID: 1629978058
       vertices: []
       indices: 
       edges: []
@@ -311,22 +399,22 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":8.0},"gridSpriteSize":{"x":48.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Hurt-Anim_0: -3483430361698347056
-      Hurt-Anim_1: 3116437033781710035
-      Hurt-Anim_10: -606437513128102347
-      Hurt-Anim_11: 6310680550416806712
-      Hurt-Anim_12: -18598981550417356
-      Hurt-Anim_13: -5909122139704460207
-      Hurt-Anim_14: -1778341294004012663
-      Hurt-Anim_15: -8574411699006034854
-      Hurt-Anim_2: 969750801644170259
-      Hurt-Anim_3: -1664589625159975562
-      Hurt-Anim_4: 6376951580759638214
-      Hurt-Anim_5: 1112904929469669748
-      Hurt-Anim_6: -6216161832688416774
-      Hurt-Anim_7: 5124697469292587934
-      Hurt-Anim_8: -8788567161575655961
-      Hurt-Anim_9: -6774800835217887876
+      Charmander_2_Hurt-Anim_0: -1554981459
+      Charmander_2_Hurt-Anim_1: 667050801
+      Charmander_2_Hurt-Anim_10: -368530653
+      Charmander_2_Hurt-Anim_11: 1472134868
+      Charmander_2_Hurt-Anim_12: -1322134283
+      Charmander_2_Hurt-Anim_13: 790998649
+      Charmander_2_Hurt-Anim_14: 727620574
+      Charmander_2_Hurt-Anim_15: 1629978058
+      Charmander_2_Hurt-Anim_2: -1052264278
+      Charmander_2_Hurt-Anim_3: 10579567
+      Charmander_2_Hurt-Anim_4: -1716088771
+      Charmander_2_Hurt-Anim_5: -1280406070
+      Charmander_2_Hurt-Anim_6: 1256087353
+      Charmander_2_Hurt-Anim_7: -1561577916
+      Charmander_2_Hurt-Anim_8: -2128003124
+      Charmander_2_Hurt-Anim_9: 1834182455
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
