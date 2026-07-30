@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "MapSO", menuName = "ScripableObjects/Map")]
+[CreateAssetMenu(fileName = "MapSO", menuName = "ScriptableObjects/Map")]
 public class MapSO : ScriptableObject
 {
     [SerializeField] private int _id;

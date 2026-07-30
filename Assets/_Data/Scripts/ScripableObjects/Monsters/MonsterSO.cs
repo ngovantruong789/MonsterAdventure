@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "MonsterSO", menuName = "ScripableObjects/Monster")]
+[CreateAssetMenu(fileName = "MonsterSO", menuName = "ScriptableObjects/Monster")]
 public class MonsterSO : ScriptableObject
 {
     [SerializeField] private int _id;
