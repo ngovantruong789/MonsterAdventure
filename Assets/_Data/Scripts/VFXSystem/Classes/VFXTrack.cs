@@ -4,6 +4,6 @@ using UnityEngine;
 [Serializable]
 public class VFXTrack
 {
-    public GameObject Prefab;
-    public float StartTime;
+    public GameObject VFXObj;
+    public float timeActive;
 }
