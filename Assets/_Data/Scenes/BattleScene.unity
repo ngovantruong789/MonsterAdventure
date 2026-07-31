@@ -447,6 +447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dd59aa713f28c844ab1924495327c95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BatlleMonsterView
+  _skillVFXSpawner: {fileID: 1815805667}
   _playerMonsterObj: {fileID: 1306092452}
   _opponentMonsterObj: {fileID: 1111015099}
   _playerAnimator: {fileID: 4054095783427405369}
@@ -3614,7 +3615,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689c827a30d08e24683c074331b89045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VFXSpawner
-  skillVfxs: []
   obj: {fileID: 459227237}
   holder: {fileID: 1126603993}
 --- !u!1 &1979685939

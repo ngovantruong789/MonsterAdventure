@@ -2,8 +2,9 @@ using UnityEngine;
 
 public enum EBattlePhase
 {
-    Start = 0,
-    PlayerTurn = 1,
-    OpponentTurn = 2,
-    End,
+    None = 0,
+    Start = 1,
+    PlayerTurn = 2,
+    OpponentTurn = 3,
+    End = 4,
 }

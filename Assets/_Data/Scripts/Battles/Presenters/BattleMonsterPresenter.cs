@@ -41,6 +41,7 @@ public class BattleMonsterPresenter
         _iBattleMonsterPresenter.StatePhaseChangeEvt += HandleStatePhaseChange;
         _iBattleMonsterPresenter.TurnEvt += HandleTurn;
         _battleMonsterView.AnimationCompletedEvt += HandleAnimationComplete;
+        _battleMonsterView.VFXCompletedEvt += HandlePlayVFXComplete;
     }
 
     private void UpdateHUDBattleMonsterViewData(bool updateUnlockSkills, bool updateBattleSkills)
@@ -156,7 +157,7 @@ public class BattleMonsterPresenter
         }
     }
 
-    private void HandleStatePhaseChange(EMonsterSide eMonsterSide, EStatePhase eStatePhase, int monsterIndex, bool isEndBattle)
+    private void HandleStatePhaseChange(EMonsterSide eMonsterSide, EStatePhase eStatePhase, ESkillId eSkillId, int monsterIndex, bool isEndBattle)
     {
         switch(eStatePhase)
         {
@@ -164,7 +165,7 @@ public class BattleMonsterPresenter
                 HandlePlayAnimAttackPhase(eMonsterSide); 
                 break;
             case EStatePhase.PlayVFXAttack:
-                HandlePlayVFXPhase(eMonsterSide);
+                HandlePlayVFXPhase(eMonsterSide, eSkillId);
                 break;
             case EStatePhase.ApplyDamage:
                 HandleApplyDamagePhase(eMonsterSide, monsterIndex);
@@ -206,7 +207,12 @@ public class BattleMonsterPresenter
         }
     }
 
-    private void HandlePlayVFXPhase(EMonsterSide eMonsterSide)
+    private void HandlePlayVFXPhase(EMonsterSide eMonsterSide, ESkillId eSkillId)
+    {
+        _battleMonsterView.PlayVFX(eMonsterSide, eSkillId);
+    }
+
+    private void HandlePlayVFXComplete(EMonsterSide eMonsterSide)
     {
         _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.PlayVFXAttack);
     }

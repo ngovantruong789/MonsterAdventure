@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae7077c60b2e2a48ab9ab90008bf65a, type: 3}
   m_Name: SandsearStorm
   m_EditorClassIdentifier: Assembly-CSharp::SkillSO
-  eSkillId: 10
+  eSkillId: 11
   _fullName: Sandsear Storm
   _skillType: 3
   _elementType: 5

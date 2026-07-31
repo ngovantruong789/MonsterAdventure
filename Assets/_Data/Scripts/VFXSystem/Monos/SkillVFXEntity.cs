@@ -1,13 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SkillVFXEntity : LifetimeScope
+public class SkillVFXEntity : LifetimeScope, ISkillVFXEntity
 {
     [SerializeField] private ESkillId eSkillId;
     public ESkillId ESkillId => eSkillId;
 
     [SerializeField] private List<VFXTrack> vfxTracks;
+
+    public Action PlayVFXCompleted { get; set; }
+    public Transform CurrentTransform => transform;
 
     protected override void OnEnable()
     {
@@ -32,7 +36,9 @@ public class SkillVFXEntity : LifetimeScope
             ActiveVFX(track);
         }
 
+        PlayVFXCompleted?.Invoke();
         yield return new WaitForSeconds(1f);
+
         gameObject.SetActive(false);
     }
 
