@@ -44,6 +44,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Player
+    uniqueID: 1556571603
+    locked: 0
+  - name: Monster
+    uniqueID: 465848261
+    locked: 0
+  - name: VFX
+    uniqueID: 3472334659
+    locked: 0
   - name: UI
     uniqueID: 4079926265
     locked: 0

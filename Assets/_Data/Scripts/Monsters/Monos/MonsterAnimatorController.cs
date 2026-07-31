@@ -49,6 +49,8 @@ public partial class MonsterAnimatorController : CharacterAnimatorController
 
             (EMonsterSide.Player, EMonsterState.Attack) => Attack_Top_Right,
             (EMonsterSide.Opponent, EMonsterState.Attack) => Attack_Bottom_Left,
+            (EMonsterSide.Player, EMonsterState.Hurt) => Top_Right_Hurt,
+            (EMonsterSide.Opponent, EMonsterState.Hurt) => Bottom_Left_Hurt,
 
             _ => throw new ArgumentOutOfRangeException()
         };
