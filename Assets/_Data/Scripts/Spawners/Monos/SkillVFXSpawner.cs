@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class SkillVFXSpawner : LifetimeScope, ISpawner, IStartInit
 {
-    [SerializeField] private List<SkillVFXEntity> skillVfxs = new();
     [SerializeField] private Transform obj;
     [SerializeField] private Transform holder;
+
+    private List<ISkillVFXEntity> skillVfxs = new();
 
     protected override void Start()
     {
@@ -16,17 +17,17 @@ public class SkillVFXSpawner : LifetimeScope, ISpawner, IStartInit
 
     public void Initialize()
     {
-        skillVfxs = obj.GetComponentsInChildren<SkillVFXEntity>().ToList();
-        skillVfxs.ForEach(x => x.gameObject.SetActive(false));
+        skillVfxs = obj.GetComponentsInChildren<ISkillVFXEntity>().ToList();
+        skillVfxs.ForEach(x => x.CurrentTransform.gameObject.SetActive(false));
     }
 
-    public Transform Spawn(ESkillId eSkillId, Vector3 position, bool isActive)
+    public Transform Spawn(ESkillId eSkillId, Vector3 position, bool isActive = false)
     {
-        foreach(SkillVFXEntity skillVFXEntity in skillVfxs)
+        foreach(ISkillVFXEntity skillVFXEntity in skillVfxs)
         {
             if(skillVFXEntity.ESkillId == eSkillId)
             {
-                Transform vfx = Instantiate(skillVFXEntity.transform, position, Quaternion.identity);
+                Transform vfx = Instantiate(skillVFXEntity.CurrentTransform, position, Quaternion.identity);
                 vfx.gameObject.SetActive(isActive);
                 vfx.parent = holder;
                 return vfx;
