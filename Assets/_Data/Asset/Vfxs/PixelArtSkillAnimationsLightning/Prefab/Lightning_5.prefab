@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1290309391625158838
+--- !u!1001 &4720557617530717335
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 508644983975271683, guid: 3ee5006fb0e236e4dbd7ea3a4c168a9b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -13.40168
       objectReference: {fileID: 0}
     - target: {fileID: 508644983975271683, guid: 3ee5006fb0e236e4dbd7ea3a4c168a9b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -12.79926
       objectReference: {fileID: 0}
     - target: {fileID: 508644983975271683, guid: 3ee5006fb0e236e4dbd7ea3a4c168a9b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -51,30 +51,26 @@ PrefabInstance:
     - target: {fileID: 1828595695040949672, guid: 3ee5006fb0e236e4dbd7ea3a4c168a9b, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 30c0a2de43e525344b625acdf21aa7c8, type: 2}
+      objectReference: {fileID: 9100000, guid: 2497cb590b07d5e499cb151c037c3131, type: 2}
     - target: {fileID: 4874548993383349040, guid: 3ee5006fb0e236e4dbd7ea3a4c168a9b, type: 3}
       propertyPath: m_Name
-      value: FireExplosion_1
+      value: VFXPrefab Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6837064476365021442, guid: 3ee5006fb0e236e4dbd7ea3a4c168a9b, type: 3}
       propertyPath: m_Size.x
-      value: 6.4
+      value: 5.12
       objectReference: {fileID: 0}
     - target: {fileID: 6837064476365021442, guid: 3ee5006fb0e236e4dbd7ea3a4c168a9b, type: 3}
       propertyPath: m_Size.y
-      value: 6.4
+      value: 5.12
       objectReference: {fileID: 0}
     - target: {fileID: 6837064476365021442, guid: 3ee5006fb0e236e4dbd7ea3a4c168a9b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 6640447659558706830, guid: 1c66958b15274f249ae298f92499fdb3, type: 3}
+      objectReference: {fileID: -4101952309661839413, guid: c5b61c156305256499e45f8284084062, type: 3}
     - target: {fileID: 6837064476365021442, guid: 3ee5006fb0e236e4dbd7ea3a4c168a9b, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7992696456943199810, guid: 3ee5006fb0e236e4dbd7ea3a4c168a9b, type: 3}
-      propertyPath: m_Icon
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
