@@ -25,11 +25,15 @@ public class PlayerEntity : CharacterEntity, IStartInit
         _sceneReceiverData.SceneLoadedEvent += OnGetNewData;
     }
 
+
     [ContextMenu("Add PlayerMovementInstaller")]
     public void AddPlayerMovementInstaller() => installerConfigs.Add(new PlayerMovementInstaller());
 
     [ContextMenu("Add PlayerTeamInstaller")]
     public void AddPlayerTeamInstaller() => installerConfigs.Add(new PlayerTeamInstaller());
+
+    [ContextMenu("Add InventoryInstaller")]
+    public void AddInventoryInstaller() => installerConfigs.Add(new InventoryInstaller());
 
     private void OnGetNewData(SceneLoadModel sceneLoadModel)
     {

@@ -1647,6 +1647,7 @@ MonoBehaviour:
   installerConfigs:
   - rid: 5677875185751949398
   - rid: 2744881490987843671
+  - rid: 6854972396197380170
   _sceneReceiverData: {fileID: 1263100481}
   _sceneLoadManager: {fileID: 276409611}
   references:
@@ -1666,6 +1667,11 @@ MonoBehaviour:
         _view: {fileID: 393709199}
         _playerMovement: {fileID: 993076900}
         _animatorController: {fileID: 1088951859}
+    - rid: 6854972396197380170
+      type: {class: InventoryInstaller, ns: , asm: Assembly-CSharp}
+      data:
+        installerName: Inventory
+        _itemDatabaseSO: {fileID: 11400000, guid: ee2226f5f265b774cb1baa3cf6e2d3fc, type: 2}
 --- !u!50 &1877288291
 Rigidbody2D:
   serializedVersion: 5
