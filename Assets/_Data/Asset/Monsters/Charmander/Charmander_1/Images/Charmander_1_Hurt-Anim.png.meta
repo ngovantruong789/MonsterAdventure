@@ -250,50 +250,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Charmander_1_Hurt-Anim_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 280
-        width: 48
-        height: 56
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6bbc53ca2c5878141a2322e550380fe9
-      internalID: 1842190860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Charmander_1_Hurt-Anim_5
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 280
-        width: 48
-        height: 56
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4eb5de2f8fd6594d8126bbcd36ed1e9
-      internalID: 2011811023
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Charmander_1_Hurt-Anim_6
       rect:
         serializedVersion: 2
@@ -333,50 +289,6 @@ TextureImporter:
       bones: []
       spriteID: 9bb73b20ccd153f47aa03bbfcda90a49
       internalID: -1870420906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Charmander_1_Hurt-Anim_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 56
-        width: 48
-        height: 56
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22534778fc41200479c49904de6eb74f
-      internalID: 1242688579
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Charmander_1_Hurt-Anim_13
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 56
-        width: 48
-        height: 56
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e2bd72730a655442aa0cf53add1aed3
-      internalID: 1299184610
       vertices: []
       indices: 
       edges: []

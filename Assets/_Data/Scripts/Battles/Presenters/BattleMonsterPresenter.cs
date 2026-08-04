@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class BattleMonsterPresenter
@@ -8,6 +9,7 @@ public class BattleMonsterPresenter
     private HUDBattleMonsterView _hUDBattleMonsterView;
     private BattleManager _battleManager;
     private IBattleMonsterPresenter _iBattleMonsterPresenter;
+    private EStatePhase _currentStatePhase;
 
     public BattleMonsterPresenter(BattleMonsterWorldSpaceView battleMonsterView, 
         HUDBattleMonsterView hUDBattleMonsterView, 
@@ -38,6 +40,7 @@ public class BattleMonsterPresenter
         _hUDBattleMonsterView.OnShowItemsEvent += ShowItem;
         _hUDBattleMonsterView.OnSwapMonster += SwapMonster;
         _hUDBattleMonsterView.OnActiveAttack += ActiveAttack;
+        _hUDBattleMonsterView.OnUpdateMonsterStatCompleted += HandleUpdateStatComplete;
         _iBattleMonsterPresenter.StatePhaseChangeEvt += HandleStatePhaseChange;
         _iBattleMonsterPresenter.TurnEvt += HandleTurn;
         _battleMonsterView.AnimationCompletedEvt += HandleAnimationComplete;
@@ -159,7 +162,8 @@ public class BattleMonsterPresenter
 
     private void HandleStatePhaseChange(EMonsterSide eMonsterSide, EStatePhase eStatePhase, ESkillId eSkillId, int monsterIndex, bool isEndBattle)
     {
-        switch(eStatePhase)
+        _currentStatePhase = eStatePhase;
+        switch (eStatePhase)
         {
             case EStatePhase.PlayAnimAttack:
                 HandlePlayAnimAttackPhase(eMonsterSide); 
@@ -168,7 +172,7 @@ public class BattleMonsterPresenter
                 HandlePlayVFXPhase(eMonsterSide, eSkillId);
                 break;
             case EStatePhase.ApplyDamage:
-                HandleApplyDamagePhase(eMonsterSide, monsterIndex);
+                HandleApplyDamagePhaseAsync(eMonsterSide, monsterIndex);
                 break;
             case EStatePhase.End:
                 HandleEndPhase(eMonsterSide, isEndBattle);
@@ -195,7 +199,6 @@ public class BattleMonsterPresenter
     private void HandlePlayAnimAttackPhase(EMonsterSide eMonsterSide)
     {
         _battleMonsterView.PlayCrossFade(eMonsterSide, EMonsterState.Attack, 1, 0f);
-        //_iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.PlayAnimAttack);
     }
 
     private void HandleAnimationComplete(EMonsterSide eMonsterSide, EMonsterState eMonsterState)
@@ -204,6 +207,10 @@ public class BattleMonsterPresenter
         {
             _battleMonsterView.PlayCrossFade(eMonsterSide, EMonsterState.IdleAttack, 1, 0f);
             _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.PlayAnimAttack);
+        }
+        else if(eMonsterState == EMonsterState.Faint)
+        {
+            _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.End);
         }
     }
 
@@ -216,38 +223,50 @@ public class BattleMonsterPresenter
     {
         _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.PlayVFXAttack);
     }
-    
-    private void HandleApplyDamagePhase(EMonsterSide eMonsterSide, int monsterIndex)
+ 
+    private void HandleApplyDamagePhaseAsync(EMonsterSide eMonsterSide, int monsterIndex)
     {
         if (eMonsterSide == EMonsterSide.Player)
         {
             RefreshMonsterHUD(EMonsterSide.Opponent, -1);
+            _battleMonsterView.PlayCrossFade(EMonsterSide.Opponent, EMonsterState.Hurt, 1, 0);
         }
         else
         {
             RefreshMonsterHUD(EMonsterSide.Player, monsterIndex);
+            _battleMonsterView.PlayCrossFade(EMonsterSide.Player, EMonsterState.Hurt, 1, 0);
         }
-        _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.ApplyDamage);
     }
 
     private void HandleEndPhase(EMonsterSide eMonsterSide, bool isEndBattle)
     {
-        if (isEndBattle)
+        if (_battleModel.OpponentMonsterModel.IsDead)
         {
-            if (eMonsterSide == EMonsterSide.Opponent)
-            {
-                Debug.Log("Opponent đã chết hết");
-            }
-            else
-            {
-                Debug.Log("Player đã chết hết");
-            }
+            _battleMonsterView.PlayCrossFade(EMonsterSide.Opponent, EMonsterState.Faint, 1, 0f);
         }
-        _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.End);
+        else if (_battleModel.PlayerTeamModel.PlayerTeam[_iBattleMonsterPresenter.CurrentPlayerMonsterBattleIndex].IsDead)
+        {
+            _battleMonsterView.PlayCrossFade(EMonsterSide.Player, EMonsterState.Faint, 1, 0f);
+        }
+        else
+        {
+            _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.End);
+        }
     }
 
     private void ActiveAttack(EMonsterSide eMonsterSide, int skillIndex)
     {
         _iBattleMonsterPresenter.ActiveAttack(eMonsterSide, skillIndex);
+    }
+
+    private async void HandleUpdateStatComplete(EMonsterSide eMonsterSide, EStatType eStatType)
+    {
+        if(eStatType == EStatType.Health && _currentStatePhase == EStatePhase.ApplyDamage)
+        {
+            _battleMonsterView.PlayCrossFade(eMonsterSide, EMonsterState.IdleAttack, 1, 0f);
+
+            await Task.Delay(500);
+            _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.ApplyDamage);
+        }
     }
 }

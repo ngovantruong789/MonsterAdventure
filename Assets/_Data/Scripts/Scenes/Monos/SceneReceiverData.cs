@@ -25,7 +25,5 @@ public class SceneReceiverData : LifetimeScope
         {
             SceneLoadedEvent?.Invoke(_sceneLoadModel);
         }
-        //Debug.Log(_sceneLoadModel.BatlleModel.OpponentMonsterModel.Level + "; " + _sceneLoadModel.BatlleModel.OpponentMonsterModel.Health);
-        Debug.Log(_sceneLoadModel.BatlleModel.PlayerTeamModel.PlayerTeam[0].Level + "; " + _sceneLoadModel.BatlleModel.PlayerTeamModel.PlayerTeam[0].Health);
     }
 }

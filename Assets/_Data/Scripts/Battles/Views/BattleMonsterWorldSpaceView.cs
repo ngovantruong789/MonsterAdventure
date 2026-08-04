@@ -30,13 +30,13 @@ public class BattleMonsterWorldSpaceView : LifetimeScope, IStartInit
     {
         MonsterAnimatorController monsterAnimatorController = GetMonsterAnimator(eMonsterSide);
         monsterAnimatorController.UpdateRuntimeAnimator(runTimeAnimator);
-        monsterAnimatorController.PlayCrossFade(eMonsterSide, EMonsterState.IdleAttack, 1, 0);
+        monsterAnimatorController.PlayCrossFade(EMonsterState.IdleAttack, 1, 0);
     }
 
     public void PlayCrossFade(EMonsterSide eMonsterSide, EMonsterState eMonsterState, int layer, float fade)
     {
         MonsterAnimatorController monsterAnimatorController = GetMonsterAnimator(eMonsterSide);
-        monsterAnimatorController.PlayCrossFade(eMonsterSide, eMonsterState, layer, fade);
+        monsterAnimatorController.PlayCrossFade(eMonsterState, layer, fade);
     }
 
     public void PlayVFX(EMonsterSide eMonsterSide, ESkillId eSkillId)

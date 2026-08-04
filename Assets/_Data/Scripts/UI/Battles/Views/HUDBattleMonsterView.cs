@@ -35,6 +35,7 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
     private ButtonSelectMonsterInfor _currentMonsterSelected;
     public Action OnShowPlayerTeamEvent { get; set; }
     public Action<EMonsterSide, int> OnSwapMonster { get; set; }
+    public Action<EMonsterSide, EStatType> OnUpdateMonsterStatCompleted { get; set; }
 
     [Header("Run")]
     [SerializeField] private Button _btnRun;
@@ -108,8 +109,9 @@ public class HUDBattleMonsterView : LifetimeScope, IStartInit
             case EStatType.Health:
                 currentBattleInfor.HealthValueText.text = value.ToString() + " / " + maxValue;
                 currentBattleInfor.HealthSlider
-                    .DOValue(value / maxValue, 1f)
-                    .SetEase(Ease.OutQuad);
+                    .DOValue(value / maxValue, 2f)
+                    .SetEase(Ease.OutQuad)
+                    .OnComplete(() => OnUpdateMonsterStatCompleted.Invoke(eMonsterSide, EStatType.Health));
                 break;
         }
     }
