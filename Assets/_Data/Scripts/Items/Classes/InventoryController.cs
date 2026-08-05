@@ -30,24 +30,22 @@ public class InventoryController
            item.EffectItem == EItemEffect.BuffAttack ||
            item.EffectItem == EItemEffect.BuffSpeed ||
            item.EffectItem == EItemEffect.Awakening ||
-           item.EffectItem == EItemEffect.Lucky ||
-           item.EffectItem == EItemEffect.ParalyzeHeal
-           )
+           item.EffectItem == EItemEffect.ParalyzeHeal )
         {
             OnAddItem(_inventoryModel.RestoreInventory.Items, item);
         }
-        else if (item.EffectItem == EItemEffect.RestoreHp)
+        else if (item.EffectItem == EItemEffect.Capture)
         {
-            OnAddItem(_inventoryModel.RestoreInventory.Items, item);
+            OnAddItem(_inventoryModel.CaptureInventory.Items, item);
         }
-        else if (item.EffectItem == EItemEffect.RestoreHp)
+        else if (item.EffectItem == EItemEffect.Lucky)
         {
-            OnAddItem(_inventoryModel.RestoreInventory.Items, item);
+            OnAddItem(_inventoryModel.PlayerEquipment.Items, item);
         }
-        else
+        /*else //Chưa có Item cho monster
         {
-            OnAddItem(_inventoryModel.RestoreInventory.Items, item);
-        }
+           OnAddItem(_inventoryModel.MonsterEquipment.Items, item);
+        }*/
     }
 
     private void OnAddItem(List<ItemModel> itemModels, ItemModel item)
