@@ -1,4 +1,3 @@
-
 public class InventoryModel
 {
     public RestoreInventoryModel RestoreInventory { get; set; } = new();
