@@ -41,6 +41,7 @@ public class BattleManager : LifetimeScope, IStartInit
         sceneLoadModel = _sceneReceiverData.SceneLoadModel;
         sceneLoadModel.BatlleModel = newBattleModel;
         sceneLoadModel.PlayerTeamModel = newBattleModel.PlayerTeamModel;
+        sceneLoadModel.BattleInventoryModel = newBattleModel.BattleInventoryModel;
         sceneLoadModel.BatlleModel.OpponentMonsterModel = null;
         _sceneLoadManager.CloseSceneAttitive("BattleScene", "GamePlay", sceneLoadModel);
     }
