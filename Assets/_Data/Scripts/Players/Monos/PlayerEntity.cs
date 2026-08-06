@@ -53,7 +53,6 @@ public class PlayerEntity : CharacterEntity, IStartInit
         
         _sceneLoadManager.StartLoadScene("BattleScene", new SceneLoadModel
         {
-            
             BatlleModel = new BattleModel
             {
                 OpponentMonsterModel = monsterEntity.IMonsterModelProvider.CloneCurrentMonsterModel(),

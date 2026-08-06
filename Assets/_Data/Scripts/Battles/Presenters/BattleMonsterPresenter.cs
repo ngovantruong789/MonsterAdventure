@@ -11,7 +11,6 @@ public class BattleMonsterPresenter
     private IBattleMonsterPresenter _iBattleMonsterPresenter;
     private EStatePhase _currentStatePhase;
 
-    
     public BattleMonsterPresenter(BattleMonsterWorldSpaceView battleMonsterView, 
         HUDBattleMonsterView hUDBattleMonsterView, 
         BattleModel battleModel,

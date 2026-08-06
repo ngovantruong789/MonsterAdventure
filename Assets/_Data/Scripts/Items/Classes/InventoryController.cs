@@ -10,7 +10,6 @@ public class InventoryController
 
     private ItemDatabaseSO _itemDatabaseSO;
     
-
     public InventoryController(InventoryModel inventoryModel, ItemDatabaseSO itemDatabaseSO)
     {
         _inventoryModel = inventoryModel;
@@ -68,6 +67,5 @@ public class InventoryController
                 break;
             }
         }
-
     }
 }
