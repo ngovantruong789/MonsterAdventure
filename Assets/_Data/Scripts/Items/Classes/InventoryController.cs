@@ -5,8 +5,11 @@ public class InventoryController
     private InventoryModel _inventoryModel;
     public InventoryModel InventoryModel => _inventoryModel;
 
-    private ItemDatabaseSO _itemDatabaseSO;
+    private BattleInventoryModel _battleInventoryModel;
+    public BattleInventoryModel BattleInventoryModel => _battleInventoryModel;
 
+    private ItemDatabaseSO _itemDatabaseSO;
+    
     public InventoryController(InventoryModel inventoryModel, ItemDatabaseSO itemDatabaseSO)
     {
         _inventoryModel = inventoryModel;

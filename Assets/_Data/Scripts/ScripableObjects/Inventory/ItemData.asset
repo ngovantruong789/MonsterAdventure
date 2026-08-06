@@ -15,4 +15,5 @@ MonoBehaviour:
   _captures: []
   _playerEquipments: []
   _monsterEquipments: []
-  _restores: []
+  _restores:
+  - {fileID: 11400000, guid: 8eb7f51e1e9685249867f61c34651888, type: 2}

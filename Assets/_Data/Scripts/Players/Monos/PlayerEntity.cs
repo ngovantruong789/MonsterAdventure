@@ -9,6 +9,7 @@ public class PlayerEntity : CharacterEntity, IStartInit
     [SerializeField] private SceneLoadManager _sceneLoadManager;
 
     private IPlayerTeamIntallerProvider _iPlayerTeamIntallerProvider;
+    private IInventoryModelProvider _inventoryModelProvider;
 
     public override void Initialize()
     {
@@ -19,6 +20,10 @@ public class PlayerEntity : CharacterEntity, IStartInit
             if(installer is IPlayerTeamIntallerProvider iPlayerTeamIntallerProvider)
             {
                 _iPlayerTeamIntallerProvider = iPlayerTeamIntallerProvider;
+            }
+            if (installer is IInventoryModelProvider inventoryModelProvider)
+            {
+                _inventoryModelProvider = inventoryModelProvider;
             }
         }
 
@@ -52,6 +57,17 @@ public class PlayerEntity : CharacterEntity, IStartInit
             {
                 OpponentMonsterModel = monsterEntity.IMonsterModelProvider.CloneCurrentMonsterModel(),
                 PlayerTeamModel = _iPlayerTeamIntallerProvider.ClonePlayerTeamModel(),
+                BattleInventoryModel = new BattleInventoryModel
+                {
+                    RestoreInventory = new RestoreInventoryModel
+                    {
+                        Items = _inventoryModelProvider.CloneInventoryModel(_inventoryModelProvider.InventoryModel.RestoreInventory.Items),
+                    },
+                    CaptureInventory = new CaptureInventoryModel
+                    {
+                        Items = _inventoryModelProvider.CloneInventoryModel(_inventoryModelProvider.InventoryModel.CaptureInventory.Items),
+                    }
+                }
             },
         });
     }
