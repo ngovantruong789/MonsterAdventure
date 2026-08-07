@@ -1,9 +1,8 @@
 using System;
 using UnityEngine;
 
-public class AnimationStateBehaviour : StateMachineBehaviour
+public partial class AnimationStateBehaviour : StateMachineBehaviour
 {
-    public static event Action<int, int> StateExited;
     private bool isStateExited;
 
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -20,7 +19,7 @@ public class AnimationStateBehaviour : StateMachineBehaviour
         if(stateInfo.normalizedTime >= 1 && !stateInfo.loop)
         {
             isStateExited = true;
-            StateExited?.Invoke(animator.GetInstanceID(), stateInfo.shortNameHash);
+            ActiveStateExitedEvent(animator.GetInstanceID(), stateInfo.shortNameHash);
         }
     }
 
@@ -31,6 +30,11 @@ public class AnimationStateBehaviour : StateMachineBehaviour
         {
             isStateExited = true;
         }
-        StateExited?.Invoke(animator.GetInstanceID(), stateInfo.shortNameHash);
+        ActiveStateExitedEvent(animator.GetInstanceID(), stateInfo.shortNameHash);
+    }
+
+    private void ActiveStateExitedEvent(int instanceId, int shortNameHash)
+    {
+        _onStateExited.OnNext(new StateExitedData(instanceId, shortNameHash));
     }
 }

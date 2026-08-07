@@ -1,7 +1,8 @@
 using System;
+using UniRx;
 using UnityEngine;
 
-public class BattleMonsterWorldSpaceView : LifetimeScope, IStartInit
+public partial class BattleMonsterWorldSpaceView : LifetimeScope, IStartInit
 {
     [SerializeField] private SkillVFXSpawner _skillVFXSpawner;
 
@@ -11,9 +12,6 @@ public class BattleMonsterWorldSpaceView : LifetimeScope, IStartInit
     [SerializeField] private MonsterAnimatorController _playerAnimator;
     [SerializeField] private MonsterAnimatorController _opponentAnimator;
 
-    public Action<EMonsterSide, EMonsterState> AnimationCompletedEvt { get; set; }
-    public Action<EMonsterSide> VFXCompletedEvt { get; set; }
-
     protected override void Start()
     {
         base.Start();
@@ -22,8 +20,13 @@ public class BattleMonsterWorldSpaceView : LifetimeScope, IStartInit
 
     public void Initialize()
     {
-        _playerAnimator.AnimationCompletedEvt += OnAnimationComplete;
-        _opponentAnimator.AnimationCompletedEvt += OnAnimationComplete;
+        _playerAnimator.OnAnimationCompleted
+            .Subscribe(val => OnAnimationComplete(val.EMonsterSide, val.EMonsterState))
+            .AddTo(this);
+
+        _opponentAnimator.OnAnimationCompleted
+            .Subscribe(val => OnAnimationComplete(val.EMonsterSide, val.EMonsterState))
+            .AddTo(this);
     }
 
     public void UpdateMonsterAnimator(EMonsterSide eMonsterSide, RuntimeAnimatorController runTimeAnimator)
@@ -50,7 +53,7 @@ public class BattleMonsterWorldSpaceView : LifetimeScope, IStartInit
         handler = () =>
         {
             skillVFXEntity.PlayVFXCompleted -= handler;
-            VFXCompletedEvt?.Invoke(eMonsterSide);
+            _onVFXCompleted.OnNext(eMonsterSide);
         };
         skillVFXEntity.PlayVFXCompleted += handler;
 
@@ -59,7 +62,7 @@ public class BattleMonsterWorldSpaceView : LifetimeScope, IStartInit
 
     private void OnAnimationComplete(EMonsterSide eMonsterSide, EMonsterState eMonsterState)
     {
-        AnimationCompletedEvt?.Invoke(eMonsterSide, eMonsterState);
+        _onAnimationCompletedViewData.OnNext(new AnimationCompletedViewData(eMonsterSide, eMonsterState));
     }
 
     private MonsterAnimatorController GetMonsterAnimator(EMonsterSide eMonsterSide)

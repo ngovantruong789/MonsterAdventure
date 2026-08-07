@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-public class SceneReceiverData : LifetimeScope
+public partial class SceneReceiverData : LifetimeScope
 {
     [SerializeField] private SceneLoadManager _sceneLoadManager;
     private SceneLoadModel _sceneLoadModel;
@@ -23,7 +23,7 @@ public class SceneReceiverData : LifetimeScope
         _sceneLoadManager.EndLoadNewScene();
         if (_sceneLoadModel != null)
         {
-            SceneLoadedEvent?.Invoke(_sceneLoadModel);
+            _onSceneLoaded.OnNext(_sceneLoadModel);
         }
     }
 }

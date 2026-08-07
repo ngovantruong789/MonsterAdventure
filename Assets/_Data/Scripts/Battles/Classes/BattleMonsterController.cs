@@ -1,21 +1,17 @@
 using System;
 using UnityEngine;
 
-public class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTurn
+public partial class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTurn
 {
-    public Action<EBattlePhase> TurnEvt { get; set; }
-    public Action<EMonsterSide, EStatePhase, ESkillId, int, bool> StatePhaseChangeEvt { get; set; }
-    public Action<bool> EndBattleEvt { get; set; }
-    public Action NextTurnEvt { get; set; }
+    private int _currentPlayerMonsterBattleIndex;
     public int CurrentPlayerMonsterBattleIndex { get => _currentPlayerMonsterBattleIndex; set => _currentPlayerMonsterBattleIndex = value; }
 
-    private BattleModel _battleModel;
-    private DamageCalculator _damageCalculator;
+    private readonly BattleModel _battleModel;
+    private readonly DamageCalculator _damageCalculator;
     private SkillModel _skillModel = new();
     private EBattlePhase _eBattlePhase;
     private EMonsterSide _eMonsterSide;
     private int _skillIndexAttack;
-    private int _currentPlayerMonsterBattleIndex;
     private bool _isEndBattle;
 
     public BattleMonsterController(BattleModel battleModel, DamageCalculator damageCalculator)
@@ -27,7 +23,7 @@ public class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTu
     public void ChangeTurn(EBattlePhase eBattlePhase)
     {
         _eBattlePhase = eBattlePhase;
-        TurnEvt.Invoke(_eBattlePhase);
+        _onTurnChanged.OnNext(_eBattlePhase);
 
         if(_eBattlePhase == EBattlePhase.OpponentTurn)
         {
@@ -37,12 +33,12 @@ public class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTu
 
     private void PlayAnim()
     {
-        StatePhaseChangeEvt.Invoke(_eMonsterSide, EStatePhase.PlayAnimAttack, _skillModel.ESkillId, _currentPlayerMonsterBattleIndex, false);
+        HandleStatePhaseChanged(_eMonsterSide, EStatePhase.PlayAnimAttack, _skillModel.ESkillId, false);
     }
 
     private void PlayVFX()
     {
-        StatePhaseChangeEvt.Invoke(_eMonsterSide, EStatePhase.PlayVFXAttack, _skillModel.ESkillId, _currentPlayerMonsterBattleIndex, false);
+        HandleStatePhaseChanged(_eMonsterSide, EStatePhase.PlayVFXAttack, _skillModel.ESkillId, false);
     }
 
     private void ApplyDamage()
@@ -64,7 +60,7 @@ public class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTu
             playerModel.IsDead = playerModel.Health <= 0;
         }
 
-        StatePhaseChangeEvt.Invoke(_eMonsterSide, EStatePhase.ApplyDamage, _skillModel.ESkillId, _currentPlayerMonsterBattleIndex, false);
+        HandleStatePhaseChanged(_eMonsterSide, EStatePhase.ApplyDamage, _skillModel.ESkillId, false);
     }
 
     private bool CheckEndBattle()
@@ -91,8 +87,8 @@ public class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTu
         _isEndBattle = CheckEndBattle();
         _skillIndexAttack = -1;
 
-        EndBattleEvt.Invoke(_isEndBattle);
-        StatePhaseChangeEvt.Invoke(_eMonsterSide, EStatePhase.End, ESkillId.None, _currentPlayerMonsterBattleIndex, _isEndBattle);
+        _onEndBattle.OnNext(_isEndBattle);
+        HandleStatePhaseChanged(_eMonsterSide, EStatePhase.End, ESkillId.None, _isEndBattle);
     }
 
     private void AIOpponentAttack()
@@ -130,7 +126,7 @@ public class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTu
                 EndPhase();
                 break;
             case EStatePhase.End:
-                NextTurnEvt.Invoke();
+                _onNextTurn.OnNext(default);
                 break;
         }
     }
@@ -150,5 +146,10 @@ public class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTu
         return eMonsterSide == EMonsterSide.Player ? 
             _battleModel.PlayerTeamModel.PlayerTeam[_currentPlayerMonsterBattleIndex] :
             _battleModel.OpponentMonsterModel;
+    }
+
+    private void HandleStatePhaseChanged(EMonsterSide eMonsterSide, EStatePhase eStatePhase, ESkillId eSkillId, bool isEndBattle)
+    {
+        _onStatePhaseChanged.OnNext(new StatePhaseChangedControllerData(eMonsterSide, eStatePhase, eSkillId, _currentPlayerMonsterBattleIndex, isEndBattle));
     }
 }
