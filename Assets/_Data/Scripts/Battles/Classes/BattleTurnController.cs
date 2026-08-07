@@ -1,16 +1,25 @@
-public class BattleTurnController
+using System;
+using UniRx;
+
+public class BattleTurnController : IDisposable
 {
     private IBattleMonsterTurn _battleMonsterTurn;
     private EBattlePhase _eBattlePhase;
     private bool _isEndBattle;
+    private readonly CompositeDisposable _disposable = new();
 
     public BattleTurnController(IBattleMonsterTurn battleMonsterTurn)
     {
         _eBattlePhase = EBattlePhase.Start;
         _battleMonsterTurn = battleMonsterTurn;
 
-        battleMonsterTurn.EndBattleEvt += SetEndBattle;
-        _battleMonsterTurn.NextTurnEvt += HandleNextTurn;
+        battleMonsterTurn.OnEndBattle
+            .Subscribe(val => SetEndBattle(val))
+            .AddTo(_disposable);
+
+        _battleMonsterTurn.OnNextTurn
+            .Subscribe(_ => HandleNextTurn())
+            .AddTo(_disposable);
 
         HandleNextTurn();
     }
@@ -35,5 +44,10 @@ public class BattleTurnController
     private void SetEndBattle(bool isEndBattle)
     {
         _isEndBattle = isEndBattle;
+    }
+
+    public void Dispose()
+    {
+        _disposable.Dispose();
     }
 }

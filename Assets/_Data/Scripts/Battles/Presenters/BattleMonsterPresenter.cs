@@ -1,14 +1,17 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
-using UnityEngine;
+using UniRx;
 
-public class BattleMonsterPresenter
+public partial class BattleMonsterPresenter : IDisposable
 {
-    private BattleModel _battleModel;
-    private BattleMonsterWorldSpaceView _battleMonsterView;
-    private HUDBattleMonsterView _hUDBattleMonsterView;
-    private BattleManager _battleManager;
-    private IBattleMonsterPresenter _iBattleMonsterPresenter;
+    private readonly BattleModel _battleModel;
+    private readonly BattleMonsterWorldSpaceView _battleMonsterView;
+    private readonly HUDBattleMonsterView _hUDBattleMonsterView;
+    private readonly BattleManager _battleManager;
+    private readonly CompositeDisposable _disposable = new();
+    private readonly IBattleMonsterPresenter _iBattleMonsterPresenter;
+
     private EStatePhase _currentStatePhase;
 
     public BattleMonsterPresenter(BattleMonsterWorldSpaceView battleMonsterView, 
@@ -34,17 +37,49 @@ public class BattleMonsterPresenter
         DeployMonster(EMonsterSide.Player, 0);
         _hUDBattleMonsterView.CurrentMonsterSelectedConstructor();
 
-        _hUDBattleMonsterView.OnShowPlayerTeamEvent += ShowPlayerTeam;
-        _hUDBattleMonsterView.OnOutBattleEvent += OutBattle;
-        _hUDBattleMonsterView.OnShowSkillsEvent += ShowSkillBattleMonsterHUD;
-        _hUDBattleMonsterView.OnShowItemsEvent += ShowItem;
-        _hUDBattleMonsterView.OnSwapMonster += SwapMonster;
-        _hUDBattleMonsterView.OnActiveAttack += ActiveAttack;
-        _hUDBattleMonsterView.OnUpdateMonsterStatCompleted += HandleUpdateStatComplete;
-        _iBattleMonsterPresenter.StatePhaseChangeEvt += HandleStatePhaseChange;
-        _iBattleMonsterPresenter.TurnEvt += HandleTurn;
-        _battleMonsterView.AnimationCompletedEvt += HandleAnimationComplete;
-        _battleMonsterView.VFXCompletedEvt += HandlePlayVFXComplete;
+        _hUDBattleMonsterView.OnShowPlayerTeam
+            .Subscribe(_ => ShowPlayerTeam())
+            .AddTo(_disposable);
+
+        _hUDBattleMonsterView.OnOutBattle
+            .Subscribe(_ => OutBattle())
+            .AddTo(_disposable);
+
+        _hUDBattleMonsterView.OnShowSkill
+            .Subscribe(_ => ShowSkillBattleMonsterHUD())
+            .AddTo(_disposable);
+
+        _hUDBattleMonsterView.OnShowItem
+            .Subscribe(_ => ShowItem())
+            .AddTo(_disposable);
+
+        _hUDBattleMonsterView.OnSwapMonster
+            .Subscribe(val => SwapMonster(val.EMonsterSide, val.MonsterIndex))
+            .AddTo(_disposable);
+
+        _hUDBattleMonsterView.OnActiveAttack
+            .Subscribe(val => ActiveAttack(val.EMonsterSide, val.SkillIndex))
+            .AddTo(_disposable);
+
+        _hUDBattleMonsterView.OnUpdateMonsterStatCompleted
+            .Subscribe(val => HandleUpdateStatComplete(val.EMonsterSide, val.EStatType))
+            .AddTo(_disposable);
+
+        _iBattleMonsterPresenter.OnStatePhaseChanged
+            .Subscribe(val => HandleStatePhaseChange(val))
+            .AddTo(_disposable);
+
+        _iBattleMonsterPresenter.OnTurnChanged
+            .Subscribe(val => HandleTurn(val))
+            .AddTo(_disposable);
+
+        _battleMonsterView.OnAnimationCompletedViewData
+            .Subscribe(val => HandleAnimationComplete(val.EMonsterSide, val.EMonsterState))
+            .AddTo(_disposable);
+
+        _battleMonsterView.OnVFXCompleted
+            .Subscribe(val => HandlePlayVFXComplete(val))
+            .AddTo(_disposable);
     }
 
     private void UpdateHUDBattleMonsterViewData(bool updateUnlockSkills, bool updateBattleSkills)
@@ -160,22 +195,22 @@ public class BattleMonsterPresenter
         }
     }
 
-    private void HandleStatePhaseChange(EMonsterSide eMonsterSide, EStatePhase eStatePhase, ESkillId eSkillId, int monsterIndex, bool isEndBattle)
+    private void HandleStatePhaseChange(StatePhaseChangedControllerData data)
     {
-        _currentStatePhase = eStatePhase;
-        switch (eStatePhase)
+        _currentStatePhase = data.EStatePhase;
+        switch (data.EStatePhase)
         {
             case EStatePhase.PlayAnimAttack:
-                HandlePlayAnimAttackPhase(eMonsterSide); 
+                HandlePlayAnimAttackPhase(data.EMonsterSide); 
                 break;
             case EStatePhase.PlayVFXAttack:
-                HandlePlayVFXPhase(eMonsterSide, eSkillId);
+                HandlePlayVFXPhase(data.EMonsterSide, data.ESkillId);
                 break;
             case EStatePhase.ApplyDamage:
-                HandleApplyDamagePhaseAsync(eMonsterSide, monsterIndex);
+                HandleApplyDamagePhaseAsync(data.EMonsterSide, data.CurrentPlayerMonsterBattleIndex);
                 break;
             case EStatePhase.End:
-                HandleEndPhase(eMonsterSide, isEndBattle);
+                HandleEndPhase(data.EMonsterSide, data.IsEndBattle);
                 break;
         }
     }
@@ -268,5 +303,10 @@ public class BattleMonsterPresenter
             await Task.Delay(500);
             _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.ApplyDamage);
         }
+    }
+
+    public void Dispose()
+    {
+        _disposable.Dispose();
     }
 }

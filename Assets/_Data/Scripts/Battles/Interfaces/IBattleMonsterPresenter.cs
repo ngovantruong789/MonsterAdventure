@@ -2,9 +2,9 @@ using System;
 
 public interface IBattleMonsterPresenter
 {
+    IObservable<EBattlePhase> OnTurnChanged { get; }
+    IObservable<StatePhaseChangedControllerData> OnStatePhaseChanged { get; }
     int CurrentPlayerMonsterBattleIndex { get; set; }
-    public Action<EBattlePhase> TurnEvt {  get; set; }
-    Action<EMonsterSide, EStatePhase, ESkillId, int, bool> StatePhaseChangeEvt { get; set; }
     void ActiveAttack(EMonsterSide eMonsterSide, int skillIndex);
     void NotifyStateCompleted(EStatePhase eStatePhase);
 }

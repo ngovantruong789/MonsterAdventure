@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UniRx;
 using UnityEngine;
 
 public class PlayerEntity : CharacterEntity, IStartInit
@@ -27,7 +28,9 @@ public class PlayerEntity : CharacterEntity, IStartInit
             }
         }
 
-        _sceneReceiverData.SceneLoadedEvent += OnGetNewData;
+        _sceneReceiverData.OnSceneLoaded
+            .Subscribe(val => OnGetNewData(val))
+            .AddTo(this);
     }
 
 

@@ -1,11 +1,10 @@
 using System;
+using UniRx;
 using UnityEngine;
 
 public partial class MonsterAnimatorController : CharacterAnimatorController
 {
     [SerializeField] private EMonsterSide _currentMonsterSide;
-
-    public Action<EMonsterSide, EMonsterState> AnimationCompletedEvt { get; set; }
 
     private EMonsterState _currentMonsterState;
     private int _currentHash;
@@ -14,13 +13,9 @@ public partial class MonsterAnimatorController : CharacterAnimatorController
     protected override void OnEnable()
     {
         base.OnEnable();
-        AnimationStateBehaviour.StateExited += OnStateExited;
-    }
-
-    protected override void OnDisable()
-    {
-        base.OnDisable();
-        AnimationStateBehaviour.StateExited -= OnStateExited;
+        AnimationStateBehaviour.OnStateExited
+            .Subscribe(val => OnStateExited(val.InstanceID, val.ShortNameHash))
+            .AddTo(this);
     }
 
     public void UpdateRuntimeAnimator(RuntimeAnimatorController controller) => _animator.runtimeAnimatorController = controller;
@@ -35,7 +30,7 @@ public partial class MonsterAnimatorController : CharacterAnimatorController
     {
         if (animatorId != _animator.GetInstanceID()) return;
 
-        AnimationCompletedEvt?.Invoke(_currentMonsterSide, _currentMonsterState);
+        _onAnimationCompleted.OnNext(new MonsterAnimationCompletedData(_currentMonsterSide, _currentMonsterState));
 
         _currentMonsterState = EMonsterState.None;
         _currentHash = -1;

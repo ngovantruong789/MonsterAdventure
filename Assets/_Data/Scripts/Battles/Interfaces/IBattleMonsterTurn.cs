@@ -1,8 +1,9 @@
 using System;
+using UniRx;
 
 public interface IBattleMonsterTurn
 {
-    Action NextTurnEvt { get; set; }
-    Action<bool> EndBattleEvt { get; set; }
+    IObservable<Unit> OnNextTurn { get;}
+    IObservable<bool> OnEndBattle { get;}
     void ChangeTurn(EBattlePhase eBattlePhase);
 }

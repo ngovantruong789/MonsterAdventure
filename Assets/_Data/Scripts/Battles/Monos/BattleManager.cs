@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UniRx;
 using UnityEngine;
 
 public class BattleManager : LifetimeScope, IStartInit
@@ -16,7 +17,9 @@ public class BattleManager : LifetimeScope, IStartInit
 
     public void Initialize()
     {
-        _sceneReceiverData.SceneLoadedEvent += OnGetDataBattle;
+        _sceneReceiverData.OnSceneLoaded
+            .Subscribe(val => OnGetDataBattle(val))
+            .AddTo(this);
     }
 
     [ContextMenu("Add BattleInstaller")]
