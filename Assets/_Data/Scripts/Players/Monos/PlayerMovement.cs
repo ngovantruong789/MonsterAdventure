@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerMovement : LifetimeScope
+public class PlayerMovement : BaseMonoBehaviour
 {
     [SerializeField] private Rigidbody2D _rd;
     [SerializeField] private float _speed;

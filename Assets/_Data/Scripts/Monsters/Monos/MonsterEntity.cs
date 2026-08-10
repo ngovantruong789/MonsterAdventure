@@ -1,27 +1,29 @@
-using System.Collections.Generic;
 using UnityEngine;
+using VContainer.Unity;
 
-public class MonsterEntity : CharacterEntity
+public class MonsterEntity : CharacterEntity, IStartable
 {
-    [Header("Installers")]
-    [SerializeReference] private List<BaseInstaller> installerConfigs = new List<BaseInstaller>();
-    
-    private IMonsterModelProvider _iMonsterModelProvider;
-    public IMonsterModelProvider IMonsterModelProvider => _iMonsterModelProvider;
+    [SerializeField] private MapManager _mapManager;
+    [SerializeField] private MonsterSO _monsterSO;
 
-    public override void Initialize()
+    private MonsterModel _currentModel;
+    public MonsterModel CurrentMonsterModel => _currentModel;
+
+    public void Start()
     {
-        base.Initialize();
-        foreach (BaseInstaller installer in installerConfigs)
-        {
-            installer.Initialize();
-            if(installer is IMonsterModelProvider iMonsterModelProvider)
-            {
-                _iMonsterModelProvider = iMonsterModelProvider;
-            }
-        }
+        Vector2 originLevelRange = GetOriginLevelRange(_monsterSO.Map);
+        _currentModel = MonsterModelFactory.Create(_monsterSO, 5);
     }
 
-    [ContextMenu("Add MonsterAttributeInstaller")]
-    public void AddMonsterAttributeInstaller() => installerConfigs.Add(new MonsterStatsInstaller());
+    private Vector2 GetOriginLevelRange(MonsterMapConfig[] monsterMapConfigs)
+    {
+        foreach (MonsterMapConfig monsterMapConfig in monsterMapConfigs)
+        {
+            if (monsterMapConfig.MapType == _mapManager.MapType)
+            {
+                return monsterMapConfig.LevelOriginRange;
+            }
+        }
+        return Vector2.zero;
+    }
 }

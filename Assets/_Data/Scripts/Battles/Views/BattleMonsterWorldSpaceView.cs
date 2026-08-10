@@ -2,7 +2,7 @@ using System;
 using UniRx;
 using UnityEngine;
 
-public partial class BattleMonsterWorldSpaceView : LifetimeScope, IStartInit
+public partial class BattleMonsterWorldSpaceView : BaseMonoBehaviour, IStartInit
 {
     [SerializeField] private SkillVFXSpawner _skillVFXSpawner;
 

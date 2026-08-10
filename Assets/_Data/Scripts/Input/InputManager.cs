@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class InputManager : LifetimeScope, IStartInit
+public class InputManager : BaseMonoBehaviour, IStartInit
 {
     private InputSystem_Actions inputActions;
     public Action<Vector2> MovePressedEvent { get; set; }

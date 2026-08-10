@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public partial class HUDBattleMonsterView : LifetimeScope, IStartInit
+public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
 {
     [Header("Infor current monster")]
     [SerializeField] private MonsterBattleInforUI _playerMonster;

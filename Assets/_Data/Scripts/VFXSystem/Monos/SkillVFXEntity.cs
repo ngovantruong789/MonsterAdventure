@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SkillVFXEntity : LifetimeScope, ISkillVFXEntity
+public class SkillVFXEntity : BaseMonoBehaviour, ISkillVFXEntity
 {
     [SerializeField] private ESkillId eSkillId;
     public ESkillId ESkillId => eSkillId;

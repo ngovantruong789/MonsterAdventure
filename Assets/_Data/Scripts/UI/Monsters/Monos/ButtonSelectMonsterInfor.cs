@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ButtonSelectMonsterInfor : LifetimeScope
+public class ButtonSelectMonsterInfor : BaseMonoBehaviour
 {
     [SerializeField] private Button _button;
     public Button Button { get => _button; set => _button = value; }

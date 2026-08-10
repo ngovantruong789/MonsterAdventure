@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BattleButtonSkillInfor : LifetimeScope
+public class BattleButtonSkillInfor : BaseMonoBehaviour
 {
     [SerializeField] private Button _btnSkill;
     public Button BtnSkill { get => _btnSkill; set => _btnSkill = value; }

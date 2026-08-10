@@ -1,96 +1,110 @@
 using System.Collections;
-using System.Collections.Generic;
+using UniRx;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using VContainer;
+using VContainer.Unity;
 
-public class SceneLoadManager : LifetimeScope, IStartInit
+public partial class SceneLoadManager : GameLifetimeScope, IStartable
 {
-    [SerializeField] private SceneLoadView _sceneLoadView;
-    [SerializeField] private List<GameObject> disableObjects = new List<GameObject>();
+    [Inject] private readonly ISceneLoadController _sceneLoadController;
 
-    [SerializeField] private MonsterEntity _monsterEntity;
-    private SceneLoadModel _sceneLoadModel;
-    private SceneLoadInstaller _installer;
+    private SceneActiveManager _currentActiveManager;
 
-    protected override void Start()
+    private string _sceneName = "";
+    private string _sceneNameClose = "";
+
+    public void Start()
     {
-        base.Start();
-        Initialize();
+        _sceneLoadController.OnToggleSceneCompleted
+            .Subscribe(val =>
+            {
+                if (!val && _sceneName != "")
+                {
+                    if(_sceneNameClose != "")
+                    {
+                        StartCoroutine(OnCloseSceneAttitiveCoroutine(_sceneNameClose, _sceneName));
+                    }
+                    else
+                    {
+                        StartCoroutine(LoadSceneAdditiveCoroutine(_sceneName));
+                    }
+                }
+            })
+            .AddTo(this);
+
+        DontDestroyOnLoad(gameObject);
+        Debug.Log("SceneLoadManager Initialized");
     }
 
-    public void Initialize()
+    public void StartLoadScene(string sceneName)
     {
-        _installer = new SceneLoadInstaller(_sceneLoadModel, _sceneLoadView, this);
-        _installer.Initialize();
-        Debug.Log("SceneLoadInstaller Initialized");
+        _sceneName = sceneName;
+        _sceneLoadController.ToggleLoadScene(false);
     }
 
-    public void StartLoadScene(string sceneName, SceneLoadModel sceneLoadModel)
-    {
-        _installer.ToggleLoadScene(() =>
-        {
-            StartCoroutine(LoadSceneAdditiveCoroutine(sceneName, sceneLoadModel));
-        });
-    }
-
-    private IEnumerator LoadSceneAdditiveCoroutine(string sceneName, SceneLoadModel sceneLoadModel)
+    private IEnumerator LoadSceneAdditiveCoroutine(string sceneName)
     {
         yield return new WaitForSeconds(0.5f);
+        yield return new WaitUntil(() => _currentActiveManager != null);
+        _currentActiveManager.SetActiveObjects(false);
 
-        SetActiveObjects(false);
         AsyncOperation op = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
         yield return op;
 
         Scene sceneLoaded = SceneManager.GetSceneByName(sceneName);
         foreach(GameObject obj in sceneLoaded.GetRootGameObjects())
         {
-            if (obj.TryGetComponent(out SceneReceiverData sceneReceiverData))
+            if (obj.TryGetComponent(out SceneActiveManager sceneActiveManager))
             {
-                sceneReceiverData.Initialize(sceneLoadModel);
-            }
-            if (obj.TryGetComponent(out SceneLoadManager sceneLoadManager))
-            {
-                sceneLoadManager.SetActiveObjects(true);
+                sceneActiveManager.SetActiveObjects(true);
+                _onCameraChanged.OnNext(sceneActiveManager.GetCurrentCameraObject());
+                _currentActiveManager = sceneActiveManager;
+                break;
             }
         }
+        yield return new WaitForSeconds(0.5f);
+
+        _sceneLoadController.ToggleLoadScene(true);
+        ResetValue();
     }
 
-    public void CloseSceneAttitive(string sceneNameClose, string sceneNameBack, SceneLoadModel sceneLoadModel)
+    public void CloseSceneAttitive(string sceneNameClose, string sceneNameBack)
     {
-        _installer.ToggleLoadScene(() =>
-        {
-            OnCloseSceneAttitive(sceneNameClose, sceneNameBack, sceneLoadModel);
-        });
+        _sceneName = sceneNameBack;
+        _sceneNameClose = sceneNameClose;
+        _sceneLoadController.ToggleLoadScene(false);
     }
 
-    private void OnCloseSceneAttitive(string sceneNameClose, string sceneNameBack, SceneLoadModel sceneLoadModel)
+    private IEnumerator OnCloseSceneAttitiveCoroutine(string sceneNameClose, string sceneNameBack)
     {
         Scene sceneLoaded = SceneManager.GetSceneByName(sceneNameBack);
         foreach (GameObject obj in sceneLoaded.GetRootGameObjects())
         {
-            if (obj.TryGetComponent(out SceneReceiverData sceneReceiverData))
+            if (obj.TryGetComponent(out SceneActiveManager sceneActiveManager))
             {
-                sceneReceiverData.Initialize(sceneLoadModel);
-            }
-            if (obj.TryGetComponent(out SceneLoadManager sceneLoadManager))
-            {
-                sceneLoadManager.SetActiveObjects(true);
+                sceneActiveManager.SetActiveObjects(true);
+                _onCameraChanged.OnNext(sceneActiveManager.GetCurrentCameraObject());
+                _currentActiveManager = sceneActiveManager;
+                break;
             }
         }
 
-        SceneManager.UnloadSceneAsync(sceneNameClose);
+        AsyncOperation op = SceneManager.UnloadSceneAsync(sceneNameClose);
+        yield return op;
+
+        _sceneLoadController.ToggleLoadScene(true);
+        ResetValue();
     }
 
-    public void EndLoadNewScene()
+    public void UpdateCurrentScene(SceneActiveManager sceneActiveManager)
     {
-        _installer.ToggleLoadScene();
+        _currentActiveManager = sceneActiveManager;
     }
 
-    private void SetActiveObjects(bool isActive)
+    private void ResetValue()
     {
-        foreach (GameObject obj in disableObjects)
-        {
-            obj.SetActive(isActive);
-        }
+        _sceneName = "";
+        _sceneNameClose = "";
     }
 }

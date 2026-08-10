@@ -1,19 +1,24 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
+using VContainer;
+using VContainer.Unity;
 
-public class InventoryController
+public class InventoryController : IInventoryProvider, IStartable
 {
     private InventoryModel _inventoryModel;
     public InventoryModel InventoryModel => _inventoryModel;
 
-    private BattleInventoryModel _battleInventoryModel;
-    public BattleInventoryModel BattleInventoryModel => _battleInventoryModel;
-
-    private ItemDatabaseSO _itemDatabaseSO;
+    [Inject] private ItemDatabaseSO _itemDatabaseSO;
     
-    public InventoryController(InventoryModel inventoryModel, ItemDatabaseSO itemDatabaseSO)
+    public InventoryController(InventoryModel inventoryModel)
     {
         _inventoryModel = inventoryModel;
-        _itemDatabaseSO = itemDatabaseSO;
+        //_itemDatabaseSO = itemDatabaseSO;
+        Debug.Log("InventoryController Initialized");
+    }
+
+    public void Start()
+    {
         AddItem(new ItemModel
         {
             Id = 2301,
@@ -67,5 +72,10 @@ public class InventoryController
                 break;
             }
         }
+    }
+
+    public List<ItemModel> CloneInventoryModel(List<ItemModel> items)
+    {
+        return InventoryModelFactory.Create(items);
     }
 }

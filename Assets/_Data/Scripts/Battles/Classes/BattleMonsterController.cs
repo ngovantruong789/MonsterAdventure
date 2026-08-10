@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public partial class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTurn
@@ -6,7 +5,8 @@ public partial class BattleMonsterController : IBattleMonsterPresenter, IBattleM
     private int _currentPlayerMonsterBattleIndex;
     public int CurrentPlayerMonsterBattleIndex { get => _currentPlayerMonsterBattleIndex; set => _currentPlayerMonsterBattleIndex = value; }
 
-    private readonly BattleModel _battleModel;
+    private readonly MonsterModel _opponentModel;
+    private readonly PlayerTeamModel _playerTeamModel;
     private readonly DamageCalculator _damageCalculator;
     private SkillModel _skillModel = new();
     private EBattlePhase _eBattlePhase;
@@ -14,10 +14,12 @@ public partial class BattleMonsterController : IBattleMonsterPresenter, IBattleM
     private int _skillIndexAttack;
     private bool _isEndBattle;
 
-    public BattleMonsterController(BattleModel battleModel, DamageCalculator damageCalculator)
+    public BattleMonsterController(BattleModel battleModel, PlayerTeamModel playerTeamModel, DamageCalculator damageCalculator)
     {
-        _battleModel = battleModel;
+        _opponentModel = battleModel.OpponentMonsterModel;
+        _playerTeamModel = playerTeamModel;
         _damageCalculator = damageCalculator;
+        Debug.Log("BattleMonsterController Initialized");
     }
 
     public void ChangeTurn(EBattlePhase eBattlePhase)
@@ -65,12 +67,12 @@ public partial class BattleMonsterController : IBattleMonsterPresenter, IBattleM
 
     private bool CheckEndBattle()
     {
-        if(_battleModel.OpponentMonsterModel.IsDead)
+        if(_opponentModel.IsDead)
         {
             return true;
         }
 
-        foreach(MonsterModel model in _battleModel.PlayerTeamModel.PlayerTeam)
+        foreach(MonsterModel model in _playerTeamModel.PlayerTeam)
         {
             if (!model.IsDead)
             {
@@ -93,7 +95,7 @@ public partial class BattleMonsterController : IBattleMonsterPresenter, IBattleM
 
     private void AIOpponentAttack()
     {
-        ActiveAttack(EMonsterSide.Opponent, UnityEngine.Random.Range(0, _battleModel.OpponentMonsterModel.BatlleSkills.Count));
+        ActiveAttack(EMonsterSide.Opponent, UnityEngine.Random.Range(0, _opponentModel.BatlleSkills.Count));
     }
 
     public void ActiveAttack(EMonsterSide eMonsterSide, int skillIndex)
@@ -144,8 +146,7 @@ public partial class BattleMonsterController : IBattleMonsterPresenter, IBattleM
     private MonsterModel GetMonsterModel(EMonsterSide eMonsterSide)
     {
         return eMonsterSide == EMonsterSide.Player ? 
-            _battleModel.PlayerTeamModel.PlayerTeam[_currentPlayerMonsterBattleIndex] :
-            _battleModel.OpponentMonsterModel;
+            _playerTeamModel.PlayerTeam[_currentPlayerMonsterBattleIndex] : _opponentModel;
     }
 
     private void HandleStatePhaseChanged(EMonsterSide eMonsterSide, EStatePhase eStatePhase, ESkillId eSkillId, bool isEndBattle)
