@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public partial class BattleMonsterController : IBattleMonsterPresenter, IBattleMonsterTurn
@@ -6,7 +5,6 @@ public partial class BattleMonsterController : IBattleMonsterPresenter, IBattleM
     private int _currentPlayerMonsterBattleIndex;
     public int CurrentPlayerMonsterBattleIndex { get => _currentPlayerMonsterBattleIndex; set => _currentPlayerMonsterBattleIndex = value; }
 
-    //private readonly BattleModel _battleModel;
     private readonly MonsterModel _opponentModel;
     private readonly PlayerTeamModel _playerTeamModel;
     private readonly DamageCalculator _damageCalculator;

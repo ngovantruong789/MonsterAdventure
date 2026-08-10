@@ -7,7 +7,6 @@ using VContainer.Unity;
 
 public partial class BattleMonsterPresenter : IDisposable, IStartable
 {
-    //private readonly BattleModel _battleModel;
     private readonly MonsterModel _opponentModel;
     private readonly PlayerTeamModel _playerTeamModel;
     private readonly BattleMonsterWorldSpaceView _battleMonsterView;
