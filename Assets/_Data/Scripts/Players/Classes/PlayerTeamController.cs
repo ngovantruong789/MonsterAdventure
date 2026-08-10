@@ -1,15 +1,28 @@
-public class PlayerTeamController
+using System.Collections.Generic;
+using UnityEngine;
+using VContainer;
+using VContainer.Unity;
+
+public class PlayerTeamController : IPlayerTeamProvider, IStartable
 {
     private PlayerTeamModel _teamModel;
     public PlayerTeamModel TeamModel => _teamModel;
 
     public bool CanBattle => CheckCanBattle();
 
-    public PlayerTeamController(MonsterSO monsterSO, MonsterSO monsterSO2)
+    private IReadOnlyList<MonsterSO> _monsters;
+
+    public PlayerTeamController(PlayerTeamModel teamModel, IReadOnlyList<MonsterSO> monsters)
     {
-        _teamModel = new PlayerTeamModel();
-        _teamModel.PlayerTeam.Add(MonsterModelFactory.Create(monsterSO, 30));
-        _teamModel.PlayerTeam.Add(MonsterModelFactory.Create(monsterSO2, 16));
+        _teamModel = teamModel;
+        _monsters = monsters;
+        Debug.Log("PlayerTeamController Initialized");
+    }
+
+    public void Start()
+    {
+        _teamModel.PlayerTeam.Add(MonsterModelFactory.Create(_monsters[0], 30));
+        _teamModel.PlayerTeam.Add(MonsterModelFactory.Create(_monsters[1], 16));
         UpdateTeamModel(_teamModel);
     }
 

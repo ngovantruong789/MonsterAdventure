@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MonsterBattleInforUI : LifetimeScope
+public class MonsterBattleInforUI : BaseMonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _monsterNameText;
     public TextMeshProUGUI MonsterNameText { get => _monsterNameText; set => _monsterNameText = value; }

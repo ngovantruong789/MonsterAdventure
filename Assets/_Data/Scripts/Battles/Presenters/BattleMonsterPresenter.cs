@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UniRx;
+using UnityEngine;
+using VContainer.Unity;
 
-public partial class BattleMonsterPresenter : IDisposable
+public partial class BattleMonsterPresenter : IDisposable, IStartable
 {
-    private readonly BattleModel _battleModel;
+    //private readonly BattleModel _battleModel;
+    private readonly MonsterModel _opponentModel;
+    private readonly PlayerTeamModel _playerTeamModel;
     private readonly BattleMonsterWorldSpaceView _battleMonsterView;
     private readonly HUDBattleMonsterView _hUDBattleMonsterView;
     private readonly BattleManager _battleManager;
@@ -18,21 +22,28 @@ public partial class BattleMonsterPresenter : IDisposable
         HUDBattleMonsterView hUDBattleMonsterView, 
         BattleModel battleModel,
         BattleManager battleManager,
+        PlayerTeamModel playerTeamModel,
         IBattleMonsterPresenter iBattleMonsterPresenter)
     {
-        _battleModel = battleModel;
+        //_battleModel = battleModel;
         _battleMonsterView = battleMonsterView;
         _hUDBattleMonsterView = hUDBattleMonsterView;
         _battleManager = battleManager;
+        _playerTeamModel = playerTeamModel;
+        _opponentModel = battleModel.OpponentMonsterModel;
         _iBattleMonsterPresenter = iBattleMonsterPresenter;
+        Debug.Log("BattleMonsterPresenter Initialized");
+    }
 
+    public void Start()
+    {
         UpdateHUDBattleMonsterViewData(true, true);
 
         //Opponent
         DeployMonster(EMonsterSide.Opponent, -1);
 
         //Player
-        _hUDBattleMonsterView.UpdateMonsterNumber(_battleModel.PlayerTeamModel.PlayerTeam.Count);
+        _hUDBattleMonsterView.UpdateMonsterNumber(_playerTeamModel.PlayerTeam.Count);
         _hUDBattleMonsterView.UpdatePlayerTeamAnimator();
         DeployMonster(EMonsterSide.Player, 0);
         _hUDBattleMonsterView.CurrentMonsterSelectedConstructor();
@@ -85,9 +96,9 @@ public partial class BattleMonsterPresenter : IDisposable
     private void UpdateHUDBattleMonsterViewData(bool updateUnlockSkills, bool updateBattleSkills)
     {
         HUDBattleMonsterViewData hUDBattleMonsterViewData = new HUDBattleMonsterViewData();
-        for (int i = 0; i < _battleModel.PlayerTeamModel.PlayerTeam.Count; i++)
+        for (int i = 0; i < _playerTeamModel.PlayerTeam.Count; i++)
         {
-            MonsterModel model = _battleModel.PlayerTeamModel.PlayerTeam[i];
+            MonsterModel model = _playerTeamModel.PlayerTeam[i];
             MonsterViewData monsterViewData = CovertMonsterModelToMonsterViewData(model);
 
             monsterViewData.UnlockedSkills = updateUnlockSkills ? ConvertSkillsModelToSkillViewData(model.UnlockedSkills) : _hUDBattleMonsterView.HUDBattleMonsterViewData.PlayerTeamDatas[i].UnlockedSkills;
@@ -154,7 +165,7 @@ public partial class BattleMonsterPresenter : IDisposable
 
     private void OutBattle()
     {
-        _battleManager.EndBattle(_battleModel);
+        _battleManager.EndBattle();
     }
 
     private void SwapMonster(EMonsterSide eMonsterSide, int index)
@@ -164,19 +175,19 @@ public partial class BattleMonsterPresenter : IDisposable
 
     private void DeployMonster(EMonsterSide eMonsterSide, int index)
     {
-        if (eMonsterSide == EMonsterSide.Player && _battleModel.PlayerTeamModel.PlayerTeam[index] != null)
+        if (eMonsterSide == EMonsterSide.Player && _playerTeamModel.PlayerTeam[index] != null)
         {
-            _battleMonsterView.UpdateMonsterAnimator(eMonsterSide, _battleModel.PlayerTeamModel.PlayerTeam[index].MonsterAnimator);
-            _hUDBattleMonsterView.UpdateStatsInforText(eMonsterSide, _battleModel.PlayerTeamModel.PlayerTeam[index].MonsterName, _battleModel.PlayerTeamModel.PlayerTeam[index].Level);
-            _hUDBattleMonsterView.UpdateMonsterStats(eMonsterSide, EStatType.Health, _battleModel.PlayerTeamModel.PlayerTeam[index].Health, _battleModel.PlayerTeamModel.PlayerTeam[index].MaxHealth);
+            _battleMonsterView.UpdateMonsterAnimator(eMonsterSide, _playerTeamModel.PlayerTeam[index].MonsterAnimator);
+            _hUDBattleMonsterView.UpdateStatsInforText(eMonsterSide, _playerTeamModel.PlayerTeam[index].MonsterName, _playerTeamModel.PlayerTeam[index].Level);
+            _hUDBattleMonsterView.UpdateMonsterStats(eMonsterSide, EStatType.Health, _playerTeamModel.PlayerTeam[index].Health, _playerTeamModel.PlayerTeam[index].MaxHealth);
             _hUDBattleMonsterView.UpdateBattteMonsterSkill(index);
             _iBattleMonsterPresenter.CurrentPlayerMonsterBattleIndex = index;
         }
-        else if (eMonsterSide == EMonsterSide.Opponent && _battleModel.OpponentMonsterModel != null)
+        else if (eMonsterSide == EMonsterSide.Opponent && _opponentModel != null)
         {
-            _battleMonsterView.UpdateMonsterAnimator(eMonsterSide, _battleModel.OpponentMonsterModel.MonsterAnimator);
-            _hUDBattleMonsterView.UpdateStatsInforText(eMonsterSide, _battleModel.OpponentMonsterModel.MonsterName, _battleModel.OpponentMonsterModel.Level);
-            _hUDBattleMonsterView.UpdateMonsterStats(eMonsterSide, EStatType.Health, _battleModel.OpponentMonsterModel.Health, _battleModel.OpponentMonsterModel.MaxHealth);
+            _battleMonsterView.UpdateMonsterAnimator(eMonsterSide, _opponentModel.MonsterAnimator);
+            _hUDBattleMonsterView.UpdateStatsInforText(eMonsterSide, _opponentModel.MonsterName, _opponentModel.Level);
+            _hUDBattleMonsterView.UpdateMonsterStats(eMonsterSide, EStatType.Health, _opponentModel.Health, _opponentModel.MaxHealth);
         }
     }
 
@@ -184,14 +195,14 @@ public partial class BattleMonsterPresenter : IDisposable
     {
         if (eMonsterSide == EMonsterSide.Player)
         {
-            _hUDBattleMonsterView.UpdateStatsInforText(eMonsterSide, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].MonsterName, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].Level);
-            _hUDBattleMonsterView.UpdateMonsterStats(eMonsterSide, EStatType.Health, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].Health, _battleModel.PlayerTeamModel.PlayerTeam[playerMonsterIndex].MaxHealth);
+            _hUDBattleMonsterView.UpdateStatsInforText(eMonsterSide, _playerTeamModel.PlayerTeam[playerMonsterIndex].MonsterName, _playerTeamModel.PlayerTeam[playerMonsterIndex].Level);
+            _hUDBattleMonsterView.UpdateMonsterStats(eMonsterSide, EStatType.Health, _playerTeamModel.PlayerTeam[playerMonsterIndex].Health, _playerTeamModel.PlayerTeam[playerMonsterIndex].MaxHealth);
             UpdateHUDBattleMonsterViewData(false, false);
         }
         else
         {
-            _hUDBattleMonsterView.UpdateStatsInforText(eMonsterSide, _battleModel.OpponentMonsterModel.MonsterName, _battleModel.OpponentMonsterModel.Level);
-            _hUDBattleMonsterView.UpdateMonsterStats(eMonsterSide, EStatType.Health, _battleModel.OpponentMonsterModel.Health, _battleModel.OpponentMonsterModel.MaxHealth);
+            _hUDBattleMonsterView.UpdateStatsInforText(eMonsterSide, _opponentModel.MonsterName, _opponentModel.Level);
+            _hUDBattleMonsterView.UpdateMonsterStats(eMonsterSide, EStatType.Health, _opponentModel.Health, _opponentModel.MaxHealth);
         }
     }
 
@@ -275,11 +286,11 @@ public partial class BattleMonsterPresenter : IDisposable
 
     private void HandleEndPhase(EMonsterSide eMonsterSide, bool isEndBattle)
     {
-        if (_battleModel.OpponentMonsterModel.IsDead)
+        if (_opponentModel.IsDead)
         {
             _battleMonsterView.PlayCrossFade(EMonsterSide.Opponent, EMonsterState.Faint, 1, 0f);
         }
-        else if (_battleModel.PlayerTeamModel.PlayerTeam[_iBattleMonsterPresenter.CurrentPlayerMonsterBattleIndex].IsDead)
+        else if (_playerTeamModel.PlayerTeam[_iBattleMonsterPresenter.CurrentPlayerMonsterBattleIndex].IsDead)
         {
             _battleMonsterView.PlayCrossFade(EMonsterSide.Player, EMonsterState.Faint, 1, 0f);
         }

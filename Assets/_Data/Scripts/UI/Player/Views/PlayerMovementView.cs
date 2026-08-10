@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class PlayerMovementView : LifetimeScope, IPointerUpHandler, IDragHandler, IPointerDownHandler, IStartInit
+public class PlayerMovementView : BaseMonoBehaviour, IPointerUpHandler, IDragHandler, IPointerDownHandler, IStartInit
 {
     [SerializeField] private InputManager _inputManager;
     [SerializeField] private RectTransform _container;

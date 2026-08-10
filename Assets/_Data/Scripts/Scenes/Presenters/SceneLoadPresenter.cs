@@ -1,24 +1,42 @@
 using System;
+using UniRx;
+using VContainer.Unity;
 
-public class SceneLoadPresenter
+public class SceneLoadPresenter : IStartable, IDisposable
 {
-    private SceneLoadModel _sceneLoadModel;
-    private SceneLoadView _sceneLoadView;
-    private SceneLoadManager _sceneLoadManager;
+    private readonly SceneLoadView _sceneLoadView;
+    private readonly ISceneLoadController _sceneLoadController;
+    private readonly CompositeDisposable _compositeDisposable = new();
 
-    public SceneLoadPresenter(SceneLoadView sceneLoadView, SceneLoadManager sceneLoadManager)
+    public SceneLoadPresenter(ISceneLoadController sceneLoadController, SceneLoadView sceneLoadView)
     {
         _sceneLoadView = sceneLoadView;
-        _sceneLoadManager = sceneLoadManager;
+        _sceneLoadController = sceneLoadController;
     }
 
-    public void ToggleLoadScene(Action onComplete = null)
+    public void Start()
     {
-        _sceneLoadView.ToggleOpenCloseLoadScene(onComplete);
+        _sceneLoadController.OnLoadScene
+            .Subscribe(val => ToggleLoadScene(val))
+            .AddTo(_compositeDisposable);
+
+        _sceneLoadView.OnToggleCompleted
+            .Subscribe(val => HandleToggleCompleted(val))
+            .AddTo(_compositeDisposable);
     }
 
-    public void SetSceneLoadModel(SceneLoadModel sceneLoadModel)
+    public void ToggleLoadScene(bool isOpen)
     {
-        _sceneLoadModel = sceneLoadModel;
+        _sceneLoadView.ToggleOpenCloseLoadScene(isOpen);
+    }
+
+    private void HandleToggleCompleted(bool isOpen)
+    {
+        _sceneLoadController.ToggleLoadSceneCompleted(isOpen);
+    }
+
+    public void Dispose()
+    {
+        _compositeDisposable.Dispose();
     }
 }

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class SkillVFXSpawner : LifetimeScope, ISpawner, IStartInit
+public class SkillVFXSpawner : BaseMonoBehaviour, ISpawner, IStartInit
 {
     [SerializeField] private Transform obj;
     [SerializeField] private Transform holder;

@@ -1,19 +1,25 @@
 using UnityEngine;
+using VContainer;
+using VContainer.Unity;
 
-public class PlayerMovementPresenter
+public class PlayerMovementPresenter : IStartable
 {
-    private PlayerMovementView _view;
-    private PlayerMovement _playerMovement;
-    private PlayerAnimatorController _animatorController;
+    private readonly PlayerMovementView _view;
+    private readonly PlayerMovement _playerMovement;
+    private readonly PlayerAnimatorController _animatorController;
+    [Inject] private IPlayerTeamProvider _playerTeamProvider;
 
     public PlayerMovementPresenter(PlayerMovement playerMovement, PlayerMovementView playerMovementView, PlayerAnimatorController animatorController)
     {
         _view = playerMovementView;
         _playerMovement = playerMovement;
         _animatorController = animatorController;
-
-        _view.MoveEvent += OnJoystickPosChanged;
         Debug.Log("PlayerMovementPresenter initialized");
+    }
+
+    public void Start()
+    {
+        _view.MoveEvent += OnJoystickPosChanged;
     }
 
     private void OnJoystickPosChanged(Vector2 direction, float speedIntensity)

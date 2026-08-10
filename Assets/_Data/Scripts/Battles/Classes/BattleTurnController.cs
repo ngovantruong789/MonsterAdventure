@@ -1,19 +1,26 @@
 using System;
 using UniRx;
+using UnityEngine;
+using VContainer.Unity;
 
-public class BattleTurnController : IDisposable
+public class BattleTurnController : IDisposable, IStartable
 {
-    private IBattleMonsterTurn _battleMonsterTurn;
+    private readonly IBattleMonsterTurn _battleMonsterTurn;
     private EBattlePhase _eBattlePhase;
     private bool _isEndBattle;
     private readonly CompositeDisposable _disposable = new();
 
     public BattleTurnController(IBattleMonsterTurn battleMonsterTurn)
     {
-        _eBattlePhase = EBattlePhase.Start;
         _battleMonsterTurn = battleMonsterTurn;
+        Debug.Log("BattleTurnController Initialized");
+    }
 
-        battleMonsterTurn.OnEndBattle
+    public void Start()
+    {
+        _eBattlePhase = EBattlePhase.Start;
+
+        _battleMonsterTurn.OnEndBattle
             .Subscribe(val => SetEndBattle(val))
             .AddTo(_disposable);
 

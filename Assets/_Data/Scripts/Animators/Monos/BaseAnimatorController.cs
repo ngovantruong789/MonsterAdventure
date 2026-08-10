@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BaseAnimatorController : LifetimeScope, IStartInit
+public class BaseAnimatorController : BaseMonoBehaviour, IStartInit
 {
     [SerializeField] protected Animator _animator;
 
