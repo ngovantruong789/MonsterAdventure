@@ -54,7 +54,11 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: a686e254458429c4a9cd8e208e98eb07, type: 2}
     - target: {fileID: 4874548993383349040, guid: 3ee5006fb0e236e4dbd7ea3a4c168a9b, type: 3}
       propertyPath: m_Name
-      value: VFXPrefab Variant
+      value: Impact
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874548993383349040, guid: 3ee5006fb0e236e4dbd7ea3a4c168a9b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6837064476365021442, guid: 3ee5006fb0e236e4dbd7ea3a4c168a9b, type: 3}
       propertyPath: m_Size.x

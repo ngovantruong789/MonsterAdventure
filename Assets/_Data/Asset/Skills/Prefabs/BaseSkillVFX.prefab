@@ -44,3 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c0d64ecbaaceb48b70ad252092bc90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VFXEntity
+  eSkillId: 13
+  vfxTracks: []
