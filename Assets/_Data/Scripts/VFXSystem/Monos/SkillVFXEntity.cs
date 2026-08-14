@@ -9,6 +9,8 @@ public class SkillVFXEntity : BaseMonoBehaviour, ISkillVFXEntity
     public ESkillId ESkillId => eSkillId;
 
     [SerializeField] private List<VFXTrack> vfxTracks;
+    [SerializeField] private float _timeDisable = 1f;
+    [SerializeField] private float _timeDelayCompleted = 1f;
 
     public Action PlayVFXCompleted { get; set; }
     public Transform CurrentTransform => transform;
@@ -36,9 +38,10 @@ public class SkillVFXEntity : BaseMonoBehaviour, ISkillVFXEntity
             ActiveVFX(track);
         }
 
+        yield return new WaitForSeconds(_timeDelayCompleted);
         PlayVFXCompleted?.Invoke();
-        yield return new WaitForSeconds(1f);
 
+        yield return new WaitForSeconds(_timeDisable);
         gameObject.SetActive(false);
     }
 

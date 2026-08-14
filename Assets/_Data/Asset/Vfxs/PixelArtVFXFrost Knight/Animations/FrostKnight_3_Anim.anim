@@ -22,29 +22,29 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: 1732276827407520466, guid: 56d2da9f2428c1e448df156a3af08365, type: 3}
-    - time: 0.1
+    - time: 0.06666667
       value: {fileID: -9111334026566338639, guid: 3c6d54224b0c99e4da12a3676d929c93, type: 3}
-    - time: 0.2
+    - time: 0.11666667
       value: {fileID: -288556614092222461, guid: 7499b2ece982f894a8bb33e9d6bbc0a0, type: 3}
-    - time: 0.3
+    - time: 0.18333334
       value: {fileID: -4814611014655227942, guid: 0bb0dc42c1bda4741a8ca973ecb7bd93, type: 3}
-    - time: 0.4
+    - time: 0.23333333
       value: {fileID: 4480259808710137108, guid: a316e771449359e458f5c5158c5dfea5, type: 3}
-    - time: 0.5
+    - time: 0.31666666
       value: {fileID: 4200642808188534947, guid: f832727763b3d4d49837f5084d5a4995, type: 3}
-    - time: 0.6
+    - time: 0.35
       value: {fileID: 3544703375196856505, guid: 65b43a01654e39e459c2fe2f8ae759a2, type: 3}
-    - time: 0.7
+    - time: 0.41666666
       value: {fileID: 6442623088138775485, guid: ca7724a845fa30542b0136c39675b8f6, type: 3}
-    - time: 0.8
+    - time: 0.41666666
       value: {fileID: 5515639991112237745, guid: 87bd6a333390ae149a9e0654edea5bd3, type: 3}
-    - time: 0.9
+    - time: 0.46666667
       value: {fileID: -8738033662348739625, guid: e21025234f3348c45b206eb142151e80, type: 3}
-    - time: 1
+    - time: 0.46666667
       value: {fileID: 3680061065417038939, guid: c0df859334285d54b8a7d166a7c675cf, type: 3}
-    - time: 1.1
+    - time: 0.53333336
       value: {fileID: 3680061065417038939, guid: c0df859334285d54b8a7d166a7c675cf, type: 3}
-    - time: 1.1333333
+    - time: 0.5833333
       value: {fileID: -3044812348678223458, guid: 8f4c29ee58c7ca14885f067e4d48b32e, type: 3}
     attribute: m_Sprite
     path: 
@@ -86,7 +86,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.15
+    m_StopTime: 0.59999996
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
