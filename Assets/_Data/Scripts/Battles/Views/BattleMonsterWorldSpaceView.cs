@@ -49,6 +49,9 @@ public partial class BattleMonsterWorldSpaceView : BaseMonoBehaviour, IStartInit
         if (vfx == null) return;
         if (!vfx.TryGetComponent(out ISkillVFXEntity skillVFXEntity)) return;
 
+        Vector3 scale = vfx.transform.localScale;
+        vfx.transform.localScale = eMonsterSide == EMonsterSide.Opponent ? new Vector3(-scale.x, scale.y) : scale;
+
         Action handler = null;
         handler = () =>
         {

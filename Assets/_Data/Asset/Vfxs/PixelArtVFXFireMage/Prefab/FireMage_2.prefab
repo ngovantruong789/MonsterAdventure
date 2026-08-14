@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 508644983975271683, guid: 3ee5006fb0e236e4dbd7ea3a4c168a9b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.40168
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 508644983975271683, guid: 3ee5006fb0e236e4dbd7ea3a4c168a9b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.79926
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 508644983975271683, guid: 3ee5006fb0e236e4dbd7ea3a4c168a9b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 623fe56abed9c954d8ee61d2ea40f868, type: 2}
     - target: {fileID: 4874548993383349040, guid: 3ee5006fb0e236e4dbd7ea3a4c168a9b, type: 3}
       propertyPath: m_Name
-      value: VFXPrefab Variant
+      value: FireMage_2
       objectReference: {fileID: 0}
     - target: {fileID: 6837064476365021442, guid: 3ee5006fb0e236e4dbd7ea3a4c168a9b, type: 3}
       propertyPath: m_Size.x

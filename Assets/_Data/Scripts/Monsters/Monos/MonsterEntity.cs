@@ -12,7 +12,7 @@ public class MonsterEntity : CharacterEntity, IStartable
     public void Start()
     {
         Vector2 originLevelRange = GetOriginLevelRange(_monsterSO.Map);
-        _currentModel = MonsterModelFactory.Create(_monsterSO, 5);
+        _currentModel = MonsterModelFactory.Create(_monsterSO, 20);
     }
 
     private Vector2 GetOriginLevelRange(MonsterMapConfig[] monsterMapConfigs)
