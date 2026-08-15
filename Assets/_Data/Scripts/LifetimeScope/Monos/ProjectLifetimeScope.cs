@@ -7,6 +7,7 @@ public class ProjectLifetimeScope : LifetimeScope, IStartable
 {
     [SerializeField] private List<MonsterSO> _monsters;
     [SerializeField] private ItemDatabaseSO _itemDatabaseSO;
+    [SerializeField] private List<ItemSO> _items;
 
     void IStartable.Start()
     {
@@ -18,7 +19,7 @@ public class ProjectLifetimeScope : LifetimeScope, IStartable
         base.Configure(builder);
         //Controller
         builder.RegisterEntryPoint<PlayerTeamController>(Lifetime.Singleton).AsSelf().As<IPlayerTeamProvider>();
-        builder.RegisterEntryPoint<InventoryController>(Lifetime.Singleton);
+        builder.RegisterEntryPoint<InventoryController>(Lifetime.Singleton).As<IInventoryProvider>();
         builder.RegisterEntryPoint<SceneLoadController>(Lifetime.Singleton).As<ISceneLoadController>();
 
         //Model
@@ -32,6 +33,7 @@ public class ProjectLifetimeScope : LifetimeScope, IStartable
         //File
         builder.RegisterInstance(_itemDatabaseSO);
         builder.RegisterInstance<IReadOnlyList<MonsterSO>>(_monsters);
+        builder.RegisterInstance<IReadOnlyList<ItemSO>>(_items);
 
         //View
         builder.RegisterComponentInHierarchy<SceneLoadView>();
