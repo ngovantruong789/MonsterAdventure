@@ -14,15 +14,17 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
     private readonly BattleManager _battleManager;
     private readonly CompositeDisposable _disposable = new();
     private readonly IBattleMonsterPresenter _iBattleMonsterPresenter;
+    private readonly IInventoryProvider _inventoryProvider;
 
     private EStatePhase _currentStatePhase;
 
-    public BattleMonsterPresenter(BattleMonsterWorldSpaceView battleMonsterView, 
-        HUDBattleMonsterView hUDBattleMonsterView, 
+    public BattleMonsterPresenter(BattleMonsterWorldSpaceView battleMonsterView,
+        HUDBattleMonsterView hUDBattleMonsterView,
         BattleModel battleModel,
         BattleManager battleManager,
         PlayerTeamModel playerTeamModel,
-        IBattleMonsterPresenter iBattleMonsterPresenter)
+        IBattleMonsterPresenter iBattleMonsterPresenter,
+        IInventoryProvider inventoryProvider)
     {
         //_battleModel = battleModel;
         _battleMonsterView = battleMonsterView;
@@ -31,12 +33,16 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         _playerTeamModel = playerTeamModel;
         _opponentModel = battleModel.OpponentMonsterModel;
         _iBattleMonsterPresenter = iBattleMonsterPresenter;
+        _inventoryProvider = inventoryProvider;
         Debug.Log("BattleMonsterPresenter Initialized");
     }
 
     public void Start()
     {
         UpdateHUDBattleMonsterViewData(true, true);
+        _hUDBattleMonsterView.CreateItemButtons();
+        _hUDBattleMonsterView.UpdateItemButtons();
+        _hUDBattleMonsterView.CurrentItemSelectedConstructor();
 
         //Opponent
         DeployMonster(EMonsterSide.Opponent, -1);
@@ -91,7 +97,6 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
             .Subscribe(val => HandlePlayVFXComplete(val))
             .AddTo(_disposable);
     }
-
     private void UpdateHUDBattleMonsterViewData(bool updateUnlockSkills, bool updateBattleSkills)
     {
         HUDBattleMonsterViewData hUDBattleMonsterViewData = new HUDBattleMonsterViewData();
@@ -104,8 +109,10 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
             monsterViewData.BatlleSkills = updateBattleSkills ? ConvertSkillsModelToSkillViewData(model.BatlleSkills) : _hUDBattleMonsterView.HUDBattleMonsterViewData.PlayerTeamDatas[i].BatlleSkills;
             hUDBattleMonsterViewData.PlayerTeamDatas.Add(monsterViewData);
         }
-
+        hUDBattleMonsterViewData.RestoreInventoryModel = _inventoryProvider.RestoreInventoryModel;
+        hUDBattleMonsterViewData.CaptureInventoryModel = _inventoryProvider.CaptureInventoryModel;
         _hUDBattleMonsterView.SetData(hUDBattleMonsterViewData);
+        Debug.Log("So luong Item lay duoc data: " + hUDBattleMonsterViewData.RestoreInventoryModel.Items.Count.ToString()); 
     }
     private MonsterViewData CovertMonsterModelToMonsterViewData(MonsterModel model)
     {
@@ -159,6 +166,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
 
     private void ShowItem()
     {
+
         _hUDBattleMonsterView.ShowItem();
     }
 

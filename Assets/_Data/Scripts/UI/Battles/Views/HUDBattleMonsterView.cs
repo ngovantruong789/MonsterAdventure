@@ -1,4 +1,6 @@
-using DG.Tweening;
+﻿using DG.Tweening;
+using JetBrains.Annotations;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,6 +24,13 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
     [SerializeField] private Button _btnItem;
     [SerializeField] private Button _btnCloseItem;
     [SerializeField] private RectTransform _itemChoosePanel;
+    [SerializeField] private List<SelectItemInfor> _selectItems;
+    [SerializeField] private SelectItemInfor _itemPrefab;
+    [SerializeField] private RectTransform _itemRestoreParent;
+    [SerializeField] private RectTransform _itemCaptureParent;
+    [SerializeField] private Button _btnItemRestore;
+    [SerializeField] private Button _btnItemCapture;
+    private SelectItemInfor _currentItemselected;
 
     [Header("Monster")]
     [SerializeField] private Button _btnMonster;
@@ -47,7 +56,7 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
 
     public void Initialize()
     {
-        //Skill
+        //Skil
         _btnSkill.onClick.AddListener(() =>
         {
             if (!CheckClickedBattleHUD()) return;
@@ -65,6 +74,16 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         {
             if (!CheckClickedBattleHUD()) return;
             _onShowItem.OnNext(default);
+        });
+
+        _btnItemRestore.onClick.AddListener(() =>
+        {
+            ShowItemRestore();
+        });
+
+        _btnItemCapture.onClick.AddListener(() =>
+        {
+            ShowItemCapture();
         });
 
         _btnCloseItem.onClick.AddListener(() =>
@@ -161,6 +180,52 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         }
     }
 
+    public void CreateItemButtons()
+    {
+        int restoreDataCount = _hUDBattleMonsterViewData.RestoreInventoryModel.Items.Count;
+        int captureDataCount = _hUDBattleMonsterViewData.CaptureInventoryModel.Items.Count;
+        
+        for (int i = 0; i < restoreDataCount; i++)
+        {
+            SelectItemInfor newItemUI = SpawnItemButton(_itemRestoreParent);
+            _selectItems.Add(newItemUI);
+        }
+        for (int i = 0; i < captureDataCount; i++)
+        {
+            SelectItemInfor newItemUI = SpawnItemButton(_itemCaptureParent);
+            _selectItems.Add(newItemUI);
+        }
+        _selectItems.ForEach(item => item.BtnItem.onClick.AddListener(() => SelectItem(item)));
+    }
+    private SelectItemInfor SpawnItemButton(RectTransform parent)
+    {
+        return Instantiate(_itemPrefab, parent);
+    }
+
+    public void UpdateItemButtons()
+    {
+        List<ItemModel> restoreData = _hUDBattleMonsterViewData.RestoreInventoryModel.Items;
+        List<ItemModel> captureData = _hUDBattleMonsterViewData.CaptureInventoryModel.Items;
+        int i = 0;
+        i = UpdateItemButtons(restoreData, i);
+        UpdateItemButtons(captureData, i);
+    }
+
+    private int UpdateItemButtons(List<ItemModel> data, int currentIndex)
+    {
+        foreach (ItemModel item in data)
+        {
+            Debug.Log(currentIndex.ToString());
+            _selectItems[currentIndex].ItemNameText.text = item.Name;
+            _selectItems[currentIndex].DescriptionText.text = item.Description;
+            _selectItems[currentIndex].QuantityText.text = item.Quantity.ToString();
+
+            if (item.Image != null) _selectItems[currentIndex].ImgIcon.sprite = item.Image;
+            currentIndex++;
+        }
+        return currentIndex;
+    }
+
     public void ShowPlayerTeam()
     {
         _monsterChoosePanel.gameObject.SetActive(true);
@@ -182,11 +247,30 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
     public void ShowItem()
     {
         _itemChoosePanel.gameObject.SetActive(true);
+        _itemRestoreParent.gameObject.SetActive(true);
+        _itemCaptureParent.gameObject.SetActive(false);
+    }
+
+    public void ShowItemRestore()
+    {
+        _itemRestoreParent.gameObject.SetActive(true);
+        _itemCaptureParent.gameObject.SetActive(false);
+    }
+
+    public void ShowItemCapture()
+    {
+        _itemRestoreParent.gameObject.SetActive(false);
+        _itemCaptureParent.gameObject.SetActive(true);
     }
 
     public void CurrentMonsterSelectedConstructor()
     {
         _currentMonsterSelected = _btnSelectMonsters[0];
+    }
+
+    public void CurrentItemSelectedConstructor()
+    {
+        _currentItemselected = _selectItems[0];
     }
 
     private void SelectMonster(ButtonSelectMonsterInfor buttonSelectMonsterInfor)
@@ -222,6 +306,22 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
 
         _isBattleButtonClicked = true;
         return true;
+    }
+
+    private void SelectItem(SelectItemInfor buttonSelectItemInfor)
+    {
+        if (!IsInteract) return;
+        if (_currentItemselected != null && _currentItemselected != buttonSelectItemInfor)
+        {
+            _currentItemselected.ImgSelectedItem.gameObject.SetActive(false);
+            _currentItemselected = buttonSelectItemInfor;
+            _currentItemselected.ImgSelectedItem.gameObject.SetActive(true);
+        }
+        else
+        {
+            _currentItemselected = buttonSelectItemInfor;
+            _currentItemselected.ImgSelectedItem.gameObject.SetActive(true);
+        }
     }
 
     private void SelectSkill(BattleButtonSkillInfor battleButtonSkillInfor)

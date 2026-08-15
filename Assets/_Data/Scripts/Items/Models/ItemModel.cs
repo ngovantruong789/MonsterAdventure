@@ -1,5 +1,8 @@
+using UnityEngine;
+
 public class ItemModel
 {
+    public Sprite Image { get; set; }
     public int Id {  get; set; }
     public string Name { get; set; }
     public EItemEffect EffectItem { get; set; }
