@@ -42,7 +42,6 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         UpdateHUDBattleMonsterViewData(true, true);
         _hUDBattleMonsterView.CreateItemButtons();
         _hUDBattleMonsterView.UpdateItemButtons();
-        _hUDBattleMonsterView.CurrentItemSelectedConstructor();
 
         //Opponent
         DeployMonster(EMonsterSide.Opponent, -1);

@@ -1,5 +1,4 @@
 ﻿using DG.Tweening;
-using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -197,6 +196,7 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         }
         _selectItems.ForEach(item => item.BtnItem.onClick.AddListener(() => SelectItem(item)));
     }
+
     private SelectItemInfor SpawnItemButton(RectTransform parent)
     {
         return Instantiate(_itemPrefab, parent);
@@ -255,22 +255,20 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
     {
         _itemRestoreParent.gameObject.SetActive(true);
         _itemCaptureParent.gameObject.SetActive(false);
+        ResetCurrentSelectedItem(_currentItemselected);
+
     }
 
     public void ShowItemCapture()
     {
         _itemRestoreParent.gameObject.SetActive(false);
         _itemCaptureParent.gameObject.SetActive(true);
+        ResetCurrentSelectedItem(_currentItemselected);
     }
 
     public void CurrentMonsterSelectedConstructor()
     {
         _currentMonsterSelected = _btnSelectMonsters[0];
-    }
-
-    public void CurrentItemSelectedConstructor()
-    {
-        _currentItemselected = _selectItems[0];
     }
 
     private void SelectMonster(ButtonSelectMonsterInfor buttonSelectMonsterInfor)
@@ -317,11 +315,21 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
             _currentItemselected = buttonSelectItemInfor;
             _currentItemselected.ImgSelectedItem.gameObject.SetActive(true);
         }
-        else
+        if (_currentItemselected != null && _currentItemselected == buttonSelectItemInfor)
         {
             _currentItemselected = buttonSelectItemInfor;
             _currentItemselected.ImgSelectedItem.gameObject.SetActive(true);
         }
+        else
+        {
+            _currentItemselected = null;
+        }
+    }
+
+    public void ResetCurrentSelectedItem(SelectItemInfor currentSelectedItem)
+    {
+        if (currentSelectedItem != null) currentSelectedItem.ImgSelectedItem.gameObject.SetActive(false);
+        _currentItemselected = null;
     }
 
     private void SelectSkill(BattleButtonSkillInfor battleButtonSkillInfor)
