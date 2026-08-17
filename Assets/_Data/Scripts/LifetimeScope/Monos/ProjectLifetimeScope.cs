@@ -40,5 +40,6 @@ public class ProjectLifetimeScope : LifetimeScope, IStartable
 
         //Instance
         builder.RegisterComponentInHierarchy<SceneLoadManager>();
+        builder.RegisterComponentInHierarchy<BattleManager>();
     }
 }

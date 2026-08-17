@@ -37,9 +37,6 @@ public class MonsterSO : ScriptableObject
     [SerializeField] private StatConfig _speed = new StatConfig { StatType = EStatType.Speed };
     public StatConfig Speed => _speed;
 
-    [SerializeField] private MonsterMapConfig[] _map;
-    public MonsterMapConfig[] Map => _map;
-
     [SerializeField] private SkillConfig[] _skills;
     public SkillConfig[] Skills => _skills;
 }

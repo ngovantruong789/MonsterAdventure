@@ -30,6 +30,10 @@ public partial class SceneLoadManager : GameLifetimeScope, IStartable
                         StartCoroutine(LoadSceneAdditiveCoroutine(_sceneName));
                     }
                 }
+                else
+                {
+                    _onLoadScene.OnNext(true);
+                }
             })
             .AddTo(this);
 
@@ -40,6 +44,7 @@ public partial class SceneLoadManager : GameLifetimeScope, IStartable
     public void StartLoadScene(string sceneName)
     {
         _sceneName = sceneName;
+        _onLoadScene.OnNext(false);
         _sceneLoadController.ToggleLoadScene(false);
     }
 

@@ -280,7 +280,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle-Anim_0
+      name: Glaceon_Idle-Anim_0
       rect:
         serializedVersion: 2
         x: 0
@@ -293,16 +293,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fa864d247f1766b60800000000000000
-      internalID: 7738998316474853551
+      spriteID: 7e5c7d1a1b7a9e14189d7a2f4c607daf
+      internalID: -852244253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_1
+      name: Glaceon_Idle-Anim_1
       rect:
         serializedVersion: 2
         x: 32
@@ -315,16 +315,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 30f49f3b6ebff6b10800000000000000
-      internalID: 1977075729719447299
+      spriteID: ab885b24cf5e8dd4cb9da4d2ca6fc127
+      internalID: 1094161582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_2
+      name: Glaceon_Idle-Anim_2
       rect:
         serializedVersion: 2
         x: 64
@@ -337,16 +337,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 04047ac9bd83f4f70800000000000000
-      internalID: 9173613481854189632
+      spriteID: 0ab2a307c85314640b2234a0ff710d2b
+      internalID: 770271075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_3
+      name: Glaceon_Idle-Anim_3
       rect:
         serializedVersion: 2
         x: 96
@@ -359,16 +359,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 12fbfb24eb2beff20800000000000000
-      internalID: 3458398094100512545
+      spriteID: b0bb14c7459170b4fa567a79ffde9844
+      internalID: -1574066673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_4
+      name: Glaceon_Idle-Anim_4
       rect:
         serializedVersion: 2
         x: 128
@@ -381,16 +381,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4adc0a0e11377bae0800000000000000
-      internalID: -1533630627476091484
+      spriteID: cdefc2c4029d46043b5116b4b8ebe878
+      internalID: -1913703576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_5
+      name: Glaceon_Idle-Anim_5
       rect:
         serializedVersion: 2
         x: 160
@@ -403,16 +403,148 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 710667869a1b9d030800000000000000
-      internalID: 3520039924926930967
+      spriteID: 9eb462c2ec4fe054aba0929e5c759fd8
+      internalID: 359343844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_12
+      name: Glaceon_Idle-Anim_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101fd1374ca6ea540a2294728018854f
+      internalID: 1262228249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50430f4445aab2f439d1d467dbbb9c16
+      internalID: -349821657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668461cf11fc6b341b5626a82d13473c
+      internalID: -1577079864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0544c82131fa5a64eb51473c74522b4b
+      internalID: -365714046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 240
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31202e736105f09449dbea6580eba944
+      internalID: 150585389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98c267a64eb1304e99fe859fba53c77
+      internalID: -1701110154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_12
       rect:
         serializedVersion: 2
         x: 0
@@ -425,16 +557,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7fdda996a9f0c9750800000000000000
-      internalID: 6312937933537730039
+      spriteID: 5190649ceedddba4297643434c88db25
+      internalID: 1618914729
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_13
+      name: Glaceon_Idle-Anim_13
       rect:
         serializedVersion: 2
         x: 32
@@ -447,16 +579,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 77f8961a485984660800000000000000
-      internalID: 7370305187068088183
+      spriteID: 776213a0b07f2154baa833bdff569726
+      internalID: -1776684464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_14
+      name: Glaceon_Idle-Anim_14
       rect:
         serializedVersion: 2
         x: 64
@@ -469,16 +601,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5035613e1c7abe2c0800000000000000
-      internalID: -4401239759644110075
+      spriteID: 31847735b1ec7df44a9538c45bd860bb
+      internalID: 461274189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_15
+      name: Glaceon_Idle-Anim_15
       rect:
         serializedVersion: 2
         x: 96
@@ -491,16 +623,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c808dca5d0f935f40800000000000000
-      internalID: 5716087231770099852
+      spriteID: d037b4dd519f3674487fff9f60f7afbf
+      internalID: 1097350638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_16
+      name: Glaceon_Idle-Anim_16
       rect:
         serializedVersion: 2
         x: 128
@@ -513,16 +645,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7c6531675e307f440800000000000000
-      internalID: 4969444997890004679
+      spriteID: 3be75c9bfa4ce9e4d8e476230f6d0014
+      internalID: -1453995999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_17
+      name: Glaceon_Idle-Anim_17
       rect:
         serializedVersion: 2
         x: 160
@@ -535,16 +667,148 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4b444a8c9eda31180800000000000000
-      internalID: -9145775198654151500
+      spriteID: f5db4920a287ca544a285f068434d3b6
+      internalID: -2050614843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_24
+      name: Glaceon_Idle-Anim_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a54c28920ddbc4eb8e75123937e8f1
+      internalID: -1188525735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1fe72610f0755488d5df0f9b2c2ea3
+      internalID: -213778756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25095fdf265083640b9ad182d9562e84
+      internalID: -1686947675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_21
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9423ec5bc51c2224bb060d055049f822
+      internalID: 338270867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b884b19af6f7387458ea48a5a64afa49
+      internalID: -1666322357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbf43548410a1049bf659f884be24d1
+      internalID: -724508858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_24
       rect:
         serializedVersion: 2
         x: 0
@@ -557,16 +821,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 69906a69f391192e0800000000000000
-      internalID: -2120886188613695082
+      spriteID: 97a0532162288d946875fa8b7d2dc067
+      internalID: 518904954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_25
+      name: Glaceon_Idle-Anim_25
       rect:
         serializedVersion: 2
         x: 32
@@ -579,16 +843,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8afe6a79463be50b0800000000000000
-      internalID: -5737951630601031768
+      spriteID: 1c10090ece8a5df47871001d5e13048a
+      internalID: 1836889799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_26
+      name: Glaceon_Idle-Anim_26
       rect:
         serializedVersion: 2
         x: 64
@@ -601,16 +865,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a683f0ec316423bc0800000000000000
-      internalID: -3804901684299220886
+      spriteID: 31a0b6f670cd80a4b974177fadcf897c
+      internalID: -1930787467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_27
+      name: Glaceon_Idle-Anim_27
       rect:
         serializedVersion: 2
         x: 96
@@ -623,16 +887,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f7bbce720a1b088c0800000000000000
-      internalID: -3999001167682290817
+      spriteID: c1b879744c078df4fbcacb092ace926c
+      internalID: 1806883817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_28
+      name: Glaceon_Idle-Anim_28
       rect:
         serializedVersion: 2
         x: 128
@@ -645,16 +909,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 18a9cff227ff57830800000000000000
-      internalID: 4068438704295549569
+      spriteID: 62fa224944fc03043bf88b2a11a66b35
+      internalID: -1129731508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_29
+      name: Glaceon_Idle-Anim_29
       rect:
         serializedVersion: 2
         x: 160
@@ -667,16 +931,148 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5cac0c4c0757dbef0800000000000000
-      internalID: -90787290279785787
+      spriteID: 6a981d926c2352848948d706ce90d7fa
+      internalID: 1735650620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_36
+      name: Glaceon_Idle-Anim_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e898ca7396b98446a32c8248416eea7
+      internalID: -1816048979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da211449bd04e748ac800fd9895c8c7
+      internalID: -2069086168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc4b511e31bb4b4da7bb973c12d9739
+      internalID: -578308105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a800cfe03fc96644b1f1006e92f3e15
+      internalID: 1359251885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad383f245cfbf794cb274ff6daf6a62e
+      internalID: -491876922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_35
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7004b18e058db40428b4bf9bf38943ba
+      internalID: 1214385686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_36
       rect:
         serializedVersion: 2
         x: 0
@@ -689,16 +1085,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 95aec204fa1914570800000000000000
-      internalID: 8449194557805750873
+      spriteID: 3be4d2fdf1c757440bc43266f8565d16
+      internalID: -1869905673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_37
+      name: Glaceon_Idle-Anim_37
       rect:
         serializedVersion: 2
         x: 32
@@ -711,16 +1107,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 194d5e6ecd8fcfe00800000000000000
-      internalID: 1080011638312391825
+      spriteID: 5a71c927723e40f4a89fb2531c233d57
+      internalID: -1916167307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_38
+      name: Glaceon_Idle-Anim_38
       rect:
         serializedVersion: 2
         x: 64
@@ -733,16 +1129,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 799fe02f53b63aac0800000000000000
-      internalID: -3845111777405765225
+      spriteID: cdae9b333f4423e41b088b490b802b3d
+      internalID: 727125834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_39
+      name: Glaceon_Idle-Anim_39
       rect:
         serializedVersion: 2
         x: 96
@@ -755,16 +1151,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d36aec4f4f20c4ce0800000000000000
-      internalID: -1419756531426089411
+      spriteID: 317a745e9d331834cb1eb93f8e1c6215
+      internalID: -320922486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_40
+      name: Glaceon_Idle-Anim_40
       rect:
         serializedVersion: 2
         x: 128
@@ -777,16 +1173,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a45965f87b268fe80800000000000000
-      internalID: -8144651385576188598
+      spriteID: 4d06b4bfe1581d04b9d9a5cc92572e9f
+      internalID: -107260068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_41
+      name: Glaceon_Idle-Anim_41
       rect:
         serializedVersion: 2
         x: 160
@@ -799,10 +1195,142 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3507dfc83abb03960800000000000000
-      internalID: 7579764483984027731
+      spriteID: 8fce3bb26cf03c94288e1f85ee756585
+      internalID: 764165786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10db68bf71528e4b8ece02f5b21d7b4
+      internalID: -1448170086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_43
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252edabba5cbae54586c10e02ad1f1c9
+      internalID: 418219923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c29e3481aeddf74396bc45d9c1cd26a
+      internalID: -1759526992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_45
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4cbf99f2afb53d4b8cccac86c4bd9b5
+      internalID: -781951054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_46
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7497fa8d2af6d64499e49fba12495e2
+      internalID: -329935184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glaceon_Idle-Anim_47
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8023306e6fe19824ea39ef06d4cff0de
+      internalID: 78382789
       vertices: []
       indices: 
       edges: []
@@ -823,54 +1351,54 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":8.0},"gridSpriteSize":{"x":32.0,"y":40.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Idle-Anim_0: 7738998316474853551
-      Idle-Anim_1: 1977075729719447299
-      Idle-Anim_10: -2500440999657106871
-      Idle-Anim_11: 3380924079768591465
-      Idle-Anim_12: 6312937933537730039
-      Idle-Anim_13: 7370305187068088183
-      Idle-Anim_14: -4401239759644110075
-      Idle-Anim_15: 5716087231770099852
-      Idle-Anim_16: 4969444997890004679
-      Idle-Anim_17: -9145775198654151500
-      Idle-Anim_18: -6656707347790094562
-      Idle-Anim_19: -5421402862643160038
-      Idle-Anim_2: 9173613481854189632
-      Idle-Anim_20: 728989986691342317
-      Idle-Anim_21: 1731065877924970417
-      Idle-Anim_22: 702254742369775053
-      Idle-Anim_23: 843812802259278218
-      Idle-Anim_24: -2120886188613695082
-      Idle-Anim_25: -5737951630601031768
-      Idle-Anim_26: -3804901684299220886
-      Idle-Anim_27: -3999001167682290817
-      Idle-Anim_28: 4068438704295549569
-      Idle-Anim_29: -90787290279785787
-      Idle-Anim_3: 3458398094100512545
-      Idle-Anim_30: -3261768965048884968
-      Idle-Anim_31: 3239275106390307007
-      Idle-Anim_32: 7682167150398461212
-      Idle-Anim_33: 8060601425331014186
-      Idle-Anim_34: -6958673752304707357
-      Idle-Anim_35: -8426690388386427687
-      Idle-Anim_36: 8449194557805750873
-      Idle-Anim_37: 1080011638312391825
-      Idle-Anim_38: -3845111777405765225
-      Idle-Anim_39: -1419756531426089411
-      Idle-Anim_4: -1533630627476091484
-      Idle-Anim_40: -8144651385576188598
-      Idle-Anim_41: 7579764483984027731
-      Idle-Anim_42: -6616807519860232062
-      Idle-Anim_43: 742480819118137374
-      Idle-Anim_44: -6994012070172245659
-      Idle-Anim_45: -2345808624152391985
-      Idle-Anim_46: 2654939614410779705
-      Idle-Anim_47: 4167702978702494160
-      Idle-Anim_5: 3520039924926930967
-      Idle-Anim_6: -9007074944737430628
-      Idle-Anim_7: 5469265311968306403
-      Idle-Anim_8: 8813659312991238842
-      Idle-Anim_9: -7205847637910636526
+      Glaceon_Idle-Anim_0: -852244253
+      Glaceon_Idle-Anim_1: 1094161582
+      Glaceon_Idle-Anim_10: 150585389
+      Glaceon_Idle-Anim_11: -1701110154
+      Glaceon_Idle-Anim_12: 1618914729
+      Glaceon_Idle-Anim_13: -1776684464
+      Glaceon_Idle-Anim_14: 461274189
+      Glaceon_Idle-Anim_15: 1097350638
+      Glaceon_Idle-Anim_16: -1453995999
+      Glaceon_Idle-Anim_17: -2050614843
+      Glaceon_Idle-Anim_18: -1188525735
+      Glaceon_Idle-Anim_19: -213778756
+      Glaceon_Idle-Anim_2: 770271075
+      Glaceon_Idle-Anim_20: -1686947675
+      Glaceon_Idle-Anim_21: 338270867
+      Glaceon_Idle-Anim_22: -1666322357
+      Glaceon_Idle-Anim_23: -724508858
+      Glaceon_Idle-Anim_24: 518904954
+      Glaceon_Idle-Anim_25: 1836889799
+      Glaceon_Idle-Anim_26: -1930787467
+      Glaceon_Idle-Anim_27: 1806883817
+      Glaceon_Idle-Anim_28: -1129731508
+      Glaceon_Idle-Anim_29: 1735650620
+      Glaceon_Idle-Anim_3: -1574066673
+      Glaceon_Idle-Anim_30: -1816048979
+      Glaceon_Idle-Anim_31: -2069086168
+      Glaceon_Idle-Anim_32: -578308105
+      Glaceon_Idle-Anim_33: 1359251885
+      Glaceon_Idle-Anim_34: -491876922
+      Glaceon_Idle-Anim_35: 1214385686
+      Glaceon_Idle-Anim_36: -1869905673
+      Glaceon_Idle-Anim_37: -1916167307
+      Glaceon_Idle-Anim_38: 727125834
+      Glaceon_Idle-Anim_39: -320922486
+      Glaceon_Idle-Anim_4: -1913703576
+      Glaceon_Idle-Anim_40: -107260068
+      Glaceon_Idle-Anim_41: 764165786
+      Glaceon_Idle-Anim_42: -1448170086
+      Glaceon_Idle-Anim_43: 418219923
+      Glaceon_Idle-Anim_44: -1759526992
+      Glaceon_Idle-Anim_45: -781951054
+      Glaceon_Idle-Anim_46: -329935184
+      Glaceon_Idle-Anim_47: 78382789
+      Glaceon_Idle-Anim_5: 359343844
+      Glaceon_Idle-Anim_6: 1262228249
+      Glaceon_Idle-Anim_7: -349821657
+      Glaceon_Idle-Anim_8: -1577079864
+      Glaceon_Idle-Anim_9: -365714046
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

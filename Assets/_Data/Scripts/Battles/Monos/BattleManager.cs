@@ -1,22 +1,72 @@
+using UniRx;
 using UnityEngine;
+using VContainer;
+using VContainer.Unity;
 
-public class BattleManager : BaseMonoBehaviour, IStartInit
+public class BattleManager : GameLifetimeScope, IStartable
 {
-    [SerializeField] private SceneLoadManager _sceneLoadManager;
+    [Inject] private SceneLoadManager _sceneLoadManager;
+    [Inject] private BattleModel _battleModel;
 
-    protected override void Start()
+    private IPlayer _player;
+    private IMapManager _mapManager;
+    private bool _isBattle = false;
+
+    public void Start()
     {
-        base.Start();
-        Initialize();
+        _player = FindAnyObjectByType<PlayerEntity>();
+
+        _sceneLoadManager.OnLoadScene
+            .Subscribe(val =>
+            {
+                if (_player == null) return;
+                _player.PlayerMovement.SetMove(val);
+            })
+            .AddTo(this);
+
+        DontDestroyOnLoad(gameObject);
     }
 
-    public void Initialize()
+    private MonsterModel GetMonsterModel()
     {
-        _sceneLoadManager = FindAnyObjectByType<SceneLoadManager>();
+        int rand = Random.Range(1, 101);
+        MonsterMapModel monsterMapModel = new MonsterMapModel();
+
+        foreach(MonsterMapModel model in _mapManager.MapModel.MonsterMaps)
+        {
+            if(rand >= model.SpawnRate.x && rand <= model.SpawnRate.y)
+            {
+                monsterMapModel = model;
+                break;
+            }
+        }
+        if(monsterMapModel.MonsterSO == null) return null;
+
+        int level = Random.Range((int)monsterMapModel.LevelOriginRange.x, (int)monsterMapModel.LevelOriginRange.y + 1);
+        return MonsterModelFactory.Create(monsterMapModel.MonsterSO, level); ;
+    }
+
+    public void EnterBattle()
+    {
+        if (_isBattle) return;
+        if(_player == null) return;
+        if (!_player.CanBattle) return;
+
+        _battleModel.OpponentMonsterModel = GetMonsterModel();
+        if (_battleModel.OpponentMonsterModel == null) return;
+
+        _sceneLoadManager.StartLoadScene("BattleScene");
+        _isBattle = true;
     }
 
     public void EndBattle()
     {
         _sceneLoadManager.CloseSceneAttitive("BattleScene", "GamePlay");
+        _isBattle = false;
+    }
+
+    public void SetMapManager(IMapManager mapManager)
+    {
+        _mapManager = mapManager;
     }
 }

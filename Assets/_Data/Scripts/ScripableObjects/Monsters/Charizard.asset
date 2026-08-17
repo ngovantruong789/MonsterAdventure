@@ -35,13 +35,10 @@ MonoBehaviour:
   _speed:
     _statType: 2
     _growthPerLevels: 05000000
-  _map:
-  - _mapType: 0
-    _levelOriginRange: {x: 31, y: 50}
   _skills:
   - _skillSO: {fileID: 11400000, guid: 4e2ebd9e03befb448992463335ae49f7, type: 2}
     _unlockLevel: 1
-  - _skillSO: {fileID: 11400000, guid: 251461362d338fa4f89b8473dc905cfe, type: 2}
+  - _skillSO: {fileID: 11400000, guid: 1c04f26889aa5a94e88868e41c98417d, type: 2}
     _unlockLevel: 16
-  - _skillSO: {fileID: 11400000, guid: 2d60d226b8fb2494b8cd6bf52369da87, type: 2}
+  - _skillSO: {fileID: 11400000, guid: 9d86fb6f5c7e19447838580c615c4300, type: 2}
     _unlockLevel: 30
