@@ -1,6 +1,4 @@
 ﻿using DG.Tweening;
-using JetBrains.Annotations;
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,7 +22,8 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
     [SerializeField] private Button _btnItem;
     [SerializeField] private Button _btnCloseItem;
     [SerializeField] private RectTransform _itemChoosePanel;
-    [SerializeField] private List<SelectItemInfor> _selectItems;
+    [SerializeField] private List<SelectItemInfor> _selectItemRestore;
+    [SerializeField] private List<SelectItemInfor> _selectItemCapture;
     [SerializeField] private SelectItemInfor _itemPrefab;
     [SerializeField] private RectTransform _itemRestoreParent;
     [SerializeField] private RectTransform _itemCaptureParent;
@@ -188,15 +187,17 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         for (int i = 0; i < restoreDataCount; i++)
         {
             SelectItemInfor newItemUI = SpawnItemButton(_itemRestoreParent);
-            _selectItems.Add(newItemUI);
+            _selectItemRestore.Add(newItemUI);
         }
         for (int i = 0; i < captureDataCount; i++)
         {
             SelectItemInfor newItemUI = SpawnItemButton(_itemCaptureParent);
-            _selectItems.Add(newItemUI);
+            _selectItemCapture.Add(newItemUI);
         }
-        _selectItems.ForEach(item => item.BtnItem.onClick.AddListener(() => SelectItem(item)));
+        _selectItemRestore.ForEach(item => item.BtnItem.onClick.AddListener(() => SelectItem(item)));
+        _selectItemCapture.ForEach(item => item.BtnItem.onClick.AddListener(() => SelectItem(item)));
     }
+
     private SelectItemInfor SpawnItemButton(RectTransform parent)
     {
         return Instantiate(_itemPrefab, parent);
@@ -206,24 +207,22 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
     {
         List<ItemModel> restoreData = _hUDBattleMonsterViewData.RestoreInventoryModel.Items;
         List<ItemModel> captureData = _hUDBattleMonsterViewData.CaptureInventoryModel.Items;
-        int i = 0;
-        i = UpdateItemButtons(restoreData, i);
-        UpdateItemButtons(captureData, i);
+        UpdateItemButtons(restoreData, _selectItemRestore);
+        UpdateItemButtons(captureData, _selectItemCapture);
     }
 
-    private int UpdateItemButtons(List<ItemModel> data, int currentIndex)
+    private void UpdateItemButtons(List<ItemModel> data, List<SelectItemInfor> listItemData)
     {
+        int i = 0;
         foreach (ItemModel item in data)
         {
-            Debug.Log(currentIndex.ToString());
-            _selectItems[currentIndex].ItemNameText.text = item.Name;
-            _selectItems[currentIndex].DescriptionText.text = item.Description;
-            _selectItems[currentIndex].QuantityText.text = item.Quantity.ToString();
-
-            if (item.Image != null) _selectItems[currentIndex].ImgIcon.sprite = item.Image;
-            currentIndex++;
+            listItemData[i].IdItem = item.Id;
+            listItemData[i].ItemNameText.text = item.Name;
+            listItemData[i].DescriptionText.text = item.Description;
+            listItemData[i].QuantityText.text = item.Quantity.ToString();
+            if (item.Image != null) listItemData[i].ImgIcon.sprite = item.Image;
+            i++;
         }
-        return currentIndex;
     }
 
     public void ShowPlayerTeam()
@@ -255,22 +254,28 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
     {
         _itemRestoreParent.gameObject.SetActive(true);
         _itemCaptureParent.gameObject.SetActive(false);
+        if (_currentItemselected != null)
+        {
+            _currentItemselected.ImgSelectedItem.gameObject.SetActive(false);
+            _currentItemselected = null;
+        }
+
     }
 
     public void ShowItemCapture()
     {
         _itemRestoreParent.gameObject.SetActive(false);
         _itemCaptureParent.gameObject.SetActive(true);
+        if (_currentItemselected != null)
+        {
+            _currentItemselected.ImgSelectedItem.gameObject.SetActive(false);
+            _currentItemselected = null;
+        }
     }
 
     public void CurrentMonsterSelectedConstructor()
     {
         _currentMonsterSelected = _btnSelectMonsters[0];
-    }
-
-    public void CurrentItemSelectedConstructor()
-    {
-        _currentItemselected = _selectItems[0];
     }
 
     private void SelectMonster(ButtonSelectMonsterInfor buttonSelectMonsterInfor)
@@ -316,6 +321,10 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
             _currentItemselected.ImgSelectedItem.gameObject.SetActive(false);
             _currentItemselected = buttonSelectItemInfor;
             _currentItemselected.ImgSelectedItem.gameObject.SetActive(true);
+        }
+        else if (_currentItemselected != null && _currentItemselected == buttonSelectItemInfor)
+        {
+            _onActiveItem.OnNext(_currentItemselected.IdItem);
         }
         else
         {
@@ -366,6 +375,11 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         {
             _currentButtonSkillSelected.ImgSelected.gameObject.SetActive(false);
             _currentButtonSkillSelected = null;
+        }
+        if (_currentItemselected != null)
+        {
+            _currentItemselected.ImgSelectedItem.gameObject.SetActive(false);
+            _currentItemselected = null;
         }
     }
 }
