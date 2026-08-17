@@ -16,6 +16,7 @@ MonoBehaviour:
   _id: 2303
   _name: Green Candy
   _effectItem: 0
+  _itemType: 2
   _value: 10
   _buyPrice: 10
   _sellPrice: 5

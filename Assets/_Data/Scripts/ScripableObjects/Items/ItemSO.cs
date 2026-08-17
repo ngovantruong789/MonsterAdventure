@@ -14,7 +14,10 @@ public class ItemSO : ScriptableObject
 
     [SerializeField] private EItemEffect _effectItem;
     public EItemEffect EffectItem => _effectItem;
-        
+
+    [SerializeField] private EItemType _itemType;
+    public EItemType ItemType => _itemType;
+
     [SerializeField] private float _value;
     public float Value => _value;
 

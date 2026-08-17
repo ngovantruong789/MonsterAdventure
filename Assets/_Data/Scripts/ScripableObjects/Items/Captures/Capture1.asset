@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04385e6d9d22d73439aefca02e05220a, type: 3}
-  m_Name: Capture2
+  m_Name: Capture1
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
-  _image: {fileID: -8010451510339023214, guid: e66673a20bf09c24fb191438d056e6ca, type: 3}
-  _id: 2202
+  _image: {fileID: 1447442794450965071, guid: 980f09ea9f567a344be92b5ac1e22507, type: 3}
+  _id: 2201
   _name: Capture1
   _effectItem: 6
+  _itemType: 1
   _value: 10
   _buyPrice: 10
   _sellPrice: 5
