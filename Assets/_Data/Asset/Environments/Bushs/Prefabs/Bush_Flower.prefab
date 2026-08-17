@@ -56,6 +56,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush_Flower
       objectReference: {fileID: 0}
+    - target: {fileID: 5744934769696533412, guid: 23e544c310b67d44c9a914bbb4159ab4, type: 3}
+      propertyPath: _touchedSprite
+      value: 
+      objectReference: {fileID: 1853107758707378000, guid: 3ad43e744d6854749b9ecc1718f3fd7d, type: 3}
+    - target: {fileID: 5744934769696533412, guid: 23e544c310b67d44c9a914bbb4159ab4, type: 3}
+      propertyPath: _exitTouchedSprite
+      value: 
+      objectReference: {fileID: -1082756311645976254, guid: 3ad43e744d6854749b9ecc1718f3fd7d, type: 3}
     - target: {fileID: 7083340455126738580, guid: 23e544c310b67d44c9a914bbb4159ab4, type: 3}
       propertyPath: m_Controller
       value: 
