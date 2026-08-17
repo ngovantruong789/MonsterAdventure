@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 public class SelectItemInfor : BaseMonoBehaviour
 {
+    [SerializeField] private int _idItem;
+    public int IdItem { get => _idItem; set => _idItem = value; }
+
     [SerializeField] private Button _btnItem;
     public Button BtnItem { get => _btnItem; set => _btnItem = value; }
 

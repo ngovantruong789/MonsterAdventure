@@ -95,7 +95,12 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         _battleMonsterView.OnVFXCompleted
             .Subscribe(val => HandlePlayVFXComplete(val))
             .AddTo(_disposable);
+
+        _hUDBattleMonsterView.OnActiveItem
+            .Subscribe(val => HandleActiveItem(val))
+            .AddTo(_disposable);
     }
+
     private void UpdateHUDBattleMonsterViewData(bool updateUnlockSkills, bool updateBattleSkills)
     {
         HUDBattleMonsterViewData hUDBattleMonsterViewData = new HUDBattleMonsterViewData();
@@ -111,7 +116,6 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         hUDBattleMonsterViewData.RestoreInventoryModel = _inventoryProvider.RestoreInventoryModel;
         hUDBattleMonsterViewData.CaptureInventoryModel = _inventoryProvider.CaptureInventoryModel;
         _hUDBattleMonsterView.SetData(hUDBattleMonsterViewData);
-        Debug.Log("So luong Item lay duoc data: " + hUDBattleMonsterViewData.RestoreInventoryModel.Items.Count.ToString()); 
     }
     private MonsterViewData CovertMonsterModelToMonsterViewData(MonsterModel model)
     {
@@ -309,6 +313,11 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
     private void ActiveAttack(EMonsterSide eMonsterSide, int skillIndex)
     {
         _iBattleMonsterPresenter.ActiveAttack(eMonsterSide, skillIndex);
+    }
+
+    private void HandleActiveItem(int id)
+    {
+        //code use item
     }
 
     private async void HandleUpdateStatComplete(EMonsterSide eMonsterSide, EStatType eStatType)
