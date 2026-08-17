@@ -1,12 +1,18 @@
 using UnityEngine;
+using VContainer.Unity;
 
-public class PlayerMovement : BaseMonoBehaviour
+public partial class PlayerMovement : GameLifetimeScope, IPlayerMovement, IStartable
 {
     [SerializeField] private Rigidbody2D _rd;
     [SerializeField] private float _speed;
     [SerializeField] private float _currentVel;
 
     private Vector2 _currentDir;
+
+    public void Start()
+    {
+        _isMoveable.Value = true;
+    }
 
     private void FixedUpdate()
     {
@@ -15,6 +21,7 @@ public class PlayerMovement : BaseMonoBehaviour
 
     private void Movement()
     {
+        if (!_isMoveable.Value) return;
         if (_rd == null) return;
 
         Vector3 curentVelocity = _rd.transform.localScale;
@@ -29,6 +36,7 @@ public class PlayerMovement : BaseMonoBehaviour
 
     public void ChangePos(Vector2 dir, float speedIntensity)
     {
+        if (!_isMoveable.Value) return;
         _currentDir = dir;
 
         if (speedIntensity <= 0)
@@ -39,5 +47,17 @@ public class PlayerMovement : BaseMonoBehaviour
         {
             _currentVel = speedIntensity * _speed;
         }
+    }
+
+    private void HandleToggleMove()
+    {
+        _currentVel = 0;
+        _rd.linearVelocity = new Vector2(0f, 0f);
+    }
+
+    public void SetMove(bool canMove)
+    {
+        _isMoveable.Value = canMove;
+        HandleToggleMove();
     }
 }

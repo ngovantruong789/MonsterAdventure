@@ -11,7 +11,7 @@ public class MonsterEntity : CharacterEntity, IStartable
 
     public void Start()
     {
-        Vector2 originLevelRange = GetOriginLevelRange(_monsterSO.Map);
+        //Vector2 originLevelRange = GetOriginLevelRange(_monsterSO.Map);
         _currentModel = MonsterModelFactory.Create(_monsterSO, 20);
     }
 
@@ -19,10 +19,10 @@ public class MonsterEntity : CharacterEntity, IStartable
     {
         foreach (MonsterMapConfig monsterMapConfig in monsterMapConfigs)
         {
-            if (monsterMapConfig.MapType == _mapManager.MapType)
+            /*if (monsterMapConfig.MapType == _mapManager.MapType)
             {
                 return monsterMapConfig.LevelOriginRange;
-            }
+            }*/
         }
         return Vector2.zero;
     }
