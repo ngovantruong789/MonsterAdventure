@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sandshrew_1_BottomLeft_Idle_Anim
+  m_Name: Jolteon_TopRight_Idle_Attack_Anim
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,13 +21,11 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 4068438704295549569, guid: 912ea92ef7e85144396a137341d411d0, type: 3}
-    - time: 0.33333334
-      value: {fileID: -90787290279785787, guid: 912ea92ef7e85144396a137341d411d0, type: 3}
-    - time: 0.6666667
-      value: {fileID: -3261768965048884968, guid: 912ea92ef7e85144396a137341d411d0, type: 3}
+      value: {fileID: 112828480, guid: ad5e8bdd584b70a4eb6d64e000503db6, type: 3}
+    - time: 0.5
+      value: {fileID: -622261197, guid: ad5e8bdd584b70a4eb6d64e000503db6, type: 3}
     - time: 1
-      value: {fileID: 3239275106390307007, guid: 912ea92ef7e85144396a137341d411d0, type: 3}
+      value: {fileID: -622261197, guid: ad5e8bdd584b70a4eb6d64e000503db6, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -50,10 +48,9 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 4068438704295549569, guid: 912ea92ef7e85144396a137341d411d0, type: 3}
-    - {fileID: -90787290279785787, guid: 912ea92ef7e85144396a137341d411d0, type: 3}
-    - {fileID: -3261768965048884968, guid: 912ea92ef7e85144396a137341d411d0, type: 3}
-    - {fileID: 3239275106390307007, guid: 912ea92ef7e85144396a137341d411d0, type: 3}
+    - {fileID: 112828480, guid: ad5e8bdd584b70a4eb6d64e000503db6, type: 3}
+    - {fileID: -622261197, guid: ad5e8bdd584b70a4eb6d64e000503db6, type: 3}
+    - {fileID: -622261197, guid: ad5e8bdd584b70a4eb6d64e000503db6, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

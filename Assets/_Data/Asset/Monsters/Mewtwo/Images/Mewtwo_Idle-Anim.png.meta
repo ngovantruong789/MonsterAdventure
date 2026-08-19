@@ -280,7 +280,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle-Anim_0
+      name: Mewtwo_Idle-Anim_0
       rect:
         serializedVersion: 2
         x: 0
@@ -295,14 +295,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91056a9bb3eea864989e89563819e671
-      internalID: 726099360
+      spriteID: f2a9fade8bab19348bae0afc8a8b23dd
+      internalID: 483435859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_1
+      name: Mewtwo_Idle-Anim_1
       rect:
         serializedVersion: 2
         x: 48
@@ -317,14 +317,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 212e02a3babef4c4aba98d3dc4e72d71
-      internalID: -1008290105
+      spriteID: 0ebd45cb218716349b293d9b48d2a150
+      internalID: -1673426989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_2
+      name: Mewtwo_Idle-Anim_2
       rect:
         serializedVersion: 2
         x: 96
@@ -339,14 +339,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c1b541796f28a042a87223dee057567
-      internalID: 268558815
+      spriteID: 1bc2d41714b070b42a46e16fe3e28eeb
+      internalID: 109629928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_3
+      name: Mewtwo_Idle-Anim_3
       rect:
         serializedVersion: 2
         x: 144
@@ -361,14 +361,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2da7f965e062905459dfd671c793e8fd
-      internalID: -1401921487
+      spriteID: 583ab2e51601dfa43bb4cdbd85805219
+      internalID: 1392937519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_4
+      name: Mewtwo_Idle-Anim_4
       rect:
         serializedVersion: 2
         x: 192
@@ -383,14 +383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98799b42b30903d45b7a4f07efd53c9f
-      internalID: 1057959449
+      spriteID: a6b2517076dd9864fab1ac770e4037a9
+      internalID: -1988256650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_5
+      name: Mewtwo_Idle-Anim_5
       rect:
         serializedVersion: 2
         x: 240
@@ -405,14 +405,146 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4705f2734f346a4f850822250b5ecd0
-      internalID: -2089177185
+      spriteID: 1f869a1b984ff4740bce2cdd9759868f
+      internalID: 991519101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_12
+      name: Mewtwo_Idle-Anim_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d541df0d5884cc24c8f8b90cfdf199ec
+      internalID: 244309983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 336
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5957edac2efd954aa7fc975b0f263aa
+      internalID: 2100092020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 336
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe97f7d4896444844bcaabebcbd49614
+      internalID: -355781773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 336
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3988a4ba0067e1a4dbec469dfda50e21
+      internalID: -79486239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 336
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e7599c938f2ff4d99a5d7ea95380b9
+      internalID: 156740072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_11
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 336
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547c54e7ea04fd64c918687f325340a3
+      internalID: -2119908784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_12
       rect:
         serializedVersion: 2
         x: 0
@@ -427,14 +559,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 371527183a7769e4fb5a8eea0fcce040
-      internalID: -1569680785
+      spriteID: 3001efae8da09ed4b8835db77726f2bf
+      internalID: 2000954991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_13
+      name: Mewtwo_Idle-Anim_13
       rect:
         serializedVersion: 2
         x: 48
@@ -449,14 +581,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c59e84b443820840a23f5cac92f078a
-      internalID: -2055904089
+      spriteID: bab7044a9ec60ef488216349d2639093
+      internalID: 1219679971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_14
+      name: Mewtwo_Idle-Anim_14
       rect:
         serializedVersion: 2
         x: 96
@@ -471,14 +603,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17738e433bf45d04d95baf1296fa8294
-      internalID: -444707258
+      spriteID: 9c6b30abdbbfb244fb7625e3c879e91b
+      internalID: 2103392743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_15
+      name: Mewtwo_Idle-Anim_15
       rect:
         serializedVersion: 2
         x: 144
@@ -493,14 +625,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f75c6e3d7a872349b300de678f15e0d
-      internalID: 501572440
+      spriteID: b78b768841ae8b54db99598c603b9d6e
+      internalID: -667284116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_16
+      name: Mewtwo_Idle-Anim_16
       rect:
         serializedVersion: 2
         x: 192
@@ -515,14 +647,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4efface02ca81e841941e283a20e15bd
-      internalID: 165835817
+      spriteID: 9d73974d646a2fb45a99fbce1c838cbd
+      internalID: -389428709
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_17
+      name: Mewtwo_Idle-Anim_17
       rect:
         serializedVersion: 2
         x: 240
@@ -537,14 +669,146 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5af9b4c71885e584397327c41f6d887b
-      internalID: -963884634
+      spriteID: 294a355b06fcef1468dc0b628cb240dc
+      internalID: -883949316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_24
+      name: Mewtwo_Idle-Anim_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f918c0d3645c0439aba996c9b236f6
+      internalID: -98569663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 224
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f782a26c8c02ae40be3bab92006b8b9
+      internalID: 998988582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c3abfcc6706a04689fd0956a5a34ea
+      internalID: -172867248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 224
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61fe3ba1af5e64b4fb8bee71360f13a6
+      internalID: -1163470900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b29be2f2dc23345ab7079a08d0e6b1
+      internalID: 318279903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_23
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 224
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88af812edac70d34caed8b14726aee51
+      internalID: -1749654674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_24
       rect:
         serializedVersion: 2
         x: 0
@@ -559,14 +823,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32a69d38c2ce9014a9890aa0a91066e3
-      internalID: -853994517
+      spriteID: 12598d552b930a64ebd1f2e525d1dd1d
+      internalID: -389352805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_25
+      name: Mewtwo_Idle-Anim_25
       rect:
         serializedVersion: 2
         x: 48
@@ -581,14 +845,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e4d2be2dfe72c84fa53e27a1da7a2fe
-      internalID: -642935562
+      spriteID: f138136a48098fe40b47d9f3782ff694
+      internalID: -517906472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_26
+      name: Mewtwo_Idle-Anim_26
       rect:
         serializedVersion: 2
         x: 96
@@ -603,14 +867,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a71fca7e482963408e85a69ad1f3ca2
-      internalID: -1524815139
+      spriteID: 4da7e1b5411025e47ad1ee84bb16012c
+      internalID: 1854644464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_27
+      name: Mewtwo_Idle-Anim_27
       rect:
         serializedVersion: 2
         x: 144
@@ -625,14 +889,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a64d19014a0059429395ebda8dec873
-      internalID: 1836248247
+      spriteID: cb83fb4a68c54bd40a291e59220f3e2b
+      internalID: -1259332456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_28
+      name: Mewtwo_Idle-Anim_28
       rect:
         serializedVersion: 2
         x: 192
@@ -647,14 +911,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0253de087618e248bc68acfcb385fa9
-      internalID: -999857024
+      spriteID: 2f1489ea613c5504fa8e1340e0c48531
+      internalID: 973528489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_29
+      name: Mewtwo_Idle-Anim_29
       rect:
         serializedVersion: 2
         x: 240
@@ -669,14 +933,146 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb7a4214107283940a53f2da8f8cc344
-      internalID: -252326538
+      spriteID: c8d1dffef1d2eb54681a5e73ded84d99
+      internalID: -808543040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_36
+      name: Mewtwo_Idle-Anim_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107514508bfc51c4893839e2bb96bfe0
+      internalID: -370200146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a8b55a0212fc941af1775b4b412400
+      internalID: -1433364858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_32
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bb7c7923c30b7449c709cbfbe14298
+      internalID: -602662845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_33
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 112
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b2306e867d6784bb8d59f6d0ca1a7b
+      internalID: 1280825277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 112
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f616780bbb007d04e9d4995b711e3612
+      internalID: -746163463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_35
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 112
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afdb08aa2287c4245b85dcf6f2613884
+      internalID: -264633330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_36
       rect:
         serializedVersion: 2
         x: 0
@@ -691,14 +1087,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e14eb60733b973043affc31ad7777d8e
-      internalID: 1212670615
+      spriteID: bd83bb25249755c47bd57b6397ba7545
+      internalID: 742942159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_37
+      name: Mewtwo_Idle-Anim_37
       rect:
         serializedVersion: 2
         x: 48
@@ -713,14 +1109,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b6585653f641ab4aaa2c62dd1255834
-      internalID: -1574211783
+      spriteID: 072840dc1eae34d45bc96362937a0d72
+      internalID: -1949141199
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_38
+      name: Mewtwo_Idle-Anim_38
       rect:
         serializedVersion: 2
         x: 96
@@ -735,14 +1131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87f8159e18dead3449045b68e02a4978
-      internalID: 873447187
+      spriteID: 208a5f76e3eba224cb07c5a5c8e4411c
+      internalID: 1507760068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_39
+      name: Mewtwo_Idle-Anim_39
       rect:
         serializedVersion: 2
         x: 144
@@ -757,14 +1153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c79b70da7d2a6414081d8faf2989d194
-      internalID: -346999999
+      spriteID: 120135c760f16854c88137f9c027d16f
+      internalID: -741276085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_40
+      name: Mewtwo_Idle-Anim_40
       rect:
         serializedVersion: 2
         x: 192
@@ -779,14 +1175,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7004c363b47fa93409e922ce39a3b817
-      internalID: 1741188435
+      spriteID: ec7ec49604421694bb3a50a6cdda6bac
+      internalID: -1797008355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_41
+      name: Mewtwo_Idle-Anim_41
       rect:
         serializedVersion: 2
         x: 240
@@ -801,8 +1197,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d0aad285b8a8d548bf8ab5a1f6f2ebf
-      internalID: 1348420212
+      spriteID: 4ed74ad3105d4f7479b2701f5fd71a92
+      internalID: 1785856315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf2e71ac4135f042beb3a0b34e5a86b
+      internalID: -654209246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_43
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe30532c299c5a4fa7cc4a1f4677d3b
+      internalID: 1141053958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_44
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455ed57b842901641a35a6062a92cca2
+      internalID: 2019894075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_45
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2ac32b706bcd04e9f69b0dc395dbb1
+      internalID: 1690613460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_46
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97c46cb5eb38db4b9b55f07e2daa726
+      internalID: 850390671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mewtwo_Idle-Anim_47
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24563b6ecf5df564a926e8efdc883312
+      internalID: 1997252521
       vertices: []
       indices: 
       edges: []
@@ -823,54 +1351,54 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":8.0},"gridSpriteSize":{"x":48.0,"y":56.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Idle-Anim_0: 726099360
-      Idle-Anim_1: -1008290105
-      Idle-Anim_10: 575732030
-      Idle-Anim_11: -32569863
-      Idle-Anim_12: -1569680785
-      Idle-Anim_13: -2055904089
-      Idle-Anim_14: -444707258
-      Idle-Anim_15: 501572440
-      Idle-Anim_16: 165835817
-      Idle-Anim_17: -963884634
-      Idle-Anim_18: 2008028031
-      Idle-Anim_19: 1675475440
-      Idle-Anim_2: 268558815
-      Idle-Anim_20: 693904396
-      Idle-Anim_21: 1315464516
-      Idle-Anim_22: 18810837
-      Idle-Anim_23: -389165309
-      Idle-Anim_24: -853994517
-      Idle-Anim_25: -642935562
-      Idle-Anim_26: -1524815139
-      Idle-Anim_27: 1836248247
-      Idle-Anim_28: -999857024
-      Idle-Anim_29: -252326538
-      Idle-Anim_3: -1401921487
-      Idle-Anim_30: 1249507531
-      Idle-Anim_31: -1652092498
-      Idle-Anim_32: -1063245842
-      Idle-Anim_33: 1159469502
-      Idle-Anim_34: 1821343718
-      Idle-Anim_35: 28818550
-      Idle-Anim_36: 1212670615
-      Idle-Anim_37: -1574211783
-      Idle-Anim_38: 873447187
-      Idle-Anim_39: -346999999
-      Idle-Anim_4: 1057959449
-      Idle-Anim_40: 1741188435
-      Idle-Anim_41: 1348420212
-      Idle-Anim_42: 1213724431
-      Idle-Anim_43: 83087273
-      Idle-Anim_44: 2133548718
-      Idle-Anim_45: -1191755937
-      Idle-Anim_46: 257517798
-      Idle-Anim_47: -309752812
-      Idle-Anim_5: -2089177185
-      Idle-Anim_6: 2125643779
-      Idle-Anim_7: 281266377
-      Idle-Anim_8: -1662740484
-      Idle-Anim_9: 1254589459
+      Mewtwo_Idle-Anim_0: 483435859
+      Mewtwo_Idle-Anim_1: -1673426989
+      Mewtwo_Idle-Anim_10: 156740072
+      Mewtwo_Idle-Anim_11: -2119908784
+      Mewtwo_Idle-Anim_12: 2000954991
+      Mewtwo_Idle-Anim_13: 1219679971
+      Mewtwo_Idle-Anim_14: 2103392743
+      Mewtwo_Idle-Anim_15: -667284116
+      Mewtwo_Idle-Anim_16: -389428709
+      Mewtwo_Idle-Anim_17: -883949316
+      Mewtwo_Idle-Anim_18: -98569663
+      Mewtwo_Idle-Anim_19: 998988582
+      Mewtwo_Idle-Anim_2: 109629928
+      Mewtwo_Idle-Anim_20: -172867248
+      Mewtwo_Idle-Anim_21: -1163470900
+      Mewtwo_Idle-Anim_22: 318279903
+      Mewtwo_Idle-Anim_23: -1749654674
+      Mewtwo_Idle-Anim_24: -389352805
+      Mewtwo_Idle-Anim_25: -517906472
+      Mewtwo_Idle-Anim_26: 1854644464
+      Mewtwo_Idle-Anim_27: -1259332456
+      Mewtwo_Idle-Anim_28: 973528489
+      Mewtwo_Idle-Anim_29: -808543040
+      Mewtwo_Idle-Anim_3: 1392937519
+      Mewtwo_Idle-Anim_30: -370200146
+      Mewtwo_Idle-Anim_31: -1433364858
+      Mewtwo_Idle-Anim_32: -602662845
+      Mewtwo_Idle-Anim_33: 1280825277
+      Mewtwo_Idle-Anim_34: -746163463
+      Mewtwo_Idle-Anim_35: -264633330
+      Mewtwo_Idle-Anim_36: 742942159
+      Mewtwo_Idle-Anim_37: -1949141199
+      Mewtwo_Idle-Anim_38: 1507760068
+      Mewtwo_Idle-Anim_39: -741276085
+      Mewtwo_Idle-Anim_4: -1988256650
+      Mewtwo_Idle-Anim_40: -1797008355
+      Mewtwo_Idle-Anim_41: 1785856315
+      Mewtwo_Idle-Anim_42: -654209246
+      Mewtwo_Idle-Anim_43: 1141053958
+      Mewtwo_Idle-Anim_44: 2019894075
+      Mewtwo_Idle-Anim_45: 1690613460
+      Mewtwo_Idle-Anim_46: 850390671
+      Mewtwo_Idle-Anim_47: 1997252521
+      Mewtwo_Idle-Anim_5: 991519101
+      Mewtwo_Idle-Anim_6: 244309983
+      Mewtwo_Idle-Anim_7: 2100092020
+      Mewtwo_Idle-Anim_8: -355781773
+      Mewtwo_Idle-Anim_9: -79486239
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

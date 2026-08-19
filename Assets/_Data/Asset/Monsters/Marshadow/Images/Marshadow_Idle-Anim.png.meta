@@ -304,7 +304,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle-Anim_0
+      name: Marshadow_Idle-Anim_0
       rect:
         serializedVersion: 2
         x: 0
@@ -317,16 +317,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fa864d247f1766b60800000000000000
-      internalID: 7738998316474853551
+      spriteID: be2349b8703762a4aac1c30020c93045
+      internalID: -1874667400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_1
+      name: Marshadow_Idle-Anim_1
       rect:
         serializedVersion: 2
         x: 24
@@ -339,16 +339,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 30f49f3b6ebff6b10800000000000000
-      internalID: 1977075729719447299
+      spriteID: 9058b701ca48883418f1829fc62748c4
+      internalID: -210341416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_2
+      name: Marshadow_Idle-Anim_2
       rect:
         serializedVersion: 2
         x: 48
@@ -361,16 +361,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 04047ac9bd83f4f70800000000000000
-      internalID: 9173613481854189632
+      spriteID: de0114a5240fb394c97fc20721bcbb40
+      internalID: -2010642011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_3
+      name: Marshadow_Idle-Anim_3
       rect:
         serializedVersion: 2
         x: 72
@@ -383,16 +383,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 12fbfb24eb2beff20800000000000000
-      internalID: 3458398094100512545
+      spriteID: 4032cca17781a1b44b4629694b441a61
+      internalID: 1926522883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_4
+      name: Marshadow_Idle-Anim_4
       rect:
         serializedVersion: 2
         x: 96
@@ -405,16 +405,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4adc0a0e11377bae0800000000000000
-      internalID: -1533630627476091484
+      spriteID: 21501249d25607a47b59e6c079096fd3
+      internalID: -1166151509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_5
+      name: Marshadow_Idle-Anim_5
       rect:
         serializedVersion: 2
         x: 120
@@ -427,16 +427,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 710667869a1b9d030800000000000000
-      internalID: 3520039924926930967
+      spriteID: 39f42aeba9d42f74995940552d9e2ba2
+      internalID: -345890430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_6
+      name: Marshadow_Idle-Anim_6
       rect:
         serializedVersion: 2
         x: 144
@@ -449,16 +449,170 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c93ba9d2f01700380800000000000000
-      internalID: -9007074944737430628
+      spriteID: 9fe960bb3c1b4e84c9ebf7c442be301f
+      internalID: -1912261714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_14
+      name: Marshadow_Idle-Anim_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6801a7392d575e4a9c88b42e9659e66
+      internalID: 1730205579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_8
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 240
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f40dbd8c18481f9418ab090c975d558c
+      internalID: 979812902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 240
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1374b1609cbb54d8f6aa87aae804ef
+      internalID: -1266905279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_10
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 240
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4acb21101d9e8d046813821a9b021a2d
+      internalID: -317888478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e7334dd1c93be4db7fdcd2bcff1d2a
+      internalID: 29136255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_12
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 240
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863d35a3a9b16a1488c860eacc50d6c9
+      internalID: -1900818058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_13
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 240
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981377621ec752944aa731c105241bf7
+      internalID: 994523120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_14
       rect:
         serializedVersion: 2
         x: 0
@@ -471,16 +625,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5035613e1c7abe2c0800000000000000
-      internalID: -4401239759644110075
+      spriteID: b94512327253e3946b0fea878c257b0d
+      internalID: -1475507682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_15
+      name: Marshadow_Idle-Anim_15
       rect:
         serializedVersion: 2
         x: 24
@@ -493,16 +647,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c808dca5d0f935f40800000000000000
-      internalID: 5716087231770099852
+      spriteID: 1da6875d48d843a43bd714b055da5966
+      internalID: 1125566251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_16
+      name: Marshadow_Idle-Anim_16
       rect:
         serializedVersion: 2
         x: 48
@@ -515,16 +669,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7c6531675e307f440800000000000000
-      internalID: 4969444997890004679
+      spriteID: 1e19279cd2d783c42a050c47eda99cb6
+      internalID: -195225052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_17
+      name: Marshadow_Idle-Anim_17
       rect:
         serializedVersion: 2
         x: 72
@@ -537,16 +691,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4b444a8c9eda31180800000000000000
-      internalID: -9145775198654151500
+      spriteID: 560d10c2b0b4ae642ae6dab82f25fb02
+      internalID: -1492979982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_18
+      name: Marshadow_Idle-Anim_18
       rect:
         serializedVersion: 2
         x: 96
@@ -559,16 +713,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e1f1d399fef9e93a0800000000000000
-      internalID: -6656707347790094562
+      spriteID: abb1b97e6ba3f65449885638a2d732ca
+      internalID: 1253773770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_19
+      name: Marshadow_Idle-Anim_19
       rect:
         serializedVersion: 2
         x: 120
@@ -581,16 +735,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a1c5edbf1de43c4b0800000000000000
-      internalID: -5421402862643160038
+      spriteID: ebe2cca3118c432448ae9de5ebe6fbd1
+      internalID: 813212989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_20
+      name: Marshadow_Idle-Anim_20
       rect:
         serializedVersion: 2
         x: 144
@@ -603,16 +757,170 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: defdd81d784ed1a00800000000000000
-      internalID: 728989986691342317
+      spriteID: 4a43c9796d3f93347b40f04191504d84
+      internalID: 1432697552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_28
+      name: Marshadow_Idle-Anim_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7561f87d059c4a4290ed9a8a3ec0e14
+      internalID: -966814237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_22
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 160
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503726eed98feb94aaa17b6a74995ed2
+      internalID: 1626680841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_23
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e322a901eaa5940b3cb7c00a76323b
+      internalID: 1736454124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_24
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 160
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7fc80fd6d6793e4cafac64073ec2dbc
+      internalID: -350797925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_25
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aec6dedde190fc4a9aaac2e62a91b23
+      internalID: 1104433212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_26
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 160
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087ca9db957488244937cf6180bfa101
+      internalID: -419137451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_27
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8b130d1c56d7c409ead208c85206ca
+      internalID: 975085183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_28
       rect:
         serializedVersion: 2
         x: 0
@@ -625,16 +933,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 18a9cff227ff57830800000000000000
-      internalID: 4068438704295549569
+      spriteID: 95fc860e5c09fc4448d8c6dbfae5f3a0
+      internalID: 1419809499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_29
+      name: Marshadow_Idle-Anim_29
       rect:
         serializedVersion: 2
         x: 24
@@ -647,16 +955,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5cac0c4c0757dbef0800000000000000
-      internalID: -90787290279785787
+      spriteID: c1e68b52b5225954e80abb0ac9ef5b71
+      internalID: 859964189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_30
+      name: Marshadow_Idle-Anim_30
       rect:
         serializedVersion: 2
         x: 48
@@ -669,16 +977,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8112eda686edbb2d0800000000000000
-      internalID: -3261768965048884968
+      spriteID: d4f78e98f8046ff4fbe8e5f3f0515786
+      internalID: -651520174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_31
+      name: Marshadow_Idle-Anim_31
       rect:
         serializedVersion: 2
         x: 72
@@ -691,16 +999,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fb0f82efb8734fc20800000000000000
-      internalID: 3239275106390307007
+      spriteID: 2ddd0c6505a39784abaf85630fc56b79
+      internalID: -86251112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_32
+      name: Marshadow_Idle-Anim_32
       rect:
         serializedVersion: 2
         x: 96
@@ -713,16 +1021,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c15dca8425a8c9a60800000000000000
-      internalID: 7682167150398461212
+      spriteID: de34222f7e8a2f844b614293925c36d6
+      internalID: -1919629421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_33
+      name: Marshadow_Idle-Anim_33
       rect:
         serializedVersion: 2
         x: 120
@@ -735,16 +1043,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a2accd81a420ddf60800000000000000
-      internalID: 8060601425331014186
+      spriteID: 4441f021da5aaa2448a83ff667b141f9
+      internalID: -702066437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_34
+      name: Marshadow_Idle-Anim_34
       rect:
         serializedVersion: 2
         x: 144
@@ -757,16 +1065,170 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3e81b064713dd6f90800000000000000
-      internalID: -6958673752304707357
+      spriteID: e899c6097e2b1254fb5c9a427dcbf296
+      internalID: -30646803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_42
+      name: Marshadow_Idle-Anim_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0801ee06c774a41468889e7a8b3c6975
+      internalID: 235987578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_36
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 80
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08a5b6d8df227a49b8560a1e8303c71
+      internalID: 1337103463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_37
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7582d3e2e1bfb44a908d6cda4db5bc6
+      internalID: 1427830669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_38
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 80
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4108ef61398dae345ab121fe03a16458
+      internalID: -1818986490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f948256fc88dd4a831f76892cfe082
+      internalID: -623907846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_40
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 80
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb64dcb5d84ef64986c00e85aadc57e
+      internalID: 1406135104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_41
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e100ebbaff1d4dd499f3d188d2f62fa7
+      internalID: 345756961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_42
       rect:
         serializedVersion: 2
         x: 0
@@ -779,16 +1241,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 280f8973e906c24a0800000000000000
-      internalID: -6616807519860232062
+      spriteID: e92af55c9ddf31f449c415660441a705
+      internalID: 1187964251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_43
+      name: Marshadow_Idle-Anim_43
       rect:
         serializedVersion: 2
         x: 24
@@ -801,16 +1263,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e10e3140f52dd4a00800000000000000
-      internalID: 742480819118137374
+      spriteID: 540f7b16de55e254f96a0b50ef15d9eb
+      internalID: -1683371143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_44
+      name: Marshadow_Idle-Anim_44
       rect:
         serializedVersion: 2
         x: 48
@@ -823,16 +1285,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 561c69af31740fe90800000000000000
-      internalID: -6994012070172245659
+      spriteID: 00cc3f56b1e9c2a4fa1ee963b9f8dbe7
+      internalID: 125347883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_45
+      name: Marshadow_Idle-Anim_45
       rect:
         serializedVersion: 2
         x: 72
@@ -845,16 +1307,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fce49562c73027fd0800000000000000
-      internalID: -2345808624152391985
+      spriteID: 92afb228f40dad94791784daad7d3cab
+      internalID: 1895388059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_46
+      name: Marshadow_Idle-Anim_46
       rect:
         serializedVersion: 2
         x: 96
@@ -867,16 +1329,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 93c2119438d38d420800000000000000
-      internalID: 2654939614410779705
+      spriteID: ecaa8ae627b4bc94fbf29e384b886074
+      internalID: 131316283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_47
+      name: Marshadow_Idle-Anim_47
       rect:
         serializedVersion: 2
         x: 120
@@ -889,16 +1351,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0d946e617c7a6d930800000000000000
-      internalID: 4167702978702494160
+      spriteID: 9c6bec073449ba343ad9cf4049ae0811
+      internalID: -1682142419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_48
+      name: Marshadow_Idle-Anim_48
       rect:
         serializedVersion: 2
         x: 144
@@ -911,10 +1373,164 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2b6d1f1695f139690800000000000000
-      internalID: -7596693677688105294
+      spriteID: a5eb2db3ca5129f4b98c0675828ac504
+      internalID: 522606897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395d402409e50f24da0961e2964d1335
+      internalID: -2139673737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_50
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8290a7f10c766e419a437dbcf9d9bdc
+      internalID: 690665651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_51
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69531fe442e35c439079b74b5fe88f9
+      internalID: -697031191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_52
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19015bbaaebd9546b4cbfcfdde6e9fe
+      internalID: -2139619189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_53
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cef4c4a049099e4495e85ca5ebe5940
+      internalID: 2062298057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_54
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000b57508477ea942b04740649229f2c
+      internalID: 2119436486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle-Anim_55
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e060a053f92864992505d64a248318
+      internalID: 577490829
       vertices: []
       indices: 
       edges: []
@@ -935,62 +1551,62 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":8.0},"gridSpriteSize":{"x":24.0,"y":40.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Idle-Anim_0: 7738998316474853551
-      Idle-Anim_1: 1977075729719447299
-      Idle-Anim_10: -2500440999657106871
-      Idle-Anim_11: 3380924079768591465
-      Idle-Anim_12: 6312937933537730039
-      Idle-Anim_13: 7370305187068088183
-      Idle-Anim_14: -4401239759644110075
-      Idle-Anim_15: 5716087231770099852
-      Idle-Anim_16: 4969444997890004679
-      Idle-Anim_17: -9145775198654151500
-      Idle-Anim_18: -6656707347790094562
-      Idle-Anim_19: -5421402862643160038
-      Idle-Anim_2: 9173613481854189632
-      Idle-Anim_20: 728989986691342317
-      Idle-Anim_21: 1731065877924970417
-      Idle-Anim_22: 702254742369775053
-      Idle-Anim_23: 843812802259278218
-      Idle-Anim_24: -2120886188613695082
-      Idle-Anim_25: -5737951630601031768
-      Idle-Anim_26: -3804901684299220886
-      Idle-Anim_27: -3999001167682290817
-      Idle-Anim_28: 4068438704295549569
-      Idle-Anim_29: -90787290279785787
-      Idle-Anim_3: 3458398094100512545
-      Idle-Anim_30: -3261768965048884968
-      Idle-Anim_31: 3239275106390307007
-      Idle-Anim_32: 7682167150398461212
-      Idle-Anim_33: 8060601425331014186
-      Idle-Anim_34: -6958673752304707357
-      Idle-Anim_35: -8426690388386427687
-      Idle-Anim_36: 8449194557805750873
-      Idle-Anim_37: 1080011638312391825
-      Idle-Anim_38: -3845111777405765225
-      Idle-Anim_39: -1419756531426089411
-      Idle-Anim_4: -1533630627476091484
-      Idle-Anim_40: -8144651385576188598
-      Idle-Anim_41: 7579764483984027731
-      Idle-Anim_42: -6616807519860232062
-      Idle-Anim_43: 742480819118137374
-      Idle-Anim_44: -6994012070172245659
-      Idle-Anim_45: -2345808624152391985
-      Idle-Anim_46: 2654939614410779705
-      Idle-Anim_47: 4167702978702494160
-      Idle-Anim_48: -7596693677688105294
-      Idle-Anim_49: -5695744126161345550
-      Idle-Anim_5: 3520039924926930967
-      Idle-Anim_50: 1547541788270972784
-      Idle-Anim_51: -4499450257312095318
-      Idle-Anim_52: 9020560476305569239
-      Idle-Anim_53: -363880760124612792
-      Idle-Anim_54: 4418380584751096824
-      Idle-Anim_55: -7682972370156704571
-      Idle-Anim_6: -9007074944737430628
-      Idle-Anim_7: 5469265311968306403
-      Idle-Anim_8: 8813659312991238842
-      Idle-Anim_9: -7205847637910636526
+      Marshadow_Idle-Anim_0: -1874667400
+      Marshadow_Idle-Anim_1: -210341416
+      Marshadow_Idle-Anim_10: -317888478
+      Marshadow_Idle-Anim_11: 29136255
+      Marshadow_Idle-Anim_12: -1900818058
+      Marshadow_Idle-Anim_13: 994523120
+      Marshadow_Idle-Anim_14: -1475507682
+      Marshadow_Idle-Anim_15: 1125566251
+      Marshadow_Idle-Anim_16: -195225052
+      Marshadow_Idle-Anim_17: -1492979982
+      Marshadow_Idle-Anim_18: 1253773770
+      Marshadow_Idle-Anim_19: 813212989
+      Marshadow_Idle-Anim_2: -2010642011
+      Marshadow_Idle-Anim_20: 1432697552
+      Marshadow_Idle-Anim_21: -966814237
+      Marshadow_Idle-Anim_22: 1626680841
+      Marshadow_Idle-Anim_23: 1736454124
+      Marshadow_Idle-Anim_24: -350797925
+      Marshadow_Idle-Anim_25: 1104433212
+      Marshadow_Idle-Anim_26: -419137451
+      Marshadow_Idle-Anim_27: 975085183
+      Marshadow_Idle-Anim_28: 1419809499
+      Marshadow_Idle-Anim_29: 859964189
+      Marshadow_Idle-Anim_3: 1926522883
+      Marshadow_Idle-Anim_30: -651520174
+      Marshadow_Idle-Anim_31: -86251112
+      Marshadow_Idle-Anim_32: -1919629421
+      Marshadow_Idle-Anim_33: -702066437
+      Marshadow_Idle-Anim_34: -30646803
+      Marshadow_Idle-Anim_35: 235987578
+      Marshadow_Idle-Anim_36: 1337103463
+      Marshadow_Idle-Anim_37: 1427830669
+      Marshadow_Idle-Anim_38: -1818986490
+      Marshadow_Idle-Anim_39: -623907846
+      Marshadow_Idle-Anim_4: -1166151509
+      Marshadow_Idle-Anim_40: 1406135104
+      Marshadow_Idle-Anim_41: 345756961
+      Marshadow_Idle-Anim_42: 1187964251
+      Marshadow_Idle-Anim_43: -1683371143
+      Marshadow_Idle-Anim_44: 125347883
+      Marshadow_Idle-Anim_45: 1895388059
+      Marshadow_Idle-Anim_46: 131316283
+      Marshadow_Idle-Anim_47: -1682142419
+      Marshadow_Idle-Anim_48: 522606897
+      Marshadow_Idle-Anim_49: -2139673737
+      Marshadow_Idle-Anim_5: -345890430
+      Marshadow_Idle-Anim_50: 690665651
+      Marshadow_Idle-Anim_51: -697031191
+      Marshadow_Idle-Anim_52: -2139619189
+      Marshadow_Idle-Anim_53: 2062298057
+      Marshadow_Idle-Anim_54: 2119436486
+      Marshadow_Idle-Anim_55: 577490829
+      Marshadow_Idle-Anim_6: -1912261714
+      Marshadow_Idle-Anim_7: 1730205579
+      Marshadow_Idle-Anim_8: 979812902
+      Marshadow_Idle-Anim_9: -1266905279
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

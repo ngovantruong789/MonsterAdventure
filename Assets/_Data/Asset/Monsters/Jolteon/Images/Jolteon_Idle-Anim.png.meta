@@ -184,7 +184,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle-Anim_0
+      name: Jolteon_Idle-Anim_0
       rect:
         serializedVersion: 2
         x: 0
@@ -197,16 +197,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fa864d247f1766b60800000000000000
-      internalID: 7738998316474853551
+      spriteID: fce8e91439cbd7f4e812b9bf36986e03
+      internalID: 1444385317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_1
+      name: Jolteon_Idle-Anim_1
       rect:
         serializedVersion: 2
         x: 32
@@ -219,16 +219,60 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 30f49f3b6ebff6b10800000000000000
-      internalID: 1977075729719447299
+      spriteID: 5eb75665c329327489e0c7347d253802
+      internalID: 860148410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_4
+      name: Jolteon_Idle-Anim_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c62051037be844d8018d015b55e5b1
+      internalID: -970577575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Idle-Anim_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5381b3731025684488b398f90fd43959
+      internalID: 1068394600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Idle-Anim_4
       rect:
         serializedVersion: 2
         x: 0
@@ -241,16 +285,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4adc0a0e11377bae0800000000000000
-      internalID: -1533630627476091484
+      spriteID: f5a642518f2575a48b797b5d4774c8db
+      internalID: -528964001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_5
+      name: Jolteon_Idle-Anim_5
       rect:
         serializedVersion: 2
         x: 32
@@ -263,16 +307,60 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 710667869a1b9d030800000000000000
-      internalID: 3520039924926930967
+      spriteID: f633040c368f3514fb608e577b762b2c
+      internalID: 1563719876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_8
+      name: Jolteon_Idle-Anim_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e1b666028d18341b39c21ddbdd8557
+      internalID: 112828480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Idle-Anim_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b339e3676208304b82965a0f48a25b1
+      internalID: -622261197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Idle-Anim_8
       rect:
         serializedVersion: 2
         x: 0
@@ -285,16 +373,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: abaf72ac278605a70800000000000000
-      internalID: 8813659312991238842
+      spriteID: 1e90be8cf81773d4e9943754771bebb8
+      internalID: 1031188579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_9
+      name: Jolteon_Idle-Anim_9
       rect:
         serializedVersion: 2
         x: 32
@@ -307,16 +395,60 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 218bfb460cfaffb90800000000000000
-      internalID: -7205847637910636526
+      spriteID: c2814788fdf323f48be9f7fa5a0a8a22
+      internalID: -1496052330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_12
+      name: Jolteon_Idle-Anim_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce364ef0bdfc1c140817a15aad83b184
+      internalID: 1641414629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Idle-Anim_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e34691adac23ac4b93da679a03675ac
+      internalID: -376719669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Idle-Anim_12
       rect:
         serializedVersion: 2
         x: 0
@@ -329,16 +461,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7fdda996a9f0c9750800000000000000
-      internalID: 6312937933537730039
+      spriteID: 71e5cfafa1bc81344a39ad8db4eb11fb
+      internalID: -796844594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_13
+      name: Jolteon_Idle-Anim_13
       rect:
         serializedVersion: 2
         x: 32
@@ -351,10 +483,54 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 77f8961a485984660800000000000000
-      internalID: 7370305187068088183
+      spriteID: a0a17120162058b4a8b7cafdd58ae0c1
+      internalID: 859336436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Idle-Anim_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635fb4bc826b45840bd846fb94ac3f0e
+      internalID: -1128746977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Idle-Anim_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db43d33449b1f474caf5368e68d53a19
+      internalID: -798688441
       vertices: []
       indices: 
       edges: []
@@ -375,22 +551,22 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":8.0},"gridSpriteSize":{"x":32.0,"y":40.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Idle-Anim_0: 7738998316474853551
-      Idle-Anim_1: 1977075729719447299
-      Idle-Anim_10: -2500440999657106871
-      Idle-Anim_11: 3380924079768591465
-      Idle-Anim_12: 6312937933537730039
-      Idle-Anim_13: 7370305187068088183
-      Idle-Anim_14: -4401239759644110075
-      Idle-Anim_15: 5716087231770099852
-      Idle-Anim_2: 9173613481854189632
-      Idle-Anim_3: 3458398094100512545
-      Idle-Anim_4: -1533630627476091484
-      Idle-Anim_5: 3520039924926930967
-      Idle-Anim_6: -9007074944737430628
-      Idle-Anim_7: 5469265311968306403
-      Idle-Anim_8: 8813659312991238842
-      Idle-Anim_9: -7205847637910636526
+      Jolteon_Idle-Anim_0: 1444385317
+      Jolteon_Idle-Anim_1: 860148410
+      Jolteon_Idle-Anim_10: 1641414629
+      Jolteon_Idle-Anim_11: -376719669
+      Jolteon_Idle-Anim_12: -796844594
+      Jolteon_Idle-Anim_13: 859336436
+      Jolteon_Idle-Anim_14: -1128746977
+      Jolteon_Idle-Anim_15: -798688441
+      Jolteon_Idle-Anim_2: -970577575
+      Jolteon_Idle-Anim_3: 1068394600
+      Jolteon_Idle-Anim_4: -528964001
+      Jolteon_Idle-Anim_5: 1563719876
+      Jolteon_Idle-Anim_6: 112828480
+      Jolteon_Idle-Anim_7: -622261197
+      Jolteon_Idle-Anim_8: 1031188579
+      Jolteon_Idle-Anim_9: -1496052330
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -130,7 +130,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -232,7 +232,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle-Anim_0
+      name: Riolu_1_Idle-Anim_0
       rect:
         serializedVersion: 2
         x: 0
@@ -245,16 +245,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fa864d247f1766b60800000000000000
-      internalID: 7738998316474853551
+      spriteID: a1ef56bf981edf844bead9947a926ccb
+      internalID: 1528992520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_1
+      name: Riolu_1_Idle-Anim_1
       rect:
         serializedVersion: 2
         x: 32
@@ -267,16 +267,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 30f49f3b6ebff6b10800000000000000
-      internalID: 1977075729719447299
+      spriteID: b582034d23f3fb943b253c6e379af551
+      internalID: -2125740223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_2
+      name: Riolu_1_Idle-Anim_2
       rect:
         serializedVersion: 2
         x: 64
@@ -289,16 +289,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 04047ac9bd83f4f70800000000000000
-      internalID: 9173613481854189632
+      spriteID: e160bc795e9863147b5c0fa89019114f
+      internalID: 6642809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_3
+      name: Riolu_1_Idle-Anim_3
       rect:
         serializedVersion: 2
         x: 96
@@ -311,16 +311,104 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 12fbfb24eb2beff20800000000000000
-      internalID: 3458398094100512545
+      spriteID: 54198668d1cf78848976e229d39ba3af
+      internalID: -392414375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_8
+      name: Riolu_1_Idle-Anim_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca52c172b2a768419e7ee8c9ec84a83
+      internalID: 737918992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_1_Idle-Anim_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd306c5686b0c804d83d2cb3f1a13e2f
+      internalID: -1401460934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_1_Idle-Anim_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ed42df1210a6543bdb505508638c61
+      internalID: 1922835869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_1_Idle-Anim_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a09bb548bea454c9a2b8589aebee05
+      internalID: 1476016781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_1_Idle-Anim_8
       rect:
         serializedVersion: 2
         x: 0
@@ -333,16 +421,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: abaf72ac278605a70800000000000000
-      internalID: 8813659312991238842
+      spriteID: 853e9691e945881459b0718c671bb28a
+      internalID: -1046842871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_9
+      name: Riolu_1_Idle-Anim_9
       rect:
         serializedVersion: 2
         x: 32
@@ -355,16 +443,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 218bfb460cfaffb90800000000000000
-      internalID: -7205847637910636526
+      spriteID: 4742bdfb3d9fdd146b6c40978be19827
+      internalID: 2098823137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_10
+      name: Riolu_1_Idle-Anim_10
       rect:
         serializedVersion: 2
         x: 64
@@ -377,16 +465,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9429d91a826ac4dd0800000000000000
-      internalID: -2500440999657106871
+      spriteID: cbf9d419f40b51a4b94d48a1f9253ad0
+      internalID: 1004166227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_11
+      name: Riolu_1_Idle-Anim_11
       rect:
         serializedVersion: 2
         x: 96
@@ -399,16 +487,104 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 96cdb23a9847bee20800000000000000
-      internalID: 3380924079768591465
+      spriteID: 2ed48e56940c06048ad211691165f16e
+      internalID: -1235135198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_16
+      name: Riolu_1_Idle-Anim_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed55f0518cf44b418477f76df1d9159
+      internalID: 66794759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_1_Idle-Anim_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b24e03f4a9de5b47a7ec6b8bb3530f9
+      internalID: -2073356868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_1_Idle-Anim_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4b75d835cbc9b4b88e0ce9657ada37
+      internalID: 1334096710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_1_Idle-Anim_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6b1164a5a1a6246b8a87e9ef534197
+      internalID: -402564142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_1_Idle-Anim_16
       rect:
         serializedVersion: 2
         x: 0
@@ -421,16 +597,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7c6531675e307f440800000000000000
-      internalID: 4969444997890004679
+      spriteID: 66899a1ba8d6eca44a3074c3f812b086
+      internalID: -587727937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_17
+      name: Riolu_1_Idle-Anim_17
       rect:
         serializedVersion: 2
         x: 32
@@ -443,16 +619,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4b444a8c9eda31180800000000000000
-      internalID: -9145775198654151500
+      spriteID: 1d919f57d1e455c4a8aac82aea0f0552
+      internalID: -781868116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_18
+      name: Riolu_1_Idle-Anim_18
       rect:
         serializedVersion: 2
         x: 64
@@ -465,16 +641,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e1f1d399fef9e93a0800000000000000
-      internalID: -6656707347790094562
+      spriteID: 452849da1c3db0f449a23f697abea7ea
+      internalID: -2005310730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_19
+      name: Riolu_1_Idle-Anim_19
       rect:
         serializedVersion: 2
         x: 96
@@ -487,16 +663,104 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a1c5edbf1de43c4b0800000000000000
-      internalID: -5421402862643160038
+      spriteID: 632cc2cc1fda35d49a706741cb8603e0
+      internalID: -1798376802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_24
+      name: Riolu_1_Idle-Anim_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05aac9b4276c1f94f9eb627f349c317a
+      internalID: -2061938462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_1_Idle-Anim_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f239569c1ec47dd4f97ca9d0b0cc6e5f
+      internalID: -177960118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_1_Idle-Anim_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670819d539fa2834ea3b3e01c56a2781
+      internalID: 2132516263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_1_Idle-Anim_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34022ecfe8ad8a64aad3d3ccbb85185a
+      internalID: 945662536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_1_Idle-Anim_24
       rect:
         serializedVersion: 2
         x: 0
@@ -509,16 +773,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 69906a69f391192e0800000000000000
-      internalID: -2120886188613695082
+      spriteID: b0bc3f6f0dd8492418e1aa2c98fd781f
+      internalID: 235541667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_25
+      name: Riolu_1_Idle-Anim_25
       rect:
         serializedVersion: 2
         x: 32
@@ -531,16 +795,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8afe6a79463be50b0800000000000000
-      internalID: -5737951630601031768
+      spriteID: a623b260cef407644b9e6d2348d7c2c8
+      internalID: -189098978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_26
+      name: Riolu_1_Idle-Anim_26
       rect:
         serializedVersion: 2
         x: 64
@@ -553,16 +817,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a683f0ec316423bc0800000000000000
-      internalID: -3804901684299220886
+      spriteID: 5e23da49639e3564b99617c5f0acd558
+      internalID: -239945089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_27
+      name: Riolu_1_Idle-Anim_27
       rect:
         serializedVersion: 2
         x: 96
@@ -575,10 +839,98 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f7bbce720a1b088c0800000000000000
-      internalID: -3999001167682290817
+      spriteID: d1019d736d82a4e43b5f4c7864258374
+      internalID: -1609895082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_1_Idle-Anim_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6882cd4c15f35344aaefdb9b42c83da4
+      internalID: 2002916417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_1_Idle-Anim_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dfe277009f8889449326cdafa177a97
+      internalID: -1900248513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_1_Idle-Anim_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4e37cad8664a4438704291bfa7d6e2
+      internalID: -1594804911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Riolu_1_Idle-Anim_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7288a06281b23104f83784967cf17f08
+      internalID: -1351651153
       vertices: []
       indices: 
       edges: []
@@ -599,38 +951,38 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":8.0},"gridSpriteSize":{"x":32.0,"y":40.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Idle-Anim_0: 7738998316474853551
-      Idle-Anim_1: 1977075729719447299
-      Idle-Anim_10: -2500440999657106871
-      Idle-Anim_11: 3380924079768591465
-      Idle-Anim_12: 6312937933537730039
-      Idle-Anim_13: 7370305187068088183
-      Idle-Anim_14: -4401239759644110075
-      Idle-Anim_15: 5716087231770099852
-      Idle-Anim_16: 4969444997890004679
-      Idle-Anim_17: -9145775198654151500
-      Idle-Anim_18: -6656707347790094562
-      Idle-Anim_19: -5421402862643160038
-      Idle-Anim_2: 9173613481854189632
-      Idle-Anim_20: 728989986691342317
-      Idle-Anim_21: 1731065877924970417
-      Idle-Anim_22: 702254742369775053
-      Idle-Anim_23: 843812802259278218
-      Idle-Anim_24: -2120886188613695082
-      Idle-Anim_25: -5737951630601031768
-      Idle-Anim_26: -3804901684299220886
-      Idle-Anim_27: -3999001167682290817
-      Idle-Anim_28: 4068438704295549569
-      Idle-Anim_29: -90787290279785787
-      Idle-Anim_3: 3458398094100512545
-      Idle-Anim_30: -3261768965048884968
-      Idle-Anim_31: 3239275106390307007
-      Idle-Anim_4: -1533630627476091484
-      Idle-Anim_5: 3520039924926930967
-      Idle-Anim_6: -9007074944737430628
-      Idle-Anim_7: 5469265311968306403
-      Idle-Anim_8: 8813659312991238842
-      Idle-Anim_9: -7205847637910636526
+      Riolu_1_Idle-Anim_0: 1528992520
+      Riolu_1_Idle-Anim_1: -2125740223
+      Riolu_1_Idle-Anim_10: 1004166227
+      Riolu_1_Idle-Anim_11: -1235135198
+      Riolu_1_Idle-Anim_12: 66794759
+      Riolu_1_Idle-Anim_13: -2073356868
+      Riolu_1_Idle-Anim_14: 1334096710
+      Riolu_1_Idle-Anim_15: -402564142
+      Riolu_1_Idle-Anim_16: -587727937
+      Riolu_1_Idle-Anim_17: -781868116
+      Riolu_1_Idle-Anim_18: -2005310730
+      Riolu_1_Idle-Anim_19: -1798376802
+      Riolu_1_Idle-Anim_2: 6642809
+      Riolu_1_Idle-Anim_20: -2061938462
+      Riolu_1_Idle-Anim_21: -177960118
+      Riolu_1_Idle-Anim_22: 2132516263
+      Riolu_1_Idle-Anim_23: 945662536
+      Riolu_1_Idle-Anim_24: 235541667
+      Riolu_1_Idle-Anim_25: -189098978
+      Riolu_1_Idle-Anim_26: -239945089
+      Riolu_1_Idle-Anim_27: -1609895082
+      Riolu_1_Idle-Anim_28: 2002916417
+      Riolu_1_Idle-Anim_29: -1900248513
+      Riolu_1_Idle-Anim_3: -392414375
+      Riolu_1_Idle-Anim_30: -1594804911
+      Riolu_1_Idle-Anim_31: -1351651153
+      Riolu_1_Idle-Anim_4: 737918992
+      Riolu_1_Idle-Anim_5: -1401460934
+      Riolu_1_Idle-Anim_6: 1922835869
+      Riolu_1_Idle-Anim_7: 1476016781
+      Riolu_1_Idle-Anim_8: -1046842871
+      Riolu_1_Idle-Anim_9: 2098823137
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

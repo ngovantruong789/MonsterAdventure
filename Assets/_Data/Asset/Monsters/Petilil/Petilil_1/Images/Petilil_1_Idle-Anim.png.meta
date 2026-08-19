@@ -232,7 +232,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle-Anim_0
+      name: Petilil_1_Idle-Anim_0
       rect:
         serializedVersion: 2
         x: 0
@@ -245,16 +245,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fa864d247f1766b60800000000000000
-      internalID: 7738998316474853551
+      spriteID: 91a19462cbca23242a2a37d5baf954c5
+      internalID: 741104752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_1
+      name: Petilil_1_Idle-Anim_1
       rect:
         serializedVersion: 2
         x: 32
@@ -267,16 +267,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 30f49f3b6ebff6b10800000000000000
-      internalID: 1977075729719447299
+      spriteID: a551906c8cd46c84a889a45c94eb2eac
+      internalID: 241675121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_2
+      name: Petilil_1_Idle-Anim_2
       rect:
         serializedVersion: 2
         x: 64
@@ -289,16 +289,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 04047ac9bd83f4f70800000000000000
-      internalID: 9173613481854189632
+      spriteID: 5fcbfae5a0892ec41a1595c5d50fa4e3
+      internalID: -1974216101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_3
+      name: Petilil_1_Idle-Anim_3
       rect:
         serializedVersion: 2
         x: 96
@@ -311,16 +311,104 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 12fbfb24eb2beff20800000000000000
-      internalID: 3458398094100512545
+      spriteID: eb882bf9f57ce62498fc5655586db91a
+      internalID: 80114745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_8
+      name: Petilil_1_Idle-Anim_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85bd85395e2eca042b3cb2c9bcd649f0
+      internalID: -1810470908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Idle-Anim_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5009e378401734ab7f4a6ff94e99d3
+      internalID: 1739899386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Idle-Anim_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed2edeb67607714d9097d79d521a007
+      internalID: -1770789224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Idle-Anim_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d63d64f6bc51b4aad9a7ff006f1c35
+      internalID: -772248890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Idle-Anim_8
       rect:
         serializedVersion: 2
         x: 0
@@ -333,16 +421,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: abaf72ac278605a70800000000000000
-      internalID: 8813659312991238842
+      spriteID: 6bfbd6cc7103e2542a72289289c4b121
+      internalID: -284867373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_9
+      name: Petilil_1_Idle-Anim_9
       rect:
         serializedVersion: 2
         x: 32
@@ -355,16 +443,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 218bfb460cfaffb90800000000000000
-      internalID: -7205847637910636526
+      spriteID: d0c711882a1274845848ea73092e518d
+      internalID: -886878958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_10
+      name: Petilil_1_Idle-Anim_10
       rect:
         serializedVersion: 2
         x: 64
@@ -377,16 +465,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9429d91a826ac4dd0800000000000000
-      internalID: -2500440999657106871
+      spriteID: 0ee399d432a590e4fac4b62cbefce7c8
+      internalID: -605946301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_11
+      name: Petilil_1_Idle-Anim_11
       rect:
         serializedVersion: 2
         x: 96
@@ -399,16 +487,104 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 96cdb23a9847bee20800000000000000
-      internalID: 3380924079768591465
+      spriteID: 41f8322f4ab7e9c4d93ade539916aa87
+      internalID: -164279680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_16
+      name: Petilil_1_Idle-Anim_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0498a4dd0d1b1e74ab19c53e6c268148
+      internalID: -2078496476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Idle-Anim_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07f4a20a18a90141a744e8fb448ad48
+      internalID: 142563762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Idle-Anim_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb639ef495710e947ac99d65d2d6a547
+      internalID: -1366260328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Idle-Anim_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49049d11a1ee9464f88bdc954bc39810
+      internalID: -405398335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Idle-Anim_16
       rect:
         serializedVersion: 2
         x: 0
@@ -421,16 +597,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7c6531675e307f440800000000000000
-      internalID: 4969444997890004679
+      spriteID: 45c1344ac02320e47923a6c87ecae067
+      internalID: 898095700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_17
+      name: Petilil_1_Idle-Anim_17
       rect:
         serializedVersion: 2
         x: 32
@@ -443,16 +619,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4b444a8c9eda31180800000000000000
-      internalID: -9145775198654151500
+      spriteID: 7e194bbe893256b45b493994f250a95e
+      internalID: -190226971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_18
+      name: Petilil_1_Idle-Anim_18
       rect:
         serializedVersion: 2
         x: 64
@@ -465,16 +641,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e1f1d399fef9e93a0800000000000000
-      internalID: -6656707347790094562
+      spriteID: 4b519438d050a494abc2f387bd22e2dc
+      internalID: -1590182344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_19
+      name: Petilil_1_Idle-Anim_19
       rect:
         serializedVersion: 2
         x: 96
@@ -487,16 +663,104 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a1c5edbf1de43c4b0800000000000000
-      internalID: -5421402862643160038
+      spriteID: f312b14793729cf4ead849472d3e4656
+      internalID: 2029575022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_24
+      name: Petilil_1_Idle-Anim_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085d1166e09401c459cb008e8575930e
+      internalID: -920070753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Idle-Anim_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5aa66e1f4794e449937549c7529147
+      internalID: -1248815960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Idle-Anim_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a2978ce02a82a4eae344b1928760d9
+      internalID: 1624333991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Idle-Anim_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dda81449abcc39458652d07dc7ff7c7
+      internalID: -131345686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Idle-Anim_24
       rect:
         serializedVersion: 2
         x: 0
@@ -509,16 +773,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 69906a69f391192e0800000000000000
-      internalID: -2120886188613695082
+      spriteID: 3520897973f9c06449534789e86529ba
+      internalID: 815628170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_25
+      name: Petilil_1_Idle-Anim_25
       rect:
         serializedVersion: 2
         x: 32
@@ -531,16 +795,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8afe6a79463be50b0800000000000000
-      internalID: -5737951630601031768
+      spriteID: 48a485286fb53924982805941e80afac
+      internalID: 1025994966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_26
+      name: Petilil_1_Idle-Anim_26
       rect:
         serializedVersion: 2
         x: 64
@@ -553,16 +817,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a683f0ec316423bc0800000000000000
-      internalID: -3804901684299220886
+      spriteID: d89bceed16ffea448a0f191f1603e5f0
+      internalID: 1205511393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_27
+      name: Petilil_1_Idle-Anim_27
       rect:
         serializedVersion: 2
         x: 96
@@ -575,10 +839,98 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f7bbce720a1b088c0800000000000000
-      internalID: -3999001167682290817
+      spriteID: 9c5fbf972622d2b48960dbcb96186dc5
+      internalID: -1784697666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Idle-Anim_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa2ec1f7fcdb5943a037b8a0c03da50
+      internalID: 954891255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Idle-Anim_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cafcff1f7ac194dab07518ac74daed
+      internalID: 716006148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Idle-Anim_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2ec7a32cb3823498426cedf93f9663
+      internalID: -1450245781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Petilil_1_Idle-Anim_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6facb2b4aed1aa4ab40d64dfde3432b
+      internalID: -1574192120
       vertices: []
       indices: 
       edges: []
@@ -599,38 +951,38 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":8.0},"gridSpriteSize":{"x":32.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Idle-Anim_0: 7738998316474853551
-      Idle-Anim_1: 1977075729719447299
-      Idle-Anim_10: -2500440999657106871
-      Idle-Anim_11: 3380924079768591465
-      Idle-Anim_12: 6312937933537730039
-      Idle-Anim_13: 7370305187068088183
-      Idle-Anim_14: -4401239759644110075
-      Idle-Anim_15: 5716087231770099852
-      Idle-Anim_16: 4969444997890004679
-      Idle-Anim_17: -9145775198654151500
-      Idle-Anim_18: -6656707347790094562
-      Idle-Anim_19: -5421402862643160038
-      Idle-Anim_2: 9173613481854189632
-      Idle-Anim_20: 728989986691342317
-      Idle-Anim_21: 1731065877924970417
-      Idle-Anim_22: 702254742369775053
-      Idle-Anim_23: 843812802259278218
-      Idle-Anim_24: -2120886188613695082
-      Idle-Anim_25: -5737951630601031768
-      Idle-Anim_26: -3804901684299220886
-      Idle-Anim_27: -3999001167682290817
-      Idle-Anim_28: 4068438704295549569
-      Idle-Anim_29: -90787290279785787
-      Idle-Anim_3: 3458398094100512545
-      Idle-Anim_30: -3261768965048884968
-      Idle-Anim_31: 3239275106390307007
-      Idle-Anim_4: -1533630627476091484
-      Idle-Anim_5: 3520039924926930967
-      Idle-Anim_6: -9007074944737430628
-      Idle-Anim_7: 5469265311968306403
-      Idle-Anim_8: 8813659312991238842
-      Idle-Anim_9: -7205847637910636526
+      Petilil_1_Idle-Anim_0: 741104752
+      Petilil_1_Idle-Anim_1: 241675121
+      Petilil_1_Idle-Anim_10: -605946301
+      Petilil_1_Idle-Anim_11: -164279680
+      Petilil_1_Idle-Anim_12: -2078496476
+      Petilil_1_Idle-Anim_13: 142563762
+      Petilil_1_Idle-Anim_14: -1366260328
+      Petilil_1_Idle-Anim_15: -405398335
+      Petilil_1_Idle-Anim_16: 898095700
+      Petilil_1_Idle-Anim_17: -190226971
+      Petilil_1_Idle-Anim_18: -1590182344
+      Petilil_1_Idle-Anim_19: 2029575022
+      Petilil_1_Idle-Anim_2: -1974216101
+      Petilil_1_Idle-Anim_20: -920070753
+      Petilil_1_Idle-Anim_21: -1248815960
+      Petilil_1_Idle-Anim_22: 1624333991
+      Petilil_1_Idle-Anim_23: -131345686
+      Petilil_1_Idle-Anim_24: 815628170
+      Petilil_1_Idle-Anim_25: 1025994966
+      Petilil_1_Idle-Anim_26: 1205511393
+      Petilil_1_Idle-Anim_27: -1784697666
+      Petilil_1_Idle-Anim_28: 954891255
+      Petilil_1_Idle-Anim_29: 716006148
+      Petilil_1_Idle-Anim_3: 80114745
+      Petilil_1_Idle-Anim_30: -1450245781
+      Petilil_1_Idle-Anim_31: -1574192120
+      Petilil_1_Idle-Anim_4: -1810470908
+      Petilil_1_Idle-Anim_5: 1739899386
+      Petilil_1_Idle-Anim_6: -1770789224
+      Petilil_1_Idle-Anim_7: -772248890
+      Petilil_1_Idle-Anim_8: -284867373
+      Petilil_1_Idle-Anim_9: -886878958
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
