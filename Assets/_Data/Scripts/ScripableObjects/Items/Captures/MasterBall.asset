@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04385e6d9d22d73439aefca02e05220a, type: 3}
-  m_Name: Capture2
+  m_Name: MasterBall
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
-  _image: {fileID: -8010451510339023214, guid: e66673a20bf09c24fb191438d056e6ca, type: 3}
-  _id: 2202
-  _name: Capture1
+  _image: {fileID: -2185961492541576866, guid: 3cae10e4ade57c04c863bf36f22f10f0, type: 3}
+  _id: 2203
+  _name: Master Ball
+  _prefab: {fileID: 3571501798688286163, guid: a5d80cbf547fc214b946dc20bf654d81, type: 3}
   _effectItem: 6
   _itemType: 1
-  _value: 10
+  _value: 99999
   _buyPrice: 10
   _sellPrice: 5
   _description: Catch Pokemon

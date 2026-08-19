@@ -1,6 +1,8 @@
 using System;
+using System.Threading.Tasks;
 using UniRx;
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public partial class MonsterAnimatorController : CharacterAnimatorController
 {
@@ -23,13 +25,32 @@ public partial class MonsterAnimatorController : CharacterAnimatorController
     {
         _currentHash = GetStateHash(eMonsterState);
         _currentMonsterState = eMonsterState;
+
+        if(_currentHash == Idle_Attack_Left)
+        {
+            _animator.SetInteger("IdleAttackValue", 1);
+        }
+        else if(_currentHash == Idle_Attack_Right)
+        {
+            _animator.SetInteger("IdleAttackValue", 2);
+        }
         _animator.CrossFade(_currentHash, fade, layer, 0f);
     }
 
-    private void OnStateExited(int animatorId, int hash)
+    private async void OnStateExited(int animatorId, int hash)
     {
         if (animatorId != _animator.GetInstanceID()) return;
 
+        if(hash == Attack_Top_Right)
+        {
+            await Task.Delay(1000);
+            _animator.CrossFade(Idle_Attack_Left, 0f, 1, 0f);
+        }
+        else if(hash == Attack_Bottom_Left)
+        {
+            await Task.Delay(1000);
+            _animator.CrossFade(Idle_Attack_Right, 0f, 1, 0f);
+        }
         _onAnimationCompleted.OnNext(new MonsterAnimationCompletedData(_currentMonsterSide, _currentMonsterState));
 
         _currentMonsterState = EMonsterState.None;

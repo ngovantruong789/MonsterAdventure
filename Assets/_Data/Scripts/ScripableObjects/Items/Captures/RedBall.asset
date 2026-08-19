@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04385e6d9d22d73439aefca02e05220a, type: 3}
-  m_Name: Capture1
+  m_Name: RedBall
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
-  _image: {fileID: 1447442794450965071, guid: 980f09ea9f567a344be92b5ac1e22507, type: 3}
-  _id: 2201
-  _name: Capture1
+  _image: {fileID: 2102516872252582677, guid: 3cae10e4ade57c04c863bf36f22f10f0, type: 3}
+  _id: 2202
+  _name: Red Ball
   _prefab: {fileID: 7767287966087706194, guid: 68f9dfcfc16393e42893a8537d029a69, type: 3}
   _effectItem: 6
   _itemType: 1
