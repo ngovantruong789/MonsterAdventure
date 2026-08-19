@@ -12,6 +12,8 @@ public partial class BattleMonsterWorldSpaceView : BaseMonoBehaviour, IStartInit
     [SerializeField] private MonsterAnimatorController _playerAnimator;
     [SerializeField] private MonsterAnimatorController _opponentAnimator;
 
+    [SerializeField] private Transform _holderItem;
+
     protected override void Start()
     {
         base.Start();
@@ -66,6 +68,19 @@ public partial class BattleMonsterWorldSpaceView : BaseMonoBehaviour, IStartInit
     private void OnAnimationComplete(EMonsterSide eMonsterSide, EMonsterState eMonsterState)
     {
         _onAnimationCompletedViewData.OnNext(new AnimationCompletedViewData(eMonsterSide, eMonsterState));
+    }
+
+    public void PlayCapture(EItemType itemType, bool isComplete, GameObject prefab)
+    {
+        Transform monsterBall = Instantiate(prefab.transform, _playerMonsterObj.position, Quaternion.identity, _holderItem);
+        BallEntity monsterBallEntity = monsterBall.GetComponent<BallEntity>();
+        monsterBallEntity.SetData(new Vector3(_opponentMonsterObj.position.x, _opponentMonsterObj.position.y + 1f));
+        monsterBallEntity.gameObject.SetActive(true);
+
+        monsterBallEntity.OnActiveCompleted
+            .Take(1)
+            .Subscribe(_ => _onActiveItemCompleted.OnNext(default))
+            .AddTo(this);
     }
 
     private MonsterAnimatorController GetMonsterAnimator(EMonsterSide eMonsterSide)

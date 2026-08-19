@@ -6,6 +6,7 @@ public static class ItemModelFactory
         {
             Id = itemSO.Id,
             Name = itemSO.Name,
+            Prefab = itemSO.Prefab,
             EffectItem = itemSO.EffectItem,
             ItemType = itemSO.ItemType,
             Quantity = quantity,

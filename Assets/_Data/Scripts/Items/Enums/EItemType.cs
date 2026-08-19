@@ -5,4 +5,5 @@ public enum EItemType
     Restore = 2,
     PlayerEquipment = 3,
     MonsterEquipment = 4,
+    Monster = 5,
 }

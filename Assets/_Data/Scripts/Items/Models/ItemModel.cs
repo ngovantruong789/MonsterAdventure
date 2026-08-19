@@ -3,6 +3,7 @@ using UnityEngine;
 public class ItemModel
 {
     public Sprite Image { get; set; }
+    public GameObject Prefab { get; set; }
     public int Id {  get; set; }
     public string Name { get; set; }
     public EItemType ItemType { get; set; }

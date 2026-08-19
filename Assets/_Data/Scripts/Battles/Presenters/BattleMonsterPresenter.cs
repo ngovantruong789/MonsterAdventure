@@ -15,6 +15,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
     private readonly CompositeDisposable _disposable = new();
     private readonly IBattleMonsterPresenter _battleMonstercontroller;
     private readonly IInventoryProvider _inventoryProvider;
+    private readonly IItemController _itemController;
 
     private EStatePhase _currentStatePhase;
 
@@ -24,7 +25,8 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         BattleManager battleManager,
         PlayerTeamModel playerTeamModel,
         IBattleMonsterPresenter iBattleMonsterPresenter,
-        IInventoryProvider inventoryProvider)
+        IInventoryProvider inventoryProvider,
+        IItemController itemController)
     {
         //_battleModel = battleModel;
         _battleMonsterView = battleMonsterView;
@@ -34,7 +36,9 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         _opponentModel = battleModel.OpponentMonsterModel;
         _battleMonstercontroller = iBattleMonsterPresenter;
         _inventoryProvider = inventoryProvider;
+        _itemController = itemController;
         Debug.Log("BattleMonsterPresenter Initialized");
+        _itemController = itemController;
     }
 
     public void Start()
@@ -95,9 +99,13 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
             .Subscribe(val => HandlePlayVFXComplete(val))
             .AddTo(_disposable);
 
-        _hUDBattleMonsterView.OnActiveItem
-            .Subscribe(val => HandleActiveItem(val))
+        _hUDBattleMonsterView.OnUseItem
+            .Subscribe(val => HandleUseItem(val.ItemId, val.ItemType))
             .AddTo(_disposable);
+
+        _itemController.OnActiveItem
+            .Subscribe(val => HandleActiveItem(val.ItemType, val.IsComplete, val.Prefab))
+            .AddTo (_disposable);
     }
 
     #region Update view data
@@ -201,9 +209,17 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         _hUDBattleMonsterView.ShowItemPanel(EItemType.Restore);
     }
 
-    private void HandleActiveItem(int id)
+    private void HandleUseItem(int id, EItemType itemType)
     {
-        //code use item
+        _itemController.UseItem(id, itemType, _opponentModel);
+    }
+
+    private void HandleActiveItem(EItemType itemType, bool isComplete, GameObject prefab)
+    {
+        if(itemType == EItemType.Capture)
+        {
+            _battleMonsterView.PlayCapture(itemType, isComplete, prefab);
+        }
     }
     #endregion Item
 

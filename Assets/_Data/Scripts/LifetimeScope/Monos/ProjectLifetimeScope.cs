@@ -21,6 +21,7 @@ public class ProjectLifetimeScope : LifetimeScope, IStartable
         builder.RegisterEntryPoint<PlayerTeamController>(Lifetime.Singleton).AsSelf().As<IPlayerTeamProvider>();
         builder.RegisterEntryPoint<InventoryController>(Lifetime.Singleton).As<IInventoryProvider>();
         builder.RegisterEntryPoint<SceneLoadController>(Lifetime.Singleton).As<ISceneLoadController>();
+        builder.RegisterEntryPoint<ItemController>(Lifetime.Singleton).As<IItemController>();
 
         //Model
         builder.Register<PlayerTeamModel>(Lifetime.Singleton);

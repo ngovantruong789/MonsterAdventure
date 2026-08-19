@@ -22,6 +22,7 @@ public static class MonsterModelFactory
             UIAnimator = monsterSO.UIAnimator,
             MonsterName = monsterSO.name,
             EElementTypes = monsterSO.Elements,
+            DifficultCapture = CaptureCalculator.CalculateDiffercultCapturePerLevel(monsterSO.CaptureRateConfig, level),
             Experience = 0,
             IsDead = false,
         };

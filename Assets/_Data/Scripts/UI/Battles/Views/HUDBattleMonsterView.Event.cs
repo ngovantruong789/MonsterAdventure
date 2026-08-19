@@ -3,8 +3,8 @@ using UniRx;
 
 public partial class HUDBattleMonsterView
 {
-    private Subject<int> _onActiveItem = new();
-    public IObservable<int> OnActiveItem => _onActiveItem;
+    private Subject<UseItemHUDViewData> _onUseItem = new();
+    public IObservable<UseItemHUDViewData> OnUseItem => _onUseItem;
 
     private Subject<Unit> _onShowSkill = new();
     public IObservable<Unit> OnShowSkill => _onShowSkill;

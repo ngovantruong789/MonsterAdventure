@@ -15,9 +15,10 @@ MonoBehaviour:
   _image: {fileID: 1447442794450965071, guid: 980f09ea9f567a344be92b5ac1e22507, type: 3}
   _id: 2201
   _name: Capture1
+  _prefab: {fileID: 7767287966087706194, guid: 68f9dfcfc16393e42893a8537d029a69, type: 3}
   _effectItem: 6
   _itemType: 1
-  _value: 10
+  _value: 50
   _buyPrice: 10
   _sellPrice: 5
   _description: Catch Pokemon

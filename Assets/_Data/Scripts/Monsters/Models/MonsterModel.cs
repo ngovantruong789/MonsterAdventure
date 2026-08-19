@@ -16,6 +16,7 @@ public class MonsterModel
     public int MaxHealth { get; set; }
     public int Defense { get; set; }
     public int Level { get; set; }
+    public float DifficultCapture { get; set; }
     public bool IsDead { get; set; }
     public float Experience { get; set; }
 }

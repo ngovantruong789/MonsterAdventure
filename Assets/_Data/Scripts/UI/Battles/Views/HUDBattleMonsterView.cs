@@ -266,6 +266,7 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
     private void UpdateInforItemButton(SelectItemInfor itemInfor, ItemViewData itemViewData)
     {
         itemInfor.IdItem = itemViewData.Id;
+        itemInfor.ItemType = itemViewData.ItemType;
         itemInfor.ItemNameText.text = itemViewData.Name;
         itemInfor.DescriptionText.text = itemViewData.Description;
         itemInfor.QuantityText.text = itemViewData.Quantity.ToString();
@@ -331,7 +332,7 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         }
         else if (_currentItemselected != null && _currentItemselected == buttonSelectItemInfor)
         {
-            _onActiveItem.OnNext(_currentItemselected.IdItem);
+            _onUseItem.OnNext(new UseItemHUDViewData(_currentItemselected.IdItem, _currentItemselected.ItemType));
         }
         else
         {
