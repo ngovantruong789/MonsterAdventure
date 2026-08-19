@@ -16,6 +16,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
     private readonly IBattleMonsterPresenter _battleMonstercontroller;
     private readonly IInventoryProvider _inventoryProvider;
     private readonly IItemController _itemController;
+    private bool _isUseComplete = false;
 
     private EStatePhase _currentStatePhase;
 
@@ -106,6 +107,10 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         _itemController.OnActiveItem
             .Subscribe(val => HandleActiveItem(val.ItemType, val.IsComplete, val.Prefab))
             .AddTo (_disposable);
+
+        _battleMonsterView.OnActiveItemCompleted
+            .Subscribe(val => HandleActiveItemComplete(val))
+            .AddTo(_disposable);
     }
 
     #region Update view data
@@ -216,10 +221,25 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
 
     private void HandleActiveItem(EItemType itemType, bool isComplete, GameObject prefab)
     {
-        if(itemType == EItemType.Capture)
+        _isUseComplete = isComplete;
+        if (itemType == EItemType.Capture)
         {
             _battleMonsterView.PlayCapture(itemType, isComplete, prefab);
         }
+    }
+
+    private void HandleActiveItemComplete(EItemType itemType)
+    {
+        if(itemType == EItemType.Capture && _isUseComplete)
+        {
+            OutBattle();
+        }
+        else if(itemType == EItemType.Capture && !_isUseComplete)
+        {
+            HandleEndPhase(EMonsterSide.Player, false);
+        }
+
+        _hUDBattleMonsterView.IsInteract = true;
     }
     #endregion Item
 

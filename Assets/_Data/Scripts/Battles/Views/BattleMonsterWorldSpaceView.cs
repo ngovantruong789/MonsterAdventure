@@ -1,4 +1,6 @@
+using DG.Tweening;
 using System;
+using System.Collections;
 using UniRx;
 using UnityEngine;
 
@@ -11,8 +13,10 @@ public partial class BattleMonsterWorldSpaceView : BaseMonoBehaviour, IStartInit
 
     [SerializeField] private MonsterAnimatorController _playerAnimator;
     [SerializeField] private MonsterAnimatorController _opponentAnimator;
-
+    [SerializeField] private Transform _ballSpawnPoint;
     [SerializeField] private Transform _holderItem;
+
+    [SerializeField] private float _waitOpenCloseBall;
 
     protected override void Start()
     {
@@ -72,15 +76,75 @@ public partial class BattleMonsterWorldSpaceView : BaseMonoBehaviour, IStartInit
 
     public void PlayCapture(EItemType itemType, bool isComplete, GameObject prefab)
     {
-        Transform monsterBall = Instantiate(prefab.transform, _playerMonsterObj.position, Quaternion.identity, _holderItem);
+        Transform monsterBall = Instantiate(prefab.transform, _ballSpawnPoint.position, Quaternion.identity, _holderItem);
         BallEntity monsterBallEntity = monsterBall.GetComponent<BallEntity>();
-        monsterBallEntity.SetData(new Vector3(_opponentMonsterObj.position.x, _opponentMonsterObj.position.y + 1f));
+        monsterBallEntity.SetData(new Vector3(_opponentMonsterObj.position.x, _opponentMonsterObj.position.y + 1f), false);
         monsterBallEntity.gameObject.SetActive(true);
 
-        monsterBallEntity.OnActiveCompleted
-            .Take(1)
-            .Subscribe(_ => _onActiveItemCompleted.OnNext(default))
+        int throwCount = isComplete ? 1 : 2;
+        int currentThrow = 0;
+
+        monsterBallEntity.OnActivePhaseCompleted
+            .Take(throwCount)
+            .Subscribe(_ =>
+            {
+                currentThrow++;
+                if (currentThrow == 1)
+                {
+                    StartCoroutine(HandleCaptureCoroutine(monsterBallEntity, isComplete));
+                }
+                else
+                {
+                    StartCoroutine(HandleCompleteCaptureFalse(monsterBallEntity));
+                }
+            })
             .AddTo(this);
+    }
+
+    private IEnumerator HandleCaptureCoroutine(BallEntity ballEntity,bool isComplete)
+    {
+        ballEntity.ToggleOpenBall(EBallState.Idle, 0.5f);
+        yield return _waitOpenCloseBall;
+        yield return _opponentMonsterObj.DOScale(Vector3.zero, 1f).SetEase(Ease.Linear).WaitForCompletion();
+
+        ballEntity.ToggleOpenBall(EBallState.Idle, 1f);
+        yield return _waitOpenCloseBall;
+
+        ballEntity.ToggleOpenBall(EBallState.Idle, 0f);
+        yield return _waitOpenCloseBall;
+        yield return ballEntity.transform.DOMoveY(ballEntity.transform.position.y - 1f, 1f).SetEase(Ease.Linear).WaitForCompletion();
+
+        int rotateCount = isComplete ? 3 : UnityEngine.Random.Range(1, 3);
+        bool rotateDirection = true;
+
+        for (int i = 0; i < rotateCount; i++)
+        {
+            ballEntity.RotateBall(rotateDirection);
+            rotateDirection = !rotateDirection;
+            yield return new WaitForSeconds(2);
+        }
+        if (isComplete)
+        {
+            _onActiveItemCompleted.OnNext(EItemType.Capture);
+            yield break;
+        }
+
+        ballEntity.ToggleOpenBall(EBallState.Idle, 0.5f);
+        yield return _waitOpenCloseBall;
+        yield return _opponentMonsterObj.DOScale(Vector3.one, 1f).SetEase(Ease.Linear).WaitForCompletion();
+
+        ballEntity.ToggleOpenBall(EBallState.Idle, 1f);
+        yield return _waitOpenCloseBall;
+
+        ballEntity.SetData(_ballSpawnPoint.position,true);
+    }
+
+    private IEnumerator HandleCompleteCaptureFalse(BallEntity ballEntity)
+    {
+        yield return new WaitForSeconds(1);
+
+        ballEntity.gameObject.SetActive(false);
+        _onActiveItemCompleted.OnNext(EItemType.Capture);
     }
 
     private MonsterAnimatorController GetMonsterAnimator(EMonsterSide eMonsterSide)

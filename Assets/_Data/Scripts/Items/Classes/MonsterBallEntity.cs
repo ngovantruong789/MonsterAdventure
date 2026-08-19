@@ -3,6 +3,6 @@ using UniRx;
 
 public partial class BallEntity
 {
-    private Subject<Unit> _onActiveCompleted = new();
-    public IObservable<Unit> OnActiveCompleted => _onActiveCompleted;
+    private Subject<EBallState> _onActivePhaseCompleted = new();
+    public IObservable<EBallState> OnActivePhaseCompleted => _onActivePhaseCompleted;
 }

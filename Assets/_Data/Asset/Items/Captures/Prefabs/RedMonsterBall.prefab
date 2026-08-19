@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6763126165351156501}
   - component: {fileID: 331035395576418015}
+  - component: {fileID: 6625545182320035150}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -91,6 +92,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &6625545182320035150
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6281532941219487804}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: b1f5760de9c058c4cbb4f31753851ce5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7767287966087706194
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +125,7 @@ GameObject:
   - component: {fileID: 4717886246339269158}
   - component: {fileID: 1997793671543196593}
   m_Layer: 0
-  m_Name: BaseMonsterBall
+  m_Name: RedMonsterBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,5 +192,12 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  _trajectoryAnimCurve2:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   _moveSpeed: 15
   _trajectoryMaxHeight: 3
+  _animator: {fileID: 6625545182320035150}

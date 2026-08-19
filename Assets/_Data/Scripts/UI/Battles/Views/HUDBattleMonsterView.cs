@@ -109,6 +109,7 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         _btnRun.onClick.AddListener(() =>
         {
             if (_isBattleButtonClicked) return;
+            if (!IsInteract) return;
 
             _onOutBattleEvent.OnNext(default);
             ResetValue();
@@ -333,6 +334,8 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         else if (_currentItemselected != null && _currentItemselected == buttonSelectItemInfor)
         {
             _onUseItem.OnNext(new UseItemHUDViewData(_currentItemselected.IdItem, _currentItemselected.ItemType));
+            IsInteract = false;
+            ResetValue();
         }
         else
         {
