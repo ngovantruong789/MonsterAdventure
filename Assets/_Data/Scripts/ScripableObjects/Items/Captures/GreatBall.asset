@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04385e6d9d22d73439aefca02e05220a, type: 3}
+  m_Name: GreatBall
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSO
+  _image: {fileID: -1277142029991855476, guid: 3cae10e4ade57c04c863bf36f22f10f0, type: 3}
+  _id: 2201
+  _name: Great Ball
+  _prefab: {fileID: 3571501798688286163, guid: bc49743f4ee53f240bb626c76ef737fe, type: 3}
+  _effectItem: 6
+  _itemType: 1
+  _value: 1
+  _buyPrice: 10
+  _sellPrice: 5
+  _description: Catch Pokemon

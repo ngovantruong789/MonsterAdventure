@@ -1024,10 +1024,10 @@ TextureImporter:
       name: Pokeball_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 6
         y: 676
-        width: 26
-        height: 25
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1046,10 +1046,10 @@ TextureImporter:
       name: Pokeball_1
       rect:
         serializedVersion: 2
-        x: 49
+        x: 47
         y: 676
-        width: 26
-        height: 25
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1068,10 +1068,10 @@ TextureImporter:
       name: Pokeball_2
       rect:
         serializedVersion: 2
-        x: 90
+        x: 88
         y: 676
-        width: 26
-        height: 25
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1092,7 +1092,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 676
-        width: 28
+        width: 29
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1398,10 +1398,10 @@ TextureImporter:
       name: Pokeball_17
       rect:
         serializedVersion: 2
-        x: 8
+        x: 6
         y: 635
-        width: 26
-        height: 26
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1420,10 +1420,10 @@ TextureImporter:
       name: Pokeball_18
       rect:
         serializedVersion: 2
-        x: 49
+        x: 47
         y: 636
-        width: 26
-        height: 25
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1442,10 +1442,10 @@ TextureImporter:
       name: Pokeball_19
       rect:
         serializedVersion: 2
-        x: 90
+        x: 88
         y: 635
-        width: 26
-        height: 26
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1466,7 +1466,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 635
-        width: 28
+        width: 29
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1772,10 +1772,10 @@ TextureImporter:
       name: Pokeball_34
       rect:
         serializedVersion: 2
-        x: 8
+        x: 6
         y: 596
-        width: 26
-        height: 25
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1794,10 +1794,10 @@ TextureImporter:
       name: Pokeball_35
       rect:
         serializedVersion: 2
-        x: 49
+        x: 47
         y: 596
-        width: 26
-        height: 25
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1816,10 +1816,10 @@ TextureImporter:
       name: Pokeball_36
       rect:
         serializedVersion: 2
-        x: 91
+        x: 88
         y: 596
-        width: 25
-        height: 25
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1840,7 +1840,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 596
-        width: 28
+        width: 29
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2146,10 +2146,10 @@ TextureImporter:
       name: Pokeball_51
       rect:
         serializedVersion: 2
-        x: 8
+        x: 6
         y: 555
-        width: 26
-        height: 26
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2168,10 +2168,10 @@ TextureImporter:
       name: Pokeball_52
       rect:
         serializedVersion: 2
-        x: 49
+        x: 47
         y: 555
-        width: 26
-        height: 26
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2190,10 +2190,10 @@ TextureImporter:
       name: Pokeball_53
       rect:
         serializedVersion: 2
-        x: 90
+        x: 88
         y: 555
-        width: 26
-        height: 26
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2214,7 +2214,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 556
-        width: 28
+        width: 29
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2520,10 +2520,10 @@ TextureImporter:
       name: Pokeball_68
       rect:
         serializedVersion: 2
-        x: 8
+        x: 6
         y: 515
-        width: 26
-        height: 26
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2542,10 +2542,10 @@ TextureImporter:
       name: Pokeball_69
       rect:
         serializedVersion: 2
-        x: 49
+        x: 47
         y: 516
-        width: 26
-        height: 25
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2564,10 +2564,10 @@ TextureImporter:
       name: Pokeball_70
       rect:
         serializedVersion: 2
-        x: 90
+        x: 88
         y: 516
-        width: 26
-        height: 25
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2588,7 +2588,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 516
-        width: 28
+        width: 29
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2894,10 +2894,10 @@ TextureImporter:
       name: Pokeball_85
       rect:
         serializedVersion: 2
-        x: 8
+        x: 6
         y: 475
-        width: 26
-        height: 26
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2916,10 +2916,10 @@ TextureImporter:
       name: Pokeball_86
       rect:
         serializedVersion: 2
-        x: 49
+        x: 47
         y: 475
-        width: 26
-        height: 26
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2938,10 +2938,10 @@ TextureImporter:
       name: Pokeball_87
       rect:
         serializedVersion: 2
-        x: 90
+        x: 88
         y: 476
-        width: 26
-        height: 25
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2962,7 +2962,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 476
-        width: 28
+        width: 29
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3268,10 +3268,10 @@ TextureImporter:
       name: Pokeball_102
       rect:
         serializedVersion: 2
-        x: 8
+        x: 6
         y: 436
-        width: 26
-        height: 25
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3290,10 +3290,10 @@ TextureImporter:
       name: Pokeball_103
       rect:
         serializedVersion: 2
-        x: 49
+        x: 47
         y: 436
-        width: 26
-        height: 25
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3312,10 +3312,10 @@ TextureImporter:
       name: Pokeball_104
       rect:
         serializedVersion: 2
-        x: 91
+        x: 88
         y: 436
-        width: 25
-        height: 25
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3336,7 +3336,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 436
-        width: 28
+        width: 29
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3642,10 +3642,10 @@ TextureImporter:
       name: Pokeball_119
       rect:
         serializedVersion: 2
-        x: 8
+        x: 6
         y: 396
-        width: 25
-        height: 25
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3664,10 +3664,10 @@ TextureImporter:
       name: Pokeball_120
       rect:
         serializedVersion: 2
-        x: 49
+        x: 47
         y: 396
-        width: 26
-        height: 25
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3686,10 +3686,10 @@ TextureImporter:
       name: Pokeball_121
       rect:
         serializedVersion: 2
-        x: 90
+        x: 88
         y: 396
-        width: 26
-        height: 25
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3710,7 +3710,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 396
-        width: 28
+        width: 29
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -4016,10 +4016,10 @@ TextureImporter:
       name: Pokeball_136
       rect:
         serializedVersion: 2
-        x: 8
+        x: 6
         y: 354
-        width: 26
-        height: 25
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4038,10 +4038,10 @@ TextureImporter:
       name: Pokeball_137
       rect:
         serializedVersion: 2
-        x: 49
+        x: 47
         y: 354
-        width: 26
-        height: 25
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4060,10 +4060,10 @@ TextureImporter:
       name: Pokeball_138
       rect:
         serializedVersion: 2
-        x: 90
+        x: 88
         y: 354
-        width: 26
-        height: 25
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4084,7 +4084,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 354
-        width: 28
+        width: 29
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -4390,10 +4390,10 @@ TextureImporter:
       name: Pokeball_153
       rect:
         serializedVersion: 2
-        x: 8
+        x: 6
         y: 314
-        width: 26
-        height: 25
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4412,10 +4412,10 @@ TextureImporter:
       name: Pokeball_154
       rect:
         serializedVersion: 2
-        x: 49
+        x: 47
         y: 314
-        width: 26
-        height: 25
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4434,10 +4434,10 @@ TextureImporter:
       name: Pokeball_155
       rect:
         serializedVersion: 2
-        x: 90
+        x: 88
         y: 314
-        width: 26
-        height: 25
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4458,7 +4458,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 314
-        width: 28
+        width: 29
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -4764,10 +4764,10 @@ TextureImporter:
       name: Pokeball_170
       rect:
         serializedVersion: 2
-        x: 7
+        x: 6
         y: 274
-        width: 26
-        height: 32
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4788,8 +4788,8 @@ TextureImporter:
         serializedVersion: 2
         x: 47
         y: 274
-        width: 28
-        height: 32
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4810,8 +4810,8 @@ TextureImporter:
         serializedVersion: 2
         x: 88
         y: 274
-        width: 28
-        height: 32
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4832,7 +4832,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 273
-        width: 28
+        width: 29
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -5138,10 +5138,10 @@ TextureImporter:
       name: Pokeball_187
       rect:
         serializedVersion: 2
-        x: 7
+        x: 6
         y: 236
-        width: 26
-        height: 26
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5160,10 +5160,10 @@ TextureImporter:
       name: Pokeball_188
       rect:
         serializedVersion: 2
-        x: 48
+        x: 47
         y: 236
-        width: 26
-        height: 25
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5182,10 +5182,10 @@ TextureImporter:
       name: Pokeball_189
       rect:
         serializedVersion: 2
-        x: 89
+        x: 88
         y: 236
-        width: 26
-        height: 25
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5206,7 +5206,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 236
-        width: 28
+        width: 29
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -5512,10 +5512,10 @@ TextureImporter:
       name: Pokeball_204
       rect:
         serializedVersion: 2
-        x: 5
+        x: 6
         y: 195
-        width: 27
-        height: 27
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5536,8 +5536,8 @@ TextureImporter:
         serializedVersion: 2
         x: 47
         y: 196
-        width: 26
-        height: 25
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5558,8 +5558,8 @@ TextureImporter:
         serializedVersion: 2
         x: 88
         y: 196
-        width: 26
-        height: 25
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5580,7 +5580,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 196
-        width: 28
+        width: 29
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -5886,10 +5886,10 @@ TextureImporter:
       name: Pokeball_221
       rect:
         serializedVersion: 2
-        x: 4
+        x: 6
         y: 155
-        width: 27
-        height: 27
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5910,8 +5910,8 @@ TextureImporter:
         serializedVersion: 2
         x: 46
         y: 155
-        width: 26
-        height: 26
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5930,10 +5930,10 @@ TextureImporter:
       name: Pokeball_223
       rect:
         serializedVersion: 2
-        x: 87
+        x: 88
         y: 155
-        width: 26
-        height: 26
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5954,7 +5954,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 155
-        width: 28
+        width: 29
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -6260,10 +6260,10 @@ TextureImporter:
       name: Pokeball_238
       rect:
         serializedVersion: 2
-        x: 9
+        x: 6
         y: 115
-        width: 26
-        height: 27
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6282,10 +6282,10 @@ TextureImporter:
       name: Pokeball_239
       rect:
         serializedVersion: 2
-        x: 50
+        x: 47
         y: 115
-        width: 26
-        height: 26
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6304,10 +6304,10 @@ TextureImporter:
       name: Pokeball_240
       rect:
         serializedVersion: 2
-        x: 91
+        x: 88
         y: 115
-        width: 26
-        height: 26
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6328,7 +6328,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 115
-        width: 28
+        width: 29
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -6634,10 +6634,10 @@ TextureImporter:
       name: Pokeball_255
       rect:
         serializedVersion: 2
-        x: 10
+        x: 6
         y: 76
-        width: 27
-        height: 26
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6656,10 +6656,10 @@ TextureImporter:
       name: Pokeball_256
       rect:
         serializedVersion: 2
-        x: 51
+        x: 47
         y: 76
-        width: 26
-        height: 25
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6678,10 +6678,10 @@ TextureImporter:
       name: Pokeball_257
       rect:
         serializedVersion: 2
-        x: 92
+        x: 88
         y: 76
-        width: 26
-        height: 25
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6702,7 +6702,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 76
-        width: 28
+        width: 29
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -7008,10 +7008,10 @@ TextureImporter:
       name: Pokeball_272
       rect:
         serializedVersion: 2
-        x: 11
+        x: 6
         y: 35
-        width: 27
-        height: 27
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7030,10 +7030,10 @@ TextureImporter:
       name: Pokeball_273
       rect:
         serializedVersion: 2
-        x: 52
+        x: 47
         y: 36
-        width: 26
-        height: 25
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7052,10 +7052,10 @@ TextureImporter:
       name: Pokeball_274
       rect:
         serializedVersion: 2
-        x: 93
+        x: 88
         y: 36
-        width: 26
-        height: 26
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7076,7 +7076,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 36
-        width: 28
+        width: 29
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

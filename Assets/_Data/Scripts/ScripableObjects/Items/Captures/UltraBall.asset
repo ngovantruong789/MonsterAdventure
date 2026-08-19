@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04385e6d9d22d73439aefca02e05220a, type: 3}
-  m_Name: Capture3
+  m_Name: UltraBall
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
-  _image: {fileID: -6261654383949262991, guid: 4de729fa62e65f144897d314bab31dba, type: 3}
-  _id: 2203
-  _name: Capture3
+  _image: {fileID: -6952826525084400016, guid: 3cae10e4ade57c04c863bf36f22f10f0, type: 3}
+  _id: 2202
+  _name: Ultra Ball
+  _prefab: {fileID: 3571501798688286163, guid: 96bbefc00a9051c4993156899c51b6fd, type: 3}
   _effectItem: 6
   _itemType: 1
-  _value: 10
+  _value: 250
   _buyPrice: 10
   _sellPrice: 5
   _description: Catch Pokemon
