@@ -226,7 +226,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -328,7 +328,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle-Anim_0
+      name: Tapulele_Idle-Anim_0
       rect:
         serializedVersion: 2
         x: 0
@@ -341,16 +341,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fa864d247f1766b60800000000000000
-      internalID: 7738998316474853551
+      spriteID: 00a270e776815834eb47c7d922d496ea
+      internalID: -318544413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_1
+      name: Tapulele_Idle-Anim_1
       rect:
         serializedVersion: 2
         x: 24
@@ -363,16 +363,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 30f49f3b6ebff6b10800000000000000
-      internalID: 1977075729719447299
+      spriteID: 26fb5e17a77b29c4097360f8b519de25
+      internalID: -1739443829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_2
+      name: Tapulele_Idle-Anim_2
       rect:
         serializedVersion: 2
         x: 48
@@ -385,16 +385,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 04047ac9bd83f4f70800000000000000
-      internalID: 9173613481854189632
+      spriteID: d27a3a1092157514fb9d84cbc0b9f744
+      internalID: -4432417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_3
+      name: Tapulele_Idle-Anim_3
       rect:
         serializedVersion: 2
         x: 72
@@ -407,16 +407,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 12fbfb24eb2beff20800000000000000
-      internalID: 3458398094100512545
+      spriteID: c2bba1cf730871845abc73652d4dae91
+      internalID: -228963728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_4
+      name: Tapulele_Idle-Anim_4
       rect:
         serializedVersion: 2
         x: 96
@@ -429,16 +429,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4adc0a0e11377bae0800000000000000
-      internalID: -1533630627476091484
+      spriteID: af3b5a3b98531c74788b8574331e54d9
+      internalID: 2081075115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_5
+      name: Tapulele_Idle-Anim_5
       rect:
         serializedVersion: 2
         x: 120
@@ -451,16 +451,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 710667869a1b9d030800000000000000
-      internalID: 3520039924926930967
+      spriteID: 62af2061244b50b4e818eea187c89150
+      internalID: -1417774862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_6
+      name: Tapulele_Idle-Anim_6
       rect:
         serializedVersion: 2
         x: 144
@@ -473,16 +473,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c93ba9d2f01700380800000000000000
-      internalID: -9007074944737430628
+      spriteID: 73d60d84b6e2d9e4cb4290661d7d638a
+      internalID: 1940880317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_7
+      name: Tapulele_Idle-Anim_7
       rect:
         serializedVersion: 2
         x: 168
@@ -495,16 +495,192 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3e4ac36e2dbb6eb40800000000000000
-      internalID: 5469265311968306403
+      spriteID: 8a20981fb9fb2354db8a2991a9d4d29b
+      internalID: 1267105496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_16
+      name: Tapulele_Idle-Anim_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3011134f93875ba419b4eeb450881555
+      internalID: -664260818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_9
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 384
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d074fc15a8184a74c9949ffe8897fdfb
+      internalID: 1250006423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 384
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b793502bf49db304bba4c4a0e81ac233
+      internalID: -39652863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_11
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 384
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5bdcdbde86a354480975b4fd48571c
+      internalID: 341968102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d37f8bc45b2d9f42b36029d06aa73da
+      internalID: 1852948023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_13
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 384
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9858e1ea09df3548b7d4c4d705bffb5
+      internalID: 1096031838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_14
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 384
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1bfef866090d18498d8e7902d841c51
+      internalID: 1811984423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_15
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 384
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861b6b0c47782ab469069f5e33b383d1
+      internalID: -2030111775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_16
       rect:
         serializedVersion: 2
         x: 0
@@ -517,16 +693,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7c6531675e307f440800000000000000
-      internalID: 4969444997890004679
+      spriteID: 0a5e1b732f7b3774aa8acaf799f748df
+      internalID: 1273161881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_17
+      name: Tapulele_Idle-Anim_17
       rect:
         serializedVersion: 2
         x: 24
@@ -539,16 +715,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4b444a8c9eda31180800000000000000
-      internalID: -9145775198654151500
+      spriteID: bf6d1520d39646640bb8adb6c20433f8
+      internalID: -1533346418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_18
+      name: Tapulele_Idle-Anim_18
       rect:
         serializedVersion: 2
         x: 48
@@ -561,16 +737,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e1f1d399fef9e93a0800000000000000
-      internalID: -6656707347790094562
+      spriteID: b1b6806d1f9755346aed74846141c4f3
+      internalID: -1885093338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_19
+      name: Tapulele_Idle-Anim_19
       rect:
         serializedVersion: 2
         x: 72
@@ -583,16 +759,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a1c5edbf1de43c4b0800000000000000
-      internalID: -5421402862643160038
+      spriteID: 515e793cb09af2d488d915a400ca1770
+      internalID: -624519534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_20
+      name: Tapulele_Idle-Anim_20
       rect:
         serializedVersion: 2
         x: 96
@@ -605,16 +781,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: defdd81d784ed1a00800000000000000
-      internalID: 728989986691342317
+      spriteID: 8e8e07370455312418c21b2c3e6f953a
+      internalID: -1599972298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_21
+      name: Tapulele_Idle-Anim_21
       rect:
         serializedVersion: 2
         x: 120
@@ -627,16 +803,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1bf74809e3bf50810800000000000000
-      internalID: 1731065877924970417
+      spriteID: bbddd2bf5c491a84d90abae9f826ddcd
+      internalID: -1142870612
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_22
+      name: Tapulele_Idle-Anim_22
       rect:
         serializedVersion: 2
         x: 144
@@ -649,16 +825,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dcda8cca7f8eeb900800000000000000
-      internalID: 702254742369775053
+      spriteID: 7d479a00c95dfad4ebd725c6f3e6c313
+      internalID: -1573535602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_23
+      name: Tapulele_Idle-Anim_23
       rect:
         serializedVersion: 2
         x: 168
@@ -671,16 +847,192 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a89579fd543d5bb00800000000000000
-      internalID: 843812802259278218
+      spriteID: edfd513396c7f9945a3a5fbdb7aafcc6
+      internalID: -1958668555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_32
+      name: Tapulele_Idle-Anim_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da151834f20949d40ac7d2cb7befed1b
+      internalID: 843854209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_25
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 256
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df2c5c37bd37e74e8d65923adcd688e
+      internalID: -1159839506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_26
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 256
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9596d92e13f9f3c49a5e0033cf4b28ea
+      internalID: 607891925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_27
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 256
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43d28af847531c47a8e4c7b14f668d9
+      internalID: -33576637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054fa2ba0e4776445a57c1bf843470a3
+      internalID: 256365401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_29
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 256
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affc2483835492b4ab435df193dd8e7f
+      internalID: 1000918881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_30
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 256
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7b63ec06e51b1498be31d03c7bfbb6
+      internalID: -371542174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_31
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 256
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7799a12f39d9da44f8493689e231137a
+      internalID: 83684325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_32
       rect:
         serializedVersion: 2
         x: 0
@@ -693,16 +1045,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c15dca8425a8c9a60800000000000000
-      internalID: 7682167150398461212
+      spriteID: bf27e5595bba47b41a7cb0d888ee94ea
+      internalID: 1958193999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_33
+      name: Tapulele_Idle-Anim_33
       rect:
         serializedVersion: 2
         x: 24
@@ -715,16 +1067,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a2accd81a420ddf60800000000000000
-      internalID: 8060601425331014186
+      spriteID: 297012bf2e1f2964c875129c28f31951
+      internalID: -277413994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_34
+      name: Tapulele_Idle-Anim_34
       rect:
         serializedVersion: 2
         x: 48
@@ -737,16 +1089,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3e81b064713dd6f90800000000000000
-      internalID: -6958673752304707357
+      spriteID: 3ac39404f6a40854880723fffc1d97c6
+      internalID: -1204123697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_35
+      name: Tapulele_Idle-Anim_35
       rect:
         serializedVersion: 2
         x: 72
@@ -759,16 +1111,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9dc47000db16e0b80800000000000000
-      internalID: -8426690388386427687
+      spriteID: f04eba5ae8045594d9e74b1fbd32e216
+      internalID: 1693875775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_36
+      name: Tapulele_Idle-Anim_36
       rect:
         serializedVersion: 2
         x: 96
@@ -781,16 +1133,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 95aec204fa1914570800000000000000
-      internalID: 8449194557805750873
+      spriteID: 2b9a6dda3a53ebf4cbd88633c08e8294
+      internalID: -1157918439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_37
+      name: Tapulele_Idle-Anim_37
       rect:
         serializedVersion: 2
         x: 120
@@ -803,16 +1155,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 194d5e6ecd8fcfe00800000000000000
-      internalID: 1080011638312391825
+      spriteID: b4a9bc259ae803e42bb77aff11a1f2f1
+      internalID: -1896993667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_38
+      name: Tapulele_Idle-Anim_38
       rect:
         serializedVersion: 2
         x: 144
@@ -825,16 +1177,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 799fe02f53b63aac0800000000000000
-      internalID: -3845111777405765225
+      spriteID: 573ef4a38a7beed4aba058eda9e307b1
+      internalID: -1839592407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_39
+      name: Tapulele_Idle-Anim_39
       rect:
         serializedVersion: 2
         x: 168
@@ -847,16 +1199,192 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d36aec4f4f20c4ce0800000000000000
-      internalID: -1419756531426089411
+      spriteID: b6d26844a32e19a499cf51a3685bf719
+      internalID: -656818770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_48
+      name: Tapulele_Idle-Anim_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6671be06daf6d76478c225266613d37f
+      internalID: 364001350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_41
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 128
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a69c5bf8015a74191d5a308be47ac4
+      internalID: 1765088803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_42
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f0f3245bbd0574b8760057012f4474
+      internalID: -1533070392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_43
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 128
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86b0263ee310d94ba4f7eb270e15215
+      internalID: -2050730576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_44
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8a217bd8b189346bb3069fe54872d3
+      internalID: -1500230266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_45
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 128
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ad4ff779ded9c488c71f3cf7a7ef7b
+      internalID: 825896916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_46
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ba4c6f88500eb4b84fd8154beb4971
+      internalID: -1459284741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_47
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 128
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa6d32b5ae87ce409f3b88d95431b70
+      internalID: -1019801562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_48
       rect:
         serializedVersion: 2
         x: 0
@@ -869,16 +1397,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2b6d1f1695f139690800000000000000
-      internalID: -7596693677688105294
+      spriteID: 29e2ce6d11d380d4f9e5dba77581e890
+      internalID: -1414117641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_49
+      name: Tapulele_Idle-Anim_49
       rect:
         serializedVersion: 2
         x: 24
@@ -891,16 +1419,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2f3a2a405e6a4f0b0800000000000000
-      internalID: -5695744126161345550
+      spriteID: a5aa978508767194e8dee71964628ecb
+      internalID: -1946866350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_50
+      name: Tapulele_Idle-Anim_50
       rect:
         serializedVersion: 2
         x: 48
@@ -913,16 +1441,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 07fc6f4ae09f97510800000000000000
-      internalID: 1547541788270972784
+      spriteID: 1e4f6268a90ca9c4b9b937afbb65d0c8
+      internalID: 1183254891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_51
+      name: Tapulele_Idle-Anim_51
       rect:
         serializedVersion: 2
         x: 72
@@ -935,16 +1463,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: aa36f5084ddbe81c0800000000000000
-      internalID: -4499450257312095318
+      spriteID: 0e34ad37188f166419fe74a0ab534901
+      internalID: 1313069302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_52
+      name: Tapulele_Idle-Anim_52
       rect:
         serializedVersion: 2
         x: 96
@@ -957,16 +1485,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7d53f11d5f77f2d70800000000000000
-      internalID: 9020560476305569239
+      spriteID: fa9bd61248f485c4eb7aa547172a3337
+      internalID: 160500272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_53
+      name: Tapulele_Idle-Anim_53
       rect:
         serializedVersion: 2
         x: 120
@@ -979,16 +1507,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 84f5c28606c33faf0800000000000000
-      internalID: -363880760124612792
+      spriteID: d28f904c1e452274cb1aca265c8c3da9
+      internalID: -129512991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_54
+      name: Tapulele_Idle-Anim_54
       rect:
         serializedVersion: 2
         x: 144
@@ -1001,16 +1529,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8f362947bbd315d30800000000000000
-      internalID: 4418380584751096824
+      spriteID: a1394789076d7c842bd21741ed436a3f
+      internalID: 1503212726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_55
+      name: Tapulele_Idle-Anim_55
       rect:
         serializedVersion: 2
         x: 168
@@ -1023,10 +1551,186 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5cc2ba1e559906590800000000000000
-      internalID: -7682972370156704571
+      spriteID: 3eda7a155d9623b439b294274dc60b1b
+      internalID: -1271151951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8797bfb99cda740821dbed8b634495
+      internalID: 246177725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_57
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb0ec7979bae4b4d9467a109ef9b352
+      internalID: 155837797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_58
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c6dc6d25965d54b8c4d6e3c309bc5a
+      internalID: 1859959755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_59
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5873b4b51a285640a92ff3dc1b60108
+      internalID: 1204732707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_60
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1459d99d07db9346ba2e3bddd16b811
+      internalID: -284712008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_61
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eced89590148f5a438eccc7eed6901ef
+      internalID: -283591785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_62
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11eeddcb7c04558489bba31854ef0893
+      internalID: -921162361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tapulele_Idle-Anim_63
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8829c9d67b4d7a940a7f5b48bcc30712
+      internalID: 834471964
       vertices: []
       indices: 
       edges: []
@@ -1047,70 +1751,70 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":8.0},"gridSpriteSize":{"x":24.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Idle-Anim_0: 7738998316474853551
-      Idle-Anim_1: 1977075729719447299
-      Idle-Anim_10: -2500440999657106871
-      Idle-Anim_11: 3380924079768591465
-      Idle-Anim_12: 6312937933537730039
-      Idle-Anim_13: 7370305187068088183
-      Idle-Anim_14: -4401239759644110075
-      Idle-Anim_15: 5716087231770099852
-      Idle-Anim_16: 4969444997890004679
-      Idle-Anim_17: -9145775198654151500
-      Idle-Anim_18: -6656707347790094562
-      Idle-Anim_19: -5421402862643160038
-      Idle-Anim_2: 9173613481854189632
-      Idle-Anim_20: 728989986691342317
-      Idle-Anim_21: 1731065877924970417
-      Idle-Anim_22: 702254742369775053
-      Idle-Anim_23: 843812802259278218
-      Idle-Anim_24: -2120886188613695082
-      Idle-Anim_25: -5737951630601031768
-      Idle-Anim_26: -3804901684299220886
-      Idle-Anim_27: -3999001167682290817
-      Idle-Anim_28: 4068438704295549569
-      Idle-Anim_29: -90787290279785787
-      Idle-Anim_3: 3458398094100512545
-      Idle-Anim_30: -3261768965048884968
-      Idle-Anim_31: 3239275106390307007
-      Idle-Anim_32: 7682167150398461212
-      Idle-Anim_33: 8060601425331014186
-      Idle-Anim_34: -6958673752304707357
-      Idle-Anim_35: -8426690388386427687
-      Idle-Anim_36: 8449194557805750873
-      Idle-Anim_37: 1080011638312391825
-      Idle-Anim_38: -3845111777405765225
-      Idle-Anim_39: -1419756531426089411
-      Idle-Anim_4: -1533630627476091484
-      Idle-Anim_40: -8144651385576188598
-      Idle-Anim_41: 7579764483984027731
-      Idle-Anim_42: -6616807519860232062
-      Idle-Anim_43: 742480819118137374
-      Idle-Anim_44: -6994012070172245659
-      Idle-Anim_45: -2345808624152391985
-      Idle-Anim_46: 2654939614410779705
-      Idle-Anim_47: 4167702978702494160
-      Idle-Anim_48: -7596693677688105294
-      Idle-Anim_49: -5695744126161345550
-      Idle-Anim_5: 3520039924926930967
-      Idle-Anim_50: 1547541788270972784
-      Idle-Anim_51: -4499450257312095318
-      Idle-Anim_52: 9020560476305569239
-      Idle-Anim_53: -363880760124612792
-      Idle-Anim_54: 4418380584751096824
-      Idle-Anim_55: -7682972370156704571
-      Idle-Anim_56: 7535274437353096891
-      Idle-Anim_57: 8585344447161022563
-      Idle-Anim_58: 112875410864699704
-      Idle-Anim_59: 8991885629887930004
-      Idle-Anim_6: -9007074944737430628
-      Idle-Anim_60: -1391829914706750737
-      Idle-Anim_61: -7056941162786057586
-      Idle-Anim_62: -5537185671722031022
-      Idle-Anim_63: -1944692991671737465
-      Idle-Anim_7: 5469265311968306403
-      Idle-Anim_8: 8813659312991238842
-      Idle-Anim_9: -7205847637910636526
+      Tapulele_Idle-Anim_0: -318544413
+      Tapulele_Idle-Anim_1: -1739443829
+      Tapulele_Idle-Anim_10: -39652863
+      Tapulele_Idle-Anim_11: 341968102
+      Tapulele_Idle-Anim_12: 1852948023
+      Tapulele_Idle-Anim_13: 1096031838
+      Tapulele_Idle-Anim_14: 1811984423
+      Tapulele_Idle-Anim_15: -2030111775
+      Tapulele_Idle-Anim_16: 1273161881
+      Tapulele_Idle-Anim_17: -1533346418
+      Tapulele_Idle-Anim_18: -1885093338
+      Tapulele_Idle-Anim_19: -624519534
+      Tapulele_Idle-Anim_2: -4432417
+      Tapulele_Idle-Anim_20: -1599972298
+      Tapulele_Idle-Anim_21: -1142870612
+      Tapulele_Idle-Anim_22: -1573535602
+      Tapulele_Idle-Anim_23: -1958668555
+      Tapulele_Idle-Anim_24: 843854209
+      Tapulele_Idle-Anim_25: -1159839506
+      Tapulele_Idle-Anim_26: 607891925
+      Tapulele_Idle-Anim_27: -33576637
+      Tapulele_Idle-Anim_28: 256365401
+      Tapulele_Idle-Anim_29: 1000918881
+      Tapulele_Idle-Anim_3: -228963728
+      Tapulele_Idle-Anim_30: -371542174
+      Tapulele_Idle-Anim_31: 83684325
+      Tapulele_Idle-Anim_32: 1958193999
+      Tapulele_Idle-Anim_33: -277413994
+      Tapulele_Idle-Anim_34: -1204123697
+      Tapulele_Idle-Anim_35: 1693875775
+      Tapulele_Idle-Anim_36: -1157918439
+      Tapulele_Idle-Anim_37: -1896993667
+      Tapulele_Idle-Anim_38: -1839592407
+      Tapulele_Idle-Anim_39: -656818770
+      Tapulele_Idle-Anim_4: 2081075115
+      Tapulele_Idle-Anim_40: 364001350
+      Tapulele_Idle-Anim_41: 1765088803
+      Tapulele_Idle-Anim_42: -1533070392
+      Tapulele_Idle-Anim_43: -2050730576
+      Tapulele_Idle-Anim_44: -1500230266
+      Tapulele_Idle-Anim_45: 825896916
+      Tapulele_Idle-Anim_46: -1459284741
+      Tapulele_Idle-Anim_47: -1019801562
+      Tapulele_Idle-Anim_48: -1414117641
+      Tapulele_Idle-Anim_49: -1946866350
+      Tapulele_Idle-Anim_5: -1417774862
+      Tapulele_Idle-Anim_50: 1183254891
+      Tapulele_Idle-Anim_51: 1313069302
+      Tapulele_Idle-Anim_52: 160500272
+      Tapulele_Idle-Anim_53: -129512991
+      Tapulele_Idle-Anim_54: 1503212726
+      Tapulele_Idle-Anim_55: -1271151951
+      Tapulele_Idle-Anim_56: 246177725
+      Tapulele_Idle-Anim_57: 155837797
+      Tapulele_Idle-Anim_58: 1859959755
+      Tapulele_Idle-Anim_59: 1204732707
+      Tapulele_Idle-Anim_6: 1940880317
+      Tapulele_Idle-Anim_60: -284712008
+      Tapulele_Idle-Anim_61: -283591785
+      Tapulele_Idle-Anim_62: -921162361
+      Tapulele_Idle-Anim_63: 834471964
+      Tapulele_Idle-Anim_7: 1267105496
+      Tapulele_Idle-Anim_8: -664260818
+      Tapulele_Idle-Anim_9: 1250006423
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -280,7 +280,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle-Anim_0
+      name: Charmander_2_Idle-Anim_0
       rect:
         serializedVersion: 2
         x: 0
@@ -293,16 +293,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fa864d247f1766b60800000000000000
-      internalID: 7738998316474853551
+      spriteID: 62416f05cc713a74aa5e606d7c4eca89
+      internalID: -446189545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_1
+      name: Charmander_2_Idle-Anim_1
       rect:
         serializedVersion: 2
         x: 32
@@ -315,16 +315,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 30f49f3b6ebff6b10800000000000000
-      internalID: 1977075729719447299
+      spriteID: f41530e9878db2f4ca0303d81229bb53
+      internalID: 670935510
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_2
+      name: Charmander_2_Idle-Anim_2
       rect:
         serializedVersion: 2
         x: 64
@@ -337,16 +337,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 04047ac9bd83f4f70800000000000000
-      internalID: 9173613481854189632
+      spriteID: 29a6a8bdc968f6543a0c65a39cda937a
+      internalID: -556651408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_3
+      name: Charmander_2_Idle-Anim_3
       rect:
         serializedVersion: 2
         x: 96
@@ -359,16 +359,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 12fbfb24eb2beff20800000000000000
-      internalID: 3458398094100512545
+      spriteID: 49af3fd422c440d40b9b205c8e27011d
+      internalID: -1306955858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_4
+      name: Charmander_2_Idle-Anim_4
       rect:
         serializedVersion: 2
         x: 128
@@ -381,16 +381,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4adc0a0e11377bae0800000000000000
-      internalID: -1533630627476091484
+      spriteID: 79af93962a65e7d479b8880e7edc48d5
+      internalID: -2013717859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_5
+      name: Charmander_2_Idle-Anim_5
       rect:
         serializedVersion: 2
         x: 160
@@ -403,16 +403,148 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 710667869a1b9d030800000000000000
-      internalID: 3520039924926930967
+      spriteID: 1515c00dfa0296b459f332977fe0f8dd
+      internalID: 1424309988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_12
+      name: Charmander_2_Idle-Anim_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4f93537c95bc740b17b00c1af5d4d1
+      internalID: 1898290836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 336
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6db9ddac69e7004a899ca027511ec76
+      internalID: -2124677602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 336
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: febc6155884fa0544a92c6a94e1c8aed
+      internalID: -1804672277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 336
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54ec9e26c9892048ac658fd7fff3b9d
+      internalID: -13603969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 336
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4603b78ffdf0d44a7939618e07358e
+      internalID: -927621410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 336
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29dca8d3619e454cbfa1a08622bb60e
+      internalID: 506623109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_12
       rect:
         serializedVersion: 2
         x: 0
@@ -425,16 +557,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7fdda996a9f0c9750800000000000000
-      internalID: 6312937933537730039
+      spriteID: 00d897fa41f1da54f8324e34962108bd
+      internalID: 1256468454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_13
+      name: Charmander_2_Idle-Anim_13
       rect:
         serializedVersion: 2
         x: 32
@@ -447,16 +579,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 77f8961a485984660800000000000000
-      internalID: 7370305187068088183
+      spriteID: 9dd0cefc924acf34a9efe42c387891c4
+      internalID: -1439869843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_14
+      name: Charmander_2_Idle-Anim_14
       rect:
         serializedVersion: 2
         x: 64
@@ -469,16 +601,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5035613e1c7abe2c0800000000000000
-      internalID: -4401239759644110075
+      spriteID: eea6c61785e43d5489abeca29898eeaf
+      internalID: 2040885279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_15
+      name: Charmander_2_Idle-Anim_15
       rect:
         serializedVersion: 2
         x: 96
@@ -491,16 +623,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c808dca5d0f935f40800000000000000
-      internalID: 5716087231770099852
+      spriteID: 7e46396bbf94a3e41927bcf05531f0e7
+      internalID: -919923512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_16
+      name: Charmander_2_Idle-Anim_16
       rect:
         serializedVersion: 2
         x: 128
@@ -513,16 +645,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7c6531675e307f440800000000000000
-      internalID: 4969444997890004679
+      spriteID: 148116d3a1ea41e468c33c077aa1ad80
+      internalID: -862272466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_17
+      name: Charmander_2_Idle-Anim_17
       rect:
         serializedVersion: 2
         x: 160
@@ -535,16 +667,148 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4b444a8c9eda31180800000000000000
-      internalID: -9145775198654151500
+      spriteID: ce96570e63158af49901847fcb37de43
+      internalID: 1241579555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_24
+      name: Charmander_2_Idle-Anim_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6047f08766846e94caa8b9d201c0a4f0
+      internalID: -662895804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d530eda98a0f56c4aa44848f8aed7814
+      internalID: 625915171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02fc266ff59d8242951d768b0d45889
+      internalID: -1330645545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_21
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288056bda90261c4da7f1556fdd476f7
+      internalID: 1596515222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3942e6a7e41d02241aaef5994db400fd
+      internalID: 1591975072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b2e3dd63354364baeaff1dbeb7d8e7
+      internalID: -1008806584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_24
       rect:
         serializedVersion: 2
         x: 0
@@ -557,16 +821,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 69906a69f391192e0800000000000000
-      internalID: -2120886188613695082
+      spriteID: f46bea5cd7fd7c24c999b04babd7df5c
+      internalID: -1402008696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_25
+      name: Charmander_2_Idle-Anim_25
       rect:
         serializedVersion: 2
         x: 32
@@ -579,16 +843,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8afe6a79463be50b0800000000000000
-      internalID: -5737951630601031768
+      spriteID: edd25f403581c5f4c82935e1d8745eaa
+      internalID: -1691119500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_26
+      name: Charmander_2_Idle-Anim_26
       rect:
         serializedVersion: 2
         x: 64
@@ -601,16 +865,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a683f0ec316423bc0800000000000000
-      internalID: -3804901684299220886
+      spriteID: 3f9eeb912fecae7468a9af33ada41f50
+      internalID: -1855204639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_27
+      name: Charmander_2_Idle-Anim_27
       rect:
         serializedVersion: 2
         x: 96
@@ -623,16 +887,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f7bbce720a1b088c0800000000000000
-      internalID: -3999001167682290817
+      spriteID: e2fb5fd8b95d2b1448662a56eaab7e87
+      internalID: 1816858023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_28
+      name: Charmander_2_Idle-Anim_28
       rect:
         serializedVersion: 2
         x: 128
@@ -645,16 +909,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 18a9cff227ff57830800000000000000
-      internalID: 4068438704295549569
+      spriteID: 3e266ffff158fe4419ad7f81d4df50f0
+      internalID: 612777304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_29
+      name: Charmander_2_Idle-Anim_29
       rect:
         serializedVersion: 2
         x: 160
@@ -667,16 +931,148 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5cac0c4c0757dbef0800000000000000
-      internalID: -90787290279785787
+      spriteID: 08a4db7015d8343468d429d85175c945
+      internalID: -2098540726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_36
+      name: Charmander_2_Idle-Anim_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667f4d6e3a3be8c4d9820e5e6d34993d
+      internalID: 30001010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ccda8852a060645a6206d97706068c
+      internalID: -709683442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e184e020649fb41a9d36720c0e177d
+      internalID: -1222121877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284795b0baa7b9d4bb22648a0f7c4651
+      internalID: -1697237122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a0a9eee205b0a4f94d1d04272b375e
+      internalID: 914798146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_35
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 112
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62a38c9cc29ef043a400751acdc2b6b
+      internalID: 366107504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_36
       rect:
         serializedVersion: 2
         x: 0
@@ -689,16 +1085,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 95aec204fa1914570800000000000000
-      internalID: 8449194557805750873
+      spriteID: c8163578d778f4a408951e4e7c558fc4
+      internalID: -1277250482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_37
+      name: Charmander_2_Idle-Anim_37
       rect:
         serializedVersion: 2
         x: 32
@@ -711,16 +1107,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 194d5e6ecd8fcfe00800000000000000
-      internalID: 1080011638312391825
+      spriteID: b8a0b71fdcd72434389b13eb3df82478
+      internalID: 1478424662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_38
+      name: Charmander_2_Idle-Anim_38
       rect:
         serializedVersion: 2
         x: 64
@@ -733,16 +1129,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 799fe02f53b63aac0800000000000000
-      internalID: -3845111777405765225
+      spriteID: e8d570155f9380d4a9a43e56e2c36514
+      internalID: -453831561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_39
+      name: Charmander_2_Idle-Anim_39
       rect:
         serializedVersion: 2
         x: 96
@@ -755,16 +1151,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d36aec4f4f20c4ce0800000000000000
-      internalID: -1419756531426089411
+      spriteID: 08875a7b6d0dfb249bea05f1b4184f4e
+      internalID: 1554970224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_40
+      name: Charmander_2_Idle-Anim_40
       rect:
         serializedVersion: 2
         x: 128
@@ -777,16 +1173,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a45965f87b268fe80800000000000000
-      internalID: -8144651385576188598
+      spriteID: ff80e2853e7edb94e89ed15a9ddae932
+      internalID: 850818975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Anim_41
+      name: Charmander_2_Idle-Anim_41
       rect:
         serializedVersion: 2
         x: 160
@@ -799,10 +1195,142 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3507dfc83abb03960800000000000000
-      internalID: 7579764483984027731
+      spriteID: a3f0c503afddbda44ac3d3ba3eadc912
+      internalID: 1418561471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43272e083b0360245a2bb30b8e832797
+      internalID: -384952226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_43
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bf886d2fade8a49a49deb1b3451c30
+      internalID: -1424101548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7de8d386ea0ab4b859a82ebebe2b68
+      internalID: -1547672772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_45
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5f731ada4f4f14da42d1f7c851e863
+      internalID: 1874887692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_46
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e76b8e7a2385c24e9d114b1645535a2
+      internalID: 25670573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_Idle-Anim_47
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7abe992c78db4741aae00dabd775973
+      internalID: 1274684870
       vertices: []
       indices: 
       edges: []
@@ -823,54 +1351,54 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":8.0},"gridSpriteSize":{"x":32.0,"y":56.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Idle-Anim_0: 7738998316474853551
-      Idle-Anim_1: 1977075729719447299
-      Idle-Anim_10: -2500440999657106871
-      Idle-Anim_11: 3380924079768591465
-      Idle-Anim_12: 6312937933537730039
-      Idle-Anim_13: 7370305187068088183
-      Idle-Anim_14: -4401239759644110075
-      Idle-Anim_15: 5716087231770099852
-      Idle-Anim_16: 4969444997890004679
-      Idle-Anim_17: -9145775198654151500
-      Idle-Anim_18: -6656707347790094562
-      Idle-Anim_19: -5421402862643160038
-      Idle-Anim_2: 9173613481854189632
-      Idle-Anim_20: 728989986691342317
-      Idle-Anim_21: 1731065877924970417
-      Idle-Anim_22: 702254742369775053
-      Idle-Anim_23: 843812802259278218
-      Idle-Anim_24: -2120886188613695082
-      Idle-Anim_25: -5737951630601031768
-      Idle-Anim_26: -3804901684299220886
-      Idle-Anim_27: -3999001167682290817
-      Idle-Anim_28: 4068438704295549569
-      Idle-Anim_29: -90787290279785787
-      Idle-Anim_3: 3458398094100512545
-      Idle-Anim_30: -3261768965048884968
-      Idle-Anim_31: 3239275106390307007
-      Idle-Anim_32: 7682167150398461212
-      Idle-Anim_33: 8060601425331014186
-      Idle-Anim_34: -6958673752304707357
-      Idle-Anim_35: -8426690388386427687
-      Idle-Anim_36: 8449194557805750873
-      Idle-Anim_37: 1080011638312391825
-      Idle-Anim_38: -3845111777405765225
-      Idle-Anim_39: -1419756531426089411
-      Idle-Anim_4: -1533630627476091484
-      Idle-Anim_40: -8144651385576188598
-      Idle-Anim_41: 7579764483984027731
-      Idle-Anim_42: -6616807519860232062
-      Idle-Anim_43: 742480819118137374
-      Idle-Anim_44: -6994012070172245659
-      Idle-Anim_45: -2345808624152391985
-      Idle-Anim_46: 2654939614410779705
-      Idle-Anim_47: 4167702978702494160
-      Idle-Anim_5: 3520039924926930967
-      Idle-Anim_6: -9007074944737430628
-      Idle-Anim_7: 5469265311968306403
-      Idle-Anim_8: 8813659312991238842
-      Idle-Anim_9: -7205847637910636526
+      Charmander_2_Idle-Anim_0: -446189545
+      Charmander_2_Idle-Anim_1: 670935510
+      Charmander_2_Idle-Anim_10: -927621410
+      Charmander_2_Idle-Anim_11: 506623109
+      Charmander_2_Idle-Anim_12: 1256468454
+      Charmander_2_Idle-Anim_13: -1439869843
+      Charmander_2_Idle-Anim_14: 2040885279
+      Charmander_2_Idle-Anim_15: -919923512
+      Charmander_2_Idle-Anim_16: -862272466
+      Charmander_2_Idle-Anim_17: 1241579555
+      Charmander_2_Idle-Anim_18: -662895804
+      Charmander_2_Idle-Anim_19: 625915171
+      Charmander_2_Idle-Anim_2: -556651408
+      Charmander_2_Idle-Anim_20: -1330645545
+      Charmander_2_Idle-Anim_21: 1596515222
+      Charmander_2_Idle-Anim_22: 1591975072
+      Charmander_2_Idle-Anim_23: -1008806584
+      Charmander_2_Idle-Anim_24: -1402008696
+      Charmander_2_Idle-Anim_25: -1691119500
+      Charmander_2_Idle-Anim_26: -1855204639
+      Charmander_2_Idle-Anim_27: 1816858023
+      Charmander_2_Idle-Anim_28: 612777304
+      Charmander_2_Idle-Anim_29: -2098540726
+      Charmander_2_Idle-Anim_3: -1306955858
+      Charmander_2_Idle-Anim_30: 30001010
+      Charmander_2_Idle-Anim_31: -709683442
+      Charmander_2_Idle-Anim_32: -1222121877
+      Charmander_2_Idle-Anim_33: -1697237122
+      Charmander_2_Idle-Anim_34: 914798146
+      Charmander_2_Idle-Anim_35: 366107504
+      Charmander_2_Idle-Anim_36: -1277250482
+      Charmander_2_Idle-Anim_37: 1478424662
+      Charmander_2_Idle-Anim_38: -453831561
+      Charmander_2_Idle-Anim_39: 1554970224
+      Charmander_2_Idle-Anim_4: -2013717859
+      Charmander_2_Idle-Anim_40: 850818975
+      Charmander_2_Idle-Anim_41: 1418561471
+      Charmander_2_Idle-Anim_42: -384952226
+      Charmander_2_Idle-Anim_43: -1424101548
+      Charmander_2_Idle-Anim_44: -1547672772
+      Charmander_2_Idle-Anim_45: 1874887692
+      Charmander_2_Idle-Anim_46: 25670573
+      Charmander_2_Idle-Anim_47: 1274684870
+      Charmander_2_Idle-Anim_5: 1424309988
+      Charmander_2_Idle-Anim_6: 1898290836
+      Charmander_2_Idle-Anim_7: -2124677602
+      Charmander_2_Idle-Anim_8: -1804672277
+      Charmander_2_Idle-Anim_9: -13603969
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
