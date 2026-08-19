@@ -170,6 +170,8 @@ MonoBehaviour:
   _opponentMonsterObj: {fileID: 1111015099}
   _playerAnimator: {fileID: 4054095783427405369}
   _opponentAnimator: {fileID: 645746290}
+  _ballSpawnPoint: {fileID: 776988501}
+  _holderItem: {fileID: 537919344}
 --- !u!1 &162878335
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,6 +267,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 149678018}
+  - {fileID: 205993805}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -272,6 +275,38 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &205993804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 205993805}
+  m_Layer: 0
+  m_Name: ItemWorldSpace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &205993805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205993804}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 110, y: 110, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 776988501}
+  m_Father: {fileID: 162878339}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &280087247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -443,6 +478,37 @@ Transform:
   - {fileID: 2020610982}
   - {fileID: 1045990113}
   m_Father: {fileID: 1815805666}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &537919343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 537919344}
+  m_Layer: 0
+  m_Name: ItemHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &537919344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537919343}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &558783836
 GameObject:
@@ -821,6 +887,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7781064145849118249, guid: 09f56abff7e755e4ab72e6017e29edd9, type: 3}
   m_PrefabInstance: {fileID: 715762436}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &776988500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 776988501}
+  m_Layer: 0
+  m_Name: BallSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &776988501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776988500}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.89, y: -0.74, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 205993805}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &838007576
 GameObject:
   m_ObjectHideFlags: 0
@@ -3714,7 +3811,8 @@ MonoBehaviour:
   _btnItem: {fileID: 2394370242183046989}
   _btnCloseItem: {fileID: 1859344040607114695}
   _itemChoosePanel: {fileID: 2689491451172016773}
-  _selectItems: []
+  _itemRestoreButtons: []
+  _itemCaptureButtons: []
   _itemPrefab: {fileID: 2007735898767350503, guid: 380e90fd04ccd0e48ab8e6c0739a2769, type: 3}
   _itemRestoreParent: {fileID: 7970850694038011419}
   _itemCaptureParent: {fileID: 490660957922843513}
@@ -6846,3 +6944,4 @@ SceneRoots:
   - {fileID: 1815805666}
   - {fileID: 711749251}
   - {fileID: 558783837}
+  - {fileID: 537919344}

@@ -1358,8 +1358,8 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: -215041031
-  m_SortingOrder: 1
+  m_SortingLayerID: -796175023
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!224 &1235536348
 RectTransform:
@@ -1823,6 +1823,7 @@ MonoBehaviour:
   _itemDatabaseSO: {fileID: 11400000, guid: ee2226f5f265b774cb1baa3cf6e2d3fc, type: 2}
   _items:
   - {fileID: 11400000, guid: 932886ff354951942bcf79b68ac0c025, type: 2}
+  - {fileID: 11400000, guid: 6a7fd3cd2d9b9774aab0ee08e68d9753, type: 2}
 --- !u!1001 &1775555296
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -6,4 +6,5 @@ public enum EStatePhase
     PlayVFXAttack = 3,
     ApplyDamage = 4,
     End = 5,
+    Interact = 6,
 }

@@ -12,9 +12,15 @@ public class ItemSO : ScriptableObject
     [SerializeField] private string _name;
     public string Name => _name;
 
+    [SerializeField] private GameObject _prefab;
+    public GameObject Prefab => _prefab;
+
     [SerializeField] private EItemEffect _effectItem;
     public EItemEffect EffectItem => _effectItem;
-        
+
+    [SerializeField] private EItemType _itemType;
+    public EItemType ItemType => _itemType;
+
     [SerializeField] private float _value;
     public float Value => _value;
 

@@ -20,22 +20,12 @@ public class InventoryController : IInventoryProvider, IStartable
         //_itemDatabaseSO = itemDatabaseSO;
         Debug.Log("InventoryController Initialized");
     }
+
     public void Start()
     {
-        for (int i=0; i < _items.Count; i++)
+        foreach (ItemSO item in _items)
         {
-            AddItem(new ItemModel
-            {
-                Id = _items[i].Id,
-                Name = _items[i].Name,
-                EffectItem = _items[i].EffectItem,
-                Quantity = 1,
-                Image = _items[i].Image,
-                Description = _items[i].Description,
-                BuyPrice = _items[i].BuyPrice,
-                Value = _items[i].Value,
-                SellPrice = _items[i].SellPirce,
-            });
+            AddItem(ItemModelFactory.Create(item, 1));
         }
     }
 
@@ -81,6 +71,6 @@ public class InventoryController : IInventoryProvider, IStartable
             }
         }
 
-        if (isItemExist != true) itemModels.Add(item);
+        if (!isItemExist) itemModels.Add(item);
     }
 }

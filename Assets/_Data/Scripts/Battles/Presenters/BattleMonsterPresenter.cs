@@ -13,8 +13,10 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
     private readonly HUDBattleMonsterView _hUDBattleMonsterView;
     private readonly BattleManager _battleManager;
     private readonly CompositeDisposable _disposable = new();
-    private readonly IBattleMonsterPresenter _iBattleMonsterPresenter;
+    private readonly IBattleMonsterPresenter _battleMonstercontroller;
     private readonly IInventoryProvider _inventoryProvider;
+    private readonly IItemController _itemController;
+    private bool _isUseComplete = false;
 
     private EStatePhase _currentStatePhase;
 
@@ -24,7 +26,8 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         BattleManager battleManager,
         PlayerTeamModel playerTeamModel,
         IBattleMonsterPresenter iBattleMonsterPresenter,
-        IInventoryProvider inventoryProvider)
+        IInventoryProvider inventoryProvider,
+        IItemController itemController)
     {
         //_battleModel = battleModel;
         _battleMonsterView = battleMonsterView;
@@ -32,16 +35,17 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         _battleManager = battleManager;
         _playerTeamModel = playerTeamModel;
         _opponentModel = battleModel.OpponentMonsterModel;
-        _iBattleMonsterPresenter = iBattleMonsterPresenter;
+        _battleMonstercontroller = iBattleMonsterPresenter;
         _inventoryProvider = inventoryProvider;
+        _itemController = itemController;
         Debug.Log("BattleMonsterPresenter Initialized");
+        _itemController = itemController;
     }
 
     public void Start()
     {
         UpdateHUDBattleMonsterViewData(true, true);
         _hUDBattleMonsterView.CreateItemButtons();
-        _hUDBattleMonsterView.UpdateItemButtons();
 
         //Opponent
         DeployMonster(EMonsterSide.Opponent, -1);
@@ -80,11 +84,11 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
             .Subscribe(val => HandleUpdateStatComplete(val.EMonsterSide, val.EStatType))
             .AddTo(_disposable);
 
-        _iBattleMonsterPresenter.OnStatePhaseChanged
+        _battleMonstercontroller.OnStatePhaseChanged
             .Subscribe(val => HandleStatePhaseChange(val))
             .AddTo(_disposable);
 
-        _iBattleMonsterPresenter.OnTurnChanged
+        _battleMonstercontroller.OnTurnChanged
             .Subscribe(val => HandleTurn(val))
             .AddTo(_disposable);
 
@@ -96,11 +100,20 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
             .Subscribe(val => HandlePlayVFXComplete(val))
             .AddTo(_disposable);
 
-        _hUDBattleMonsterView.OnActiveItem
-            .Subscribe(val => HandleActiveItem(val))
+        _hUDBattleMonsterView.OnUseItem
+            .Subscribe(val => HandleUseItem(val.ItemId, val.ItemType))
+            .AddTo(_disposable);
+
+        _itemController.OnActiveItem
+            .Subscribe(val => HandleActiveItem(val.ItemType, val.IsComplete, val.Prefab))
+            .AddTo (_disposable);
+
+        _battleMonsterView.OnActiveItemCompleted
+            .Subscribe(val => HandleActiveItemComplete(val))
             .AddTo(_disposable);
     }
 
+    #region Update view data
     private void UpdateHUDBattleMonsterViewData(bool updateUnlockSkills, bool updateBattleSkills)
     {
         HUDBattleMonsterViewData hUDBattleMonsterViewData = new HUDBattleMonsterViewData();
@@ -113,10 +126,11 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
             monsterViewData.BatlleSkills = updateBattleSkills ? ConvertSkillsModelToSkillViewData(model.BatlleSkills) : _hUDBattleMonsterView.HUDBattleMonsterViewData.PlayerTeamDatas[i].BatlleSkills;
             hUDBattleMonsterViewData.PlayerTeamDatas.Add(monsterViewData);
         }
-        hUDBattleMonsterViewData.RestoreInventoryModel = _inventoryProvider.RestoreInventoryModel;
-        hUDBattleMonsterViewData.CaptureInventoryModel = _inventoryProvider.CaptureInventoryModel;
+        hUDBattleMonsterViewData.RestoreInventoryData = ConvertInventoryModelToViewData(_inventoryProvider.RestoreInventoryModel.Items);
+        hUDBattleMonsterViewData.CaptureInventoryData = ConvertInventoryModelToViewData(_inventoryProvider.CaptureInventoryModel.Items);
         _hUDBattleMonsterView.SetData(hUDBattleMonsterViewData);
     }
+
     private MonsterViewData CovertMonsterModelToMonsterViewData(MonsterModel model)
     {
         return new MonsterViewData
@@ -157,27 +171,79 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         return viewSkills;
     }
 
+    private InventoryViewData ConvertInventoryModelToViewData(List<ItemModel> items)
+    {
+        InventoryViewData inventoryViewData = new InventoryViewData();
+        foreach (ItemModel item in items)
+        {
+            inventoryViewData.Items.Add(new ItemViewData
+            {
+                Id = item.Id,
+                Name = item.Name,
+                EffectItem = item.EffectItem,
+                ItemType = item.ItemType,
+                Image = item.Image,
+                Quantity = item.Quantity,
+                BuyPrice = item.BuyPrice,
+                Description = item.Description,
+                SellPrice = item.SellPrice,
+                Value = item.Value,
+            });
+        }
+        return inventoryViewData;
+    }
+    #endregion Update view data
+
+    #region Player team
     private void ShowPlayerTeam()
     {
         _hUDBattleMonsterView.ShowPlayerTeam();
     }
+    #endregion Player team
 
+    #region Skill
     private void ShowSkillBattleMonsterHUD()
     {
         _hUDBattleMonsterView.ShowSkillBattleMonster();
     }
+    #endregion Skill
 
+    #region Item
     private void ShowItem()
     {
-
-        _hUDBattleMonsterView.ShowItem();
+        _hUDBattleMonsterView.ShowItemPanel(EItemType.Restore);
     }
 
-    private void OutBattle()
+    private void HandleUseItem(int id, EItemType itemType)
     {
-        _battleManager.EndBattle();
+        _itemController.UseItem(id, itemType, _opponentModel);
     }
 
+    private void HandleActiveItem(EItemType itemType, bool isComplete, GameObject prefab)
+    {
+        _isUseComplete = isComplete;
+        if (itemType == EItemType.Capture)
+        {
+            _battleMonsterView.PlayCapture(itemType, isComplete, prefab);
+        }
+    }
+
+    private void HandleActiveItemComplete(EItemType itemType)
+    {
+        if(itemType == EItemType.Capture && _isUseComplete)
+        {
+            OutBattle();
+        }
+        else if(itemType == EItemType.Capture && !_isUseComplete)
+        {
+            HandleEndPhase(EMonsterSide.Player, false);
+        }
+
+        _hUDBattleMonsterView.IsInteract = true;
+    }
+    #endregion Item
+
+    #region Monster
     private void SwapMonster(EMonsterSide eMonsterSide, int index)
     {
         DeployMonster(eMonsterSide, index);
@@ -191,7 +257,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
             _hUDBattleMonsterView.UpdateStatsInforText(eMonsterSide, _playerTeamModel.PlayerTeam[index].MonsterName, _playerTeamModel.PlayerTeam[index].Level);
             _hUDBattleMonsterView.UpdateMonsterStats(eMonsterSide, EStatType.Health, _playerTeamModel.PlayerTeam[index].Health, _playerTeamModel.PlayerTeam[index].MaxHealth);
             _hUDBattleMonsterView.UpdateBattteMonsterSkill(index);
-            _iBattleMonsterPresenter.CurrentPlayerMonsterBattleIndex = index;
+            _battleMonstercontroller.CurrentPlayerMonsterBattleIndex = index;
         }
         else if (eMonsterSide == EMonsterSide.Opponent && _opponentModel != null)
         {
@@ -215,7 +281,9 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
             _hUDBattleMonsterView.UpdateMonsterStats(eMonsterSide, EStatType.Health, _opponentModel.Health, _opponentModel.MaxHealth);
         }
     }
+    #endregion Monster
 
+    #region State phase
     private void HandleStatePhaseChange(StatePhaseChangedControllerData data)
     {
         _currentStatePhase = data.EStatePhase;
@@ -236,22 +304,6 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         }
     }
 
-    private void HandleTurn(EBattlePhase eBattlePhase)
-    {
-        if(eBattlePhase == EBattlePhase.PlayerTurn)
-        {
-            _hUDBattleMonsterView.IsInteract = true;
-        }
-        else if(eBattlePhase == EBattlePhase.OpponentTurn)
-        {
-            _hUDBattleMonsterView.IsInteract = false;
-        }
-        else if(eBattlePhase == EBattlePhase.End)
-        {
-            OutBattle();
-        }
-    }
-
     private void HandlePlayAnimAttackPhase(EMonsterSide eMonsterSide)
     {
         _battleMonsterView.PlayCrossFade(eMonsterSide, EMonsterState.Attack, 1, 0f);
@@ -259,14 +311,14 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
 
     private void HandleAnimationComplete(EMonsterSide eMonsterSide, EMonsterState eMonsterState)
     {
-        if(eMonsterState == EMonsterState.Attack)
+        if (eMonsterState == EMonsterState.Attack)
         {
             _battleMonsterView.PlayCrossFade(eMonsterSide, EMonsterState.IdleAttack, 1, 0f);
-            _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.PlayAnimAttack);
+            _battleMonstercontroller.NotifyStateCompleted(EStatePhase.PlayAnimAttack);
         }
-        else if(eMonsterState == EMonsterState.Faint)
+        else if (eMonsterState == EMonsterState.Faint)
         {
-            _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.End);
+            _battleMonstercontroller.NotifyStateCompleted(EStatePhase.End);
         }
     }
 
@@ -277,9 +329,9 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
 
     private void HandlePlayVFXComplete(EMonsterSide eMonsterSide)
     {
-        _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.PlayVFXAttack);
+        _battleMonstercontroller.NotifyStateCompleted(EStatePhase.PlayVFXAttack);
     }
- 
+
     private void HandleApplyDamagePhaseAsync(EMonsterSide eMonsterSide, int monsterIndex)
     {
         if (eMonsterSide == EMonsterSide.Player)
@@ -300,24 +352,41 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         {
             _battleMonsterView.PlayCrossFade(EMonsterSide.Opponent, EMonsterState.Faint, 1, 0f);
         }
-        else if (_playerTeamModel.PlayerTeam[_iBattleMonsterPresenter.CurrentPlayerMonsterBattleIndex].IsDead)
+        else if (_playerTeamModel.PlayerTeam[_battleMonstercontroller.CurrentPlayerMonsterBattleIndex].IsDead)
         {
             _battleMonsterView.PlayCrossFade(EMonsterSide.Player, EMonsterState.Faint, 1, 0f);
         }
         else
         {
-            _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.End);
+            _battleMonstercontroller.NotifyStateCompleted(EStatePhase.End);
+        }
+    }
+    #endregion State phase
+
+    private void OutBattle()
+    {
+        _battleManager.EndBattle();
+    }
+
+    private void HandleTurn(EBattlePhase eBattlePhase)
+    {
+        if(eBattlePhase == EBattlePhase.PlayerTurn)
+        {
+            _hUDBattleMonsterView.IsInteract = true;
+        }
+        else if(eBattlePhase == EBattlePhase.OpponentTurn)
+        {
+            _hUDBattleMonsterView.IsInteract = false;
+        }
+        else if(eBattlePhase == EBattlePhase.End)
+        {
+            OutBattle();
         }
     }
 
     private void ActiveAttack(EMonsterSide eMonsterSide, int skillIndex)
     {
-        _iBattleMonsterPresenter.ActiveAttack(eMonsterSide, skillIndex);
-    }
-
-    private void HandleActiveItem(int id)
-    {
-        //code use item
+        _battleMonstercontroller.ActiveAttack(eMonsterSide, skillIndex);
     }
 
     private async void HandleUpdateStatComplete(EMonsterSide eMonsterSide, EStatType eStatType)
@@ -327,7 +396,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
             _battleMonsterView.PlayCrossFade(eMonsterSide, EMonsterState.IdleAttack, 1, 0f);
 
             await Task.Delay(500);
-            _iBattleMonsterPresenter.NotifyStateCompleted(EStatePhase.ApplyDamage);
+            _battleMonstercontroller.NotifyStateCompleted(EStatePhase.ApplyDamage);
         }
     }
 

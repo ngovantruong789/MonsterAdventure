@@ -7,6 +7,9 @@ public class SelectItemInfor : BaseMonoBehaviour
     [SerializeField] private int _idItem;
     public int IdItem { get => _idItem; set => _idItem = value; }
 
+    [SerializeField] private EItemType _itemType;
+    public EItemType ItemType { get => _itemType; set => _itemType = value; }
+
     [SerializeField] private Button _btnItem;
     public Button BtnItem { get => _btnItem; set => _btnItem = value; }
 

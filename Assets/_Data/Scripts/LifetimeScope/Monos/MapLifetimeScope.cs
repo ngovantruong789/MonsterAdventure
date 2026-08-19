@@ -1,7 +1,6 @@
 
 using VContainer;
 using UnityEngine;
-using System.Collections.Generic;
 
 public class MapLifetimeScope : GameLifetimeScope
 {
@@ -9,7 +8,7 @@ public class MapLifetimeScope : GameLifetimeScope
     {
         base.Configure(builder);
         //Bush
-        BushEntity[] bushes = FindObjectsByType<BushEntity>(UnityEngine.FindObjectsSortMode.None);
+        BushEntity[] bushes = FindObjectsByType<BushEntity>(FindObjectsSortMode.None);
         foreach (var bush in bushes)
         {
             builder.RegisterBuildCallback(container =>

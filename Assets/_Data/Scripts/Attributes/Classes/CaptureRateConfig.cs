@@ -15,3 +15,17 @@ public class CaptureRateConfig
         return _baseCatchDifficulty + level * _levelBonus;
     }
 }
+
+public static class CaptureCalculator
+{
+    public static float CalculateDiffercultCapturePerLevel(CaptureRateConfig config, int level)
+    {
+        float diff = config.BaseCatchDifficulty;
+        for (int i = 0; i < level; i++)
+        {
+            diff += config.LevelBonus;
+        }
+
+        return diff;
+    }
+}

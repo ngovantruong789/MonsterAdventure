@@ -35,6 +35,18 @@ public readonly struct UpdateMonsterStatCompletedViewData
         EStatType = eStatType;
     }
 }
+
+public readonly struct UseItemHUDViewData
+{
+    public int ItemId { get; }
+    public EItemType ItemType { get; }
+
+    public UseItemHUDViewData(int itemId, EItemType itemType)
+    {
+        ItemId = itemId;
+        ItemType = itemType;
+    }
+}
 #endregion HUDBattleMonsterView
 
 #region BattleMonsterWorldSpaceView
