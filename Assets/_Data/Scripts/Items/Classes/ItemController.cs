@@ -10,7 +10,7 @@ public partial class ItemController : IItemController
         _inventoryProvider = inventoryProvider;
     }
 
-    public void UseItem(int id, EItemType itemType, MonsterModel opponentMonster)
+    public void UseItem(int id, EItemType itemType, MonsterModel opponentMonster, MonsterModel player)
     {
         List<ItemModel> items = itemType == EItemType.Capture ? _inventoryProvider.CaptureInventoryModel.Items : 
             _inventoryProvider.RestoreInventoryModel.Items;
@@ -21,6 +21,12 @@ public partial class ItemController : IItemController
         if(itemType == EItemType.Capture)
         {
             ActiveCapture(itemType, itemModel, opponentMonster);
+        }
+        else
+        {
+            Debug.Log("Tinh toan hoi mau");
+            ActiveRestore(itemModel, player);
+            _onActiveItem.OnNext(new ActiveItemControllerEventData{});
         }
     }
 
@@ -58,5 +64,16 @@ public partial class ItemController : IItemController
         Debug.Log("ItemCapture: " + itemCapture.Value + "; DifficultMonster: " + opponentMonster.DifficultCapture 
             + "; Rate: " + percentRateCapture + "; IsComplete: " +  isCaptureComplete);
         _onActiveItem.OnNext(new ActiveItemControllerEventData(itemCapture.Prefab, itemType, isCaptureComplete));
+    }
+    private void ActiveRestore(ItemModel itemModel, MonsterModel player)
+    {
+        if (itemModel.EffectItem == EItemEffect.RestoreHp && player != null)
+        {
+            player.Health += (int)itemModel.Value;
+            if (player.Health > player.MaxHealth)
+            {
+                player.Health = player.MaxHealth;
+            }
+        }
     }
 }
