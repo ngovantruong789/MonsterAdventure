@@ -29,7 +29,7 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
     [SerializeField] private RectTransform _itemCaptureParent;
     [SerializeField] private Button _btnItemRestore;
     [SerializeField] private Button _btnItemCapture;
-    [SerializeField] private bool _isrestore = false;
+    [SerializeField] private bool _isRestore = false;
     private SelectItemInfor _currentItemselected;
 
     [Header("Monster")]
@@ -88,6 +88,7 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
 
         _btnCloseItem.onClick.AddListener(() =>
         {
+	    IsInteract = true;
             ResetValue();
         });
         _btnBattleSkills.ForEach(skill => skill.BtnSkill.onClick.AddListener(() => SelectSkill(skill)));
@@ -101,10 +102,9 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
 
         _btnCloseMonster.onClick.AddListener(() =>
         {
-            if (_isrestore)
+            if (_isRestore)
             {
-                _isrestore = false;
-                IsInteract = true;
+                _isRestore = false;
                 _monsterChoosePanel.gameObject.SetActive(false);
                 ShowItemPanel(EItemType.Restore);
             }
@@ -335,7 +335,6 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
 
     private void SelectItem(SelectItemInfor buttonSelectItemInfor)
     {
-        if (!IsInteract) return;
         if (_currentItemselected != null && _currentItemselected != buttonSelectItemInfor)
         {
             _currentItemselected.ImgSelectedItem.gameObject.SetActive(false);
@@ -352,7 +351,7 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
             }
             else
             {
-                _isrestore = true;
+                _isRestore = true;
                 IsInteract = false;
                 _itemChoosePanel.gameObject.SetActive(false);
                 ShowPlayerTeam();
@@ -381,7 +380,7 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         }
         else if (_currentMonsterSelected != null && _currentMonsterSelected == buttonSelectMonsterInfor)
         {
-            if (!_isrestore)
+            if (!_isRestore)
             {
                 SwapMonster(EMonsterSide.Player, _currentMonsterSelected.MonsterIndex);
                 ResetValue();
@@ -420,7 +419,7 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
     private void ResetValue()
     {
         _isBattleButtonClicked = false;
-        _isrestore = false;
+        _isRestore = false;
         _monsterChoosePanel.gameObject.SetActive(false);
         _itemChoosePanel.gameObject.SetActive(false);
         _skillPanel.gameObject.SetActive(false);

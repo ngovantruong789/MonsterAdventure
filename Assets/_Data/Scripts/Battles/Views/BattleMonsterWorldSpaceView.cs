@@ -18,7 +18,6 @@ public partial class BattleMonsterWorldSpaceView : BaseMonoBehaviour, IStartInit
 
     [SerializeField] private float _waitOpenCloseBall;
 
-
     protected override void Start()
     {
         base.Start();
@@ -104,10 +103,7 @@ public partial class BattleMonsterWorldSpaceView : BaseMonoBehaviour, IStartInit
 
     public void PlayRestore()
     {
-        if (_onActiveItemCompleted != null)
-        {
-            _onActiveItemCompleted.OnNext(EItemType.Restore);
-        }
+        _onActiveItemCompleted.OnNext(EItemType.Restore);
     }
 
     private IEnumerator HandleCaptureCoroutine(BallEntity ballEntity,bool isComplete)

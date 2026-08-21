@@ -214,7 +214,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         _hUDBattleMonsterView.ShowItemPanel(EItemType.Restore);
     }
 
-    private void HandleUseItem(int id, EItemType itemType,int selectedMonsterIndex)
+    private void HandleUseItem(int id, EItemType itemType, int selectedMonsterIndex)
     {
         if (itemType == EItemType.Capture)
         {
@@ -251,8 +251,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         }
         else if (itemType == EItemType.Restore)
         {
-            int currentIndex = _battleMonstercontroller.CurrentPlayerMonsterBattleIndex;
-            RefreshMonsterHUD(EMonsterSide.Player, currentIndex);
+            RefreshMonsterHUD(EMonsterSide.Player, _battleMonstercontroller.CurrentPlayerMonsterBattleIndex);
             HandleEndPhase(EMonsterSide.Player, false);
         }
 
