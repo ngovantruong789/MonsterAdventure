@@ -41,10 +41,13 @@ public readonly struct UseItemHUDViewData
     public int ItemId { get; }
     public EItemType ItemType { get; }
 
-    public UseItemHUDViewData(int itemId, EItemType itemType)
+    public int MonsterIndex { get; }
+
+    public UseItemHUDViewData(int itemId, EItemType itemType, int monsterIndex = -1)
     {
         ItemId = itemId;
         ItemType = itemType;
+        MonsterIndex = monsterIndex;
     }
 }
 #endregion HUDBattleMonsterView

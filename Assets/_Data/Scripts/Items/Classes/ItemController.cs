@@ -24,9 +24,7 @@ public partial class ItemController : IItemController
         }
         else
         {
-            Debug.Log("Tinh toan hoi mau");
             ActiveRestore(itemModel, player);
-            _onActiveItem.OnNext(new ActiveItemControllerEventData{});
         }
     }
 
@@ -75,5 +73,6 @@ public partial class ItemController : IItemController
                 player.Health = player.MaxHealth;
             }
         }
+        _onActiveItem.OnNext(new ActiveItemControllerEventData (itemModel.Prefab, itemModel.ItemType, true));
     }
 }

@@ -101,7 +101,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
             .AddTo(_disposable);
 
         _hUDBattleMonsterView.OnUseItem
-            .Subscribe(val => HandleUseItem(val.ItemId, val.ItemType))
+            .Subscribe(val => HandleUseItem(val.ItemId, val.ItemType, val.MonsterIndex))
             .AddTo(_disposable);
 
         _itemController.OnActiveItem
@@ -214,7 +214,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         _hUDBattleMonsterView.ShowItemPanel(EItemType.Restore);
     }
 
-    private void HandleUseItem(int id, EItemType itemType)
+    private void HandleUseItem(int id, EItemType itemType,int selectedMonsterIndex)
     {
         if (itemType == EItemType.Capture)
         {
@@ -222,10 +222,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         }
         else
         {
-            int currentIndex = _battleMonstercontroller.CurrentPlayerMonsterBattleIndex;
-            MonsterModel player = _playerTeamModel.PlayerTeam[currentIndex];
-
-            _itemController.UseItem(id, itemType, _opponentModel, player);
+            _itemController.UseItem(id, itemType, null, _playerTeamModel.PlayerTeam[selectedMonsterIndex]);
         }
     }
 
@@ -236,7 +233,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         {
             _battleMonsterView.PlayCapture(itemType, isComplete, prefab);
         }
-        else
+        else if (itemType == EItemType.Restore)
         {
             _battleMonsterView.PlayRestore();
         }

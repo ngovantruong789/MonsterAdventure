@@ -101,7 +101,17 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
 
         _btnCloseMonster.onClick.AddListener(() =>
         {
-            ResetValue();
+            if (_isrestore)
+            {
+                _isrestore = false;
+                IsInteract = true;
+                _monsterChoosePanel.gameObject.SetActive(false);
+                ShowItemPanel(EItemType.Restore);
+            }
+            else
+            {
+                ResetValue();
+            }
         });
 
         _btnSelectMonsters.ForEach(infor => infor.Button.onClick.AddListener(() => SelectMonster(infor)));
@@ -378,7 +388,7 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
             }
             else
             {
-                _onUseItem.OnNext(new UseItemHUDViewData(_currentItemselected.IdItem, _currentItemselected.ItemType));
+                _onUseItem.OnNext(new UseItemHUDViewData(_currentItemselected.IdItem, _currentItemselected.ItemType, _currentMonsterSelected.MonsterIndex));
                 IsInteract = false;
                 ResetValue();
             }
