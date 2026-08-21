@@ -101,6 +101,11 @@ public partial class BattleMonsterWorldSpaceView : BaseMonoBehaviour, IStartInit
             .AddTo(this);
     }
 
+    public void PlayRestore()
+    {
+        _onActiveItemCompleted.OnNext(EItemType.Restore);
+    }
+
     private IEnumerator HandleCaptureCoroutine(BallEntity ballEntity,bool isComplete)
     {
         ballEntity.ToggleOpenBall(EBallState.Idle, 0.5f);

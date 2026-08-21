@@ -29,6 +29,7 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
     [SerializeField] private RectTransform _itemCaptureParent;
     [SerializeField] private Button _btnItemRestore;
     [SerializeField] private Button _btnItemCapture;
+    [SerializeField] private bool _isRestore = false;
     private SelectItemInfor _currentItemselected;
 
     [Header("Monster")]
@@ -87,6 +88,7 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
 
         _btnCloseItem.onClick.AddListener(() =>
         {
+	    IsInteract = true;
             ResetValue();
         });
         _btnBattleSkills.ForEach(skill => skill.BtnSkill.onClick.AddListener(() => SelectSkill(skill)));
@@ -100,7 +102,16 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
 
         _btnCloseMonster.onClick.AddListener(() =>
         {
-            ResetValue();
+            if (_isRestore)
+            {
+                _isRestore = false;
+                _monsterChoosePanel.gameObject.SetActive(false);
+                ShowItemPanel(EItemType.Restore);
+            }
+            else
+            {
+                ResetValue();
+            }
         });
 
         _btnSelectMonsters.ForEach(infor => infor.Button.onClick.AddListener(() => SelectMonster(infor)));
@@ -324,7 +335,6 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
 
     private void SelectItem(SelectItemInfor buttonSelectItemInfor)
     {
-        if (!IsInteract) return;
         if (_currentItemselected != null && _currentItemselected != buttonSelectItemInfor)
         {
             _currentItemselected.ImgSelectedItem.gameObject.SetActive(false);
@@ -333,9 +343,19 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         }
         else if (_currentItemselected != null && _currentItemselected == buttonSelectItemInfor)
         {
-            _onUseItem.OnNext(new UseItemHUDViewData(_currentItemselected.IdItem, _currentItemselected.ItemType));
-            IsInteract = false;
-            ResetValue();
+            if (_currentItemselected.ItemType == EItemType.Capture) 
+            {
+                _onUseItem.OnNext(new UseItemHUDViewData(_currentItemselected.IdItem, _currentItemselected.ItemType));
+                IsInteract = false;
+                ResetValue();
+            }
+            else
+            {
+                _isRestore = true;
+                IsInteract = false;
+                _itemChoosePanel.gameObject.SetActive(false);
+                ShowPlayerTeam();
+            }
         }
         else
         {
@@ -353,7 +373,6 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
 
     private void SelectMonster(ButtonSelectMonsterInfor buttonSelectMonsterInfor)
     {
-        if (!IsInteract) return;
         if (_currentMonsterSelected != null && _currentMonsterSelected != buttonSelectMonsterInfor)
         {
             _currentMonsterSelected = buttonSelectMonsterInfor;
@@ -361,8 +380,18 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         }
         else if (_currentMonsterSelected != null && _currentMonsterSelected == buttonSelectMonsterInfor)
         {
-            SwapMonster(EMonsterSide.Player, _currentMonsterSelected.MonsterIndex);
-            ResetValue();
+            if (!_isRestore)
+            {
+                SwapMonster(EMonsterSide.Player, _currentMonsterSelected.MonsterIndex);
+                ResetValue();
+            }
+            else
+            {
+                _onUseItem.OnNext(new UseItemHUDViewData(_currentItemselected.IdItem, _currentItemselected.ItemType, _currentMonsterSelected.MonsterIndex));
+                IsInteract = false;
+                ResetValue();
+            }
+            
         }
         else
         {
@@ -390,6 +419,7 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
     private void ResetValue()
     {
         _isBattleButtonClicked = false;
+        _isRestore = false;
         _monsterChoosePanel.gameObject.SetActive(false);
         _itemChoosePanel.gameObject.SetActive(false);
         _skillPanel.gameObject.SetActive(false);

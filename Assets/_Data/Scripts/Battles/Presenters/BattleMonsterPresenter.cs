@@ -101,7 +101,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
             .AddTo(_disposable);
 
         _hUDBattleMonsterView.OnUseItem
-            .Subscribe(val => HandleUseItem(val.ItemId, val.ItemType))
+            .Subscribe(val => HandleUseItem(val.ItemId, val.ItemType, val.MonsterIndex))
             .AddTo(_disposable);
 
         _itemController.OnActiveItem
@@ -214,9 +214,16 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         _hUDBattleMonsterView.ShowItemPanel(EItemType.Restore);
     }
 
-    private void HandleUseItem(int id, EItemType itemType)
+    private void HandleUseItem(int id, EItemType itemType, int selectedMonsterIndex)
     {
-        _itemController.UseItem(id, itemType, _opponentModel);
+        if (itemType == EItemType.Capture)
+        {
+            _itemController.UseItem(id, itemType, _opponentModel, null);
+        }
+        else
+        {
+            _itemController.UseItem(id, itemType, null, _playerTeamModel.PlayerTeam[selectedMonsterIndex]);
+        }
     }
 
     private void HandleActiveItem(EItemType itemType, bool isComplete, GameObject prefab)
@@ -226,20 +233,29 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         {
             _battleMonsterView.PlayCapture(itemType, isComplete, prefab);
         }
+        else if (itemType == EItemType.Restore)
+        {
+            _battleMonsterView.PlayRestore();
+        }
     }
 
     private void HandleActiveItemComplete(EItemType itemType)
     {
-        if(itemType == EItemType.Capture && _isUseComplete)
+        if (itemType == EItemType.Capture && _isUseComplete)
         {
             OutBattle();
         }
-        else if(itemType == EItemType.Capture && !_isUseComplete)
+        else if (itemType == EItemType.Capture && !_isUseComplete)
         {
             HandleEndPhase(EMonsterSide.Player, false);
         }
+        else if (itemType == EItemType.Restore)
+        {
+            RefreshMonsterHUD(EMonsterSide.Player, _battleMonstercontroller.CurrentPlayerMonsterBattleIndex);
+            HandleEndPhase(EMonsterSide.Player, false);
+        }
 
-        _hUDBattleMonsterView.IsInteract = true;
+         _hUDBattleMonsterView.IsInteract = true;
     }
     #endregion Item
 
