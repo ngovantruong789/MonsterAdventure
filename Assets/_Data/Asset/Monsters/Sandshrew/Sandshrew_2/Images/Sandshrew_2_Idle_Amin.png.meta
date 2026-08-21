@@ -1,79 +1,103 @@
 fileFormatVersion: 2
-guid: e954fb11b31a65244883df327bf9136f
+guid: dd1accd96e7cefc40a09f16693ea35cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3780095524131232430
-    second: Nod-Anim_0
+      213: 7738998316474853551
+    second: Idle-Anim_0
   - first:
-      213: 8060954066543199632
-    second: Nod-Anim_1
+      213: 1977075729719447299
+    second: Idle-Anim_1
   - first:
-      213: -1847277114667883501
-    second: Nod-Anim_2
+      213: 9173613481854189632
+    second: Idle-Anim_2
   - first:
-      213: 1143596381310595136
-    second: Nod-Anim_3
+      213: 3458398094100512545
+    second: Idle-Anim_3
   - first:
-      213: 3641694375126101955
-    second: Nod-Anim_4
+      213: -1533630627476091484
+    second: Idle-Anim_4
   - first:
-      213: -4655324970317497254
-    second: Nod-Anim_5
+      213: 3520039924926930967
+    second: Idle-Anim_5
   - first:
-      213: 1365758742530225150
-    second: Nod-Anim_6
+      213: -9007074944737430628
+    second: Idle-Anim_6
   - first:
-      213: -3855410093488739226
-    second: Nod-Anim_7
+      213: 5469265311968306403
+    second: Idle-Anim_7
   - first:
-      213: 6208799851831221494
-    second: Nod-Anim_8
+      213: 8813659312991238842
+    second: Idle-Anim_8
   - first:
-      213: -5931530389389652958
-    second: Nod-Anim_9
+      213: -7205847637910636526
+    second: Idle-Anim_9
   - first:
-      213: 8974306261855816347
-    second: Nod-Anim_10
+      213: -2500440999657106871
+    second: Idle-Anim_10
   - first:
-      213: -1910080756768690222
-    second: Nod-Anim_11
+      213: 3380924079768591465
+    second: Idle-Anim_11
   - first:
-      213: 479478398496719407
-    second: Nod-Anim_12
+      213: 6312937933537730039
+    second: Idle-Anim_12
   - first:
-      213: 1495179293046061976
-    second: Nod-Anim_13
+      213: 7370305187068088183
+    second: Idle-Anim_13
   - first:
-      213: 1078499043157114183
-    second: Nod-Anim_14
+      213: -4401239759644110075
+    second: Idle-Anim_14
   - first:
-      213: 4567610096941324497
-    second: Nod-Anim_15
+      213: 5716087231770099852
+    second: Idle-Anim_15
   - first:
-      213: -1751758137712427252
-    second: Nod-Anim_16
+      213: 4969444997890004679
+    second: Idle-Anim_16
   - first:
-      213: 7313585051499453153
-    second: Nod-Anim_17
+      213: -9145775198654151500
+    second: Idle-Anim_17
   - first:
-      213: 8725495877029063299
-    second: Nod-Anim_18
+      213: -6656707347790094562
+    second: Idle-Anim_18
   - first:
-      213: 6725778485604710635
-    second: Nod-Anim_19
+      213: -5421402862643160038
+    second: Idle-Anim_19
   - first:
-      213: -6382871587600406840
-    second: Nod-Anim_20
+      213: 728989986691342317
+    second: Idle-Anim_20
   - first:
-      213: 8064019902043839634
-    second: Nod-Anim_21
+      213: 1731065877924970417
+    second: Idle-Anim_21
   - first:
-      213: -4018855438390654537
-    second: Nod-Anim_22
+      213: 702254742369775053
+    second: Idle-Anim_22
   - first:
-      213: 7668457779178266161
-    second: Nod-Anim_23
+      213: 843812802259278218
+    second: Idle-Anim_23
+  - first:
+      213: -2120886188613695082
+    second: Idle-Anim_24
+  - first:
+      213: -5737951630601031768
+    second: Idle-Anim_25
+  - first:
+      213: -3804901684299220886
+    second: Idle-Anim_26
+  - first:
+      213: -3999001167682290817
+    second: Idle-Anim_27
+  - first:
+      213: 4068438704295549569
+    second: Idle-Anim_28
+  - first:
+      213: -90787290279785787
+    second: Idle-Anim_29
+  - first:
+      213: -3261768965048884968
+    second: Idle-Anim_30
+  - first:
+      213: 3239275106390307007
+    second: Idle-Anim_31
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -223,8 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbbde64393523304d8adf278b1268c4d
-      internalID: 1928572951
+      spriteID: 02c1ea520f3c10d42a4b637a18653b18
+      internalID: 2036450443
       vertices: []
       indices: 
       edges: []
@@ -245,8 +269,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 882fe0b05c90c0c4a95136dd40b9765c
-      internalID: -1435206477
+      spriteID: 8267558c164632847a3c493f827b9562
+      internalID: -36404510
       vertices: []
       indices: 
       edges: []
@@ -267,8 +291,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c15c1bfb2b9414b4a960e6a3c3e672d5
-      internalID: -1011079664
+      spriteID: dd93a588e3fb3ec47aa43fba4be00a55
+      internalID: -1547171976
       vertices: []
       indices: 
       edges: []
@@ -277,8 +301,8 @@ TextureImporter:
       name: Sandshrew_2_Idle_Amin_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 240
+        x: 96
+        y: 280
         width: 32
         height: 40
       alignment: 0
@@ -289,8 +313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9cb17659bd32854e87dd60a32bc52c3
-      internalID: 2017531011
+      spriteID: a8c865a2521b934499bf3942e3b96306
+      internalID: -103822012
       vertices: []
       indices: 
       edges: []
@@ -299,7 +323,7 @@ TextureImporter:
       name: Sandshrew_2_Idle_Amin_4
       rect:
         serializedVersion: 2
-        x: 32
+        x: 0
         y: 240
         width: 32
         height: 40
@@ -311,8 +335,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f606446d7a2f64428532e6b0ee71d67
-      internalID: -168773550
+      spriteID: 0a703cbcd2bb5da498068b7f1ce5d3a7
+      internalID: -418424095
       vertices: []
       indices: 
       edges: []
@@ -321,6 +345,28 @@ TextureImporter:
       name: Sandshrew_2_Idle_Amin_5
       rect:
         serializedVersion: 2
+        x: 32
+        y: 240
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00529b09e7e911943a6a5bab4028f6fb
+      internalID: -176356475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_2_Idle_Amin_6
+      rect:
+        serializedVersion: 2
         x: 64
         y: 240
         width: 32
@@ -333,30 +379,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94b1415ad24698246ae6d8a72634f754
-      internalID: -361843868
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sandshrew_2_Idle_Amin_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 200
-        width: 32
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11453478b59e1cb48af77d90942f6692
-      internalID: 1636327911
+      spriteID: 16bcd2803df30d542b8392f9a632ae10
+      internalID: -511591314
       vertices: []
       indices: 
       edges: []
@@ -365,8 +389,8 @@ TextureImporter:
       name: Sandshrew_2_Idle_Amin_7
       rect:
         serializedVersion: 2
-        x: 32
-        y: 200
+        x: 96
+        y: 240
         width: 32
         height: 40
       alignment: 0
@@ -377,8 +401,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3426b49c1b1e51446aad4d3b3ae37ccd
-      internalID: 1612410171
+      spriteID: 21e0e73184ca7234f9a55f7300cdd29a
+      internalID: 823257569
       vertices: []
       indices: 
       edges: []
@@ -387,6 +411,50 @@ TextureImporter:
       name: Sandshrew_2_Idle_Amin_8
       rect:
         serializedVersion: 2
+        x: 0
+        y: 200
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4904987c23047284c95282748382cf65
+      internalID: 853092610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_2_Idle_Amin_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 200
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3dfe25100e422344a811cd255764eb3
+      internalID: 1566115725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_2_Idle_Amin_10
+      rect:
+        serializedVersion: 2
         x: 64
         y: 200
         width: 32
@@ -399,52 +467,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2782aa472ce9d54d8155cccff048e9c
-      internalID: -439541154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sandshrew_2_Idle_Amin_9
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 160
-        width: 32
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f6e781242d53cf4187b94788d11b56b
-      internalID: 1853195635
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sandshrew_2_Idle_Amin_10
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 160
-        width: 32
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7110a518d79c3a2428d6f8ebf2677346
-      internalID: 1619816835
+      spriteID: e263e7523491a524f96df0c7f103e7fd
+      internalID: 1631688617
       vertices: []
       indices: 
       edges: []
@@ -453,8 +477,8 @@ TextureImporter:
       name: Sandshrew_2_Idle_Amin_11
       rect:
         serializedVersion: 2
-        x: 64
-        y: 160
+        x: 96
+        y: 200
         width: 32
         height: 40
       alignment: 0
@@ -465,8 +489,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c0ec1c225987784ab0aafe9ebba075e
-      internalID: -1117730400
+      spriteID: 620004a9f464a5f48b9feed7aacae3b6
+      internalID: 474087483
       vertices: []
       indices: 
       edges: []
@@ -476,7 +500,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 120
+        y: 160
         width: 32
         height: 40
       alignment: 0
@@ -487,8 +511,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e7c3c19d840ec640b544f35ea2c6f17
-      internalID: -1107732399
+      spriteID: 0b283e14c57cb164fa8f867fedda0027
+      internalID: -752868951
       vertices: []
       indices: 
       edges: []
@@ -498,7 +522,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 120
+        y: 160
         width: 32
         height: 40
       alignment: 0
@@ -509,8 +533,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fe202c98f8734440a0cbc9387d40e18
-      internalID: -928730967
+      spriteID: 496e83e936960ad4e8291235d4a25d1a
+      internalID: -1820380932
       vertices: []
       indices: 
       edges: []
@@ -520,6 +544,50 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
+        y: 160
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d52920e2118e0408efd3f570df6d92
+      internalID: -1365973459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_2_Idle_Amin_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c710e75651ac1564e94be7988319d437
+      internalID: 829103207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_2_Idle_Amin_16
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 120
         width: 32
         height: 40
@@ -531,52 +599,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71ae9357a30705f4ebf5874589c63dce
-      internalID: -908123361
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sandshrew_2_Idle_Amin_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 80
-        width: 32
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5decbf3bc7633c64d97fc5842e117907
-      internalID: 1354053542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sandshrew_2_Idle_Amin_16
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 80
-        width: 32
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60fd9d1935e190e428e17359ee8117ee
-      internalID: -520491439
+      spriteID: 3879382a00728364b88788d6c74f6a89
+      internalID: -1636346548
       vertices: []
       indices: 
       edges: []
@@ -585,6 +609,116 @@ TextureImporter:
       name: Sandshrew_2_Idle_Amin_17
       rect:
         serializedVersion: 2
+        x: 32
+        y: 120
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94667e930acb4642b68f4999b9cc611
+      internalID: 156938041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_2_Idle_Amin_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 120
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9298571736e6b94a99b9ed42dfcb8d2
+      internalID: 1747812260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_2_Idle_Amin_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 120
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057fa27a75a64454ab02d435afc49ea8
+      internalID: -1309792169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_2_Idle_Amin_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f7f35c95ff75b4b8986dc762825152
+      internalID: -297953891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_2_Idle_Amin_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5916d46380ec9438fb98bbddc1dfa2
+      internalID: -1082512702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_2_Idle_Amin_22
+      rect:
+        serializedVersion: 2
         x: 64
         y: 80
         width: 32
@@ -597,118 +731,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c85bb4412074834eadc1de66b0b5ac8
-      internalID: 1124928540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sandshrew_2_Idle_Amin_18
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 40
-        width: 32
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f90baba6cc79e86459603f5201146376
-      internalID: 1422544926
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sandshrew_2_Idle_Amin_19
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 40
-        width: 32
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f61a65f897883b14f807b5dc7b3cf480
-      internalID: -1453791410
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sandshrew_2_Idle_Amin_20
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 40
-        width: 32
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba2329fda0236a74fb055520c56ceffb
-      internalID: -1094496230
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sandshrew_2_Idle_Amin_21
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8264ae5c929b8094aaa6dbc19924d06c
-      internalID: 1932199362
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sandshrew_2_Idle_Amin_22
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43158b6c5d4ca0046821f0cdd5c4d213
-      internalID: 232731554
+      spriteID: 77fe3c41136e06f43b37c248fe6a9839
+      internalID: -14791774
       vertices: []
       indices: 
       edges: []
@@ -717,6 +741,160 @@ TextureImporter:
       name: Sandshrew_2_Idle_Amin_23
       rect:
         serializedVersion: 2
+        x: 96
+        y: 80
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dae203d377ad204287687217c14b7b0
+      internalID: 1470940085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_2_Idle_Amin_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8375ac13dece55b47af77a37aa19984e
+      internalID: 138210612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_2_Idle_Amin_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 40
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5c8620ae3c66b4aa944f42276570f5
+      internalID: 409709168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_2_Idle_Amin_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 40
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78fdf8e2401efde4db53c42d47d739ee
+      internalID: -631020702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_2_Idle_Amin_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 40
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41bac6d98c223274d9ec76bec43b5f14
+      internalID: 251697665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_2_Idle_Amin_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9366d0ed5b757bd4cb4315a7c9950415
+      internalID: 347761312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_2_Idle_Amin_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca52c5ac4ff380b44ab53bb2b2edb802
+      internalID: -1549990729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_2_Idle_Amin_30
+      rect:
+        serializedVersion: 2
         x: 64
         y: 0
         width: 32
@@ -729,8 +907,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60230f35ce208814ab5c99034a755a1c
-      internalID: 1272571940
+      spriteID: e186bd8712081884485fee5611616d2f
+      internalID: 700523490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sandshrew_2_Idle_Amin_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d616b58bc0b299c4e9d69b127e0b482c
+      internalID: -1236087628
       vertices: []
       indices: 
       edges: []
@@ -739,7 +939,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 497f640ab647cd649a6af3c192283ef8
+    spriteID: 3f8aac65081688748a3a2e9ba74604a7
     internalID: 0
     vertices: []
     indices: 
@@ -749,32 +949,40 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":8.0},"gridSpriteSize":{"x":32.0,"y":40.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":8.0},"gridSpriteSize":{"x":32.0,"y":40.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Sandshrew_2_Idle_Amin_0: 1928572951
-      Sandshrew_2_Idle_Amin_1: -1435206477
-      Sandshrew_2_Idle_Amin_10: 1619816835
-      Sandshrew_2_Idle_Amin_11: -1117730400
-      Sandshrew_2_Idle_Amin_12: -1107732399
-      Sandshrew_2_Idle_Amin_13: -928730967
-      Sandshrew_2_Idle_Amin_14: -908123361
-      Sandshrew_2_Idle_Amin_15: 1354053542
-      Sandshrew_2_Idle_Amin_16: -520491439
-      Sandshrew_2_Idle_Amin_17: 1124928540
-      Sandshrew_2_Idle_Amin_18: 1422544926
-      Sandshrew_2_Idle_Amin_19: -1453791410
-      Sandshrew_2_Idle_Amin_2: -1011079664
-      Sandshrew_2_Idle_Amin_20: -1094496230
-      Sandshrew_2_Idle_Amin_21: 1932199362
-      Sandshrew_2_Idle_Amin_22: 232731554
-      Sandshrew_2_Idle_Amin_23: 1272571940
-      Sandshrew_2_Idle_Amin_3: 2017531011
-      Sandshrew_2_Idle_Amin_4: -168773550
-      Sandshrew_2_Idle_Amin_5: -361843868
-      Sandshrew_2_Idle_Amin_6: 1636327911
-      Sandshrew_2_Idle_Amin_7: 1612410171
-      Sandshrew_2_Idle_Amin_8: -439541154
-      Sandshrew_2_Idle_Amin_9: 1853195635
+      Sandshrew_2_Idle_Amin_0: 2036450443
+      Sandshrew_2_Idle_Amin_1: -36404510
+      Sandshrew_2_Idle_Amin_10: 1631688617
+      Sandshrew_2_Idle_Amin_11: 474087483
+      Sandshrew_2_Idle_Amin_12: -752868951
+      Sandshrew_2_Idle_Amin_13: -1820380932
+      Sandshrew_2_Idle_Amin_14: -1365973459
+      Sandshrew_2_Idle_Amin_15: 829103207
+      Sandshrew_2_Idle_Amin_16: -1636346548
+      Sandshrew_2_Idle_Amin_17: 156938041
+      Sandshrew_2_Idle_Amin_18: 1747812260
+      Sandshrew_2_Idle_Amin_19: -1309792169
+      Sandshrew_2_Idle_Amin_2: -1547171976
+      Sandshrew_2_Idle_Amin_20: -297953891
+      Sandshrew_2_Idle_Amin_21: -1082512702
+      Sandshrew_2_Idle_Amin_22: -14791774
+      Sandshrew_2_Idle_Amin_23: 1470940085
+      Sandshrew_2_Idle_Amin_24: 138210612
+      Sandshrew_2_Idle_Amin_25: 409709168
+      Sandshrew_2_Idle_Amin_26: -631020702
+      Sandshrew_2_Idle_Amin_27: 251697665
+      Sandshrew_2_Idle_Amin_28: 347761312
+      Sandshrew_2_Idle_Amin_29: -1549990729
+      Sandshrew_2_Idle_Amin_3: -103822012
+      Sandshrew_2_Idle_Amin_30: 700523490
+      Sandshrew_2_Idle_Amin_31: -1236087628
+      Sandshrew_2_Idle_Amin_4: -418424095
+      Sandshrew_2_Idle_Amin_5: -176356475
+      Sandshrew_2_Idle_Amin_6: -511591314
+      Sandshrew_2_Idle_Amin_7: 823257569
+      Sandshrew_2_Idle_Amin_8: 853092610
+      Sandshrew_2_Idle_Amin_9: 1566115725
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
