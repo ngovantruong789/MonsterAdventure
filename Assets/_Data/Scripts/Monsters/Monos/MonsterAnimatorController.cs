@@ -36,18 +36,16 @@ public partial class MonsterAnimatorController : CharacterAnimatorController
         _animator.CrossFade(_currentHash, fade, layer, 0f);
     }
 
-    private async void OnStateExited(int animatorId, int hash)
+    private void OnStateExited(int animatorId, int hash)
     {
         if (animatorId != _animator.GetInstanceID()) return;
 
         if(hash == Attack_Top_Right)
         {
-            await Task.Delay(1000);
             _animator.CrossFade(Idle_Attack_Left, 0f, 1, 0f);
         }
         else if(hash == Attack_Bottom_Left)
         {
-            await Task.Delay(1000);
             _animator.CrossFade(Idle_Attack_Right, 0f, 1, 0f);
         }
         _onAnimationCompleted.OnNext(new MonsterAnimationCompletedData(_currentMonsterSide, _currentMonsterState));
