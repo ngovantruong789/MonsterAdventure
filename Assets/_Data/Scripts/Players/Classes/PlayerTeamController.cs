@@ -22,6 +22,7 @@ public class PlayerTeamController : IPlayerTeamProvider, IStartable
     {
         _teamModel.PlayerTeam.Add(MonsterModelFactory.Create(_monsters[0], 30));
         _teamModel.PlayerTeam.Add(MonsterModelFactory.Create(_monsters[1], 16));
+        _teamModel.PlayerTeam.Add(MonsterModelFactory.Create(_monsters[2], 10));
         UpdateTeamModel(_teamModel);
     }
 

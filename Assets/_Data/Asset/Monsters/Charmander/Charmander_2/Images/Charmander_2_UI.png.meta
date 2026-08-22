@@ -1,0 +1,482 @@
+fileFormatVersion: 2
+guid: 9e0054fb079952e4eac86a6e602a5066
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7738998316474853551
+    second: Idle-Anim_0
+  - first:
+      213: 1977075729719447299
+    second: Idle-Anim_1
+  - first:
+      213: 9173613481854189632
+    second: Idle-Anim_2
+  - first:
+      213: 3458398094100512545
+    second: Idle-Anim_3
+  - first:
+      213: -1533630627476091484
+    second: Idle-Anim_4
+  - first:
+      213: 3520039924926930967
+    second: Idle-Anim_5
+  - first:
+      213: -9007074944737430628
+    second: Idle-Anim_6
+  - first:
+      213: 5469265311968306403
+    second: Idle-Anim_7
+  - first:
+      213: 8813659312991238842
+    second: Idle-Anim_8
+  - first:
+      213: -7205847637910636526
+    second: Idle-Anim_9
+  - first:
+      213: -2500440999657106871
+    second: Idle-Anim_10
+  - first:
+      213: 3380924079768591465
+    second: Idle-Anim_11
+  - first:
+      213: 6312937933537730039
+    second: Idle-Anim_12
+  - first:
+      213: 7370305187068088183
+    second: Idle-Anim_13
+  - first:
+      213: -4401239759644110075
+    second: Idle-Anim_14
+  - first:
+      213: 5716087231770099852
+    second: Idle-Anim_15
+  - first:
+      213: 4969444997890004679
+    second: Idle-Anim_16
+  - first:
+      213: -9145775198654151500
+    second: Idle-Anim_17
+  - first:
+      213: -6656707347790094562
+    second: Idle-Anim_18
+  - first:
+      213: -5421402862643160038
+    second: Idle-Anim_19
+  - first:
+      213: 728989986691342317
+    second: Idle-Anim_20
+  - first:
+      213: 1731065877924970417
+    second: Idle-Anim_21
+  - first:
+      213: 702254742369775053
+    second: Idle-Anim_22
+  - first:
+      213: 843812802259278218
+    second: Idle-Anim_23
+  - first:
+      213: -2120886188613695082
+    second: Idle-Anim_24
+  - first:
+      213: -5737951630601031768
+    second: Idle-Anim_25
+  - first:
+      213: -3804901684299220886
+    second: Idle-Anim_26
+  - first:
+      213: -3999001167682290817
+    second: Idle-Anim_27
+  - first:
+      213: 4068438704295549569
+    second: Idle-Anim_28
+  - first:
+      213: -90787290279785787
+    second: Idle-Anim_29
+  - first:
+      213: -3261768965048884968
+    second: Idle-Anim_30
+  - first:
+      213: 3239275106390307007
+    second: Idle-Anim_31
+  - first:
+      213: 7682167150398461212
+    second: Idle-Anim_32
+  - first:
+      213: 8060601425331014186
+    second: Idle-Anim_33
+  - first:
+      213: -6958673752304707357
+    second: Idle-Anim_34
+  - first:
+      213: -8426690388386427687
+    second: Idle-Anim_35
+  - first:
+      213: 8449194557805750873
+    second: Idle-Anim_36
+  - first:
+      213: 1080011638312391825
+    second: Idle-Anim_37
+  - first:
+      213: -3845111777405765225
+    second: Idle-Anim_38
+  - first:
+      213: -1419756531426089411
+    second: Idle-Anim_39
+  - first:
+      213: -8144651385576188598
+    second: Idle-Anim_40
+  - first:
+      213: 7579764483984027731
+    second: Idle-Anim_41
+  - first:
+      213: -6616807519860232062
+    second: Idle-Anim_42
+  - first:
+      213: 742480819118137374
+    second: Idle-Anim_43
+  - first:
+      213: -6994012070172245659
+    second: Idle-Anim_44
+  - first:
+      213: -2345808624152391985
+    second: Idle-Anim_45
+  - first:
+      213: 2654939614410779705
+    second: Idle-Anim_46
+  - first:
+      213: 4167702978702494160
+    second: Idle-Anim_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Charmander_2_UI_36
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 77
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1bdf83614a65554ab181761d73aa805
+      internalID: -1636733139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_UI_37
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 77
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b59cbd1851ab8419c973cce36ca815
+      internalID: 1707649049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_UI_38
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 77
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fe1df260a12dc4e9cc15c63e72daf9
+      internalID: -842486122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_UI_39
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 77
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f15082dfc60e94ca9849f115f7a883
+      internalID: 92973420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_UI_40
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 77
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b1f71f07042764dbb0709ff4b7ed0b
+      internalID: -793424625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charmander_2_UI_41
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 77
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7653a54be25b746818ad2c683595e6
+      internalID: -1408837661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 19c7840e66af8824b8b215ea19a9d52a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":24.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Charmander_2_UI_0: -2059372952
+      Charmander_2_UI_1: -1919832883
+      Charmander_2_UI_10: 1687657723
+      Charmander_2_UI_11: 1143195552
+      Charmander_2_UI_12: 1699953962
+      Charmander_2_UI_13: -2062597998
+      Charmander_2_UI_14: -96288823
+      Charmander_2_UI_15: 930785831
+      Charmander_2_UI_16: -1485407081
+      Charmander_2_UI_17: 1357227191
+      Charmander_2_UI_18: 249763910
+      Charmander_2_UI_19: 1414536711
+      Charmander_2_UI_2: -935097888
+      Charmander_2_UI_20: 1113297487
+      Charmander_2_UI_21: 1858509259
+      Charmander_2_UI_22: 351551229
+      Charmander_2_UI_23: -156142164
+      Charmander_2_UI_24: 1229219758
+      Charmander_2_UI_25: 38777753
+      Charmander_2_UI_26: 116809229
+      Charmander_2_UI_27: 132662435
+      Charmander_2_UI_28: -675070420
+      Charmander_2_UI_29: -867811810
+      Charmander_2_UI_3: 797213457
+      Charmander_2_UI_30: -1469957648
+      Charmander_2_UI_31: -1198741684
+      Charmander_2_UI_32: 2073110101
+      Charmander_2_UI_33: -792435149
+      Charmander_2_UI_34: 911497760
+      Charmander_2_UI_35: 1427053021
+      Charmander_2_UI_36: -1636733139
+      Charmander_2_UI_37: 1707649049
+      Charmander_2_UI_38: -842486122
+      Charmander_2_UI_39: 92973420
+      Charmander_2_UI_4: -472321415
+      Charmander_2_UI_40: -793424625
+      Charmander_2_UI_41: -1408837661
+      Charmander_2_UI_42: 1600989592
+      Charmander_2_UI_43: -649006557
+      Charmander_2_UI_44: 833832658
+      Charmander_2_UI_45: -1378035835
+      Charmander_2_UI_46: -638327406
+      Charmander_2_UI_47: -1067393572
+      Charmander_2_UI_5: -653799447
+      Charmander_2_UI_6: 1187477375
+      Charmander_2_UI_7: -1501790905
+      Charmander_2_UI_8: -978863341
+      Charmander_2_UI_9: 821952187
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

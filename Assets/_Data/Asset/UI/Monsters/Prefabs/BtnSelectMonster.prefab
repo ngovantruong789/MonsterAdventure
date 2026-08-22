@@ -220,7 +220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 48.87, y: -17.1}
+  m_AnchoredPosition: {x: 48.87, y: -17.099998}
   m_SizeDelta: {x: 215.66, y: 26.72}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &3702247873690677122
@@ -417,7 +417,7 @@ MonoBehaviour:
   _levelText: {fileID: 816100204188543568}
   _healthBar: {fileID: 5614511928875183983}
   _imgSelected: {fileID: 3532298175193001594}
-  _imgCantSelect: {fileID: 0}
+  _imgCantSelect: {fileID: 5861827299647654959}
   _monsterIndex: 0
   _canSelect: 0
 --- !u!1 &6626652944181961721
@@ -623,7 +623,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 760946721647865377}
   m_FillRect: {fileID: 7829574246317596597}
   m_HandleRect: {fileID: 8497437339666655768}
@@ -882,8 +882,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 20.4, y: -16}
-  m_SizeDelta: {x: 84.88, y: 84.88}
+  m_AnchoredPosition: {x: 22.12, y: -14.799988}
+  m_SizeDelta: {x: 81.98, y: 85}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &3198005668571791753
 CanvasRenderer:
@@ -913,7 +913,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8766648454212794861, guid: de64d3a56193c00429c37de10695558f, type: 3}
+  m_Sprite: {fileID: -566982008, guid: 226e8314f1ba0c64b8f2cf6ca19b32cc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

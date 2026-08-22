@@ -1,0 +1,536 @@
+fileFormatVersion: 2
+guid: 16b6c45c6b2b49a42acbacad7f5befc7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4690156384494862183
+    second: Pose-Anim_0
+  - first:
+      213: -6037735593600465831
+    second: Pose-Anim_1
+  - first:
+      213: -3872990898677744121
+    second: Pose-Anim_2
+  - first:
+      213: 3749890890253564970
+    second: Pose-Anim_3
+  - first:
+      213: -4507079772479102995
+    second: Pose-Anim_4
+  - first:
+      213: -5016260840652782878
+    second: Pose-Anim_5
+  - first:
+      213: 4499630344603423961
+    second: Pose-Anim_6
+  - first:
+      213: -8722470003905324158
+    second: Pose-Anim_7
+  - first:
+      213: 9035335202748902318
+    second: Pose-Anim_8
+  - first:
+      213: -8285622484716524279
+    second: Pose-Anim_9
+  - first:
+      213: 4659582776735378483
+    second: Pose-Anim_10
+  - first:
+      213: -2559294081983234775
+    second: Pose-Anim_11
+  - first:
+      213: 1116747988461378284
+    second: Pose-Anim_12
+  - first:
+      213: 4533186173736334326
+    second: Pose-Anim_13
+  - first:
+      213: -2085944609152877120
+    second: Pose-Anim_14
+  - first:
+      213: 6404106230334226887
+    second: Pose-Anim_15
+  - first:
+      213: 2120925941070526218
+    second: Pose-Anim_16
+  - first:
+      213: -5521833817833093543
+    second: Pose-Anim_17
+  - first:
+      213: -3726637964850201330
+    second: Pose-Anim_18
+  - first:
+      213: 5362518152008729580
+    second: Pose-Anim_19
+  - first:
+      213: -6720180755785203170
+    second: Pose-Anim_20
+  - first:
+      213: 5335093253269930447
+    second: Pose-Anim_21
+  - first:
+      213: 9215078456136697556
+    second: Pose-Anim_22
+  - first:
+      213: -2807140456669288555
+    second: Pose-Anim_23
+  - first:
+      213: -5749142275117442814
+    second: Pose-Anim_24
+  - first:
+      213: 4235821619427730043
+    second: Pose-Anim_25
+  - first:
+      213: 1862013332539179736
+    second: Pose-Anim_26
+  - first:
+      213: 7707880467383037617
+    second: Pose-Anim_27
+  - first:
+      213: 6658324013786924367
+    second: Pose-Anim_28
+  - first:
+      213: -5864548806270346687
+    second: Pose-Anim_29
+  - first:
+      213: 4242805865735490505
+    second: Pose-Anim_30
+  - first:
+      213: 996095469391780925
+    second: Pose-Anim_31
+  - first:
+      213: 1646768030818328701
+    second: Pose-Anim_32
+  - first:
+      213: 946823384341398541
+    second: Pose-Anim_33
+  - first:
+      213: -2420178047359871998
+    second: Pose-Anim_34
+  - first:
+      213: -3079654258585832163
+    second: Pose-Anim_35
+  - first:
+      213: -1695326833995407554
+    second: Pose-Anim_36
+  - first:
+      213: 3971541272407756491
+    second: Pose-Anim_37
+  - first:
+      213: -6734836616945403332
+    second: Pose-Anim_38
+  - first:
+      213: 3512767152685253830
+    second: Pose-Anim_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pose-Anim_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 352
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76fb8d6d168c61140800000000000000
+      internalID: 4690156384494862183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pose-Anim_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 352
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95446b78777a53ca0800000000000000
+      internalID: -6037735593600465831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pose-Anim_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 352
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70efdf13c4f504ac0800000000000000
+      internalID: -3872990898677744121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pose-Anim_3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 352
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c790c95e94a0430800000000000000
+      internalID: 3749890890253564970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pose-Anim_4
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 352
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: defd80393d2a371c0800000000000000
+      internalID: -4507079772479102995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pose-Anim_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 159
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e12c109253f1db2a0800000000000000
+      internalID: -6720180755785203170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pose-Anim_21
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 162
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc1ccbc1c0f0a0a40800000000000000
+      internalID: 5335093253269930447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pose-Anim_22
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 163
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d60263480982ef70800000000000000
+      internalID: 9215078456136697556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pose-Anim_23
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 159
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5976995a0a80b09d0800000000000000
+      internalID: -2807140456669288555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pose-Anim_24
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 157
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2099170af81f630b0800000000000000
+      internalID: -5749142275117442814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b71c67bdb15442b45872692a9320fbb6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pose-Anim_0: 4690156384494862183
+      Pose-Anim_1: -6037735593600465831
+      Pose-Anim_10: 4659582776735378483
+      Pose-Anim_11: -2559294081983234775
+      Pose-Anim_12: 1116747988461378284
+      Pose-Anim_13: 4533186173736334326
+      Pose-Anim_14: -2085944609152877120
+      Pose-Anim_15: 6404106230334226887
+      Pose-Anim_16: 2120925941070526218
+      Pose-Anim_17: -5521833817833093543
+      Pose-Anim_18: -3726637964850201330
+      Pose-Anim_19: 5362518152008729580
+      Pose-Anim_2: -3872990898677744121
+      Pose-Anim_20: -6720180755785203170
+      Pose-Anim_21: 5335093253269930447
+      Pose-Anim_22: 9215078456136697556
+      Pose-Anim_23: -2807140456669288555
+      Pose-Anim_24: -5749142275117442814
+      Pose-Anim_25: 4235821619427730043
+      Pose-Anim_26: 1862013332539179736
+      Pose-Anim_27: 7707880467383037617
+      Pose-Anim_28: 6658324013786924367
+      Pose-Anim_29: -5864548806270346687
+      Pose-Anim_3: 3749890890253564970
+      Pose-Anim_30: 4242805865735490505
+      Pose-Anim_31: 996095469391780925
+      Pose-Anim_32: 1646768030818328701
+      Pose-Anim_33: 946823384341398541
+      Pose-Anim_34: -2420178047359871998
+      Pose-Anim_35: -3079654258585832163
+      Pose-Anim_36: -1695326833995407554
+      Pose-Anim_37: 3971541272407756491
+      Pose-Anim_38: -6734836616945403332
+      Pose-Anim_39: 3512767152685253830
+      Pose-Anim_4: -4507079772479102995
+      Pose-Anim_5: -5016260840652782878
+      Pose-Anim_6: 4499630344603423961
+      Pose-Anim_7: -8722470003905324158
+      Pose-Anim_8: 9035335202748902318
+      Pose-Anim_9: -8285622484716524279
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
