@@ -1,0 +1,538 @@
+fileFormatVersion: 2
+guid: 98e270bf72376b14ebaf8f41ca35f79c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4690156384494862183
+    second: Pose-Anim_0
+  - first:
+      213: -6037735593600465831
+    second: Pose-Anim_1
+  - first:
+      213: -3872990898677744121
+    second: Pose-Anim_2
+  - first:
+      213: 3749890890253564970
+    second: Pose-Anim_3
+  - first:
+      213: -4507079772479102995
+    second: Pose-Anim_4
+  - first:
+      213: -5016260840652782878
+    second: Pose-Anim_5
+  - first:
+      213: 4499630344603423961
+    second: Pose-Anim_6
+  - first:
+      213: -8722470003905324158
+    second: Pose-Anim_7
+  - first:
+      213: 9035335202748902318
+    second: Pose-Anim_8
+  - first:
+      213: -8285622484716524279
+    second: Pose-Anim_9
+  - first:
+      213: 4659582776735378483
+    second: Pose-Anim_10
+  - first:
+      213: -2559294081983234775
+    second: Pose-Anim_11
+  - first:
+      213: 1116747988461378284
+    second: Pose-Anim_12
+  - first:
+      213: 4533186173736334326
+    second: Pose-Anim_13
+  - first:
+      213: -2085944609152877120
+    second: Pose-Anim_14
+  - first:
+      213: 6404106230334226887
+    second: Pose-Anim_15
+  - first:
+      213: 2120925941070526218
+    second: Pose-Anim_16
+  - first:
+      213: -5521833817833093543
+    second: Pose-Anim_17
+  - first:
+      213: -3726637964850201330
+    second: Pose-Anim_18
+  - first:
+      213: 5362518152008729580
+    second: Pose-Anim_19
+  - first:
+      213: -6720180755785203170
+    second: Pose-Anim_20
+  - first:
+      213: 5335093253269930447
+    second: Pose-Anim_21
+  - first:
+      213: 9215078456136697556
+    second: Pose-Anim_22
+  - first:
+      213: -2807140456669288555
+    second: Pose-Anim_23
+  - first:
+      213: -5749142275117442814
+    second: Pose-Anim_24
+  - first:
+      213: 4235821619427730043
+    second: Pose-Anim_25
+  - first:
+      213: 1862013332539179736
+    second: Pose-Anim_26
+  - first:
+      213: 7707880467383037617
+    second: Pose-Anim_27
+  - first:
+      213: 6658324013786924367
+    second: Pose-Anim_28
+  - first:
+      213: -5864548806270346687
+    second: Pose-Anim_29
+  - first:
+      213: 4242805865735490505
+    second: Pose-Anim_30
+  - first:
+      213: 996095469391780925
+    second: Pose-Anim_31
+  - first:
+      213: 1646768030818328701
+    second: Pose-Anim_32
+  - first:
+      213: 946823384341398541
+    second: Pose-Anim_33
+  - first:
+      213: -2420178047359871998
+    second: Pose-Anim_34
+  - first:
+      213: -3079654258585832163
+    second: Pose-Anim_35
+  - first:
+      213: -1695326833995407554
+    second: Pose-Anim_36
+  - first:
+      213: 3971541272407756491
+    second: Pose-Anim_37
+  - first:
+      213: -6734836616945403332
+    second: Pose-Anim_38
+  - first:
+      213: 3512767152685253830
+    second: Pose-Anim_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Marshadow_Idle_UI_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 354
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1d0693bbea1b442b8144f7fc19d6e0
+      internalID: 2106428360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle_UI_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 354
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104baaf261c06214dbe66f7f4566fb26
+      internalID: 1064413998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle_UI_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 354
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9f316953f36014289aeb9f20105ade
+      internalID: 346218799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle_UI_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 354
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189a8d3e3280dae4bb39dbe9935cd466
+      internalID: -1848394832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle_UI_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 354
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06572331ff39ea498f441ecb9a23596
+      internalID: 134848696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle_UI_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0009a8a31e84b0647ad1a03f423f04e1
+      internalID: 867046630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle_UI_21
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 144
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25158b79659df74492add75efd673b5
+      internalID: 259594284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle_UI_22
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55554ad482ca0b4eacb219a650396a1
+      internalID: 601990310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle_UI_23
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 144
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc3dca2631ec78438a90d3756b004c5
+      internalID: 416998775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marshadow_Idle_UI_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef74ad3b8652bd4787f31171377e194
+      internalID: -1979640161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0adffb34a59733447bd284403e3e073a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":8.0},"gridSpriteSize":{"x":24.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Marshadow_Idle_UI_0: 2106428360
+      Marshadow_Idle_UI_1: 1064413998
+      Marshadow_Idle_UI_10: 1799387490
+      Marshadow_Idle_UI_11: -481164782
+      Marshadow_Idle_UI_12: -880249217
+      Marshadow_Idle_UI_13: -1970278263
+      Marshadow_Idle_UI_14: 203599985
+      Marshadow_Idle_UI_15: -397605672
+      Marshadow_Idle_UI_16: -216100660
+      Marshadow_Idle_UI_17: -1934770301
+      Marshadow_Idle_UI_18: -1468735025
+      Marshadow_Idle_UI_19: 1657458385
+      Marshadow_Idle_UI_2: 346218799
+      Marshadow_Idle_UI_20: 867046630
+      Marshadow_Idle_UI_21: 259594284
+      Marshadow_Idle_UI_22: 601990310
+      Marshadow_Idle_UI_23: 416998775
+      Marshadow_Idle_UI_24: -1979640161
+      Marshadow_Idle_UI_25: 1624107496
+      Marshadow_Idle_UI_26: 1608313024
+      Marshadow_Idle_UI_27: 41865727
+      Marshadow_Idle_UI_28: -815962328
+      Marshadow_Idle_UI_29: 794518923
+      Marshadow_Idle_UI_3: -1848394832
+      Marshadow_Idle_UI_30: -673266068
+      Marshadow_Idle_UI_31: 360996193
+      Marshadow_Idle_UI_32: 1699886430
+      Marshadow_Idle_UI_33: 287408264
+      Marshadow_Idle_UI_34: -1713356258
+      Marshadow_Idle_UI_35: 164454792
+      Marshadow_Idle_UI_36: -1562602923
+      Marshadow_Idle_UI_37: -509114235
+      Marshadow_Idle_UI_38: -658912309
+      Marshadow_Idle_UI_39: 988685471
+      Marshadow_Idle_UI_4: 134848696
+      Marshadow_Idle_UI_5: 1408825216
+      Marshadow_Idle_UI_6: 455829014
+      Marshadow_Idle_UI_7: -926614656
+      Marshadow_Idle_UI_8: 1208459780
+      Marshadow_Idle_UI_9: 492872351
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

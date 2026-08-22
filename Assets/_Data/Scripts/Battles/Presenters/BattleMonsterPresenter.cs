@@ -54,7 +54,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         _hUDBattleMonsterView.UpdateMonsterNumber(_playerTeamModel.PlayerTeam.Count);
         _hUDBattleMonsterView.UpdatePlayerTeamAnimator();
         DeployMonster(EMonsterSide.Player, 0);
-        _hUDBattleMonsterView.CurrentMonsterSelectedConstructor();
+        _hUDBattleMonsterView.CurrentMonsterFightingConstructor();
 
         _hUDBattleMonsterView.OnShowPlayerTeam
             .Subscribe(_ => ShowPlayerTeam())
@@ -255,7 +255,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
             HandleEndPhase(EMonsterSide.Player, false);
         }
 
-         _hUDBattleMonsterView.IsInteract = true;
+        _hUDBattleMonsterView.IsInteract = true;
     }
     #endregion Item
 
@@ -263,6 +263,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
     private void SwapMonster(EMonsterSide eMonsterSide, int index)
     {
         DeployMonster(eMonsterSide, index);
+        _hUDBattleMonsterView.IsInteract = true;
     }
 
     private void DeployMonster(EMonsterSide eMonsterSide, int index)

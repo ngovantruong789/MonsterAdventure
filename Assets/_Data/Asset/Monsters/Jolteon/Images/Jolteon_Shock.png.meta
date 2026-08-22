@@ -1,0 +1,2997 @@
+fileFormatVersion: 2
+guid: 31bfa70dcec08a248b191e7a4549794d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8411383071464790426
+    second: Shock-Anim_0
+  - first:
+      213: 5032874431882703479
+    second: Shock-Anim_1
+  - first:
+      213: 2949359993126503949
+    second: Shock-Anim_2
+  - first:
+      213: -1358397718768550356
+    second: Shock-Anim_3
+  - first:
+      213: 1471917939869671143
+    second: Shock-Anim_4
+  - first:
+      213: -2490555763036242513
+    second: Shock-Anim_5
+  - first:
+      213: 8585460072548689846
+    second: Shock-Anim_6
+  - first:
+      213: -2585408757163367876
+    second: Shock-Anim_7
+  - first:
+      213: 3469684302945942087
+    second: Shock-Anim_8
+  - first:
+      213: 6054191850420199742
+    second: Shock-Anim_9
+  - first:
+      213: -9036755158056643907
+    second: Shock-Anim_10
+  - first:
+      213: -7841754130220207912
+    second: Shock-Anim_11
+  - first:
+      213: -9198831876588309677
+    second: Shock-Anim_12
+  - first:
+      213: -884270551270333134
+    second: Shock-Anim_13
+  - first:
+      213: -3712926539151429033
+    second: Shock-Anim_14
+  - first:
+      213: -6688479740868853987
+    second: Shock-Anim_15
+  - first:
+      213: 8768613423223241503
+    second: Shock-Anim_16
+  - first:
+      213: 6667004031023067895
+    second: Shock-Anim_17
+  - first:
+      213: 4023676131634142166
+    second: Shock-Anim_18
+  - first:
+      213: 7927301981072242777
+    second: Shock-Anim_19
+  - first:
+      213: 1808650104539111836
+    second: Shock-Anim_20
+  - first:
+      213: 2195434794418340791
+    second: Shock-Anim_21
+  - first:
+      213: -6064380324204427954
+    second: Shock-Anim_22
+  - first:
+      213: 1548717651630220787
+    second: Shock-Anim_23
+  - first:
+      213: -6748788274512164429
+    second: Shock-Anim_24
+  - first:
+      213: -8350858980928625380
+    second: Shock-Anim_25
+  - first:
+      213: 1619621235899960016
+    second: Shock-Anim_26
+  - first:
+      213: 7674828155152704344
+    second: Shock-Anim_27
+  - first:
+      213: 8667288398436965173
+    second: Shock-Anim_28
+  - first:
+      213: -1450326896230332295
+    second: Shock-Anim_29
+  - first:
+      213: 1523056920069353048
+    second: Shock-Anim_30
+  - first:
+      213: -5503848501725212651
+    second: Shock-Anim_31
+  - first:
+      213: -5091185960385594628
+    second: Shock-Anim_32
+  - first:
+      213: 4895984706509366351
+    second: Shock-Anim_33
+  - first:
+      213: 3210552754070094452
+    second: Shock-Anim_34
+  - first:
+      213: 1969852424604852019
+    second: Shock-Anim_35
+  - first:
+      213: 6671257185200869493
+    second: Shock-Anim_36
+  - first:
+      213: 7294422091853302874
+    second: Shock-Anim_37
+  - first:
+      213: 5461566635741372393
+    second: Shock-Anim_38
+  - first:
+      213: 393382012527910257
+    second: Shock-Anim_39
+  - first:
+      213: 8806229902269746243
+    second: Shock-Anim_40
+  - first:
+      213: 5463594811406826288
+    second: Shock-Anim_41
+  - first:
+      213: 4922741776109217051
+    second: Shock-Anim_42
+  - first:
+      213: -8971501441050338052
+    second: Shock-Anim_43
+  - first:
+      213: 4725594017630247957
+    second: Shock-Anim_44
+  - first:
+      213: 7023956338814558877
+    second: Shock-Anim_45
+  - first:
+      213: 4003472243024298670
+    second: Shock-Anim_46
+  - first:
+      213: 7677870764764230115
+    second: Shock-Anim_47
+  - first:
+      213: 4236178062363491480
+    second: Shock-Anim_48
+  - first:
+      213: -3914011164018540860
+    second: Shock-Anim_49
+  - first:
+      213: 4590457923698904205
+    second: Shock-Anim_50
+  - first:
+      213: -1274669249810064456
+    second: Shock-Anim_51
+  - first:
+      213: -6191101835592913910
+    second: Shock-Anim_52
+  - first:
+      213: 5524442019433474782
+    second: Shock-Anim_53
+  - first:
+      213: 4283255154014920532
+    second: Shock-Anim_54
+  - first:
+      213: 3644992721202947578
+    second: Shock-Anim_55
+  - first:
+      213: -3684112273227575081
+    second: Shock-Anim_56
+  - first:
+      213: 5750040329007907609
+    second: Shock-Anim_57
+  - first:
+      213: -2917414641004444318
+    second: Shock-Anim_58
+  - first:
+      213: -5196250156015352862
+    second: Shock-Anim_59
+  - first:
+      213: -8756415510089266732
+    second: Shock-Anim_60
+  - first:
+      213: -7932955988987927923
+    second: Shock-Anim_61
+  - first:
+      213: -3802905671359181115
+    second: Shock-Anim_62
+  - first:
+      213: 4826662996678850206
+    second: Shock-Anim_63
+  - first:
+      213: -6513722347076429447
+    second: Shock-Anim_64
+  - first:
+      213: -5409414168675416737
+    second: Shock-Anim_65
+  - first:
+      213: 3888521752756423077
+    second: Shock-Anim_66
+  - first:
+      213: -4720003198530206739
+    second: Shock-Anim_67
+  - first:
+      213: -2859443352500533190
+    second: Shock-Anim_68
+  - first:
+      213: 2401980197635677426
+    second: Shock-Anim_69
+  - first:
+      213: 8001521203486444265
+    second: Shock-Anim_70
+  - first:
+      213: -4376477601578615280
+    second: Shock-Anim_71
+  - first:
+      213: -8786868788337642271
+    second: Shock-Anim_72
+  - first:
+      213: 3541556381153596741
+    second: Shock-Anim_73
+  - first:
+      213: 2498424846859478539
+    second: Shock-Anim_74
+  - first:
+      213: 2460007307793861263
+    second: Shock-Anim_75
+  - first:
+      213: -3404586271290065686
+    second: Shock-Anim_76
+  - first:
+      213: 2517813501677855271
+    second: Shock-Anim_77
+  - first:
+      213: 7534621074688134213
+    second: Shock-Anim_78
+  - first:
+      213: 2264096251075992286
+    second: Shock-Anim_79
+  - first:
+      213: 5493134305301756315
+    second: Shock-Anim_80
+  - first:
+      213: 9054697189026506693
+    second: Shock-Anim_81
+  - first:
+      213: -2973982070189580079
+    second: Shock-Anim_82
+  - first:
+      213: 350087572807416463
+    second: Shock-Anim_83
+  - first:
+      213: 1291172736876643370
+    second: Shock-Anim_84
+  - first:
+      213: -5014642842605319397
+    second: Shock-Anim_85
+  - first:
+      213: 8394841845688281548
+    second: Shock-Anim_86
+  - first:
+      213: 7066593559675916844
+    second: Shock-Anim_87
+  - first:
+      213: -7911715396220885200
+    second: Shock-Anim_88
+  - first:
+      213: 4846161986885810721
+    second: Shock-Anim_89
+  - first:
+      213: -2688706150186071529
+    second: Shock-Anim_90
+  - first:
+      213: 3171684014771456897
+    second: Shock-Anim_91
+  - first:
+      213: 4452298058533506059
+    second: Shock-Anim_92
+  - first:
+      213: -1487445191917054290
+    second: Shock-Anim_93
+  - first:
+      213: -2992360031127341040
+    second: Shock-Anim_94
+  - first:
+      213: -1816356078833962173
+    second: Shock-Anim_95
+  - first:
+      213: -5143996053630921972
+    second: Shock-Anim_96
+  - first:
+      213: -5480535308723893470
+    second: Shock-Anim_97
+  - first:
+      213: -8132648128473780067
+    second: Shock-Anim_98
+  - first:
+      213: -1459464690593339913
+    second: Shock-Anim_99
+  - first:
+      213: 5746584723815316763
+    second: Shock-Anim_100
+  - first:
+      213: -3414419875007143827
+    second: Shock-Anim_101
+  - first:
+      213: -6117341019183902628
+    second: Shock-Anim_102
+  - first:
+      213: -10410146840233017
+    second: Shock-Anim_103
+  - first:
+      213: 755412156680520614
+    second: Shock-Anim_104
+  - first:
+      213: -6430878202615678322
+    second: Shock-Anim_105
+  - first:
+      213: -5143687551261332736
+    second: Shock-Anim_106
+  - first:
+      213: 4774003401680543631
+    second: Shock-Anim_107
+  - first:
+      213: 7228529565588222029
+    second: Shock-Anim_108
+  - first:
+      213: -9134039077809077293
+    second: Shock-Anim_109
+  - first:
+      213: 8611431535176885139
+    second: Shock-Anim_110
+  - first:
+      213: -3627868170863561630
+    second: Shock-Anim_111
+  - first:
+      213: 5212535268927688280
+    second: Shock-Anim_112
+  - first:
+      213: 922371164565598223
+    second: Shock-Anim_113
+  - first:
+      213: -8492729129804077693
+    second: Shock-Anim_114
+  - first:
+      213: -2621936722423240980
+    second: Shock-Anim_115
+  - first:
+      213: 5019935565153396301
+    second: Shock-Anim_116
+  - first:
+      213: 8409312784811163289
+    second: Shock-Anim_117
+  - first:
+      213: -749103539251743928
+    second: Shock-Anim_118
+  - first:
+      213: -6074956443241983990
+    second: Shock-Anim_119
+  - first:
+      213: 7374282550947855023
+    second: Shock-Anim_120
+  - first:
+      213: 8377657614363440509
+    second: Shock-Anim_121
+  - first:
+      213: 4889764284740411244
+    second: Shock-Anim_122
+  - first:
+      213: -7231738324932724336
+    second: Shock-Anim_123
+  - first:
+      213: -6028992896874852638
+    second: Shock-Anim_124
+  - first:
+      213: -4223270763243812022
+    second: Shock-Anim_125
+  - first:
+      213: -6241734676949391057
+    second: Shock-Anim_126
+  - first:
+      213: -2594395139042456381
+    second: Shock-Anim_127
+  - first:
+      213: 4015617710489419528
+    second: Shock-Anim_128
+  - first:
+      213: -6980242994140639844
+    second: Shock-Anim_129
+  - first:
+      213: -6069231289141161959
+    second: Shock-Anim_130
+  - first:
+      213: -2927799205810440711
+    second: Shock-Anim_131
+  - first:
+      213: 2082286187764459459
+    second: Shock-Anim_132
+  - first:
+      213: -1573497796534462205
+    second: Shock-Anim_133
+  - first:
+      213: -2455231805109437849
+    second: Shock-Anim_134
+  - first:
+      213: 2317672665543936825
+    second: Shock-Anim_135
+  - first:
+      213: 247019609035106068
+    second: Shock-Anim_136
+  - first:
+      213: -743420173557036157
+    second: Shock-Anim_137
+  - first:
+      213: 218349120227282583
+    second: Shock-Anim_138
+  - first:
+      213: -499828348205305729
+    second: Shock-Anim_139
+  - first:
+      213: -5516628956467930800
+    second: Shock-Anim_140
+  - first:
+      213: 3531166464445418666
+    second: Shock-Anim_141
+  - first:
+      213: -5192932341094305141
+    second: Shock-Anim_142
+  - first:
+      213: -1259383615595781704
+    second: Shock-Anim_143
+  - first:
+      213: -6965124891617262550
+    second: Shock-Anim_144
+  - first:
+      213: 7133563473608958562
+    second: Shock-Anim_145
+  - first:
+      213: -2291252834086523418
+    second: Shock-Anim_146
+  - first:
+      213: -1442878655053804178
+    second: Shock-Anim_147
+  - first:
+      213: 4312057622668094729
+    second: Shock-Anim_148
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jolteon_Shock_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5ef5b449cd78e428c0145d1f3e2e19
+      internalID: 234658024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 448
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cbb27bc04c7b64592d0bfd9ccf98d1
+      internalID: 1138658174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 448
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e80261f88c5204e89ae351670e0aa1
+      internalID: -475331306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 448
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8776256d878a0a44c91e65089b1c497c
+      internalID: -1841644043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 448
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af872482c150c8e4ba6a49cdfd6a9584
+      internalID: -484060154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 448
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e3f7f0a940fca4fb282c3573e0c99f
+      internalID: 2069147799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_6
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 448
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3933b4fadba7f96479e9c77f2e075718
+      internalID: -788558029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_7
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 448
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5567d64e21dd33a4cb75e3e5740834cf
+      internalID: -418349864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_8
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 448
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6caff9b6b4bcf1246a73729baa88ad67
+      internalID: 1857816657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_9
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 448
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd6672bd2ed7df4fa124739a7a99793
+      internalID: 1575155375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_10
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 448
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c288cfe4b200f64fa1721b3e73b8f5e
+      internalID: -99663752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_11
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 448
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db29b42abe538c84294052b4c7622bad
+      internalID: 945615236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_12
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 448
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3590d11d71ac5ba4fa112215f6fe2523
+      internalID: -1125834580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35b3b2996a28194e8c555bee3774fb4
+      internalID: 1491127406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_14
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 384
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4523c9277b674594aa8105717782c2c7
+      internalID: -362486866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_15
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 384
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c1949d4188658468c9d282f185a589
+      internalID: 2141964279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_16
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 384
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f250b49b72fb6b647aa9e2934951ee99
+      internalID: 2105777699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_17
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 384
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94965f2ecb755cf4e8edd6757d2bc958
+      internalID: -111568152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_18
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 384
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfecdae763f25f4e86ca0dd666db3a3
+      internalID: -1251826115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_19
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 384
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf64a49600cf2b4b8171922d6031f62
+      internalID: -1798682040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_20
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 384
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ba253d395f60c4494a44b6d14ae2ee
+      internalID: 2123399190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_21
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cfea2456b3e91d488c213c1d8d7981b
+      internalID: 1055208558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_22
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 384
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da806a40fd160b148892c1a70b2bdfe4
+      internalID: -863666002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_23
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 384
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328353c8729d9f34dab3b68422ae8df5
+      internalID: 80052555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_24
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 384
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf13c5d71e0c8c4b93e8fa937542ce0
+      internalID: -1553370495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_25
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 384
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3f1aa57276ed64baf3ebf9990e242e
+      internalID: 1488560712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e9c3cdb50fc2541a1fe65246ba4761
+      internalID: -348482749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_27
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 320
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58e0aaea43947a4a96098eb9fd8027c
+      internalID: 214686301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_28
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 320
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c05e09dd53bbe4e9d2a9c7f695a534
+      internalID: 807016866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_29
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 320
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac2ec8d55db0504caec350e761c9c70
+      internalID: -663338865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_30
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bf7a4e0621d6a4b96e9de1b02736f4
+      internalID: 818380981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_31
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 320
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f944492c392e05a418ba4398c3db5c52
+      internalID: 1988170289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_32
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 320
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6e842eb0f4c1149a3b930d405d9d6b
+      internalID: -752690988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_33
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 320
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111285e36567dc44d8ac77d825f55800
+      internalID: 1054663368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_34
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b82606e2f6dde840834b1f5c87dfa0d
+      internalID: -1903039327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_35
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 320
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831b2e2cf1a31ce4c8ced23dec1ac258
+      internalID: -1615960731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_36
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 320
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31d09066a2c441478054ab544f6ba2a
+      internalID: -2103836192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_37
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 320
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084bb94512424fa48a4e370e5a544d44
+      internalID: 2067321700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_38
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 320
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8caa84c583c7a147810f31315a0f477
+      internalID: -661687683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6301fc043364d944926bc84796abda9
+      internalID: 1033040792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_40
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 256
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31bc1ba10b4bd4548b9b1b14a98c1fb1
+      internalID: 1825771485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_41
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 256
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01aa4c36cca5d4140b74ac61ecafb894
+      internalID: 226446306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_42
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 256
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e135a7e6eb8d0a94a9c1739fd4f0e88c
+      internalID: 971125271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_43
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e3b05f0bb1dfbe40b6fc489abd15913
+      internalID: -1263729452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_44
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 256
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c21b7073fc08224ab2f29eee57b35a6
+      internalID: -1912751015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_45
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 256
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef501e76ff58204aa20c1e445ab2082
+      internalID: -2004225767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_46
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 256
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4e536ab2af8da48a2889506d720797
+      internalID: -75404360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_47
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9a54726a006784f88981105c4f31ac
+      internalID: -1804331525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_48
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 256
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471fa2b31b8334944a5df27461720d66
+      internalID: -1795507097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_49
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 256
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11f78958e11dca4f923cd570f1a9bbb
+      internalID: 535691781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_50
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 256
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8716904a1c3f22c4aa2c0c804b00081f
+      internalID: -1809045929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_51
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 256
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd428a0254d51aa46ba92f690c06803d
+      internalID: -464362169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7827269a0078f64fa749d8aa99c13af
+      internalID: -1960426980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_53
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 192
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92499581f4e3e27488acf64a7d6a247a
+      internalID: 1573125381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_54
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 192
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2964a625b7ed2f944a362cbe3ad60f22
+      internalID: 436802694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_55
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 192
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae7d2c52f0e65c48a205ed0004415d3
+      internalID: -614475904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_56
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025bbeae631d06444aabab1c208dac72
+      internalID: 1225884400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_57
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 192
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f4135484a7f4d4e9727a75b1618092
+      internalID: -1691291255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_58
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 192
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5533170d5737fdc4e9e70ff124b17415
+      internalID: 52631808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_59
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 192
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c91b3f4e5c0e2641ad94629d5f4cf79
+      internalID: 132949024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_60
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49fe06aaa1055c94da4d82dc3d7a89d0
+      internalID: -1388131844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_61
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 192
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344ac7fc035ec094187181ae8b1cb29c
+      internalID: -314089638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_62
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 192
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649da129d400f1c4692654ba4f990715
+      internalID: 895972169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_63
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 192
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3feee245046d91749905c8ef971f83c6
+      internalID: -1505202317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_64
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 192
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db060d27440d98439560bf225c3607b
+      internalID: -1537573867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9c900ab41f4b8408852fd25e7b8d34
+      internalID: 1112841289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_66
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 128
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b04cc23bdb11314ca1f16912a96e6bb
+      internalID: 918404334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_67
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5797d4e446c10a843ada2e2c5bb06bf7
+      internalID: -1624113345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_68
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 128
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1283f525f551d814db8d5aae81394e4c
+      internalID: 1448107411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_69
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c8041746c61914b872d2463d5ad41e
+      internalID: -882405024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_70
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 128
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6d7601323c41842bf071e57e95ac87
+      internalID: -65313388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_71
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 128
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96d8d5aaf6256f4fb3a8bc438617c6a
+      internalID: -2103200955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_72
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 128
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d359973718e7e468f76a223dfe2979
+      internalID: -1396088661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_73
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502e40eedc4be6441975cb75018aec4c
+      internalID: 1586999353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_74
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 128
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aba3f05b284f004bae6c12392d4f383
+      internalID: 553116247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_75
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 128
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455346b9325078546bb04786f7542640
+      internalID: -591349930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_76
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 128
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca99e52f07e5f12478f9f9263e93e962
+      internalID: 1975883900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_77
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 128
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83333f18e9ea03d4abbf3afcb0b9ddfb
+      internalID: -1271086161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e839d050154a9d4f9d399e09110a6e1
+      internalID: -751937687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_79
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 64
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4f491aedaa993468c29c3804b18b52
+      internalID: -907075797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_80
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d97b22fad8ea84c806b774d477f29b
+      internalID: 1008554719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_81
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 64
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1008731966607dc4e97ceb5436b39d3f
+      internalID: -350335266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_82
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e13437293622e846b91be5e7e7adf34
+      internalID: 645582192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_83
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 64
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74e29a97a87e0242a685c2433093bf0
+      internalID: -1947663398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_84
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 64
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48779d731cae286448e3b7dce05aa3b9
+      internalID: -494072065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_85
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 64
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a787cda5372fbcb4e9de938abef5d401
+      internalID: -283683492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_86
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f4ead64b59e0442adb6466f787b409
+      internalID: 1830758633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_87
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 64
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d83860adfb702d4b93769a1eed55697
+      internalID: 1648055234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_88
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 64
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3a9143dbc514543ba171d68ffa6b80
+      internalID: -673112037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_89
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 64
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4ae8d0b3524494a80ceadf0a7da7cc
+      internalID: -118797870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_90
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 64
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1c6c42cf3f4f54e9b97daefa8e0732
+      internalID: -900377699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0cf51d0ad77f24389775b0c76cd4f2
+      internalID: -1026495133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_92
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d0299a201282e48b650ac15b57c1e7
+      internalID: -1028069534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_93
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1b907a89886d7408d526e82e37adb6
+      internalID: 1189571984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_94
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b233ab618800ca49996c8fb4c3351ec
+      internalID: -1575772784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_95
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e108697acda2fa645b75f50d2f191253
+      internalID: 623449481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_96
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282983011c8be0d459941515402122d1
+      internalID: 1818146054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_97
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8316b027e1e3398429556dc51a186497
+      internalID: -882313395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_98
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77575346782e14348893cd50e6772621
+      internalID: -246325142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_99
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eddc96728089097469cbf418605cde7e
+      internalID: -396778266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_100
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 0
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9019650ce58b374cbd97014ac9f97bf
+      internalID: -1675221748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_101
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0f6749302a71e4c8fb350d56a52a93
+      internalID: -106095422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_102
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 0
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459d7682f3a4e584eaec8b09ec5b91f1
+      internalID: -358425965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jolteon_Shock_103
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974a09c3e066223479d37e25b3908147
+      internalID: 1336421731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 85cc0bb6fd0a68d499bbc22730ea828f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":13.0,"y":8.0},"gridSpriteSize":{"x":56.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Jolteon_Shock_0: 234658024
+      Jolteon_Shock_1: 1138658174
+      Jolteon_Shock_10: -99663752
+      Jolteon_Shock_100: -1675221748
+      Jolteon_Shock_101: -106095422
+      Jolteon_Shock_102: -358425965
+      Jolteon_Shock_103: 1336421731
+      Jolteon_Shock_11: 945615236
+      Jolteon_Shock_12: -1125834580
+      Jolteon_Shock_13: 1491127406
+      Jolteon_Shock_14: -362486866
+      Jolteon_Shock_15: 2141964279
+      Jolteon_Shock_16: 2105777699
+      Jolteon_Shock_17: -111568152
+      Jolteon_Shock_18: -1251826115
+      Jolteon_Shock_19: -1798682040
+      Jolteon_Shock_2: -475331306
+      Jolteon_Shock_20: 2123399190
+      Jolteon_Shock_21: 1055208558
+      Jolteon_Shock_22: -863666002
+      Jolteon_Shock_23: 80052555
+      Jolteon_Shock_24: -1553370495
+      Jolteon_Shock_25: 1488560712
+      Jolteon_Shock_26: -348482749
+      Jolteon_Shock_27: 214686301
+      Jolteon_Shock_28: 807016866
+      Jolteon_Shock_29: -663338865
+      Jolteon_Shock_3: -1841644043
+      Jolteon_Shock_30: 818380981
+      Jolteon_Shock_31: 1988170289
+      Jolteon_Shock_32: -752690988
+      Jolteon_Shock_33: 1054663368
+      Jolteon_Shock_34: -1903039327
+      Jolteon_Shock_35: -1615960731
+      Jolteon_Shock_36: -2103836192
+      Jolteon_Shock_37: 2067321700
+      Jolteon_Shock_38: -661687683
+      Jolteon_Shock_39: 1033040792
+      Jolteon_Shock_4: -484060154
+      Jolteon_Shock_40: 1825771485
+      Jolteon_Shock_41: 226446306
+      Jolteon_Shock_42: 971125271
+      Jolteon_Shock_43: -1263729452
+      Jolteon_Shock_44: -1912751015
+      Jolteon_Shock_45: -2004225767
+      Jolteon_Shock_46: -75404360
+      Jolteon_Shock_47: -1804331525
+      Jolteon_Shock_48: -1795507097
+      Jolteon_Shock_49: 535691781
+      Jolteon_Shock_5: 2069147799
+      Jolteon_Shock_50: -1809045929
+      Jolteon_Shock_51: -464362169
+      Jolteon_Shock_52: -1960426980
+      Jolteon_Shock_53: 1573125381
+      Jolteon_Shock_54: 436802694
+      Jolteon_Shock_55: -614475904
+      Jolteon_Shock_56: 1225884400
+      Jolteon_Shock_57: -1691291255
+      Jolteon_Shock_58: 52631808
+      Jolteon_Shock_59: 132949024
+      Jolteon_Shock_6: -788558029
+      Jolteon_Shock_60: -1388131844
+      Jolteon_Shock_61: -314089638
+      Jolteon_Shock_62: 895972169
+      Jolteon_Shock_63: -1505202317
+      Jolteon_Shock_64: -1537573867
+      Jolteon_Shock_65: 1112841289
+      Jolteon_Shock_66: 918404334
+      Jolteon_Shock_67: -1624113345
+      Jolteon_Shock_68: 1448107411
+      Jolteon_Shock_69: -882405024
+      Jolteon_Shock_7: -418349864
+      Jolteon_Shock_70: -65313388
+      Jolteon_Shock_71: -2103200955
+      Jolteon_Shock_72: -1396088661
+      Jolteon_Shock_73: 1586999353
+      Jolteon_Shock_74: 553116247
+      Jolteon_Shock_75: -591349930
+      Jolteon_Shock_76: 1975883900
+      Jolteon_Shock_77: -1271086161
+      Jolteon_Shock_78: -751937687
+      Jolteon_Shock_79: -907075797
+      Jolteon_Shock_8: 1857816657
+      Jolteon_Shock_80: 1008554719
+      Jolteon_Shock_81: -350335266
+      Jolteon_Shock_82: 645582192
+      Jolteon_Shock_83: -1947663398
+      Jolteon_Shock_84: -494072065
+      Jolteon_Shock_85: -283683492
+      Jolteon_Shock_86: 1830758633
+      Jolteon_Shock_87: 1648055234
+      Jolteon_Shock_88: -673112037
+      Jolteon_Shock_89: -118797870
+      Jolteon_Shock_9: 1575155375
+      Jolteon_Shock_90: -900377699
+      Jolteon_Shock_91: -1026495133
+      Jolteon_Shock_92: -1028069534
+      Jolteon_Shock_93: 1189571984
+      Jolteon_Shock_94: -1575772784
+      Jolteon_Shock_95: 623449481
+      Jolteon_Shock_96: 1818146054
+      Jolteon_Shock_97: -882313395
+      Jolteon_Shock_98: -246325142
+      Jolteon_Shock_99: -396778266
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
