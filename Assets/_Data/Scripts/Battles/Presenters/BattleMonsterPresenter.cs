@@ -44,6 +44,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
 
     public void Start()
     {
+        _hUDBattleMonsterView.UpdateMonsterNumber(_playerTeamModel.PlayerTeam.Count);
         UpdateHUDBattleMonsterViewData(true, true);
         _hUDBattleMonsterView.CreateItemButtons();
 
@@ -51,7 +52,6 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         DeployMonster(EMonsterSide.Opponent, -1);
 
         //Player
-        _hUDBattleMonsterView.UpdateMonsterNumber(_playerTeamModel.PlayerTeam.Count);
         _hUDBattleMonsterView.UpdatePlayerTeamAnimator();
         DeployMonster(EMonsterSide.Player, 0);
         _hUDBattleMonsterView.CurrentMonsterFightingConstructor();
@@ -197,7 +197,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
     #region Player team
     private void ShowPlayerTeam()
     {
-        _hUDBattleMonsterView.ShowPlayerTeam();
+        _hUDBattleMonsterView.ShowPlayerTeam(EMonsterTeamHUDView.MonsterTeam);
     }
     #endregion Player team
 

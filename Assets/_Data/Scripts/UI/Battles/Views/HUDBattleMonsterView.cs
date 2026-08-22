@@ -22,9 +22,12 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
     [Header("Item")]
     [SerializeField] private Button _btnItem;
     [SerializeField] private Button _btnCloseItem;
+    [SerializeField] private Button _btnCloseItemMonster;
     [SerializeField] private RectTransform _itemChoosePanel;
+    [SerializeField] private RectTransform _monsterItemChoosePanel;
     [SerializeField] private List<SelectItemInfor> _itemRestoreButtons;
     [SerializeField] private List<SelectItemInfor> _itemCaptureButtons;
+    [SerializeField] private List<ButtonSelectMonsterInfor> _btnSelectItemMonsters;
     [SerializeField] private SelectItemInfor _itemPrefab;
     [SerializeField] private RectTransform _itemRestoreParent;
     [SerializeField] private RectTransform _itemCaptureParent;
@@ -105,14 +108,16 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         _btnCloseMonster.onClick.AddListener(() =>
         {
             ResetValue();
-            if (_isRestore)
-            {
-                _isRestore = false;
-                ShowItemPanel(EItemType.Restore);
-            }
+        });
+
+        _btnCloseItemMonster.onClick.AddListener(() =>
+        {
+            ResetValue();
+            ShowItemPanel(EItemType.Restore);
         });
 
         _btnSelectMonsters.ForEach(infor => infor.Button.onClick.AddListener(() => SelectMonster(infor)));
+        _btnSelectItemMonsters.ForEach(infor => infor.Button.onClick.AddListener(() => SelectMonster(infor)));
 
         //Run
         _btnRun.onClick.AddListener(() =>
@@ -128,6 +133,8 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
     public void SetData(HUDBattleMonsterViewData hUDBattleMonsterViewData)
     {
         _hUDBattleMonsterViewData = hUDBattleMonsterViewData;
+        HandleUpdatePlayerTeam(_btnSelectItemMonsters);
+        HandleUpdatePlayerTeam(_btnSelectMonsters);
     }
 
     #region Stats
@@ -160,6 +167,7 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         for (int i = 0; i < monsterTeamNumber; i++)
         {
             _btnSelectMonsters[i].MonsterAnimator.runtimeAnimatorController = _hUDBattleMonsterViewData.PlayerTeamDatas[i].UIAnimator;
+            _btnSelectItemMonsters[i].MonsterAnimator.runtimeAnimatorController = _hUDBattleMonsterViewData.PlayerTeamDatas[i].UIAnimator;
         }
     }
 
@@ -170,19 +178,31 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         for (int i = 0; i < _btnSelectMonsters.Count; i++)
         {
             _btnSelectMonsters[i].gameObject.SetActive(i < number);
+            _btnSelectItemMonsters[i].gameObject.SetActive(i < number);
         }
         _monsterChoosePanel.gameObject.SetActive(false);
     }
 
-    public void ShowPlayerTeam()
+    public void ShowPlayerTeam(EMonsterTeamHUDView eMonsterTeamHUDView)
     {
-        _monsterChoosePanel.gameObject.SetActive(true);
+        if(eMonsterTeamHUDView == EMonsterTeamHUDView.ItemMonsterTeam)
+        {
+            _monsterItemChoosePanel.gameObject.SetActive(true);
+        }
+        else if(eMonsterTeamHUDView == EMonsterTeamHUDView.MonsterTeam)
+        {
+            _monsterChoosePanel.gameObject.SetActive(true);
+        }
+    }
+
+    private void HandleUpdatePlayerTeam(List<ButtonSelectMonsterInfor> buttons)
+    {
         for (int i = 0; i < monsterTeamNumber; i++)
         {
-            _btnSelectMonsters[i].MonsterNameText.text = _hUDBattleMonsterViewData.PlayerTeamDatas[i].MonsterName;
-            _btnSelectMonsters[i].HealthText.text = _hUDBattleMonsterViewData.PlayerTeamDatas[i].Health + "/" + _hUDBattleMonsterViewData.PlayerTeamDatas[i].MaxHealth;
-            _btnSelectMonsters[i].LevelText.text = _hUDBattleMonsterViewData.PlayerTeamDatas[i].Level.ToString();
-            _btnSelectMonsters[i].HealthBar.value = (float)_hUDBattleMonsterViewData.PlayerTeamDatas[i].Health / _hUDBattleMonsterViewData.PlayerTeamDatas[i].MaxHealth;
+            buttons[i].MonsterNameText.text = _hUDBattleMonsterViewData.PlayerTeamDatas[i].MonsterName;
+            buttons[i].HealthText.text = _hUDBattleMonsterViewData.PlayerTeamDatas[i].Health + "/" + _hUDBattleMonsterViewData.PlayerTeamDatas[i].MaxHealth;
+            buttons[i].LevelText.text = _hUDBattleMonsterViewData.PlayerTeamDatas[i].Level.ToString();
+            buttons[i].HealthBar.value = (float)_hUDBattleMonsterViewData.PlayerTeamDatas[i].Health / _hUDBattleMonsterViewData.PlayerTeamDatas[i].MaxHealth;
         }
     }
     #endregion Player team
@@ -342,33 +362,6 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
             _currentItemselected = buttonSelectItemInfor;
             _currentItemselected.ImgSelectedItem.gameObject.SetActive(true);
         }
-        if (_currentItemselected != null && _currentItemselected != buttonSelectItemInfor)
-        {
-            _currentItemselected.ImgSelectedItem.gameObject.SetActive(false);
-            _currentItemselected = buttonSelectItemInfor;
-            _currentItemselected.ImgSelectedItem.gameObject.SetActive(true);
-        }
-        else if (_currentItemselected != null && _currentItemselected == buttonSelectItemInfor)
-        {
-            if (_currentItemselected.ItemType == EItemType.Capture) 
-            {
-                _onUseItem.OnNext(new UseItemHUDViewData(_currentItemselected.IdItem, _currentItemselected.ItemType));
-                IsInteract = false;
-                ResetValue();
-            }
-            else
-            {
-                _isRestore = true;
-                IsInteract = false;
-                _itemChoosePanel.gameObject.SetActive(false);
-                ShowPlayerTeam();
-            }
-        }
-        else
-        {
-            _currentItemselected = buttonSelectItemInfor;
-            _currentItemselected.ImgSelectedItem.gameObject.SetActive(true);
-        }
     }
 
     private void HandleSeletecdItem(SelectItemInfor buttonSelectItemInfor)
@@ -391,7 +384,7 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         {
             _isRestore = true;
             _itemChoosePanel.gameObject.SetActive(false);
-            ShowPlayerTeam();
+            ShowPlayerTeam(EMonsterTeamHUDView.ItemMonsterTeam);
         }
     }
     #endregion Item
@@ -467,13 +460,16 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
     private void ResetValue()
     {
         _isBattleButtonClicked = false;
+        _isRestore = false;
         _monsterChoosePanel.gameObject.SetActive(false);
+        _monsterItemChoosePanel.gameObject.SetActive(false);
         _itemChoosePanel.gameObject.SetActive(false);
         _skillPanel.gameObject.SetActive(false);
         _battleHUDCanvas.gameObject.SetActive(true);
         if (_currentMonsterSelected)
         {
             _currentMonsterSelected.ImgSelected.gameObject.SetActive(false);
+            _currentMonsterSelected = null;
         }
 
         if (_currentButtonSkillSelected)
