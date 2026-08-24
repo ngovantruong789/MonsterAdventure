@@ -17,14 +17,14 @@ public partial class ItemController : IItemController
         if (!CheckQuantityItem(id, items)) return;
 
         ItemModel itemModel = GetItemModel(id, items);
-        //itemModel.Quantity -= 1;
+        itemModel.Quantity -= 1;
         if(itemType == EItemType.Capture)
         {
-            ActiveCapture(itemType, itemModel, opponentMonster);
+            ActiveCapture(id, itemType, itemModel, opponentMonster);
         }
         else
         {
-            ActiveRestore(itemModel, player);
+            ActiveRestore(id, itemModel, player);
         }
     }
 
@@ -53,7 +53,7 @@ public partial class ItemController : IItemController
         return null;
     }
 
-    private void ActiveCapture(EItemType itemType, ItemModel itemCapture, MonsterModel opponentMonster)
+    private void ActiveCapture(int id, EItemType itemType, ItemModel itemCapture, MonsterModel opponentMonster)
     {
         int percentRateCapture = (int)(itemCapture.Value * 3.5 / (opponentMonster.DifficultCapture * 0.3f));
         percentRateCapture = Mathf.Clamp(percentRateCapture, 1, 100);
@@ -61,9 +61,9 @@ public partial class ItemController : IItemController
         bool isCaptureComplete = rand <= percentRateCapture;
         Debug.Log("ItemCapture: " + itemCapture.Value + "; DifficultMonster: " + opponentMonster.DifficultCapture 
             + "; Rate: " + percentRateCapture + "; IsComplete: " +  isCaptureComplete);
-        _onActiveItem.OnNext(new ActiveItemControllerEventData(itemCapture.Prefab, itemType, isCaptureComplete));
+        _onActiveItem.OnNext(new ActiveItemControllerEventData(id, itemCapture.Prefab, itemType, isCaptureComplete));
     }
-    private void ActiveRestore(ItemModel itemModel, MonsterModel player)
+    private void ActiveRestore(int id, ItemModel itemModel, MonsterModel player)
     {
         if (itemModel.EffectItem == EItemEffect.RestoreHp && player != null)
         {
@@ -73,6 +73,6 @@ public partial class ItemController : IItemController
                 player.Health = player.MaxHealth;
             }
         }
-        _onActiveItem.OnNext(new ActiveItemControllerEventData (itemModel.Prefab, itemModel.ItemType, true));
+        _onActiveItem.OnNext(new ActiveItemControllerEventData (id, itemModel.Prefab, itemModel.ItemType, true));
     }
 }
