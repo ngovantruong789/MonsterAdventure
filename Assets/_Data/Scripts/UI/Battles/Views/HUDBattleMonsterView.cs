@@ -305,15 +305,21 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
 
     private void UpdateInforItemButtons(List<ItemViewData> items, List<SelectItemInfor> itemInfors, int id)
     {
+        bool isCompleted = false;
         foreach(ItemViewData item in items)
         {
+            if (isCompleted) break;
             foreach(SelectItemInfor infor in itemInfors)
             {
-                if(item.Id == id)
+                if (item.Id != id) continue;
+
+                UpdateInforItemButton(infor, item);
+                if(item.Quantity <= 0)
                 {
-                    UpdateInforItemButton(infor, item);
-                    break;
+                    infor.gameObject.SetActive(false);
+                    isCompleted = true;
                 }
+                break;
             }
         }
     }
