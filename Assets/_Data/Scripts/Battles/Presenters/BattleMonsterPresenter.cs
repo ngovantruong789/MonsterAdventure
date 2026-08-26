@@ -16,6 +16,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
     private readonly IBattleMonsterPresenter _battleMonstercontroller;
     private readonly IInventoryProvider _inventoryProvider;
     private readonly IItemController _itemController;
+    private int _itemActiveId = -1;
     private bool _isUseComplete = false;
 
     private EStatePhase _currentStatePhase;
@@ -105,7 +106,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
             .AddTo(_disposable);
 
         _itemController.OnActiveItem
-            .Subscribe(val => HandleActiveItem(val.ItemType, val.IsComplete, val.Prefab))
+            .Subscribe(val => HandleActiveItem(val.Id, val.ItemType, val.IsComplete, val.Prefab))
             .AddTo (_disposable);
 
         _battleMonsterView.OnActiveItemCompleted
@@ -226,8 +227,9 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         }
     }
 
-    private void HandleActiveItem(EItemType itemType, bool isComplete, GameObject prefab)
+    private void HandleActiveItem(int id, EItemType itemType, bool isComplete, GameObject prefab)
     {
+        _itemActiveId = id;
         _isUseComplete = isComplete;
         if (itemType == EItemType.Capture)
         {
@@ -241,6 +243,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
 
     private void HandleActiveItemComplete(EItemType itemType)
     {
+        UpdateHUDBattleMonsterViewData(false, false);
         if (itemType == EItemType.Capture && _isUseComplete)
         {
             OutBattle();
@@ -255,6 +258,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
             HandleEndPhase(EMonsterSide.Player, false);
         }
 
+        _hUDBattleMonsterView.UpdateInforItemButton(itemType, _itemActiveId);
         _hUDBattleMonsterView.IsInteract = true;
     }
     #endregion Item
@@ -290,7 +294,6 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         {
             _hUDBattleMonsterView.UpdateStatsInforText(eMonsterSide, _playerTeamModel.PlayerTeam[playerMonsterIndex].MonsterName, _playerTeamModel.PlayerTeam[playerMonsterIndex].Level);
             _hUDBattleMonsterView.UpdateMonsterStats(eMonsterSide, EStatType.Health, _playerTeamModel.PlayerTeam[playerMonsterIndex].Health, _playerTeamModel.PlayerTeam[playerMonsterIndex].MaxHealth);
-            UpdateHUDBattleMonsterViewData(false, false);
         }
         else
         {
@@ -351,6 +354,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
 
     private void HandleApplyDamagePhaseAsync(EMonsterSide eMonsterSide, int monsterIndex)
     {
+        UpdateHUDBattleMonsterViewData(false, false);
         if (eMonsterSide == EMonsterSide.Player)
         {
             RefreshMonsterHUD(EMonsterSide.Opponent, -1);
