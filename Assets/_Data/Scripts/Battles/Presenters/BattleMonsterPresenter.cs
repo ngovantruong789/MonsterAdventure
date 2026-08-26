@@ -16,6 +16,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
     private readonly IBattleMonsterPresenter _battleMonstercontroller;
     private readonly IInventoryProvider _inventoryProvider;
     private readonly IItemController _itemController;
+    private readonly IPlayerTeamProvider _playerTeamProvider;
     private int _itemActiveId = -1;
     private bool _isUseComplete = false;
 
@@ -28,7 +29,8 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         PlayerTeamModel playerTeamModel,
         IBattleMonsterPresenter iBattleMonsterPresenter,
         IInventoryProvider inventoryProvider,
-        IItemController itemController)
+        IItemController itemController,
+        IPlayerTeamProvider playerTeamProvider)
     {
         //_battleModel = battleModel;
         _battleMonsterView = battleMonsterView;
@@ -39,8 +41,8 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         _battleMonstercontroller = iBattleMonsterPresenter;
         _inventoryProvider = inventoryProvider;
         _itemController = itemController;
+        _playerTeamProvider = playerTeamProvider;
         Debug.Log("BattleMonsterPresenter Initialized");
-        _itemController = itemController;
     }
 
     public void Start()
@@ -246,6 +248,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         UpdateHUDBattleMonsterViewData(false, false);
         if (itemType == EItemType.Capture && _isUseComplete)
         {
+            _playerTeamProvider.AddMonster(_opponentModel);
             OutBattle();
         }
         else if (itemType == EItemType.Capture && !_isUseComplete)

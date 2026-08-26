@@ -1,6 +1,6 @@
 public interface IPlayerTeamProvider
 {
     PlayerTeamModel TeamModel { get;}
-    PlayerTeamModel ClonePlayerTeamModel();
+    void AddMonster(MonsterModel monster);
     bool CanBattle {  get; }
 }

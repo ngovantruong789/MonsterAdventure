@@ -44,14 +44,8 @@ public class PlayerTeamController : IPlayerTeamProvider, IStartable
         _teamModel = teamModel;
     }
 
-    public PlayerTeamModel ClonePlayerTeamModel()
+    public void AddMonster(MonsterModel monster)
     {
-        PlayerTeamModel playerTeamModel = new PlayerTeamModel();
-        foreach (MonsterModel monsterModel in TeamModel.PlayerTeam)
-        {
-            playerTeamModel.PlayerTeam.Add(MonsterModelFactory.Create(monsterModel));
-        }
-
-        return playerTeamModel;
+        _teamModel.PlayerTeam.Add(monster);
     }
 }
