@@ -92,13 +92,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51fca48515592ce46a4499b0f5dea8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BushEntity
-  parentReference:
-    TypeName: MapLifetimeScope
-  autoRun: 1
-  autoInjectGameObjects: []
   _spriteRenderer: {fileID: 1868092681552548044}
-  _touchedSprite: {fileID: 0}
-  _exitTouchedSprite: {fileID: 0}
+  _touchedSprite: {fileID: -4520572513298857391, guid: 3ad43e744d6854749b9ecc1718f3fd7d, type: 3}
+  _exitTouchedSprite: {fileID: 2227523742937998779, guid: 3ad43e744d6854749b9ecc1718f3fd7d, type: 3}
 --- !u!1 &6250349497599099759
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,8 +172,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -796175023
-  m_SortingLayer: 5
+  m_SortingLayerID: -1991702669
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 626381270595007145, guid: 3ad43e744d6854749b9ecc1718f3fd7d, type: 3}
