@@ -204,6 +204,8 @@ GameObject:
   m_Component:
   - component: {fileID: 118669315}
   - component: {fileID: 118669316}
+  - component: {fileID: 118669318}
+  - component: {fileID: 118669317}
   m_Layer: 5
   m_Name: MonsterTeamCanvas
   m_TagString: Untagged
@@ -254,6 +256,36 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &118669317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118669314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c1d886fea1db44eba7e854525b0c6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HUDMonsterTeamView
+  _btnCloseMenu: {fileID: 1422783514}
+--- !u!114 &118669318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118669314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &125774198
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,7 +726,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 333480351490275686, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_Name
-      value: BtnMenu_2
+      value: BtnSetting
       objectReference: {fileID: 0}
     - target: {fileID: 333480351490275686, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_IsActive
@@ -720,7 +752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_AnchorMin.x
@@ -728,11 +760,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 920
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -768,11 +800,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 460
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -270
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3027,6 +3059,17 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1183900563 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -3297840018878816267, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
+  m_PrefabInstance: {fileID: 437876132}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cd258d42bd7a44eae28afbc263d09f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BtnMenuInfor
 --- !u!1001 &1197627199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3313,13 +3356,15 @@ GameObject:
   m_Component:
   - component: {fileID: 1233239198}
   - component: {fileID: 1233239201}
+  - component: {fileID: 1233239202}
+  - component: {fileID: 1233239203}
   m_Layer: 5
   m_Name: MenuCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1233239198
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3363,6 +3408,42 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1233239202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233239197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1233239203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233239197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0902b69f851f7174390da912ae48fca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HUDMenuView
+  _menuCanvas: {fileID: 1233239198}
+  _btnCloseMenu: {fileID: 1759436956}
+  _btnMenuList:
+  - {fileID: 2049080885}
+  - {fileID: 2124433795}
+  - {fileID: 1183900563}
+  _currentMenuSelected: {fileID: 0}
 --- !u!1 &1235536344
 GameObject:
   m_ObjectHideFlags: 0
@@ -4311,9 +4392,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1162468078}
     m_Modifications:
+    - target: {fileID: -3297840018878816267, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
+      propertyPath: _menuCanvas
+      value: 
+      objectReference: {fileID: 118669315}
     - target: {fileID: 333480351490275686, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_Name
-      value: BtnMenu
+      value: BtnMonster
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003551554979435658, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003551554979435658, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003551554979435658, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003551554979435658, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_Pivot.x
@@ -4329,7 +4430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_AnchorMin.x
@@ -4337,11 +4438,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 920
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -4381,11 +4482,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 460
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5831,6 +5932,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1898053114}
   - component: {fileID: 1898053116}
+  - component: {fileID: 1898053118}
+  - component: {fileID: 1898053117}
   m_Layer: 5
   m_Name: HUDCanvas
   m_TagString: Untagged
@@ -5882,6 +5985,37 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1898053117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898053113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 895ac16447486744e85ddf94f07d04c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HUDGamePlayView
+  _btnOpenMenu: {fileID: 735538370}
+  _menuCanvas: {fileID: 1233239198}
+--- !u!114 &1898053118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898053113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &1919029814
 GameObject:
   m_ObjectHideFlags: 0
@@ -6403,6 +6537,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2012473794}
   - component: {fileID: 2012473795}
+  - component: {fileID: 2012473797}
+  - component: {fileID: 2012473796}
   m_Layer: 5
   m_Name: InventoryCanvas
   m_TagString: Untagged
@@ -6458,6 +6594,47 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &2012473796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012473793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 348477aa4cdac864dbec97e94892f76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HUDInventoryView
+  _btnCloseMenu: {fileID: 1944990014}
+--- !u!114 &2012473797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012473793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &2049080885 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -3297840018878816267, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
+  m_PrefabInstance: {fileID: 1569998407}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cd258d42bd7a44eae28afbc263d09f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BtnMenuInfor
 --- !u!1 &2059553269
 GameObject:
   m_ObjectHideFlags: 0
@@ -6626,9 +6803,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1162468078}
     m_Modifications:
+    - target: {fileID: -3297840018878816267, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
+      propertyPath: _menuCanvas
+      value: 
+      objectReference: {fileID: 2012473794}
     - target: {fileID: 333480351490275686, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_Name
-      value: BtnMenu_1
+      value: BtnInventory
       objectReference: {fileID: 0}
     - target: {fileID: 333480351490275686, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_IsActive
@@ -6636,7 +6817,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2553041767459474752, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_text
-      value: Item
+      value: Inventory
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_Pivot.x
@@ -6652,7 +6833,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_AnchorMin.x
@@ -6660,11 +6841,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 920
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -6700,11 +6881,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 460
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -160
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6728,6 +6909,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7811818892612313238, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
   m_PrefabInstance: {fileID: 2124433793}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2124433795 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -3297840018878816267, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
+  m_PrefabInstance: {fileID: 2124433793}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cd258d42bd7a44eae28afbc263d09f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BtnMenuInfor
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

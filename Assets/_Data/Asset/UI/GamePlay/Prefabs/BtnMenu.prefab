@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7811818892612313238}
+  - component: {fileID: -3297840018878816267}
   m_Layer: 5
   m_Name: BtnMenu
   m_TagString: Untagged
@@ -36,6 +37,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &-3297840018878816267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333480351490275686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cd258d42bd7a44eae28afbc263d09f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BtnMenuInfor
+  _button: {fileID: 3244013799833337737}
+  _menuRect: {fileID: 3003551554979435658}
 --- !u!1 &6764738497616904769
 GameObject:
   m_ObjectHideFlags: 0
