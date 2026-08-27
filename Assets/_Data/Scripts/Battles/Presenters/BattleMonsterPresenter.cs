@@ -389,6 +389,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
 
     private void OutBattle()
     {
+        _inventoryProvider.UpdateInventoryModel();
         _battleManager.EndBattle();
     }
 

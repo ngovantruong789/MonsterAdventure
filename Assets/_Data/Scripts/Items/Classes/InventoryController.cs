@@ -73,4 +73,18 @@ public class InventoryController : IInventoryProvider, IStartable
 
         if (!isItemExist) itemModels.Add(item);
     }
+
+    public void UpdateInventoryModel()
+    {
+        RemoveItemWhenUsedUp();
+    }
+
+    private void RemoveItemWhenUsedUp()
+    {
+        _inventoryModel.CaptureInventory.Items.RemoveAll(item => item.Quantity <= 0);
+        _inventoryModel.RestoreInventory.Items.RemoveAll(item => item.Quantity <= 0);
+        _inventoryModel.PlayerEquipment.Items.RemoveAll(item => item.Quantity <= 0);
+        _inventoryModel.MonsterEquipment.Items.RemoveAll(item => item.Quantity <= 0);
+        Debug.Log("Da clean item empty");
+    }
 }
