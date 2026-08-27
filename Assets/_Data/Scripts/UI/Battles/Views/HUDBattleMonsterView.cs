@@ -295,6 +295,11 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
 
     private void UpdateInforItemButton(SelectItemInfor itemInfor, ItemViewData itemViewData)
     {
+        if (itemViewData.Quantity <= 0)
+        {
+            itemInfor.gameObject.SetActive(false);
+            return;
+        }
         itemInfor.IdItem = itemViewData.Id;
         itemInfor.ItemType = itemViewData.ItemType;
         itemInfor.ItemNameText.text = itemViewData.Name;
