@@ -255,6 +255,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
     {
         DeployMonster(eMonsterSide, index);
         _hUDBattleMonsterView.IsInteract = true;
+        HandleEndPhase(eMonsterSide, false);
     }
 
     private void DeployMonster(EMonsterSide eMonsterSide, int index)
