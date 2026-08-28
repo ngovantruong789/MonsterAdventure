@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SelectItemInfor : BaseMonoBehaviour
+public class BtnItemInfor : BaseMonoBehaviour
 {
     [SerializeField] private int _idItem;
     public int IdItem { get => _idItem; set => _idItem = value; }

@@ -206,7 +206,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
             HandleEndPhase(EMonsterSide.Player, false);
         }
 
-        _hUDBattleMonsterView.UpdateInforItemButton(itemType, _itemActiveId);
+        _hUDBattleMonsterView.UpdateInforItemChanged(itemType, _itemActiveId);
         _hUDBattleMonsterView.IsInteract = true;
     }
     #endregion Item

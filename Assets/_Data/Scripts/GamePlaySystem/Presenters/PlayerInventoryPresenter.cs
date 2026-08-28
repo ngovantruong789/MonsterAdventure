@@ -2,17 +2,18 @@ using System;
 using UniRx;
 using VContainer.Unity;
 
-public class InventoryPresenter : IStartable, IDisposable
+public class PlayerInventoryPresenter : IStartable, IDisposable
 {
     private readonly HUDInventoryView _hUDInventoryView;
     private readonly IInventoryProvider _inventoryProvider;
     private readonly IBattleManager _battleManager;
     private readonly CompositeDisposable _disposable = new();
 
-    public InventoryPresenter(IInventoryProvider inventoryProvider, IBattleManager battleManager)
+    public PlayerInventoryPresenter(HUDInventoryView hUDInventoryView, IInventoryProvider inventoryProvider, IBattleManager battleManager)
     {
         _battleManager = battleManager;
         _inventoryProvider = inventoryProvider;
+        _hUDInventoryView = hUDInventoryView;
     }
 
     public void Start()
@@ -32,8 +33,9 @@ public class InventoryPresenter : IStartable, IDisposable
     {
         HUDInventoryViewData hUDInventoryViewData = new();
         hUDInventoryViewData.RestoreInventory.Items = ItemModelFactory.ConvertListItemViewModelToItemViewData(_inventoryProvider.RestoreInventoryModel.Items);
-        hUDInventoryViewData.RestoreInventory.Items = ItemModelFactory.ConvertListItemViewModelToItemViewData(_inventoryProvider.CaptureInventoryModel.Items);
+        hUDInventoryViewData.CaptureInventory.Items = ItemModelFactory.ConvertListItemViewModelToItemViewData(_inventoryProvider.CaptureInventoryModel.Items);
         _hUDInventoryView.SetData(hUDInventoryViewData);
+        _hUDInventoryView.UpdateInventoryView();
     }
 
     public void Dispose()

@@ -1,6 +1,5 @@
 ﻿using DG.Tweening;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,16 +24,16 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
     [SerializeField] private Button _btnCloseItemMonster;
     [SerializeField] private RectTransform _itemChoosePanel;
     [SerializeField] private RectTransform _monsterItemChoosePanel;
-    [SerializeField] private List<SelectItemInfor> _itemRestoreButtons;
-    [SerializeField] private List<SelectItemInfor> _itemCaptureButtons;
+    [SerializeField] private List<BtnItemInfor> _itemRestoreButtons;
+    [SerializeField] private List<BtnItemInfor> _itemCaptureButtons;
     [SerializeField] private List<ButtonSelectMonsterInfor> _btnSelectItemMonsters;
-    [SerializeField] private SelectItemInfor _itemPrefab;
+    [SerializeField] private BtnItemInfor _itemPrefab;
     [SerializeField] private RectTransform _itemRestoreParent;
     [SerializeField] private RectTransform _itemCaptureParent;
     [SerializeField] private Button _btnItemRestore;
     [SerializeField] private Button _btnItemCapture;
     [SerializeField] private bool _isRestore = false;
-    private SelectItemInfor _currentItemselected;
+    private BtnItemInfor _currentItemselected;
 
     [Header("Monster")]
     [SerializeField] private Button _btnMonster;
@@ -270,19 +269,19 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
     {
         for (int i = 0; i < _hUDBattleMonsterViewData.RestoreInventoryData.Items.Count; i++)
         {
-            SelectItemInfor itemInfor = SpawnItemButton(_itemRestoreParent);
-            UpdateInforItemButton(itemInfor, _hUDBattleMonsterViewData.RestoreInventoryData.Items[i]);
+            BtnItemInfor itemInfor = SpawnItemButton(_itemRestoreParent);
+            UpdateInforItem(itemInfor, _hUDBattleMonsterViewData.RestoreInventoryData.Items[i]);
             _itemRestoreButtons.Add(itemInfor);
         }
         for (int i = 0; i < _hUDBattleMonsterViewData.CaptureInventoryData.Items.Count; i++)
         {
-            SelectItemInfor itemInfor = SpawnItemButton(_itemCaptureParent);
-            UpdateInforItemButton(itemInfor, _hUDBattleMonsterViewData.CaptureInventoryData.Items[i]);
+            BtnItemInfor itemInfor = SpawnItemButton(_itemCaptureParent);
+            UpdateInforItem(itemInfor, _hUDBattleMonsterViewData.CaptureInventoryData.Items[i]);
             _itemCaptureButtons.Add(itemInfor);
         }
     }
 
-    private SelectItemInfor SpawnItemButton(RectTransform parent)
+    private BtnItemInfor SpawnItemButton(RectTransform parent)
     {
         return Instantiate(_itemPrefab, parent);
     }
@@ -293,13 +292,8 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         _itemCaptureButtons.ForEach(item => item.BtnItem.onClick.AddListener(() => SelectItem(item)));
     }
 
-    private void UpdateInforItemButton(SelectItemInfor itemInfor, ItemViewData itemViewData)
+    private void UpdateInforItem(BtnItemInfor itemInfor, ItemViewData itemViewData)
     {
-        if (itemViewData.Quantity <= 0)
-        {
-            itemInfor.gameObject.SetActive(false);
-            return;
-        }
         itemInfor.IdItem = itemViewData.Id;
         itemInfor.ItemType = itemViewData.ItemType;
         itemInfor.ItemNameText.text = itemViewData.Name;
@@ -308,36 +302,47 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         itemInfor.ImgIcon.sprite = itemViewData.Image;
     }
 
-    private void UpdateInforItemButtons(List<ItemViewData> items, List<SelectItemInfor> itemInfors, int id)
+    private void HandleUpdateInforItemChanged(List<ItemViewData> items, List<BtnItemInfor> itemInfors, int id)
     {
-        bool isCompleted = false;
-        foreach(ItemViewData item in items)
-        {
-            if (isCompleted) break;
-            foreach(SelectItemInfor infor in itemInfors)
-            {
-                if (item.Id != id) continue;
+        ItemViewData itemViewData = GetItemViewData(items, id);
+        if (itemViewData == null) return;
 
-                UpdateInforItemButton(infor, item);
-                if(item.Quantity <= 0)
-                {
-                    infor.gameObject.SetActive(false);
-                    isCompleted = true;
-                }
-                break;
+        foreach(BtnItemInfor infor in itemInfors)
+        {
+            if (itemViewData.Id != infor.IdItem) continue;
+            if(itemViewData.Quantity <= 0)
+            {
+                infor.gameObject.SetActive(false);
             }
+            else
+            {
+                UpdateInforItem(infor, itemViewData);
+            }
+            break;
         }
     }
 
-    public void UpdateInforItemButton(EItemType itemType, int itemId)
+    private ItemViewData GetItemViewData(List<ItemViewData> items, int id)
+    {
+        foreach (ItemViewData item in items)
+        {
+            if (item.Id == id)
+            {
+                return item;
+            }
+        }
+        return null;
+    }
+
+    public void UpdateInforItemChanged(EItemType itemType, int itemId)
     {
         if (itemType == EItemType.Restore)
         {
-            UpdateInforItemButtons(_hUDBattleMonsterViewData.RestoreInventoryData.Items, _itemRestoreButtons, itemId);
+            HandleUpdateInforItemChanged(_hUDBattleMonsterViewData.RestoreInventoryData.Items, _itemRestoreButtons, itemId);
         }
         else
         {
-            UpdateInforItemButtons(_hUDBattleMonsterViewData.CaptureInventoryData.Items, _itemCaptureButtons, itemId);
+            HandleUpdateInforItemChanged(_hUDBattleMonsterViewData.CaptureInventoryData.Items, _itemCaptureButtons, itemId);
         }
     }
 
@@ -362,7 +367,7 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         }
     }
 
-    private void SelectItem(SelectItemInfor buttonSelectItemInfor)
+    private void SelectItem(BtnItemInfor buttonSelectItemInfor)
     {
         if(_currentItemselected != null)
         {
@@ -375,7 +380,7 @@ public partial class HUDBattleMonsterView : BaseMonoBehaviour, IStartInit
         }
     }
 
-    private void HandleSeletecdItem(SelectItemInfor buttonSelectItemInfor)
+    private void HandleSeletecdItem(BtnItemInfor buttonSelectItemInfor)
     {
         if(_currentItemselected != buttonSelectItemInfor)
         {

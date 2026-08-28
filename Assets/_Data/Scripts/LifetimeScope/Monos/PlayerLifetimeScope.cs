@@ -13,6 +13,7 @@ public class PlayerLifetimeScope : LifetimeScope, IStartable
         //Class
         builder.RegisterEntryPoint<PlayerMovementPresenter>(Lifetime.Singleton);
         builder.RegisterEntryPoint<PlayerMonsterTeamPresenter>(Lifetime.Singleton);
+        builder.RegisterEntryPoint<PlayerInventoryPresenter>(Lifetime.Singleton);
 
         //Mono
         builder.RegisterComponentInHierarchy<PlayerAnimatorController>();
@@ -20,5 +21,6 @@ public class PlayerLifetimeScope : LifetimeScope, IStartable
         builder.RegisterComponentInHierarchy<PlayerMovement>().As<IPlayerMovement>();
         builder.RegisterComponentInHierarchy<PlayerEntity>();
         builder.RegisterComponentInHierarchy<HUDMonsterTeamView>();
+        builder.RegisterComponentInHierarchy<HUDInventoryView>();
     }
 }

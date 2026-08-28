@@ -1,7 +1,8 @@
+using UniRx;
 using UnityEngine;
 using VContainer;
 
-public class BushEntity : BaseMonoBehaviour
+public class BushEntity : BaseMonoBehaviour, IStartInit
 {
     [SerializeField] private SpriteRenderer _spriteRenderer;
     [SerializeField] private Sprite _touchedSprite;
@@ -10,11 +11,26 @@ public class BushEntity : BaseMonoBehaviour
     [Inject] private IBattleManager _battleManager;
 
     private IPlayer _player;
+    private bool _isBattle = false;
+
+    protected override void Start()
+    {
+        base.Start();
+        Initialize();
+    }
+
+    public void Initialize()
+    {
+        _battleManager.OnBattleStatus
+            .Subscribe(val => _isBattle = val)
+            .AddTo(this);
+    }
 
     private void EnterBattle()
     {
         if (_player == null) return;
         if (!CanBattle()) return;
+        if (_isBattle) return;
 
         _battleManager.EnterBattle();
     }

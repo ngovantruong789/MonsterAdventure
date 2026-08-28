@@ -10,6 +10,7 @@ public partial class BattleManager : GameLifetimeScope, IStartable, IBattleManag
 
     private IPlayer _player;
     private IMapManager _mapManager;
+    private bool _isEnterBattle = false;
 
     public void Start()
     {
@@ -18,8 +19,14 @@ public partial class BattleManager : GameLifetimeScope, IStartable, IBattleManag
         _sceneLoadManager.OnLoadScene
             .Subscribe(val =>
             {
-                if (_player == null) return;
-                _player.PlayerMovement.SetMove(val);
+                if (_player != null)
+                {
+                    _player.PlayerMovement.SetMove(val);
+                }
+                if (val)//Gui event khi load scene xong
+                {
+                    _onBattleStatus.Value = _isEnterBattle;
+                }
             })
             .AddTo(this);
 
@@ -47,7 +54,7 @@ public partial class BattleManager : GameLifetimeScope, IStartable, IBattleManag
 
     public void EnterBattle()
     {
-        if (_onBattleStatus.Value) return;
+        if (_isEnterBattle) return;
         if(_player == null) return;
         if (!_player.CanBattle) return;
 
@@ -55,13 +62,13 @@ public partial class BattleManager : GameLifetimeScope, IStartable, IBattleManag
         if (_battleModel.OpponentMonsterModel == null) return;
 
         _sceneLoadManager.StartLoadScene("BattleScene");
-        _onBattleStatus.Value = true;
+        _isEnterBattle = true;
     }
 
     public void EndBattle()
     {
         _sceneLoadManager.CloseSceneAttitive("BattleScene", "GamePlay");
-        _onBattleStatus.Value = false;
+        _isEnterBattle = false;
     }
 
     public void SetMapManager(IMapManager mapManager)

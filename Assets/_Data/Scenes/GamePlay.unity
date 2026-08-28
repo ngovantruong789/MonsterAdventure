@@ -2265,7 +2265,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.00024414062}
-  m_SizeDelta: {x: 0, y: -918.50867}
+  m_SizeDelta: {x: 0, y: -918.4918}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &915643674
 MonoBehaviour:
@@ -3881,8 +3881,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -468.50003, y: -35.67993}
-  m_SizeDelta: {x: -983, y: -161.36}
+  m_AnchoredPosition: {x: -526.9099, y: -35.67993}
+  m_SizeDelta: {x: -1099.82, y: -161.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1387604459
 MonoBehaviour:
@@ -3903,7 +3903,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 20
   m_Viewport: {fileID: 1154253109}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 0}
@@ -5124,6 +5124,9 @@ MonoBehaviour:
   _itemDatabaseSO: {fileID: 11400000, guid: ee2226f5f265b774cb1baa3cf6e2d3fc, type: 2}
   _items:
   - {fileID: 11400000, guid: 932886ff354951942bcf79b68ac0c025, type: 2}
+  - {fileID: 11400000, guid: 6a7fd3cd2d9b9774aab0ee08e68d9753, type: 2}
+  - {fileID: 11400000, guid: d8b9aa571400812419222b2d568c35c8, type: 2}
+  - {fileID: 11400000, guid: f42ff640ead4f404590910dbe6f0462c, type: 2}
   - {fileID: 11400000, guid: 6a7fd3cd2d9b9774aab0ee08e68d9753, type: 2}
 --- !u!1 &1759436954
 GameObject:
@@ -6668,6 +6671,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HUDInventoryView
   _btnCloseMenu: {fileID: 1944990014}
+  _btnCaptureTab: {fileID: 2101110565}
+  _btnRestoreTab: {fileID: 1919029816}
+  _btnItemPrefab: {fileID: 6233056485275117906, guid: ba91594cb4210f14ab685cca2bff7182, type: 3}
+  _btnItemRestoreInfors: []
+  _btnItemCaptureInfors: []
+  _inventoryCaptureParent: {fileID: 749904941}
+  _inventoryRestoreParent: {fileID: 915643673}
 --- !u!114 &2012473797
 MonoBehaviour:
   m_ObjectHideFlags: 0
