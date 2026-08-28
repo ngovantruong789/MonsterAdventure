@@ -21,16 +21,7 @@ public static class CalculateSkill
         {
             if (skillConfigs[i].UnlockLevel > level) break;
 
-            skillModels.Add(
-                new SkillModel
-                {
-                    ESkillId = skillConfigs[i].SkillSO.ESkillId,
-                    Damage = skillConfigs[i].SkillSO.Damage,
-                    FullName = skillConfigs[i].SkillSO.FullName,
-                    ElementType = skillConfigs[i].SkillSO.ElementType,
-                    SkillType = skillConfigs[i].SkillSO.SkillType,
-                }
-            );
+            skillModels.Add(SkillModelFactory.Create(skillConfigs[i].SkillSO));
         }
 
         return skillModels;
