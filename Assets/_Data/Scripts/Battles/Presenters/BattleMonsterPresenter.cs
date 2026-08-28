@@ -123,10 +123,10 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         for (int i = 0; i < _playerTeamModel.PlayerTeam.Count; i++)
         {
             MonsterModel model = _playerTeamModel.PlayerTeam[i];
-            MonsterViewData monsterViewData = CovertMonsterModelToMonsterViewData(model);
+            MonsterViewData monsterViewData = MonsterModelFactory.ConvertMonsterModelToMonsterViewData(model);
 
-            monsterViewData.UnlockedSkills = updateUnlockSkills ? ConvertSkillsModelToSkillViewData(model.UnlockedSkills) : _hUDBattleMonsterView.HUDBattleMonsterViewData.PlayerTeamDatas[i].UnlockedSkills;
-            monsterViewData.BatlleSkills = updateBattleSkills ? ConvertSkillsModelToSkillViewData(model.BatlleSkills) : _hUDBattleMonsterView.HUDBattleMonsterViewData.PlayerTeamDatas[i].BatlleSkills;
+            monsterViewData.UnlockedSkills = updateUnlockSkills ? SkillModelFactory.ConvertListSkillModelToSkillViewData(model.UnlockedSkills) : _hUDBattleMonsterView.HUDBattleMonsterViewData.PlayerTeamDatas[i].UnlockedSkills;
+            monsterViewData.BatlleSkills = updateBattleSkills ? SkillModelFactory.ConvertListSkillModelToSkillViewData(model.BatlleSkills) : _hUDBattleMonsterView.HUDBattleMonsterViewData.PlayerTeamDatas[i].BatlleSkills;
             hUDBattleMonsterViewData.PlayerTeamDatas.Add(monsterViewData);
         }
         hUDBattleMonsterViewData.RestoreInventoryData = ConvertInventoryModelToViewData(_inventoryProvider.RestoreInventoryModel.Items);
@@ -134,49 +134,10 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         _hUDBattleMonsterView.SetData(hUDBattleMonsterViewData);
     }
 
-    private MonsterViewData CovertMonsterModelToMonsterViewData(MonsterModel model)
-    {
-        return new MonsterViewData
-        {
-            NextEvolve = model.NextEvolve,
-            MonsterAnimator = model.MonsterAnimator,
-            UIAnimator = model.UIAnimator,
-            Health = model.Health,
-            MaxHealth = model.MaxHealth,
-            Attack = model.Attack,
-            Speed = model.Speed,
-            IsDead = model.IsDead,
-            Experience = model.Experience,
-            Defense = model.Defense,
-            Level = model.Level,
-            MonsterName = model.MonsterName,
-        };
-    }
-
-    private List<SkillViewData> ConvertSkillsModelToSkillViewData(List<SkillModel> skills)
-    {
-        return SkillModelFactory.ConvertListSkillModelToSkillViewData(skills);
-    }
-
     private InventoryViewData ConvertInventoryModelToViewData(List<ItemModel> items)
     {
         InventoryViewData inventoryViewData = new InventoryViewData();
-        foreach (ItemModel item in items)
-        {
-            inventoryViewData.Items.Add(new ItemViewData
-            {
-                Id = item.Id,
-                Name = item.Name,
-                EffectItem = item.EffectItem,
-                ItemType = item.ItemType,
-                Image = item.Image,
-                Quantity = item.Quantity,
-                BuyPrice = item.BuyPrice,
-                Description = item.Description,
-                SellPrice = item.SellPrice,
-                Value = item.Value,
-            });
-        }
+        inventoryViewData.Items = ItemModelFactory.ConvertListItemViewModelToItemViewData(items);
         return inventoryViewData;
     }
     #endregion Update view data
@@ -245,7 +206,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
             HandleEndPhase(EMonsterSide.Player, false);
         }
 
-        _hUDBattleMonsterView.UpdateInforItemButton(itemType, _itemActiveId);
+        _hUDBattleMonsterView.UpdateInforItemChanged(itemType, _itemActiveId);
         _hUDBattleMonsterView.IsInteract = true;
     }
     #endregion Item
