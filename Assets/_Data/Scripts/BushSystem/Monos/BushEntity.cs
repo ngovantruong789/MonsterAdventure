@@ -7,7 +7,7 @@ public class BushEntity : BaseMonoBehaviour
     [SerializeField] private Sprite _touchedSprite;
     [SerializeField] private Sprite _exitTouchedSprite;
 
-    [Inject] private BattleManager _battleManager;
+    [Inject] private IBattleManager _battleManager;
 
     private IPlayer _player;
 

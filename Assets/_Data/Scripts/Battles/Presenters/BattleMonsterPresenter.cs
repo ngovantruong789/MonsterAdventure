@@ -11,7 +11,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
     private readonly PlayerTeamModel _playerTeamModel;
     private readonly BattleMonsterWorldSpaceView _battleMonsterView;
     private readonly HUDBattleMonsterView _hUDBattleMonsterView;
-    private readonly BattleManager _battleManager;
+    private readonly IBattleManager _battleManager;
     private readonly CompositeDisposable _disposable = new();
     private readonly IBattleMonsterPresenter _battleMonstercontroller;
     private readonly IInventoryProvider _inventoryProvider;
@@ -25,7 +25,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
     public BattleMonsterPresenter(BattleMonsterWorldSpaceView battleMonsterView,
         HUDBattleMonsterView hUDBattleMonsterView,
         BattleModel battleModel,
-        BattleManager battleManager,
+        IBattleManager battleManager,
         PlayerTeamModel playerTeamModel,
         IBattleMonsterPresenter iBattleMonsterPresenter,
         IInventoryProvider inventoryProvider,
@@ -150,28 +150,12 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
             Defense = model.Defense,
             Level = model.Level,
             MonsterName = model.MonsterName,
-            UnlockedSkills = new List<SkillViewData>(),
-            BatlleSkills = new List<SkillViewData>()
         };
     }
 
-    private List<SkillViewData> ConvertSkillsModelToSkillViewData(List<SkillModel> originalSkills)
+    private List<SkillViewData> ConvertSkillsModelToSkillViewData(List<SkillModel> skills)
     {
-        List<SkillViewData> viewSkills = new List<SkillViewData>();
-
-        foreach (var skill in originalSkills)
-        {
-            viewSkills.Add(new SkillViewData
-            {
-                Damage = skill.Damage,
-                ElementType = skill.ElementType,
-                FullName = skill.FullName,
-                ESkillId = skill.ESkillId,
-                SkillType = skill.SkillType,
-            });
-        }
-
-        return viewSkills;
+        return SkillModelFactory.ConvertListSkillModelToSkillViewData(skills);
     }
 
     private InventoryViewData ConvertInventoryModelToViewData(List<ItemModel> items)

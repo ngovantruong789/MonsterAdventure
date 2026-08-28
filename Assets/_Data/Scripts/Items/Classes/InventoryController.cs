@@ -85,6 +85,5 @@ public class InventoryController : IInventoryProvider, IStartable
         _inventoryModel.RestoreInventory.Items.RemoveAll(item => item.Quantity <= 0);
         _inventoryModel.PlayerEquipment.Items.RemoveAll(item => item.Quantity <= 0);
         _inventoryModel.MonsterEquipment.Items.RemoveAll(item => item.Quantity <= 0);
-        Debug.Log("Da clean item empty");
     }
 }

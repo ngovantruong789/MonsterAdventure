@@ -28,25 +28,34 @@ public static class MonsterModelFactory
         };
     }
 
-    public static MonsterModel Create(MonsterModel monsterModel)
+    public static MonsterViewData ConvertMonsterModelToMonsterViewData(MonsterModel monsterModel)
     {
-        return new MonsterModel
+        return new MonsterViewData
         {
-            NextEvolve = monsterModel.NextEvolve,
-            Health = monsterModel.Health,
-            MaxHealth = monsterModel.MaxHealth,
             Attack = monsterModel.Attack,
             Defense = monsterModel.Defense,
             Speed = monsterModel.Speed,
-            UnlockedSkills = monsterModel.UnlockedSkills,
-            BatlleSkills = monsterModel.BatlleSkills,
-            Level = monsterModel.Level,
-            MonsterAnimator = monsterModel.MonsterAnimator,
-            UIAnimator = monsterModel.UIAnimator,
-            MonsterName = monsterModel.MonsterName,
-            EElementTypes = monsterModel.EElementTypes,
             Experience = monsterModel.Experience,
             IsDead = monsterModel.IsDead,
+            Health = monsterModel.Health,
+            Level = monsterModel.Level,
+            MaxHealth = monsterModel.MaxHealth,
+            MonsterName = monsterModel.MonsterName,
+            NextEvolve = monsterModel.NextEvolve,
+            MonsterAnimator = monsterModel.MonsterAnimator,
+            UIAnimator = monsterModel.UIAnimator,
+            BatlleSkills = SkillModelFactory.ConvertListSkillModelToSkillViewData(monsterModel.BatlleSkills),
+            UnlockedSkills = SkillModelFactory.ConvertListSkillModelToSkillViewData(monsterModel.UnlockedSkills),
         };
+    }
+
+    public static List<MonsterViewData> ConvertListMonsterModelToMonsterViewData(List<MonsterModel> monsterModels)
+    {
+        List<MonsterViewData> monsterViewDatas = new();
+        foreach(MonsterModel monsterModel in monsterModels)
+        {
+            monsterViewDatas.Add(ConvertMonsterModelToMonsterViewData(monsterModel));
+        }
+        return monsterViewDatas;
     }
 }
