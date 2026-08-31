@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 8cd5b5fa3fea22f4894a130b3001dd3e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1365201577210377254
+    second: ButtonBGSand_0
+  - first:
+      213: 2371906628432115177
+    second: ButtonBGSand_1
+  - first:
+      213: 7257832319948163570
+    second: ButtonBGSand_2
+  - first:
+      213: -1358980283447815286
+    second: ButtonBGSand_3
+  - first:
+      213: 5038671417421942736
+    second: ButtonBGSand_4
+  - first:
+      213: 8678782159713313153
+    second: ButtonBGSand_5
+  - first:
+      213: 3027890042006602195
+    second: ButtonBGSand_6
+  - first:
+      213: -502405190289120574
+    second: ButtonBGSand_7
+  - first:
+      213: 2760896991433577007
+    second: ButtonBGSand_8
+  - first:
+      213: 5083905507605574682
+    second: ButtonBGSand_9
+  - first:
+      213: -170025905552324083
+    second: ButtonBGSand_10
+  - first:
+      213: 1597409245973912982
+    second: ButtonBGSand_11
+  - first:
+      213: 7682756585620849474
+    second: ButtonBGSand_12
+  - first:
+      213: 9185324784559131094
+    second: ButtonBGSand_13
+  - first:
+      213: 8991687149351128328
+    second: ButtonBGSand_14
+  - first:
+      213: 491500670208746469
+    second: ButtonBGSand_15
+  - first:
+      213: 9092856235285892155
+    second: ButtonBGSand_16
+  - first:
+      213: -9137346112193659631
+    second: ButtonBGSand_17
+  - first:
+      213: 844242206694536980
+    second: ButtonBGSand_18
+  - first:
+      213: 797793659408815101
+    second: ButtonBGSand_19
+  - first:
+      213: -3785496412866215665
+    second: ButtonBGSand_20
+  - first:
+      213: -3557314938853460429
+    second: ButtonBGSand_21
+  - first:
+      213: 8832693013565925951
+    second: ButtonBGSand_22
+  - first:
+      213: -1958403964861313298
+    second: ButtonBGSand_23
+  - first:
+      213: -4979056098617715406
+    second: ButtonBGSand_24
+  - first:
+      213: 9120636674933779364
+    second: ButtonBGSand_25
+  - first:
+      213: -3659240778343639026
+    second: ButtonBGSand_26
+  - first:
+      213: -7530189763865274568
+    second: ButtonBGSand_27
+  - first:
+      213: 1702474376830042407
+    second: ButtonBGSand_28
+  - first:
+      213: -8246102197791618320
+    second: ButtonBGSand_29
+  - first:
+      213: -1894430480612157101
+    second: ButtonBGSand_30
+  - first:
+      213: -80110623669319952
+    second: ButtonBGSand_31
+  - first:
+      213: -6165256260717171986
+    second: ButtonBGSand_32
+  - first:
+      213: 7746219692202403329
+    second: ButtonBGSand_33
+  - first:
+      213: 343070808495846759
+    second: ButtonBGSand_34
+  - first:
+      213: 8636196447944849383
+    second: ButtonBGSand_35
+  - first:
+      213: -8971740582185464536
+    second: ButtonBGSand_36
+  - first:
+      213: 7729801208345075800
+    second: ButtonBGSand_37
+  - first:
+      213: 1395819934309234574
+    second: ButtonBGSand_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ButtonBGSand_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 592
+        width: 78
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6247d60f99b22f210800000000000000
+      internalID: 1365201577210377254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGSand_2
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 592
+        width: 138
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f90cd59a0009b460800000000000000
+      internalID: 7257832319948163570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGSand_4
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 592
+        width: 249
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df495745f4fce540800000000000000
+      internalID: 5038671417421942736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGSand_6
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 561
+        width: 302
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d10fb463f9350a20800000000000000
+      internalID: 3027890042006602195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGSand_7
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 559
+        width: 387
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c2218b24291709f0800000000000000
+      internalID: -502405190289120574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGSand_14
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 309
+        width: 78
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80dc48482d3e8cc70800000000000000
+      internalID: 8991687149351128328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGSand_17
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 309
+        width: 154
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d76e86f10a13180800000000000000
+      internalID: -9137346112193659631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGSand_20
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 309
+        width: 248
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f010894a117377bc0800000000000000
+      internalID: -3785496412866215665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGSand_21
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 309
+        width: 286
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336f27b19e0e1aec0800000000000000
+      internalID: -3557314938853460429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGSand_23
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 288
+        width: 387
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee89b358f952d4e0800000000000000
+      internalID: -1958403964861313298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGSand_35
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 38
+        width: 227
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e73e32b9eee9d770800000000000000
+      internalID: 8636196447944849383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGSand_36
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 38
+        width: 265
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d01ed8979fd7380800000000000000
+      internalID: -8971740582185464536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGSand_37
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 38
+        width: 285
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8502bc7ae35c54b60800000000000000
+      internalID: 7729801208345075800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c2572c2ed55032e489ffb8c437e34827
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ButtonBGSand_0: 1365201577210377254
+      ButtonBGSand_1: 2371906628432115177
+      ButtonBGSand_10: -170025905552324083
+      ButtonBGSand_11: 1597409245973912982
+      ButtonBGSand_12: 7682756585620849474
+      ButtonBGSand_13: 9185324784559131094
+      ButtonBGSand_14: 8991687149351128328
+      ButtonBGSand_15: 491500670208746469
+      ButtonBGSand_16: 9092856235285892155
+      ButtonBGSand_17: -9137346112193659631
+      ButtonBGSand_18: 844242206694536980
+      ButtonBGSand_19: 797793659408815101
+      ButtonBGSand_2: 7257832319948163570
+      ButtonBGSand_20: -3785496412866215665
+      ButtonBGSand_21: -3557314938853460429
+      ButtonBGSand_22: 8832693013565925951
+      ButtonBGSand_23: -1958403964861313298
+      ButtonBGSand_24: -4979056098617715406
+      ButtonBGSand_25: 9120636674933779364
+      ButtonBGSand_26: -3659240778343639026
+      ButtonBGSand_27: -7530189763865274568
+      ButtonBGSand_28: 1702474376830042407
+      ButtonBGSand_29: -8246102197791618320
+      ButtonBGSand_3: -1358980283447815286
+      ButtonBGSand_30: -1894430480612157101
+      ButtonBGSand_31: -80110623669319952
+      ButtonBGSand_32: -6165256260717171986
+      ButtonBGSand_33: 7746219692202403329
+      ButtonBGSand_34: 343070808495846759
+      ButtonBGSand_35: 8636196447944849383
+      ButtonBGSand_36: -8971740582185464536
+      ButtonBGSand_37: 7729801208345075800
+      ButtonBGSand_38: 1395819934309234574
+      ButtonBGSand_4: 5038671417421942736
+      ButtonBGSand_5: 8678782159713313153
+      ButtonBGSand_6: 3027890042006602195
+      ButtonBGSand_7: -502405190289120574
+      ButtonBGSand_8: 2760896991433577007
+      ButtonBGSand_9: 5083905507605574682
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
