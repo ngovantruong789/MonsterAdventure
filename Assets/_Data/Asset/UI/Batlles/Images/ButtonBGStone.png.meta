@@ -1,0 +1,888 @@
+fileFormatVersion: 2
+guid: 1c99126949b46c349b7f7d68625e69d6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3569594246555424629
+    second: ButtonBGStone_0
+  - first:
+      213: 7646883904915736722
+    second: ButtonBGStone_1
+  - first:
+      213: 4004594234453494755
+    second: ButtonBGStone_2
+  - first:
+      213: -3841239501789351544
+    second: ButtonBGStone_3
+  - first:
+      213: -6067385122243995611
+    second: ButtonBGStone_4
+  - first:
+      213: 296769628401015268
+    second: ButtonBGStone_5
+  - first:
+      213: 7699993041163189394
+    second: ButtonBGStone_6
+  - first:
+      213: -6821092628930217422
+    second: ButtonBGStone_7
+  - first:
+      213: -9120189062455162818
+    second: ButtonBGStone_8
+  - first:
+      213: 3522230859576333744
+    second: ButtonBGStone_9
+  - first:
+      213: 2570554432219652865
+    second: ButtonBGStone_10
+  - first:
+      213: 6525420513702687763
+    second: ButtonBGStone_11
+  - first:
+      213: -3050058638599645630
+    second: ButtonBGStone_12
+  - first:
+      213: -1435660565363823322
+    second: ButtonBGStone_13
+  - first:
+      213: 4407054443935146428
+    second: ButtonBGStone_14
+  - first:
+      213: 6082002609008428938
+    second: ButtonBGStone_15
+  - first:
+      213: -7530897930850349862
+    second: ButtonBGStone_16
+  - first:
+      213: 2701430958468271525
+    second: ButtonBGStone_17
+  - first:
+      213: -1864547463386996223
+    second: ButtonBGStone_18
+  - first:
+      213: -5465520589224627831
+    second: ButtonBGStone_19
+  - first:
+      213: -5475327632285029062
+    second: ButtonBGStone_20
+  - first:
+      213: -3197924516744454803
+    second: ButtonBGStone_21
+  - first:
+      213: 8876603337458876620
+    second: ButtonBGStone_22
+  - first:
+      213: 8876128862054927925
+    second: ButtonBGStone_23
+  - first:
+      213: 2565980746235078666
+    second: ButtonBGStone_24
+  - first:
+      213: 1958981458794721482
+    second: ButtonBGStone_25
+  - first:
+      213: -6034565282864900184
+    second: ButtonBGStone_26
+  - first:
+      213: -6998296784145306702
+    second: ButtonBGStone_27
+  - first:
+      213: 4644357029966884215
+    second: ButtonBGStone_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ButtonBGStone_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 579
+        width: 90
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 577d6320e0fb98130800000000000000
+      internalID: 3569594246555424629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 579
+        width: 91
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 298872785603f1a60800000000000000
+      internalID: 7646883904915736722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_2
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 579
+        width: 173
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb8d2e2d3d239730800000000000000
+      internalID: 4004594234453494755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_3
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 579
+        width: 257
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881b5ae560d21bac0800000000000000
+      internalID: -3841239501789351544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_4
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 503
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5281821b0615ccba0800000000000000
+      internalID: -6067385122243995611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_5
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 517
+        width: 359
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e997f897665e1400800000000000000
+      internalID: 296769628401015268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_6
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 468
+        width: 90
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29cf287efdedbda60800000000000000
+      internalID: 7699993041163189394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_7
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 468
+        width: 91
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a3498c46c9651a0800000000000000
+      internalID: -6821092628930217422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_8
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 468
+        width: 173
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3805f75e549e6180800000000000000
+      internalID: -9120189062455162818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 468
+        width: 257
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b557f12e4a71e030800000000000000
+      internalID: 3522230859576333744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_10
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 356
+        width: 90
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103224003a17ca320800000000000000
+      internalID: 2570554432219652865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_11
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 356
+        width: 91
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 314bb415263fe8a50800000000000000
+      internalID: 6525420513702687763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_12
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 356
+        width: 173
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 246182ef3d30ca5d0800000000000000
+      internalID: -3050058638599645630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_13
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 356
+        width: 257
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62de37f7252831ce0800000000000000
+      internalID: -1435660565363823322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_14
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 278
+        width: 170
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb1af8ccaa0092d30800000000000000
+      internalID: 4407054443935146428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_15
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 312
+        width: 359
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8742f8262d976450800000000000000
+      internalID: 6082002609008428938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_16
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 245
+        width: 90
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adcc0f77b30ec7790800000000000000
+      internalID: -7530897930850349862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_17
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 245
+        width: 91
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad8eb8d4296d7520800000000000000
+      internalID: 2701430958468271525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_18
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 245
+        width: 173
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10266f9f5fbcf16e0800000000000000
+      internalID: -1864547463386996223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_19
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 245
+        width: 257
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981beae4bf19624b0800000000000000
+      internalID: -5465520589224627831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_20
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 26
+        width: 89
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d25c8278ab304b0800000000000000
+      internalID: -5475327632285029062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_22
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 134
+        width: 173
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0884584b7003b70800000000000000
+      internalID: 8876603337458876620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 134
+        width: 272
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e406b1c285e2b70800000000000000
+      internalID: 8876128862054927925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_24
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 134
+        width: 402
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0865dfb4e13c9320800000000000000
+      internalID: 2565980746235078666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_25
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 26
+        width: 88
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac03905f143bf2b10800000000000000
+      internalID: 1958981458794721482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_26
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 26
+        width: 173
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7dee409dae04ca0800000000000000
+      internalID: -6034565282864900184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_27
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 26
+        width: 286
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bba244472e01ee90800000000000000
+      internalID: -6998296784145306702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGStone_28
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 26
+        width: 404
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77da345ac12147040800000000000000
+      internalID: 4644357029966884215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 38db73684e08d8e44bf761a4385e3d42
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ButtonBGStone_0: 3569594246555424629
+      ButtonBGStone_1: 7646883904915736722
+      ButtonBGStone_10: 2570554432219652865
+      ButtonBGStone_11: 6525420513702687763
+      ButtonBGStone_12: -3050058638599645630
+      ButtonBGStone_13: -1435660565363823322
+      ButtonBGStone_14: 4407054443935146428
+      ButtonBGStone_15: 6082002609008428938
+      ButtonBGStone_16: -7530897930850349862
+      ButtonBGStone_17: 2701430958468271525
+      ButtonBGStone_18: -1864547463386996223
+      ButtonBGStone_19: -5465520589224627831
+      ButtonBGStone_2: 4004594234453494755
+      ButtonBGStone_20: -5475327632285029062
+      ButtonBGStone_21: -3197924516744454803
+      ButtonBGStone_22: 8876603337458876620
+      ButtonBGStone_23: 8876128862054927925
+      ButtonBGStone_24: 2565980746235078666
+      ButtonBGStone_25: 1958981458794721482
+      ButtonBGStone_26: -6034565282864900184
+      ButtonBGStone_27: -6998296784145306702
+      ButtonBGStone_28: 4644357029966884215
+      ButtonBGStone_3: -3841239501789351544
+      ButtonBGStone_4: -6067385122243995611
+      ButtonBGStone_5: 296769628401015268
+      ButtonBGStone_6: 7699993041163189394
+      ButtonBGStone_7: -6821092628930217422
+      ButtonBGStone_8: -9120189062455162818
+      ButtonBGStone_9: 3522230859576333744
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

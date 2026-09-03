@@ -52,6 +52,11 @@ public partial class BattleManager : GameLifetimeScope, IStartable, IBattleManag
         return MonsterModelFactory.Create(monsterMapModel.MonsterSO, level); ;
     }
 
+    private UIBattleMapModel GetUIBattleModel()
+    {
+        return _mapManager.MapModel.UIBattleMapModel;
+    }
+
     public void EnterBattle()
     {
         if (_isEnterBattle) return;
@@ -59,6 +64,7 @@ public partial class BattleManager : GameLifetimeScope, IStartable, IBattleManag
         if (!_player.CanBattle) return;
 
         _battleModel.OpponentMonsterModel = GetMonsterModel();
+        _battleModel.UIBattleMapModel = GetUIBattleModel();
         if (_battleModel.OpponentMonsterModel == null) return;
 
         _sceneLoadManager.StartLoadScene("BattleScene");

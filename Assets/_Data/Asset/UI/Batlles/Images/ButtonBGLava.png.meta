@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 020302a5fc9da7b4690e9f7f72d9041b
+guid: 602838b09e204ef44ba255e8e6766ea4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8940088482845957344
-    second: DeepGrassBG_0
+      213: -7314256849948000736
+    second: ButtonBGLava_0
+  - first:
+      213: 7744877962916668192
+    second: ButtonBGLava_1
+  - first:
+      213: 4073362242977651030
+    second: ButtonBGLava_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,27 +102,88 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DeepGrassBG_0
+      name: ButtonBGLava_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 913
-        height: 463
+        x: 46
+        y: 105
+        width: 262
+        height: 156
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ec1898cb13911c70800000000000000
-      internalID: 8940088482845957344
+      spriteID: 02eb1e6c52a8e7a90800000000000000
+      internalID: -7314256849948000736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBGLava_2
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 102
+        width: 263
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 659db2ed06d778830800000000000000
+      internalID: 4073362242977651030
       vertices: []
       indices: 
       edges: []
@@ -125,7 +192,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0c9bb4d28cd3ebb4296420f2e732ba5c
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +202,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DeepGrassBG_0: 8940088482845957344
+      ButtonBGLava_0: -7314256849948000736
+      ButtonBGLava_1: 7744877962916668192
+      ButtonBGLava_2: 4073362242977651030
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
