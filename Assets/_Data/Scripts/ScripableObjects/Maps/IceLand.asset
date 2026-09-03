@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 502cdaca6e1d4b843a1dbdf7443cf8ca, type: 3}
-  m_Name: FireLand
+  m_Name: IceLand
   m_EditorClassIdentifier: Assembly-CSharp::MapSO
-  _mapType: 0
+  _mapType: 1
   _mapConfigs:
   - _monsterSO: {fileID: 11400000, guid: 0088ea76fa96a7e4c91f92eec3c55334, type: 2}
     _levelOriginRange: {x: 15, y: 22}
@@ -24,31 +24,31 @@ MonoBehaviour:
     _levelOriginRange: {x: 30, y: 33}
     _spawnRate: {x: 80, y: 101}
   _uIBattleMapConfig:
-    _imgBg: {fileID: 3816678224986921825, guid: 3c1236da4432ccb499040a1334e5b72d, type: 3}
-    _spriteBtnBattleHud: {fileID: -7314256849948000736, guid: 602838b09e204ef44ba255e8e6766ea4, type: 3}
+    _imgBg: {fileID: -8874164698826402266, guid: 6a29f57dbacfc3c42a016abb13ce31bc, type: 3}
+    _spriteBtnBattleHud: {fileID: -6546764856142490625, guid: 6b2141fd08734354595754204cc36342, type: 3}
     _textBtnBattleHudSetting:
-      _hudSize: {x: -0.5899963, y: 3.040001, z: 349.63, w: 75.26}
-      _color: {r: 1, g: 1, b: 1, a: 1}
-      _fontSize: 60
-    _spriteNotification: {fileID: -1330148657216626652, guid: 98e5804bf6b90974592963ce90e6e908, type: 3}
+      _hudSize: {x: 0.47, y: 3.56, z: 263.27, w: 61.56}
+      _color: {r: 0, g: 0, b: 0, a: 1}
+      _fontSize: 50
+    _spriteNotification: {fileID: 8279723187016146102, guid: 6b2141fd08734354595754204cc36342, type: 3}
     _notificationTextSetting:
-      _hudSize: {x: 10.26, y: 6.09, z: 569.98, w: 136.32}
-      _color: {r: 1, g: 1, b: 1, a: 1}
+      _hudSize: {x: 3.6, y: 1.25, z: 643.81, w: 170.21}
+      _color: {r: 0, g: 0, b: 0, a: 1}
       _fontSize: 60
-    _spriteHudMonsterBattle: {fileID: -1330148657216626652, guid: 98e5804bf6b90974592963ce90e6e908, type: 3}
+    _spriteHudMonsterBattle: {fileID: 8279723187016146102, guid: 6b2141fd08734354595754204cc36342, type: 3}
     _hudMonsterBattleNameTextSetting:
-      _hudSize: {x: 28.4, y: -18.4, z: 316.38, w: 52.895}
-      _color: {r: 1, g: 1, b: 1, a: 1}
+      _hudSize: {x: 37.76, y: -9.76, z: 307.02, w: 51.46}
+      _color: {r: 0, g: 0, b: 0, a: 1}
       _fontSize: 50
     _hudMonsterBattleHealthTextSetting:
       _hudSize: {x: -98.5, y: -11.7, z: 61.22, w: 39.3}
-      _color: {r: 1, g: 1, b: 1, a: 1}
+      _color: {r: 0, g: 0, b: 0, a: 1}
       _fontSize: 50
     _hudMonsterBattleHealthValueTextSetting:
       _hudSize: {x: 68.7, y: -45.7, z: 272.82, w: 32.6}
-      _color: {r: 1, g: 1, b: 1, a: 1}
+      _color: {r: 0, g: 0, b: 0, a: 1}
       _fontSize: 40
     _hudMonsterBattleLevelTextSetting:
       _hudSize: {x: 152.61, y: 31.2, z: 187.99, w: 44.17}
-      _color: {r: 1, g: 0.9764151, b: 0.9764151, a: 1}
+      _color: {r: 0, g: 0, b: 0, a: 1}
       _fontSize: 58
