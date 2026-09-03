@@ -9,6 +9,7 @@ public class BattleLifetimeScope : LifetimeScope
         //Mono
         builder.RegisterComponentInHierarchy<BattleMonsterWorldSpaceView>();
         builder.RegisterComponentInHierarchy<HUDBattleMonsterView>();
+        builder.RegisterComponentInHierarchy<UIMapBattleView>();
 
         //Class
         builder.Register<DamageCalculator>(Lifetime.Singleton);
@@ -17,5 +18,6 @@ public class BattleLifetimeScope : LifetimeScope
 
         //Presenter
         builder.RegisterEntryPoint<BattleMonsterPresenter>(Lifetime.Singleton);
+        builder.RegisterEntryPoint<BattleLoadingHUDPresenter>(Lifetime.Singleton);
     }
 }

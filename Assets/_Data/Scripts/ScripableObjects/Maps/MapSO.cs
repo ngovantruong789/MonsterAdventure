@@ -9,4 +9,7 @@ public class MapSO : ScriptableObject
 
     [SerializeField] private List<MonsterMapConfig> _mapConfigs = new();
     public List<MonsterMapConfig> MapConfigs => _mapConfigs;
+
+    [SerializeField] private UIBattleMapConfig _uIBattleMapConfig;
+    public UIBattleMapConfig UIBattleMapConfig => _uIBattleMapConfig;
 }

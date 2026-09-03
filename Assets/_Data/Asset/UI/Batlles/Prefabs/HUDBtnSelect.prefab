@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7187609400081087368}
+  - component: {fileID: 7576083074938134554}
   m_Layer: 5
   m_Name: HUDBtnSelect
   m_TagString: Untagged
@@ -36,6 +37,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7576083074938134554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907581898722831457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d678099540734214498cd5c2b1261aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BattleHudButtonInfor
+  _button: {fileID: 4487912298125762721}
+  _btnText: {fileID: 9058539775315280624}
 --- !u!1 &2562605793389701888
 GameObject:
   m_ObjectHideFlags: 0
@@ -68,10 +83,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1337568620649427513}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.58999634, y: 3.040001}
+  m_SizeDelta: {x: 349.63, y: 75.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4400877282115449819
 CanvasRenderer:

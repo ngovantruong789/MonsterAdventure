@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: d0dd71d6c73a71d419009adefd218fed
+guid: 3c1236da4432ccb499040a1334e5b72d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8174429172814804761
-    second: HPBar-removebg-preview_0
-  - first:
-      213: -2230785965818421531
-    second: HPBar-removebg-preview_1
-  - first:
-      213: 5176424857040460507
-    second: HPBar-removebg-preview_2
+      213: 3816678224986921825
+    second: LavaBG_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -81,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -102,17 +96,56 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HPBar-removebg-preview_0
+      name: LavaBG_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 277
-        width: 469
-        height: 70
+        x: 0
+        y: 0
+        width: 911
+        height: 851
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,52 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 917773fc508617170800000000000000
-      internalID: 8174429172814804761
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HPBar-removebg-preview_1
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 177
-        width: 352
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5ee5779bbf7aa01e0800000000000000
-      internalID: -2230785965818421531
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HPBar-removebg-preview_2
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 89
-        width: 352
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bda166a4bfa56d740800000000000000
-      internalID: 5176424857040460507
+      spriteID: 16b505ebf9097f430800000000000000
+      internalID: 3816678224986921825
       vertices: []
       indices: 
       edges: []
@@ -185,9 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      HPBar-removebg-preview_0: 8174429172814804761
-      HPBar-removebg-preview_1: -2230785965818421531
-      HPBar-removebg-preview_2: 5176424857040460507
+      LavaBG_0: 3816678224986921825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
