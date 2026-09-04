@@ -43,6 +43,9 @@ public class HUDInventoryView : BaseMonoBehaviour, IStartInit
             _inventoryCaptureParent.gameObject.SetActive(false);
             _inventoryRestoreParent.gameObject.SetActive(true);
         });
+
+        _btnItemRestoreInfors.ForEach(item => item.BtnItem.onClick.AddListener(() => SelectItem(item)));
+        _btnItemCaptureInfors.ForEach(item => item.BtnItem.onClick.AddListener(() => SelectItem(item)));
     }
 
     public void SetData(HUDInventoryViewData hUDInventoryViewData)
@@ -54,7 +57,6 @@ public class HUDInventoryView : BaseMonoBehaviour, IStartInit
     {
         HandleUpdateInventory(_hUDInventoryViewData.CaptureInventory.Items, _btnItemCaptureInfors, _inventoryCaptureParent);
         HandleUpdateInventory(_hUDInventoryViewData.RestoreInventory.Items, _btnItemRestoreInfors, _inventoryRestoreParent);
-        RegisterSelectedItemInforButtons();
     }
 
     private void HandleUpdateInventory(List<ItemViewData> items, List<BtnItemInfor> itemInfors, RectTransform parent)
@@ -84,28 +86,19 @@ public class HUDInventoryView : BaseMonoBehaviour, IStartInit
         itemInfors.Add(btnItemInfor);
     }
 
-    private void RegisterSelectedItemInforButtons()
+    private void SelectItem(BtnItemInfor itemSelected)
     {
-        _btnItemRestoreInfors.ForEach(item => item.BtnItem.onClick.AddListener(() => SelectItem(item)));
-        _btnItemCaptureInfors.ForEach(item => item.BtnItem.onClick.AddListener(() => SelectItem(item)));
-    }
+        _iconNameTextDetail.text = itemSelected.ItemNameText.text;
+        _imgIconDetail.sprite = itemSelected.ImgIcon.sprite;
+        _descriptionTextDetail.text = itemSelected.DescriptionText.text;
 
-    private void SelectItem(BtnItemInfor ItemSelected)
-    {
-        _iconNameTextDetail.text = ItemSelected.ItemNameText.text;
-        _imgIconDetail.sprite = ItemSelected.ImgIcon.sprite;
-        _descriptionTextDetail.text = ItemSelected.DescriptionText.text;
         if (_itemCurrentSelected != null)
         {
             _itemCurrentSelected.ImgSelectedItem.gameObject.SetActive(false);
-            _itemCurrentSelected = ItemSelected;
-            _itemCurrentSelected.ImgSelectedItem.gameObject.SetActive(true);
         }
-        else
-        {
-            _itemCurrentSelected = ItemSelected;
-            _itemCurrentSelected.ImgSelectedItem.gameObject.SetActive(true);
-        }
+
+        _itemCurrentSelected = itemSelected;
+        _itemCurrentSelected.ImgSelectedItem.gameObject.SetActive(true);
     }
 
     private void ResetValue()
