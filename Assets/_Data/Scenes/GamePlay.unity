@@ -1853,7 +1853,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 85.052505}
+  m_AnchoredPosition: {x: 0, y: 85.05249}
   m_SizeDelta: {x: 0, y: -170.10501}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &777459467
@@ -2265,7 +2265,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.00024414062}
-  m_SizeDelta: {x: 0, y: -918.4918}
+  m_SizeDelta: {x: 0, y: -1067.9927}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &915643674
 MonoBehaviour:
@@ -6678,6 +6678,9 @@ MonoBehaviour:
   _btnItemCaptureInfors: []
   _inventoryCaptureParent: {fileID: 749904941}
   _inventoryRestoreParent: {fileID: 915643673}
+  _iconNameTextDetail: {fileID: 1613195136}
+  _imgIconDetail: {fileID: 1603205193}
+  _descriptionTextDetail: {fileID: 653555741}
 --- !u!114 &2012473797
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,10 @@ public class HUDInventoryView : BaseMonoBehaviour, IStartInit
     [SerializeField] private List<BtnItemInfor> _btnItemCaptureInfors = new();
     [SerializeField] private RectTransform _inventoryCaptureParent;
     [SerializeField] private RectTransform _inventoryRestoreParent;
+    [SerializeField] private TextMeshProUGUI _iconNameTextDetail;
+    [SerializeField] private Image _imgIconDetail;
+    [SerializeField] private TextMeshProUGUI _descriptionTextDetail;
+    private BtnItemInfor _itemCurrentSelected;
 
     private HUDInventoryViewData _hUDInventoryViewData;
 
@@ -49,6 +54,7 @@ public class HUDInventoryView : BaseMonoBehaviour, IStartInit
     {
         HandleUpdateInventory(_hUDInventoryViewData.CaptureInventory.Items, _btnItemCaptureInfors, _inventoryCaptureParent);
         HandleUpdateInventory(_hUDInventoryViewData.RestoreInventory.Items, _btnItemRestoreInfors, _inventoryRestoreParent);
+        RegisterSelectedItemInforButtons();
     }
 
     private void HandleUpdateInventory(List<ItemViewData> items, List<BtnItemInfor> itemInfors, RectTransform parent)
@@ -78,9 +84,41 @@ public class HUDInventoryView : BaseMonoBehaviour, IStartInit
         itemInfors.Add(btnItemInfor);
     }
 
+    private void RegisterSelectedItemInforButtons()
+    {
+        _btnItemRestoreInfors.ForEach(item => item.BtnItem.onClick.AddListener(() => SelectItem(item)));
+        _btnItemCaptureInfors.ForEach(item => item.BtnItem.onClick.AddListener(() => SelectItem(item)));
+    }
+
+    private void SelectItem(BtnItemInfor ItemSelected)
+    {
+        _iconNameTextDetail.text = ItemSelected.ItemNameText.text;
+        _imgIconDetail.sprite = ItemSelected.ImgIcon.sprite;
+        _descriptionTextDetail.text = ItemSelected.DescriptionText.text;
+        if (_itemCurrentSelected != null)
+        {
+            _itemCurrentSelected.ImgSelectedItem.gameObject.SetActive(false);
+            _itemCurrentSelected = ItemSelected;
+            _itemCurrentSelected.ImgSelectedItem.gameObject.SetActive(true);
+        }
+        else
+        {
+            _itemCurrentSelected = ItemSelected;
+            _itemCurrentSelected.ImgSelectedItem.gameObject.SetActive(true);
+        }
+    }
+
     private void ResetValue()
     {
         _inventoryCaptureParent.gameObject.SetActive(false);
         _inventoryRestoreParent.gameObject.SetActive(true);
+        _iconNameTextDetail.text = null;
+        _imgIconDetail.sprite = null;
+        _descriptionTextDetail.text = null;
+        if (_itemCurrentSelected != null)
+        {
+            _itemCurrentSelected.ImgSelectedItem.gameObject.SetActive(false);
+            _itemCurrentSelected = null;
+        }
     }
 }
