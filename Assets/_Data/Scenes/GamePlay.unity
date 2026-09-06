@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -5271305723882473191, guid: 92594447dc9d56548a36ec698e20f781, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -739,6 +739,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2309154098613794980, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309154098613794980, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2884830062766064827, guid: 53ffa98f2e4195a4cb69df66920e326d, type: 3}
     - target: {fileID: 2553041767459474752, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_text
       value: 'Setting
@@ -1727,8 +1735,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -8131308518068399058, guid: 53ffa98f2e4195a4cb69df66920e326d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2169,14 +2177,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.735849, g: 0.5865966, b: 0.5865966, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 8445341952193843813, guid: 53ffa98f2e4195a4cb69df66920e326d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2870,7 +2878,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -5271305723882473191, guid: 92594447dc9d56548a36ec698e20f781, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3927,15 +3935,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.31547686, g: 0.6603774, b: 0.29280883, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 8910839991233209184, guid: 53ffa98f2e4195a4cb69df66920e326d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4055,8 +4063,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -8131308518068399058, guid: 53ffa98f2e4195a4cb69df66920e326d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4450,6 +4458,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BtnMonster
       objectReference: {fileID: 0}
+    - target: {fileID: 2309154098613794980, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309154098613794980, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2884830062766064827, guid: 53ffa98f2e4195a4cb69df66920e326d, type: 3}
     - target: {fileID: 3003551554979435658, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_Pivot.x
       value: 1
@@ -5231,8 +5247,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -8131308518068399058, guid: 53ffa98f2e4195a4cb69df66920e326d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5672,14 +5688,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -5271305723882473191, guid: 92594447dc9d56548a36ec698e20f781, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6183,8 +6199,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -8131308518068399058, guid: 53ffa98f2e4195a4cb69df66920e326d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6443,8 +6459,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -8131308518068399058, guid: 53ffa98f2e4195a4cb69df66920e326d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6851,8 +6867,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -8131308518068399058, guid: 53ffa98f2e4195a4cb69df66920e326d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6889,6 +6905,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2309154098613794980, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309154098613794980, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2884830062766064827, guid: 53ffa98f2e4195a4cb69df66920e326d, type: 3}
     - target: {fileID: 2553041767459474752, guid: 66af5f09cb3d3e44088f43c9b4316ad9, type: 3}
       propertyPath: m_text
       value: Inventory
