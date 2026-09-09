@@ -8,6 +8,7 @@ public class PlayerEntity : CharacterEntity, IPlayer
     [Inject] private BattleModel _battleModel;
     [Inject] private IPlayerMovement _playerMovement;
     public IPlayerMovement PlayerMovement => _playerMovement;
+    public Vector3 Position => transform.position;
 
     public bool CanBattle => _playerTeamProvider.CanBattle;
 

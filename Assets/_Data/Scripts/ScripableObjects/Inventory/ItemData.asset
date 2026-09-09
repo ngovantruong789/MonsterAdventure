@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bce240af3d78f0d4ea7ebf66df76c95c, type: 3}
   m_Name: ItemData
   m_EditorClassIdentifier: Assembly-CSharp::ItemDatabaseSO
-  _captures: []
+  _captures:
+  - {fileID: 11400000, guid: 6a7fd3cd2d9b9774aab0ee08e68d9753, type: 2}
+  - {fileID: 11400000, guid: fb8766967589c174ca548282ae62e2ee, type: 2}
+  - {fileID: 11400000, guid: 35a691d2e7a981b4a89e4460a738045e, type: 2}
+  - {fileID: 11400000, guid: f42ff640ead4f404590910dbe6f0462c, type: 2}
   _playerEquipments: []
   _monsterEquipments: []
   _restores:

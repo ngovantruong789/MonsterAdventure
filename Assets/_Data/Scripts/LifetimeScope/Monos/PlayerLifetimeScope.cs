@@ -16,11 +16,15 @@ public class PlayerLifetimeScope : LifetimeScope, IStartable
         builder.RegisterEntryPoint<PlayerInventoryPresenter>(Lifetime.Singleton);
 
         //Mono
+        builder.RegisterComponentInHierarchy<PlayerEntity>().As<IPlayer>();
         builder.RegisterComponentInHierarchy<PlayerAnimatorController>();
         builder.RegisterComponentInHierarchy<PlayerMovementView>();
         builder.RegisterComponentInHierarchy<PlayerMovement>().As<IPlayerMovement>();
-        builder.RegisterComponentInHierarchy<PlayerEntity>();
         builder.RegisterComponentInHierarchy<HUDMonsterTeamView>();
         builder.RegisterComponentInHierarchy<HUDInventoryView>();
+
+        //Firebase
+        builder.RegisterEntryPoint<FirebaseInitializer>(Lifetime.Singleton).As<IFirebaseInitializer>();
+        builder.RegisterEntryPoint<PlayerDataController>(Lifetime.Singleton).As<IPlayerData>();
     }
 }

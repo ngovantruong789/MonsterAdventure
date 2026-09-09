@@ -14,7 +14,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
     private readonly IBattleManager _battleManager;
     private readonly CompositeDisposable _disposable = new();
     private readonly IBattleMonsterPresenter _battleMonstercontroller;
-    private readonly IInventoryProvider _inventoryProvider;
+    private readonly IPlayerInventoryProvider _inventoryProvider;
     private readonly IItemController _itemController;
     private readonly IPlayerTeamProvider _playerTeamProvider;
     private int _itemActiveId = -1;
@@ -28,7 +28,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
         IBattleManager battleManager,
         PlayerTeamModel playerTeamModel,
         IBattleMonsterPresenter iBattleMonsterPresenter,
-        IInventoryProvider inventoryProvider,
+        IPlayerInventoryProvider inventoryProvider,
         IItemController itemController,
         IPlayerTeamProvider playerTeamProvider)
     {
@@ -335,7 +335,7 @@ public partial class BattleMonsterPresenter : IDisposable, IStartable
 
     private void OutBattle()
     {
-        _inventoryProvider.UpdateInventoryModel();
+        _inventoryProvider.UpdateQuantityPlayerInventoryModel();
         _battleManager.EndBattle();
     }
 

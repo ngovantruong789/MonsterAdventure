@@ -10,6 +10,8 @@ public partial class BattleManager : GameLifetimeScope, IStartable, IBattleManag
 
     private IPlayer _player;
     private IMapManager _mapManager;
+    public IMapManager MapManager => _mapManager;
+
     private bool _isEnterBattle = false;
 
     public void Start()

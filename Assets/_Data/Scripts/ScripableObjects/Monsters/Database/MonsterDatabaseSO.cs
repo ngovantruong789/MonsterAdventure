@@ -1,16 +1,9 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-public class MonsterDatabaseSO : MonoBehaviour
+[CreateAssetMenu(fileName = "MonsterDatabaseSO", menuName = "ScriptableObjects/MonsterDatabase")]
+public class MonsterDatabaseSO : ScriptableObject
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private List<MonsterSO> monsters = new();
+    public List<MonsterSO> Monsters => monsters;
 }

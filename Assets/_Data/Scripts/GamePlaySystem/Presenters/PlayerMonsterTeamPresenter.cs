@@ -18,7 +18,10 @@ public class PlayerMonsterTeamPresenter : IStartable, IDisposable
 
     public void Start()
     {
-        UpdateView();
+        _playerTeamProvider.OnUpdatePlayerTeam
+            .Subscribe(_ => UpdateView())
+            .AddTo(_disposable);
+
         _battleManager.OnBattleStatus
             .Subscribe(val =>
             {

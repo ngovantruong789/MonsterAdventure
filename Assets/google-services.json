@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "777183803397",
+    "project_id": "monster-adventure-71c39",
+    "storage_bucket": "monster-adventure-71c39.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777183803397:android:883343d71150f05d9f046c",
+        "android_client_info": {
+          "package_name": "com.nvtxstudio.monsteradventure"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDirnhgU7u6UIU6babNcedmJ9lIfyexsBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
