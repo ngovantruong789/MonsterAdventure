@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class MonsterModel
 {
+    public int MonsterId { get; set; }
     public EvolveConfig NextEvolve { get; set; }
     public RuntimeAnimatorController MonsterAnimator { get; set; }
     public RuntimeAnimatorController UIAnimator { get; set; }

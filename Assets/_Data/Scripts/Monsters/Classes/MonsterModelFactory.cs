@@ -9,6 +9,7 @@ public static class MonsterModelFactory
 
         return new MonsterModel
         {
+            MonsterId = monsterSO.Id,
             NextEvolve = monsterSO.NextEvolve,
             Health = StatCalculator.CalculateStatPerLevel(monsterSO.Health.GrowthPerLevels, level),
             MaxHealth = StatCalculator.CalculateStatPerLevel(monsterSO.Health.GrowthPerLevels, level),
@@ -57,5 +58,39 @@ public static class MonsterModelFactory
             monsterViewDatas.Add(ConvertMonsterModelToMonsterViewData(monsterModel));
         }
         return monsterViewDatas;
+    }
+
+    public static List<MonsterModel> ConvertTeamDataModelToTeamModel(List<MonsterDataModel> monsterDataModels, MonsterDatabaseSO monsterDatabaseSO)
+    {
+        List<MonsterModel> monsterModels = new();
+        foreach (MonsterDataModel monsterDataModel in monsterDataModels)
+        {
+            MonsterModel monsterModel = GetMonsterModelFromDatabase(monsterDatabaseSO, monsterDataModel.MonsterID, monsterDataModel.Level);
+            if (monsterModel == null) continue;
+
+            monsterModel.Attack = monsterDataModel.Attack;
+            monsterDataModel.Health = monsterDataModel.Health;
+            monsterModel.MaxHealth = monsterDataModel.MaxHealth;
+            monsterModel.Experience = monsterDataModel.Experience;
+            monsterModel.Speed = monsterDataModel.Speed;
+            monsterModel.Defense = monsterDataModel.Defense;
+            monsterModel.Level = monsterDataModel.Level;
+            monsterModels.Add(monsterModel);
+        }
+
+        return monsterModels;
+    }
+
+    private static MonsterModel GetMonsterModelFromDatabase(MonsterDatabaseSO database, int id, int level)
+    {
+        foreach(MonsterSO monsterSO in database.Monsters)
+        {
+            if(monsterSO.Id == id)
+            {
+                return Create(monsterSO, level);
+            }
+        }
+
+        return null;
     }
 }

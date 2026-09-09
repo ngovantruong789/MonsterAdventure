@@ -5,20 +5,23 @@ using VContainer.Unity;
 public class PlayerInventoryPresenter : IStartable, IDisposable
 {
     private readonly HUDInventoryView _hUDInventoryView;
-    private readonly IInventoryProvider _inventoryProvider;
+    private readonly IPlayerInventoryProvider _playerInventoryProvider;
     private readonly IBattleManager _battleManager;
     private readonly CompositeDisposable _disposable = new();
 
-    public PlayerInventoryPresenter(HUDInventoryView hUDInventoryView, IInventoryProvider inventoryProvider, IBattleManager battleManager)
+    public PlayerInventoryPresenter(HUDInventoryView hUDInventoryView, IPlayerInventoryProvider playerInventoryProvider, IBattleManager battleManager)
     {
         _battleManager = battleManager;
-        _inventoryProvider = inventoryProvider;
+        _playerInventoryProvider = playerInventoryProvider;
         _hUDInventoryView = hUDInventoryView;
     }
 
     public void Start()
     {
-        UpdateView();
+        _playerInventoryProvider.OnPlayerInventoryChanged
+            .Subscribe(_ => UpdateView())
+            .AddTo(_disposable);
+
         _battleManager.OnBattleStatus
             .Subscribe(val =>
             {
@@ -32,8 +35,8 @@ public class PlayerInventoryPresenter : IStartable, IDisposable
     private void UpdateView()
     {
         HUDInventoryViewData hUDInventoryViewData = new();
-        hUDInventoryViewData.RestoreInventory.Items = ItemModelFactory.ConvertListItemViewModelToItemViewData(_inventoryProvider.RestoreInventoryModel.Items);
-        hUDInventoryViewData.CaptureInventory.Items = ItemModelFactory.ConvertListItemViewModelToItemViewData(_inventoryProvider.CaptureInventoryModel.Items);
+        hUDInventoryViewData.RestoreInventory.Items = ItemModelFactory.ConvertListItemViewModelToItemViewData(_playerInventoryProvider.RestoreInventoryModel.Items);
+        hUDInventoryViewData.CaptureInventory.Items = ItemModelFactory.ConvertListItemViewModelToItemViewData(_playerInventoryProvider.CaptureInventoryModel.Items);
         _hUDInventoryView.SetData(hUDInventoryViewData);
         _hUDInventoryView.UpdateInventoryView();
     }

@@ -3,9 +3,9 @@ using UnityEngine;
 
 public partial class ItemController : IItemController
 {
-    private IInventoryProvider _inventoryProvider;
+    private IPlayerInventoryProvider _inventoryProvider;
 
-    public ItemController(IInventoryProvider inventoryProvider)
+    public ItemController(IPlayerInventoryProvider inventoryProvider)
     {
         _inventoryProvider = inventoryProvider;
     }
