@@ -69,6 +69,7 @@ public partial class PlayerTeamController : IPlayerTeamProvider, IStartable, IDi
     public void AddMonster(MonsterModel monster)
     {
         _teamModel.PlayerTeam.Add(monster);
+        _onUpdatePlayerTeam.OnNext(default);
     }
 
     public void SetPlayerDataController(IPlayerData playerData)

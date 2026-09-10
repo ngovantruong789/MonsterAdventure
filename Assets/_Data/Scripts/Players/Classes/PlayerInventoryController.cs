@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UniRx;
 using UnityEngine;
-using VContainer;
 using VContainer.Unity;
 
 public partial class PlayerInventoryController : IPlayerInventoryProvider, IStartable, IDisposable
@@ -31,7 +30,7 @@ public partial class PlayerInventoryController : IPlayerInventoryProvider, IStar
     private void LoadItemData(InventoryDataModel inventoryDataModel)
     {
         PlayerInventoryModel playerInventoryModel = InventoryModelFactory.ConvertPlayerInventoryDataToPlayerInventoryModel(inventoryDataModel, _itemDatabaseSO);
-        UpdatePlayerInventoryModel(playerInventoryModel);
+        _playerInventoryModel = playerInventoryModel;
         RemoveItemWhenUsedUp();
         _onPlayerInventoryChanged.OnNext(default);
     }
@@ -42,8 +41,6 @@ public partial class PlayerInventoryController : IPlayerInventoryProvider, IStar
         {
             AddItem(ItemModelFactory.Create(item, 1));
         }
-
-        _onPlayerInventoryChanged.OnNext(default);
     }
 
     public void AddItem(ItemModel item)
@@ -72,6 +69,8 @@ public partial class PlayerInventoryController : IPlayerInventoryProvider, IStar
         {
            OnAddItem(_inventoryModel.MonsterEquipment.Items, item);
         }*/
+
+        _onPlayerInventoryChanged.OnNext(default);
     }
 
     private void OnAddItem(List<ItemModel> itemModels, ItemModel item)
@@ -88,12 +87,10 @@ public partial class PlayerInventoryController : IPlayerInventoryProvider, IStar
             }
         }
 
-        if (!isItemExist) itemModels.Add(item);
-    }
-
-    private void UpdatePlayerInventoryModel(PlayerInventoryModel playerInventoryModel)
-    {
-        _playerInventoryModel = playerInventoryModel;
+        if (!isItemExist)
+        {
+            itemModels.Add(item);
+        }
     }
 
     public void UpdateQuantityPlayerInventoryModel()
