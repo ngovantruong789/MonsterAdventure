@@ -95,7 +95,7 @@ public partial class BattleMonsterController : IBattleMonsterPresenter, IBattleM
 
     private void AIOpponentAttack()
     {
-        ActiveAttack(EMonsterSide.Opponent, UnityEngine.Random.Range(0, _opponentModel.BatlleSkills.Count));
+        ActiveAttack(EMonsterSide.Opponent, Random.Range(0, _opponentModel.BatlleSkills.Count));
     }
 
     public void ActiveAttack(EMonsterSide eMonsterSide, int skillIndex)
