@@ -55,14 +55,34 @@ public partial class ItemController : IItemController
 
     private void ActiveCapture(int id, EItemType itemType, ItemModel itemCapture, MonsterModel opponentMonster)
     {
-        int percentRateCapture = (int)(itemCapture.Value * 3.5 / (opponentMonster.DifficultCapture * 0.3f));
-        percentRateCapture = Mathf.Clamp(percentRateCapture, 1, 100);
-        int rand = Random.Range(1, 101);
-        bool isCaptureComplete = rand <= percentRateCapture;
-        Debug.Log("ItemCapture: " + itemCapture.Value + "; DifficultMonster: " + opponentMonster.DifficultCapture 
-            + "; Rate: " + percentRateCapture + "; IsComplete: " +  isCaptureComplete);
+        float percentRateCapture = (float)(itemCapture.Value * 2.7f / (opponentMonster.DifficultCapture * 0.45f));
+        float effectPercentBonnus = CheckEffectMonster(opponentMonster) ? 0.5f : 0f;
+        percentRateCapture += percentRateCapture * (GetLowHpPercent(opponentMonster) + effectPercentBonnus);
+        percentRateCapture = Mathf.Clamp(percentRateCapture, 0, 101);
+
+        float random = Random.Range(0f, 100f);
+        bool isCaptureComplete = random <= percentRateCapture;
+        Debug.Log("ItemCapture: " + itemCapture.Value + "; DifficultMonster: " + opponentMonster.DifficultCapture
+            + "; Rate: " + percentRateCapture + "; Rand: " + random + "; IsComplete: " + isCaptureComplete);
         _onActiveItem.OnNext(new ActiveItemControllerEventData(id, itemCapture.Prefab, itemType, isCaptureComplete));
     }
+
+    private float GetLowHpPercent(MonsterModel opponentMonster)
+    {
+        float currentHealth = (float)opponentMonster.Health / opponentMonster.MaxHealth;
+        if (currentHealth <= 0.2f) return 1;
+        else if (currentHealth <= 0.5f) return 0.5f;
+        else return 0;
+    }
+
+    private bool CheckEffectMonster(MonsterModel opponentMonster)
+    {
+        return opponentMonster.EffectType == EEffectType.Paralyze
+            || opponentMonster.EffectType == EEffectType.Freeze
+            || opponentMonster.EffectType == EEffectType.Burn
+            || opponentMonster.EffectType == EEffectType.SpeedDown;
+    }
+
     private void ActiveRestore(int id, ItemModel itemModel, MonsterModel player)
     {
         if (itemModel.EffectItem == EItemEffect.RestoreHp && player != null)

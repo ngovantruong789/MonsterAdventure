@@ -16,4 +16,5 @@ MonoBehaviour:
   _fullName: Iron Defense
   _skillType: 2
   _elementType: 9
+  _effectType: 6
   _damage: 0

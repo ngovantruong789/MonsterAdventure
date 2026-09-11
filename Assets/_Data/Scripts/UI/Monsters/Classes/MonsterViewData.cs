@@ -17,4 +17,5 @@ public class MonsterViewData
     public int Level { get; set; }
     public bool IsDead { get; set; }
     public float Experience { get; set; }
+    public EEffectType EffectType { get; set; }
 }

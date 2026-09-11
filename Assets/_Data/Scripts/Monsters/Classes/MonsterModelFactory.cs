@@ -26,6 +26,7 @@ public static class MonsterModelFactory
             DifficultCapture = CaptureCalculator.CalculateDiffercultCapturePerLevel(monsterSO.CaptureRateConfig, level),
             Experience = 0,
             IsDead = false,
+            EffectType = EEffectType.None,
         };
     }
 
@@ -47,6 +48,7 @@ public static class MonsterModelFactory
             UIAnimator = monsterModel.UIAnimator,
             BatlleSkills = SkillModelFactory.ConvertListSkillModelToSkillViewData(monsterModel.BatlleSkills),
             UnlockedSkills = SkillModelFactory.ConvertListSkillModelToSkillViewData(monsterModel.UnlockedSkills),
+            EffectType = monsterModel.EffectType,
         };
     }
 

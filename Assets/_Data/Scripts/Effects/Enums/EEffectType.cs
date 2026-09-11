@@ -9,5 +9,6 @@ public enum EEffectType
     DefenseUp = 6,
     DefenseDown = 7,
     SpeedUp = 8,
-    SpeedDown = 9
+    SpeedDown = 9,
+    Heal = 10,
 }

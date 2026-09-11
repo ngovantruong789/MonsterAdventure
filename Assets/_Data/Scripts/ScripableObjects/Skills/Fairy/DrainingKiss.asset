@@ -16,4 +16,5 @@ MonoBehaviour:
   _fullName: Draining Kiss
   _skillType: 3
   _elementType: 11
+  _effectType: 10
   _damage: 70

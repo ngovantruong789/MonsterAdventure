@@ -16,4 +16,5 @@ MonoBehaviour:
   _fullName: Ice Beam
   _skillType: 3
   _elementType: 4
+  _effectType: 2
   _damage: 130

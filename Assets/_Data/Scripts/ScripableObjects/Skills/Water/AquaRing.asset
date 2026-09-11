@@ -16,4 +16,5 @@ MonoBehaviour:
   _fullName: Bubble Beam
   _skillType: 3
   _elementType: 1
+  _effectType: 10
   _damage: 60
