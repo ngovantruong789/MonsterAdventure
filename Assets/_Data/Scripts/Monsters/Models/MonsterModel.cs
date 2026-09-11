@@ -20,4 +20,5 @@ public class MonsterModel
     public float DifficultCapture { get; set; }
     public bool IsDead { get; set; }
     public float Experience { get; set; }
+    public EEffectType EffectType { get; set; }
 }

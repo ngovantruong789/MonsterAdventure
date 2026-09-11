@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillSO
   eSkillId: 7
   _fullName: Razor Leaf
-  _skillType: 1
+  _skillType: 3
   _elementType: 2
+  _effectType: 10
   _damage: 120

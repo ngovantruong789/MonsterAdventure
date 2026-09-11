@@ -16,4 +16,5 @@ MonoBehaviour:
   _fullName: Sandsear Storm
   _skillType: 3
   _elementType: 5
+  _effectType: 9
   _damage: 50

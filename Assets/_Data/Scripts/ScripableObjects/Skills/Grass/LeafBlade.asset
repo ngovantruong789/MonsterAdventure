@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: LeafBlade
   m_EditorClassIdentifier: Assembly-CSharp::SkillSO
   eSkillId: 6
-  _fullName: Bullet Seed
-  _skillType: 3
+  _fullName: Leaf Blade
+  _skillType: 1
   _elementType: 2
+  _effectType: 0
   _damage: 60

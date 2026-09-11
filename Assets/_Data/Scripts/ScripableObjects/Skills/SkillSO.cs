@@ -16,6 +16,9 @@ public class SkillSO : ScriptableObject
     [SerializeField] private EElementType _elementType;
     public EElementType ElementType => _elementType;
 
+    [SerializeField] private EEffectType _effectType;
+    public EEffectType EffectType => _effectType;
+
     [SerializeField] private int _damage;
     public int Damage => _damage;
 }

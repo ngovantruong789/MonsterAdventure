@@ -16,4 +16,5 @@ MonoBehaviour:
   _fullName: Charge
   _skillType: 2
   _elementType: 3
+  _effectType: 3
   _damage: 0

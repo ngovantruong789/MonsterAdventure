@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillSO
   eSkillId: 17
   _fullName: Close Combat
-  _skillType: 1
+  _skillType: 3
   _elementType: 8
+  _effectType: 7
   _damage: 120
