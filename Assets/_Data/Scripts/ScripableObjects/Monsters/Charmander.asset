@@ -25,16 +25,16 @@ MonoBehaviour:
   _elements: 00000000
   _health:
     _statType: 0
-    _growthPerLevels: 0500000006000000
+    _growthPerLevels: 03000000
   _attack:
-    _statType: 0
-    _growthPerLevels: 05000000
+    _statType: 3
+    _growthPerLevels: 02000000
   _defense:
-    _statType: 0
-    _growthPerLevels: 05000000
+    _statType: 1
+    _growthPerLevels: 02000000
   _speed:
-    _statType: 0
-    _growthPerLevels: 05000000
+    _statType: 2
+    _growthPerLevels: 01000000
   _skills:
   - _skillSO: {fileID: 11400000, guid: 4e2ebd9e03befb448992463335ae49f7, type: 2}
     _unlockLevel: 1

@@ -18,7 +18,7 @@ MonoBehaviour:
   _prefab: {fileID: 7767287966087706194, guid: 68f9dfcfc16393e42893a8537d029a69, type: 3}
   _effectItem: 6
   _itemType: 1
-  _value: 50
+  _value: 60
   _buyPrice: 10
   _sellPrice: 5
   _description: Catch Pokemon

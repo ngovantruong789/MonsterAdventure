@@ -20,22 +20,23 @@ MonoBehaviour:
     _nextEvolveSO: {fileID: 0}
     _levelEvolve: 0
   _captureRateConfig:
-    _baseCatchDifficulty: 25
-    _levelBonus: 1
+    _baseCatchDifficulty: 40
+    _levelBonus: 1.2
   _elements: 03000000
   _health:
     _statType: 0
     _growthPerLevels: 05000000
   _attack:
     _statType: 3
-    _growthPerLevels: 05000000
+    _growthPerLevels: 06000000
   _defense:
     _statType: 1
-    _growthPerLevels: 05000000
+    _growthPerLevels: 04000000
   _speed:
     _statType: 2
     _growthPerLevels: 05000000
-  _map:
-  - _mapType: 4
-    _levelOriginRange: {x: 3, y: 25}
-  _skills: []
+  _skills:
+  - _skillSO: {fileID: 11400000, guid: f2236d1328596ed4cbe58653ad837ba0, type: 2}
+    _unlockLevel: 1
+  - _skillSO: {fileID: 11400000, guid: e6ec882d58564e04cbf4af5bf9dd0bc7, type: 2}
+    _unlockLevel: 15
