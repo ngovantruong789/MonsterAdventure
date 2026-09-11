@@ -14,4 +14,14 @@ public enum ESkillId
     SandsearStorm = 11,
     Charge = 12,
     Thunderbolt = 13,
+    DrainingKiss = 14,
+    Moonblast = 15,
+    AuraSphere = 16,
+    CloseCombat = 17,
+    ShadowBall = 18,
+    ShadowForce = 19,
+    Psychic = 20,
+    Psystrike = 21,
+    FlashCannon = 22,
+    IronDefense = 23
 }

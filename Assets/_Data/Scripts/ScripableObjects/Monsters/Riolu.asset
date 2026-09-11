@@ -35,4 +35,6 @@ MonoBehaviour:
   _speed:
     _statType: 2
     _growthPerLevels: 04000000
-  _skills: []
+  _skills:
+  - _skillSO: {fileID: 11400000, guid: b7f4b37c32544564d90aa3d14746020b, type: 2}
+    _unlockLevel: 1

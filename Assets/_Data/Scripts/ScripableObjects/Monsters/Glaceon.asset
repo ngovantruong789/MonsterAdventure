@@ -38,5 +38,9 @@ MonoBehaviour:
   _skills:
   - _skillSO: {fileID: 11400000, guid: 75efab53775fb1a49ad2559c7e4529e1, type: 2}
     _unlockLevel: 10
-  - _skillSO: {fileID: 11400000, guid: 659bcb6043f66fa4397a1c335343bd78, type: 2}
+  - _skillSO: {fileID: 11400000, guid: 69a8163159de4194ea6c68ca81188e5a, type: 2}
     _unlockLevel: 20
+  - _skillSO: {fileID: 11400000, guid: 659bcb6043f66fa4397a1c335343bd78, type: 2}
+    _unlockLevel: 30
+  - _skillSO: {fileID: 11400000, guid: d524978be97978b498e4fee3fed848ed, type: 2}
+    _unlockLevel: 35
