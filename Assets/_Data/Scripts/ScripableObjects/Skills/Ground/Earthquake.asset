@@ -16,4 +16,4 @@ MonoBehaviour:
   _fullName: Earthquake
   _skillType: 1
   _elementType: 5
-  _damage: 5
+  _damage: 150

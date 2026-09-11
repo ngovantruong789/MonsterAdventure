@@ -36,7 +36,11 @@ MonoBehaviour:
     _statType: 2
     _growthPerLevels: 0d000000
   _skills:
-  - _skillSO: {fileID: 0}
+  - _skillSO: {fileID: 11400000, guid: 64d5238995e43a3469b4dfa5a65fe7e1, type: 2}
     _unlockLevel: 1
-  - _skillSO: {fileID: 0}
-    _unlockLevel: 25
+  - _skillSO: {fileID: 11400000, guid: 02857468af6990d42a3fa47582bd639e, type: 2}
+    _unlockLevel: 20
+  - _skillSO: {fileID: 11400000, guid: e6ec882d58564e04cbf4af5bf9dd0bc7, type: 2}
+    _unlockLevel: 30
+  - _skillSO: {fileID: 11400000, guid: c90731bd607706c4fb4274d045d48e58, type: 2}
+    _unlockLevel: 40

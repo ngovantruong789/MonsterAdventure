@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ae7077c60b2e2a48ab9ab90008bf65a, type: 3}
-  m_Name: Blizzard
+  m_Name: ShadowBall
   m_EditorClassIdentifier: Assembly-CSharp::SkillSO
-  eSkillId: 8
-  _fullName: Blizzard
+  eSkillId: 18
+  _fullName: Shadow Ball
   _skillType: 1
-  _elementType: 4
+  _elementType: 7
   _damage: 80

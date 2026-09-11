@@ -16,4 +16,4 @@ MonoBehaviour:
   _fullName: Bullet Seed
   _skillType: 3
   _elementType: 2
-  _damage: 2
+  _damage: 60

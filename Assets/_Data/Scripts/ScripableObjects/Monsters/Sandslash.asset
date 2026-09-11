@@ -40,3 +40,7 @@ MonoBehaviour:
     _unlockLevel: 1
   - _skillSO: {fileID: 11400000, guid: e0c06c9b655915548b90046894c4d758, type: 2}
     _unlockLevel: 16
+  - _skillSO: {fileID: 11400000, guid: d524978be97978b498e4fee3fed848ed, type: 2}
+    _unlockLevel: 20
+  - _skillSO: {fileID: 11400000, guid: b7f4b37c32544564d90aa3d14746020b, type: 2}
+    _unlockLevel: 30
