@@ -10,33 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8a8fcf4b1db5df418469822cca472b3, type: 3}
-  m_Name: Swampert
+  m_Name: Lucario
   m_EditorClassIdentifier: Assembly-CSharp::MonsterSO
-  _id: 10
-  _name: Swampert
-  _monsterAnimator: {fileID: 22100000, guid: f19734ca2a941914fa88e1c418ce4f23, type: 2}
-  _uIAnimator: {fileID: 9100000, guid: 01512f8d530621140a00e58c8d3426eb, type: 2}
+  _id: 12
+  _name: Lucario
+  _monsterAnimator: {fileID: 22100000, guid: 7fc3c76d79a1d084eaf61381761acf9c, type: 2}
+  _uIAnimator: {fileID: 9100000, guid: d25051dbc1e4bad4cbe0d1aeafe18406, type: 2}
   _nextEvolve:
     _nextEvolveSO: {fileID: 0}
     _levelEvolve: 0
   _captureRateConfig:
-    _baseCatchDifficulty: 50
+    _baseCatchDifficulty: 55
     _levelBonus: 1.5
-  _elements: 0100000005000000
+  _elements: 0800000009000000
   _health:
     _statType: 0
-    _growthPerLevels: 07000000
+    _growthPerLevels: 02000000
   _attack:
     _statType: 3
-    _growthPerLevels: 04000000
+    _growthPerLevels: 03000000
   _defense:
     _statType: 1
-    _growthPerLevels: 05000000
+    _growthPerLevels: 03000000
   _speed:
     _statType: 2
     _growthPerLevels: 04000000
-  _skills:
-  - _skillSO: {fileID: 11400000, guid: 69a8163159de4194ea6c68ca81188e5a, type: 2}
-    _unlockLevel: 1
-  - _skillSO: {fileID: 11400000, guid: 198b68a8cb8057f4c98e22026552ee58, type: 2}
-    _unlockLevel: 10
+  _skills: []

@@ -10,31 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8a8fcf4b1db5df418469822cca472b3, type: 3}
-  m_Name: Sandshrew
+  m_Name: Riolu
   m_EditorClassIdentifier: Assembly-CSharp::MonsterSO
-  _id: 8
-  _name: Sandshrew
-  _monsterAnimator: {fileID: 22100000, guid: 5f5605459ec90774a94d11b085315095, type: 2}
-  _uIAnimator: {fileID: 9100000, guid: 70a4a8b2b5fc7c243a39d677a74d639d, type: 2}
+  _id: 11
+  _name: Riolu
+  _monsterAnimator: {fileID: 22100000, guid: 6fb304c6d63305c41b93b58cc9c9e260, type: 2}
+  _uIAnimator: {fileID: 9100000, guid: 75392f249a6b82d43af7ea7a3a110449, type: 2}
   _nextEvolve:
-    _nextEvolveSO: {fileID: 11400000, guid: d0407c9270e95c14692a75bf4c8ae177, type: 2}
-    _levelEvolve: 15
+    _nextEvolveSO: {fileID: 11400000, guid: 7a537d4b60388164bacddc3a93752321, type: 2}
+    _levelEvolve: 20
   _captureRateConfig:
-    _baseCatchDifficulty: 5
-    _levelBonus: 0.4
-  _elements: 05000000
+    _baseCatchDifficulty: 15
+    _levelBonus: 1
+  _elements: 08000000
   _health:
     _statType: 0
-    _growthPerLevels: 03000000
+    _growthPerLevels: 02000000
   _attack:
     _statType: 3
-    _growthPerLevels: 02000000
+    _growthPerLevels: 03000000
   _defense:
     _statType: 1
     _growthPerLevels: 03000000
   _speed:
     _statType: 2
     _growthPerLevels: 04000000
-  _skills:
-  - _skillSO: {fileID: 11400000, guid: 526b82da614662e409f48e255bbf405e, type: 2}
-    _unlockLevel: 1
+  _skills: []
