@@ -16,4 +16,5 @@ MonoBehaviour:
   _fullName: Aura Sphere
   _skillType: 1
   _elementType: 8
-  _damage: 150
+  _effectType: 0
+  _damage: 100
