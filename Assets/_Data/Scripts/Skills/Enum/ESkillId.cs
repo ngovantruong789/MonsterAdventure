@@ -23,5 +23,7 @@ public enum ESkillId
     Psychic = 20,
     Psystrike = 21,
     FlashCannon = 22,
-    IronDefense = 23
+    IronDefense = 23,
+    BraveBird = 24,
+    SkyAttack = 25
 }
